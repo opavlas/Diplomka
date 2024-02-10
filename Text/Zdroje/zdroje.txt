@@ -1,0 +1,31 @@
+https://www.nobelprize.org/prizes/physics/1903/becquerel/biographical/ 			// Bacquerel objev radioaktivity
+
+F. Krummenacher, “Pixel detectors with local intelligence: an IC designer		// CSA zapojeni z
+point of view”, Nucl. Instr. Meth. A, vol. 305, pp: 527-532, 1991
+
+C. Granja and S. Posp ́ıˇsil, “Quantum dosimetry and online visualization of x-ray		# 1
+and charged particle radiation in commercial aircraft at operational flight altitudes
+with the pixel detector timepix”, Advances in Space Research, vol. 54, p. 241251,
+2014
+
+D. Turecek, L. Pinsky, J. Jakubek, Z. Vykydal, N. Stoffle, and S. Pospisil, “Small		# 2
+dosimeter based on timepix device for international space station”, Journal of In-
+strumentation, vol. 6, no. 12, p. C12037, 2011
+
+
+D. Vavrik, J. Dammer, J. Jak ̊ubek, I. Jeon, O. Jirousek, M. Kroupa, and P. Zlamal,		# 3		
+“Advanced x-ray radiography and tomography in several engineering applications”,
+Nuclear Instruments and Methods in Physics Research A, vol. 633, Supplement 1,
+no. 0, pp. S152 – S155, 2011. 11th International Workshop on Radiation Imaging
+Detectors (IWORID)
+
+J. Jak ̊ubek, “Semiconductor Pixel detectors and their applications in life sciences”,		# 4 
+
+http://aladdin.utef.cvut.cz/ofat/others/Pixelman/Pixelman.html					// PIXELMAN manual
+
+CERN, Web presentation of the Medipix Collaboration, web. www.cern.ch/medipix			// MEDPIX
+
+Literatura citace:
+
+[1] Vícha, V.: Experimenty s pixelovým detektorem pro výuku jaderné a částicové fyziky, Praha: ČVUT v Praze, Česká technika - nakladatelství ČVUT,
+ 2016. ISBN 978-80-01-05888-6.

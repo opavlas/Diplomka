@@ -1,0 +1,76 @@
+\begin{thebibliography}{10}
+
+\bibitem{Llopart}
+X.~{Llopart Cudié}, {\em Design and characterization of 64{K} pixels chips
+  working in single photon processing mode}.
+\newblock PhD thesis, Mid Sweden University, 2007.
+\newblock ISBN: 978-91-85317-56-1.
+
+\bibitem{tpx2_manual}
+J.~Alozy, R.~Ballabriga, I.~Kremastiotis, X.~Llopart, T.~Poikela, V.~Sriskaran,
+  and W.~Wong, ``Timepix2 {M}anual (v2.1),'' April 12 2019.
+\newblock CERN, Geneva.
+
+\bibitem{Medpix}
+CERN, ``{W}eb presentation of the {M}edipix {C}ollaboration.'' Dostupné z:
+  \url{www.cern.ch/medipix}.
+
+\bibitem{Platkevic}
+I.~M. Platkevič, {\em {S}ignal {P}rocessing and {D}ata {R}ead-{O}ut from
+  {P}osition {S}ensitive {P}ixel {D}etectors}.
+\newblock PhD thesis, ČVUT, 2014.
+
+\bibitem{usb_lite}
+Z.~Vykydal and J.~Jakůbek, ``{USB} lite - {M}iniaturized readout interface for
+  {M}edipix2 detector,'' {\em Nuclear Instruments and Methods in Physics
+  Research A}, vol.~633, pp.~48--49, 2011.
+\newblock Dostupné z:
+  \url{https://www.sciencedirect.com/science/article/pii/S0168900210013082/pdfft?md5=733e9d449a2e198b6559b52d5fbe242f&pid=1-s2.0-S0168900210013082-main.pdf}.
+
+\bibitem{Medpix2}
+CERN, ``{W}eb presentation of the {M}edipix {C}ollaboration.'' Dostupné z:
+  \url{https://medipix.web.cern.ch/medipix2}.
+
+\bibitem{Advacam}
+ADVACAM, ``{W}eb presentation of the {M}ini{P}{I}{X}
+  {S}{P}{R}{I}{N}{T}{E}{R}.'' Dostupné z:
+  \url{https://advacam.com/camera/minipix-sprinter}.
+
+\bibitem{Burian_2020}
+P.~Burian, P.~Broulím, B.~Bergmann, and L.~Tlustos, ``Ethernet embedded
+  readout interface for timepix2—katherine readout for timepix2,'' {\em
+  Journal of Instrumentation}, vol.~15, p.~C01037, jan 2020.
+
+\bibitem{Timepix3}
+T.~Poikela, J.~Plosila, T.~Westerlund, M.~Campbell, M.~D. Gaspari, X.~Llopart,
+  V.~Gromov, R.~Kluit, M.~van Beuzekom, F.~Zappon, V.~Zivkovic, C.~Brezina,
+  K.~Desch, Y.~Fu, and A.~Kruth, ``Timepix3: a 65k channel hybrid pixel readout
+  chip with simultaneous toa/tot and sparse readout,'' {\em Journal of
+  Instrumentation}, vol.~9, p.~C05013, may 2014.
+
+\bibitem{Timepix2}
+W.~Wong, J.~Alozy, R.~Ballabriga, M.~Campbell, I.~Kremastiotis, X.~Llopart,
+  T.~Poikela, V.~Sriskaran, L.~Tlustos, and D.~Turecek, ``Introducing timepix2,
+  a frame-based pixel detector readout asic measuring energy deposition and
+  arrival time,'' {\em Radiation Measurements}, vol.~131, p.~106230, 2020.
+
+\bibitem{Timepix4}
+X.~Llopart, J.~Alozy, R.~Ballabriga, M.~Campbell, R.~Casanova, V.~Gromov,
+  E.~Heijne, T.~Poikela, E.~Santin, V.~Sriskaran, L.~Tlustos, and
+  A.~Vitkovskiy, ``Timepix4, a large area pixel detector readout chip which can
+  be tiled on 4 sides providing sub-200 ps timestamp binning,'' {\em Journal of
+  Instrumentation}, vol.~17, p.~C01044, jan 2022.
+
+\bibitem{TSMC}
+TSMC, ``{W}eb presentation of the {T}{S}{M}{C}.'' Dostupné z:
+  \url{https://www.tsmc.com/english}.
+
+\bibitem{TSV}
+TSMC, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
+  \url{https://indico.cern.ch/event/710050/contributions/3185372/attachments/1741432/2817619/11_20_Re_Vertex_2018.pdf}.
+
+\bibitem{SLVS}
+F.~Tavernier and P.~Moreira, ``{SLVS} interface circuits.'' Dostupné z:
+  \url{https://indico.cern.ch/event/404345/contributions/1850202/attachments/809975/1109940/SLVS_IO}.
+
+\end{thebibliography}
