@@ -10,45 +10,45 @@ Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: zkratky.aux
 Database file #1: references.bib
 Warning--empty author in LVDS
-You've used 17 entries,
+You've used 20 entries,
             1876 wiz_defined-function locations,
-            582 strings with 6837 characters,
-and the built_in function-call counts, 3781 in all, are:
-= -- 343
-> -- 207
+            599 strings with 7525 characters,
+and the built_in function-call counts, 4361 in all, are:
+= -- 398
+> -- 232
 < -- 0
-+ -- 78
-- -- 61
-* -- 244
-:= -- 572
-add.period$ -- 23
-call.type$ -- 17
-change.case$ -- 15
++ -- 88
+- -- 68
+* -- 272
+:= -- 652
+add.period$ -- 27
+call.type$ -- 20
+change.case$ -- 18
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 176
-empty$ -- 335
-format.name$ -- 61
-if$ -- 914
+cite$ -- 21
+duplicate$ -- 205
+empty$ -- 395
+format.name$ -- 68
+if$ -- 1062
 int.to.chr$ -- 0
-int.to.str$ -- 17
-missing$ -- 7
-newline$ -- 60
-num.names$ -- 16
-pop$ -- 57
+int.to.str$ -- 20
+missing$ -- 8
+newline$ -- 70
+num.names$ -- 19
+pop$ -- 69
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 161
+skip$ -- 192
 stack$ -- 0
-substring$ -- 119
-swap$ -- 77
+substring$ -- 131
+swap$ -- 90
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 26
-width$ -- 19
-write$ -- 156
+while$ -- 30
+width$ -- 22
+write$ -- 182
 (There was 1 warning)

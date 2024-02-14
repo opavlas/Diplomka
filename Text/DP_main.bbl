@@ -65,6 +65,22 @@ X.~Llopart, J.~Alozy, R.~Ballabriga, M.~Campbell, R.~Casanova, V.~Gromov,
 TSMC, ``{W}eb presentation of the {T}{S}{M}{C}.'' Dostupné z:
   \url{https://www.tsmc.com/english}.
 
+\bibitem{Timepix2_500um}
+S.~George, D.~Turecek, S.~Wheeler, S.~Kodaira, and L.~Pinsky, ``First tests
+  with timepix2 and heavy ions,'' {\em Nuclear Instruments and Methods in
+  Physics Research Section A: Accelerators, Spectrometers, Detectors and
+  Associated Equipment}, vol.~958, p.~162725, 2020.
+\newblock Proceedings of the Vienna Conference on Instrumentation 2019.
+
+\bibitem{Timepix_500um_Pospisil}
+S.~Pospisil, ``{T}imepix hybrid pixels detectors for particle identification
+  and dosimetry.'' Dostupné z:
+  \url{https://indico.cern.ch/event/954194/contributions/4009245/attachments/2156334/3637201/Stanislav%20Pospisil%20-%20SP-Dakar-Timepix-lecture-fin.pdf}.
+
+\bibitem{Timepix_500um_Huston}
+L.~S. Pinsky, ``{A}n {U}pdate on the {T}imepix2.'' Dostupné z:
+  \url{https://wrmiss.org/workshops/twentyfourth/Pinsky.pdf}.
+
 \bibitem{TSV}
 V.~Re, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
   \url{https://indico.cern.ch/event/710050/contributions/3185372/attachments/1741432/2817619/11_20_Re_Vertex_2018.pdf}.
