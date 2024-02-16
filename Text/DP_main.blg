@@ -10,36 +10,36 @@ Reallocating 'name_of_file' (item size: 1) to 12 items.
 A level-1 auxiliary file: zkratky.aux
 Database file #1: references.bib
 Warning--empty author in LVDS
-You've used 20 entries,
+You've used 22 entries,
             1876 wiz_defined-function locations,
-            599 strings with 7525 characters,
-and the built_in function-call counts, 4361 in all, are:
-= -- 398
-> -- 232
+            609 strings with 7898 characters,
+and the built_in function-call counts, 4603 in all, are:
+= -- 418
+> -- 240
 < -- 0
-+ -- 88
-- -- 68
-* -- 272
-:= -- 652
-add.period$ -- 27
-call.type$ -- 20
-change.case$ -- 18
++ -- 92
+- -- 70
+* -- 280
+:= -- 686
+add.period$ -- 29
+call.type$ -- 22
+change.case$ -- 20
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 205
-empty$ -- 395
-format.name$ -- 68
-if$ -- 1062
+cite$ -- 23
+duplicate$ -- 213
+empty$ -- 431
+format.name$ -- 70
+if$ -- 1124
 int.to.chr$ -- 0
-int.to.str$ -- 20
+int.to.str$ -- 22
 missing$ -- 8
-newline$ -- 70
-num.names$ -- 19
-pop$ -- 69
+newline$ -- 76
+num.names$ -- 21
+pop$ -- 79
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 192
+skip$ -- 204
 stack$ -- 0
 substring$ -- 131
 swap$ -- 90
@@ -48,7 +48,7 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 30
-width$ -- 22
-write$ -- 182
+while$ -- 32
+width$ -- 24
+write$ -- 196
 (There was 1 warning)

@@ -61,6 +61,25 @@ X.~Llopart, J.~Alozy, R.~Ballabriga, M.~Campbell, R.~Casanova, V.~Gromov,
   be tiled on 4 sides providing sub-200 ps timestamp binning,'' {\em Journal of
   Instrumentation}, vol.~17, p.~C01044, jan 2022.
 
+\bibitem{Manek}
+P.~Mánek, ``{M}achine learning approach to ionizing particle recognition using
+  hybrid active pixel detector,'' Master's thesis, ČVUT, 2018.
+
+\bibitem{JAKUBEK2011S262}
+J.~Jakubek, ``Precise energy calibration of pixel detector working in
+  time-over-threshold mode,'' {\em Nuclear Instruments and Methods in Physics
+  Research Section A: Accelerators, Spectrometers, Detectors and Associated
+  Equipment}, vol.~633, pp.~S262--S266, 2011.
+\newblock 11th International Workshop on Radiation Imaging Detectors (IWORID).
+
+\bibitem{SLVS}
+F.~Tavernier and P.~Moreira, ``{SLVS} interface circuits.'' Dostupné z:
+  \url{https://indico.cern.ch/event/404345/contributions/1850202/attachments/809975/1109940/SLVS_IO}.
+
+\bibitem{LVDS}
+``Ieee standard for low-voltage differential signals (lvds) for scalable
+  coherent interface (sci),'' {\em IEEE Std 1596.3-1996}, pp.~1--34, 1996.
+
 \bibitem{TSMC}
 TSMC, ``{W}eb presentation of the {T}{S}{M}{C}.'' Dostupné z:
   \url{https://www.tsmc.com/english}.
@@ -85,23 +104,13 @@ L.~S. Pinsky, ``{A}n {U}pdate on the {T}imepix2.'' Dostupné z:
 V.~Re, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
   \url{https://indico.cern.ch/event/710050/contributions/3185372/attachments/1741432/2817619/11_20_Re_Vertex_2018.pdf}.
 
-\bibitem{SLVS}
-F.~Tavernier and P.~Moreira, ``{SLVS} interface circuits.'' Dostupné z:
-  \url{https://indico.cern.ch/event/404345/contributions/1850202/attachments/809975/1109940/SLVS_IO}.
+\bibitem{MPH2333}
+{M}onolithic~{P}ower {S}ystems, ``{S}ynchronous {B}uck {C}onverter.'' Dostupné
+  z:
+  \url{https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2333H/document_id/4409/}.
 
-\bibitem{LVDS}
-``Ieee standard for low-voltage differential signals (lvds) for scalable
-  coherent interface (sci),'' {\em IEEE Std 1596.3-1996}, pp.~1--34, 1996.
-
-\bibitem{Manek}
-P.~Mánek, ``{M}achine learning approach to ionizing particle recognition using
-  hybrid active pixel detector,'' Master's thesis, ČVUT, 2018.
-
-\bibitem{JAKUBEK2011S262}
-J.~Jakubek, ``Precise energy calibration of pixel detector working in
-  time-over-threshold mode,'' {\em Nuclear Instruments and Methods in Physics
-  Research Section A: Accelerators, Spectrometers, Detectors and Associated
-  Equipment}, vol.~633, pp.~S262--S266, 2011.
-\newblock 11th International Workshop on Radiation Imaging Detectors (IWORID).
+\bibitem{STM32U5A9}
+{S}{T}{M}croelectronics, ``{S}{T}{M}32{U}5{A}xxx.'' Dostupné z:
+  \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
 
 \end{thebibliography}

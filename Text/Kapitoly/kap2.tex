@@ -109,6 +109,7 @@ Jakou energii interagující částice zanechala v senzoru můžeme zjistit z To
 %TODO zminit ze countery mouhu ruzne kombinovat a zaroven jejich mody. PLUS zminit maskovani pixelu -> spotreba
 
 \subsection{Komunikační rozhraní}
+\label{Komunikacni rozhrani}
 \subsubsection{Logické úrovně} 	% TODO nazev
 \label{kap:3.2.1}
 Timepix 2 umožňuje komunikaci po paraelním nebo sériovém datovém kanálu. Pro komunikaci přes paraelní bránu je možno využít 32 paraelních vodičů. Paraelní brána dosahuje násobně vyšších přenosových rychlostí, než sériový kanál, viz. obrázek \ref{fig:rychlosti}. Dosažením takovýchto rychlostí je zapotřebí na straně vyčítací elektroniky použít velmi rychlé rozhraní, například FPGA.  
@@ -136,6 +137,7 @@ Komunikace s Timepix 2 se rozděluje na příkazy SET a GET. Příkazy SET nasta
 
 %TODO MCLOCK
 \subsection{Technická specifikace} %napáječky, kom. rozhraní, prikazy atd.., VN, hodiny pro měření, I/O piny
+\label{Technicka specifikace}
 Timepix 2 je rozdělen do 256 x 256 pixelů. Rozteč mezi jednotlivými pixely je 55 $\mu$$m$. Celkově pak Timepix 2 má rozměry 16.6 x 14.14 mm. Vyčítací část detektoru tvoří ASCI chip navržen ve 130 nm CMOS technologii. Samotná výroba ASIC je zajišťována jedním z předních výrobců chipů, firmou TSMC \cite{TSMC} na Taiwanu. Všechny technické informace, nebude-li uvedeno jinak jsou čerpány z manuálu k detektoru Timepix 2 \cite{tpx2_manual}.
 
 \subsubsection{Napájení}	
@@ -156,7 +158,7 @@ Timepix 2 ke své činnosti potřebuj celkem 3 napájení viz. tabulka \ref{tab:
 	\label{tab:tpx2_napajeni}
 \end{table}
 %TODO HV
-\par Speciální kategorií napájení je napájení pro zajištění vysokého napětí, které se připojí na senzorovou vrstvu. Toto napětí zajistí vyprázdnění oblasti v polovodičové struktuře. Požadavky na parametry vysokého napětí záleží na typu a tloušťce senzorové vrstvy. Nejčastěji používaným materiálem senzorové vrstvy je křemík. Například vysoké velikost napětí použitá pro testování Timepix 2 se senzorovou vrstvou křemíku o tloušťce 500 $\mu$m dle \cite{Timepix2_500um} byla 100 V. Příklady velikosti vysokého napětí používaných pro křemíkové senzorové vrstvy lze najít v odkazech \cite{Timepix_500um_Pospisil}, \cite{Timepix_500um_Huston}. %TODO jiny material pro HV
+\par Speciální kategorií napájení je napájení pro zajištění vysokého napětí, které se připojí na senzorovou vrstvu. Toto napětí zajistí vyprázdnění oblasti v polovodičové struktuře. Požadavky na parametry vysokého napětí záleží na typu a tloušťce senzorové vrstvy. Nejčastěji používaným materiálem senzorové vrstvy je křemík. Příklad vysokého napětí, které bylo použito pro testování Timepix 2 se senzorovou vrstvou křemíku o tloušťce 500 $\mu$m dle \cite{Timepix2_500um} bylo 100 V. Další příklady velikosti vysokého napětí používaných pro různé senzorové vrstvy lze najít v odkazech \cite{Timepix_500um_Pospisil}, \cite{Timepix_500um_Huston}. Důležitou vlastností vysokonapěťových zdrojů je možnost nastavení výstupního vysokého napětí v určitém rozsahu.   
 
 \subsubsection{Rozhraní pro připojení Timepix 2 k desce plošných spojů}	% TODO nazev
 Připojení Timepix 2 k desce plošných spojů je nejčastěji realizováno pomocí technologie \textit{wire bonding}. Timepix 2 má celkem 152 pinů pro přichycení wire bondů. Rozložení pinů je zobrazeno na obrázku \ref{fig:tpx2_floorplan} ve spodní části. Rozteč mezi jednotlivými plošky je 108 $\mu$m.
