@@ -84,6 +84,7 @@ Každý pixel z matice 256x256 pixelů má vlastní analogovou částí. Jak byl
 \end{figure}
 
 \subsection{Digitální část}
+\label{Digitálni cast}
 Každý pixel obsahuje čtyři digitální čítače typu LSFR. Každý n-bitový čítač generuje $2^n$ pseoudonáhodných čísel. V případě Timepix 2 každý pixel obsahuje dva 10-bitové (A,B) a dva 4-bitové (C,D) čítače. Například tedy 14-bitový čítač vznikne kombinací 10-bitového a 4-bitového čítače. Odpovídající 14-bitová hodnota je poté viz \ref{eq:1}. Celkem tedy pro každý pixel lze využít 28-bitů. Tyto čítače mouhou pracovat v různých módech. Tyto módy budou probrány v další části.
 \begin{equation}
 	14-bit = (hodnota_{4-bit} \cross 2^{10}) + hodnota_{10-bit}

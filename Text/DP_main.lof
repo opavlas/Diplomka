@@ -15,7 +15,11 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Koncept řešení vyčítacího rozhraní pro detektor Timepix 2\relax }}{12}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Zapojení regulátoru MP2333H\relax }}{14}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Napájecí sekvence základní desky\relax }}{14}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozložení vrstev PCB základní desky\relax }}{14}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev PCB základní desky\relax }}{14}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H\relax }}{14}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky\relax }}{15}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Konfigurace a napájení STM32U5A9\relax }}{17}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces STM32U5A9 PCB realizace\relax }}{18}{figure.caption.34}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

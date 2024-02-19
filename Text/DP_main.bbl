@@ -110,7 +110,11 @@ V.~Re, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
   \url{https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2333H/document_id/4409/}.
 
 \bibitem{STM32U5A9}
-{S}{T}{M}croelectronics, ``{S}{T}{M}32{U}5{A}xxx.'' Dostupné z:
+{S}{T}{M}croelectronics, ``Datasheet {S}{T}{M}32{U}5{A}xxx.'' Dostupné z:
   \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
+
+\bibitem{STM32U5A9_RM}
+{S}{T}{M}croelectronics, ``{R}{M}0456 reference manual {S}{T}{M}32{U}5{A}.''
+  Dostupné z: \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
 
 \end{thebibliography}
