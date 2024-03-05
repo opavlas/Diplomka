@@ -7,52 +7,58 @@
 \contentsline {subsection}{\numberline {2.2.2}MiniPIX SPRINTER}{4}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Katherine pro Timepix 2}{4}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Timepix 2}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Analogová část}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Digitální část}{5}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Komunikační rozhraní}{7}{subsection.2.3.3}%
-\contentsline {subsubsection}{Logické úrovně}{7}{section*.13}%
-\contentsline {subsubsection}{Struktura komunikace}{8}{section*.16}%
-\contentsline {subsection}{\numberline {2.3.4}Technická specifikace}{8}{subsection.2.3.4}%
-\contentsline {subsubsection}{Napájení}{8}{section*.17}%
-\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2 k desce plošných spojů}{9}{section*.19}%
-\contentsline {chapter}{\numberline {3}Návrh řešení}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Koncept řešení}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Výpočetní výkon}{11}{subsection.3.1.1}%
-\contentsline {subsubsection}{Komunikace s Timepix 2}{11}{section*.23}%
-\contentsline {subsection}{\numberline {3.1.2}Komunikační rozhraní}{12}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Napájení}{12}{subsection.3.1.3}%
-\contentsline {subsection}{\numberline {3.1.4}Mechanika}{12}{subsection.3.1.4}%
-\contentsline {chapter}{\numberline {4}Realizace}{13}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Základní deska}{13}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Napájení}{13}{subsection.4.1.1}%
-\contentsline {subsubsection}{Napájecí sekvence}{15}{section*.27}%
-\contentsline {subsection}{\numberline {4.1.2}Mikrokontrolér}{15}{subsection.4.1.2}%
-\contentsline {subsubsection}{Konfigurace mikrokontroléru}{16}{section*.29}%
-\contentsline {subsubsection}{Napájení}{16}{section*.30}%
-\contentsline {subsubsection}{PCB}{18}{section*.33}%
-\contentsline {subsection}{\numberline {4.1.3}Konverze logických úrovní}{18}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}USB}{18}{subsection.4.1.4}%
-\contentsline {section}{\numberline {4.2}Deska s Timepix 2}{18}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Timepix 2}{18}{subsection.4.2.1}%
-\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2}{18}{section*.35}%
-\contentsline {subsubsection}{Napájení}{18}{section*.36}%
-\contentsline {subsection}{\numberline {4.2.2}Vysokonapěťový zdroj}{18}{subsection.4.2.2}%
-\contentsline {subsubsection}{Měření vysokého napětí}{18}{section*.37}%
-\contentsline {subsection}{\numberline {4.2.3}Měření teploty}{18}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Konektor}{18}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Testování}{19}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Napájení}{19}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Vysokonapěťový zdroj}{19}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Měření teploty}{19}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Komunikační rozhraní s Timepix 2}{19}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Digitální test Timepix 2}{19}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Vyčtení chip ID}{19}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Vyčtení a zapsání pixelových matic}{19}{subsection.5.5.2}%
-\contentsline {section}{\numberline {5.6}USB komunikace}{19}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Měření spotřeby}{19}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Porovnání spotřeby}{19}{subsection.5.7.1}%
-\contentsline {section}{\numberline {5.8}Dosažené parametry}{19}{section.5.8}%
-\contentsline {chapter}{\numberline {6}Závěr}{20}{chapter.6}%
-\contentsline {chapter}{Seznam použité literatury}{23}{chapter*.38}%
-\contentsline {chapter}{Seznam použitých symbolů}{24}{chapter*.39}%
-\contentsline {chapter}{Seznam použitých zkratek}{25}{chapter*.40}%
+\contentsline {subsection}{\numberline {2.3.1}Matice pixelů}{5}{subsection.2.3.1}%
+\contentsline {subsubsection}{Analogová část}{6}{section*.11}%
+\contentsline {subsubsection}{Digitální část}{7}{section*.13}%
+\contentsline {subsection}{\numberline {2.3.2}Komunikační rozhraní}{8}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Technické specifikace}{9}{subsection.2.3.3}%
+\contentsline {subsubsection}{Napájení}{9}{section*.16}%
+\contentsline {subsubsection}{Spotřeba}{10}{section*.18}%
+\contentsline {subsubsection}{Rychlost komunikace}{10}{section*.19}%
+\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2 k desce plošných spojů}{11}{section*.21}%
+\contentsline {chapter}{\numberline {3}Návrh řešení}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Koncept řešení}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Výpočetní výkon}{12}{subsection.3.1.1}%
+\contentsline {subsubsection}{Komunikace s Timepix 2}{12}{section*.24}%
+\contentsline {subsection}{\numberline {3.1.2}Uživatelské rozhraní}{13}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Napájení}{13}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}Mechanika}{13}{subsection.3.1.4}%
+\contentsline {chapter}{\numberline {4}Realizace}{14}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Základní deska}{14}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Napájení}{14}{subsection.4.1.1}%
+\contentsline {subsubsection}{Napájecí sekvence}{16}{section*.28}%
+\contentsline {subsection}{\numberline {4.1.2}Mikrokontrolér}{17}{subsection.4.1.2}%
+\contentsline {subsubsection}{Konfigurace mikrokontroléru}{18}{section*.31}%
+\contentsline {subsubsection}{Napájení}{18}{section*.32}%
+\contentsline {subsubsection}{Konfigurace hodinových signálů}{19}{section*.35}%
+\contentsline {subsubsection}{Konfigurace komunikačních sběrnic}{20}{section*.37}%
+\contentsline {subsubsection}{Programování}{20}{section*.38}%
+\contentsline {subsubsection}{PCB}{21}{section*.40}%
+\contentsline {subsection}{\numberline {4.1.3}CPLD}{22}{subsection.4.1.3}%
+\contentsline {subsubsection}{Konverze logických úrovní}{22}{section*.42}%
+\contentsline {subsection}{\numberline {4.1.4}USB}{22}{subsection.4.1.4}%
+\contentsline {section}{\numberline {4.2}Deska s Timepix 2}{22}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Timepix 2}{22}{subsection.4.2.1}%
+\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2}{22}{section*.43}%
+\contentsline {subsubsection}{Napájení}{22}{section*.44}%
+\contentsline {subsection}{\numberline {4.2.2}Vysokonapěťový zdroj}{22}{subsection.4.2.2}%
+\contentsline {subsubsection}{Měření vysokého napětí}{22}{section*.45}%
+\contentsline {subsection}{\numberline {4.2.3}Měření teploty}{22}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Konektor}{22}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Testování}{23}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Napájení}{23}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Vysokonapěťový zdroj}{23}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Měření teploty}{23}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Komunikační rozhraní s Timepix 2}{23}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Digitální test Timepix 2}{23}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Vyčtení chip ID}{23}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}}{23}{subsection.5.5.2}%
+\contentsline {subsection}{\numberline {5.5.3}Vyčtení a zapsání pixelových matic}{23}{subsection.5.5.3}%
+\contentsline {section}{\numberline {5.6}USB komunikace}{23}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Měření spotřeby}{23}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Porovnání spotřeby}{23}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}Dosažené parametry}{23}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Závěr}{24}{chapter.6}%
+\contentsline {chapter}{Seznam použité literatury}{27}{chapter*.46}%
+\contentsline {chapter}{Seznam použitých symbolů}{28}{chapter*.47}%
+\contentsline {chapter}{Seznam použitých zkratek}{29}{chapter*.48}%

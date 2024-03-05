@@ -5,21 +5,23 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Vyčítací zařízení \textit {USB lite}\relax }}{3}{figure.caption.7}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Vyčítací zařízení MiniPIX SPRINTER\relax }}{4}{figure.caption.8}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Vyčítací zařízení Katherine pro Timepix 2 \cite {Burian_2020}\relax }}{4}{figure.caption.9}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Detektor Timepix 2 \cite {Timepix2}\relax }}{5}{figure.caption.10}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Zpracování signálu na úrovni pixelů\relax }}{6}{figure.caption.11}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Digitální módy Timepix 2 \cite {Manek}\relax }}{6}{figure.caption.12}%
-\contentsline {figure}{\numberline {2.8}{\ignorespaces SLVS specifikace \cite {SLVS}\relax }}{7}{figure.caption.14}%
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Vyčítací rychlosti snímků z Timepix2. Frekvence hodin $f_{clock}$ = 100 MHz \cite {tpx2_manual}\relax }}{7}{figure.caption.15}%
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Rozložení detektoru Timepix 2 \cite {tpx2_manual}\relax }}{9}{figure.caption.20}%
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Připojení detektoru Timepix 2 k desce plošných spojů \cite {TSV}\relax }}{10}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schematické rozložení detektoru Timepix 2 \cite {tpx2_manual}\relax }}{5}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Uspořádání jednoho pixelu \cite {Timepix2}\relax }}{6}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Digitální módy Timepix 2 \cite {Manek}\relax }}{7}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces SLVS specifikace \cite {SLVS}\relax }}{9}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Vyčítací rychlosti snímků z Timepix2. Frekvence hodin $f_{clock}$ = 100 MHz \cite {Timepix2}\relax }}{10}{figure.caption.20}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Připojení detektoru Timepix 2 k desce plošných spojů \cite {TSV}\relax }}{11}{figure.caption.22}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Koncept řešení vyčítacího rozhraní pro detektor Timepix 2\relax }}{12}{figure.caption.22}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Koncept řešení vyčítacího rozhraní pro detektor Timepix 2\relax }}{13}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozložení vrstev PCB základní desky\relax }}{14}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev PCB základní desky\relax }}{14}{figure.caption.24}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H\relax }}{14}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky\relax }}{15}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Konfigurace a napájení STM32U5A9\relax }}{17}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces STM32U5A9 PCB realizace\relax }}{18}{figure.caption.34}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozložení vrstev PCB základní desky\relax }}{15}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev PCB základní desky\relax }}{15}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H\relax }}{15}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky\relax }}{16}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Měření napájecí sekvence základní desky\relax }}{17}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Konfigurace a napájení STM32U5A9\relax }}{19}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Konfigurace hodinového signálu pro jádro mikrokontroléru\relax }}{20}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Programování mikrokontroléru\relax }}{21}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces STM32U5A9 PCB realizace\relax }}{21}{figure.caption.41}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

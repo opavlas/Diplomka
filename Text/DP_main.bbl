@@ -61,6 +61,12 @@ X.~Llopart, J.~Alozy, R.~Ballabriga, M.~Campbell, R.~Casanova, V.~Gromov,
   be tiled on 4 sides providing sub-200 ps timestamp binning,'' {\em Journal of
   Instrumentation}, vol.~17, p.~C01044, jan 2022.
 
+\bibitem{MOS}
+M.~Manghisoni, D.~Comotti, L.~Gaioni, L.~Ratti, and V.~Re, ``Dynamic
+  compression of the signal in a charge sensitive amplifier: From concept to
+  design,'' {\em IEEE Transactions on Nuclear Science}, vol.~62, no.~5,
+  pp.~2318--2326, 2015.
+
 \bibitem{Manek}
 P.~Mánek, ``{M}achine learning approach to ionizing particle recognition using
   hybrid active pixel detector,'' Master's thesis, ČVUT, 2018.
@@ -116,5 +122,9 @@ V.~Re, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
 \bibitem{STM32U5A9_RM}
 {S}{T}{M}croelectronics, ``{R}{M}0456 reference manual {S}{T}{M}32{U}5{A}.''
   Dostupné z: \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
+
+\bibitem{CPLD}
+{L}attice {S}emiconductor, ``{M}ach{X}{O}2.'' Dostupné z:
+  \url{https://www.latticesemi.com/Products/FPGAandCPLD/MachXO2}.
 
 \end{thebibliography}

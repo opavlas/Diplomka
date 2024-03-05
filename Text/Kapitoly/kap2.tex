@@ -54,38 +54,35 @@ Posledním uvedeným tipem vyčítacího zařízení je zařízení Kathrine pro
 \section{Timepix 2}
 % v podstatě technická dokumentace Timepix 2, plus konkretni pozadavky pro provoz
 \label{Timepix2}
-V předchozí části \ref{kap:2.1}, byly popsány obecné vlastnosti detektoru a základní principy detekce ionizujícího záření. V této kapitole bude detailněji popsán konkrétní detektor, detektor Timepix 2 \cite{tpx2_manual}. Detektor byl vyvinut pod záštitou CERN Medpipix Collaboration \cite{Medpix}. Timepix 2 patří do rodiny detektorů Timepix. Prvním z rodiny detektorů byl detektor Timepix \cite{Llopart}, následně to popořadě byly detektory Timepix 3 \cite{Timepix3}, Timepix 2 \cite{tpx2_manual}, \cite{Timepix2} a nejnovějším detektorem je Timepix 4 \cite{Timepix4}. Detektor Timepix 2 je zobrazen na obrázku \ref{fig:Timepix2}.
+V předchozí části \ref{kap:2.1}, byly popsány obecné vlastnosti pixelových detektoru a základní principy detekce ionizujícího záření. V této kapitole bude detailněji popsán konkrétní detektor, detektor Timepix 2 \cite{tpx2_manual}. Detektor byl vyvinut pod záštitou CERN Medpipix Collaboration \cite{Medpix}. Timepix 2 patří do rodiny detektorů Timepix, kde prvním z rodiny detektorů byl detektor Timepix \cite{Llopart}, následně to popořadě byly detektory Timepix 3 \cite{Timepix3}, Timepix 2 \cite{tpx2_manual}, \cite{Timepix2} a nejnovějším detektorem je Timepix 4 \cite{Timepix4}. Schematické rozložení detektoru Timepix 2 je zobrazeno na obrázku \ref{fig:tpx2_floorplan}. 
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.80]{Timepix2.png}
-	\caption{Detektor Timepix 2 \cite{Timepix2}} 
-	\label{fig:Timepix2}
+	\includegraphics[scale=0.80]{tpx2_floorplan.png}
+	\caption{Schematické rozložení detektoru Timepix 2 \cite{tpx2_manual}} 
+	\label{fig:tpx2_floorplan}
 \end{figure}	
 
-\subsection{Analogová část}	 %todo upravit
-Každý pixel z matice 256x256 pixelů má vlastní analogovou částí. Jak bylo zmíněno v kapitole \ref{kap:2}, pokud částice interaguje na senzorové vrstvě dojde k vytvoření nábojového impulsu. Tento náboj je díky připojenému napětí přitažen k elektrodám. Tento náboj může být charakterizován jako Diracův proudový impuls. Integrací Diracovo proudového impulsu dostaneme celkový generovaný náboj Q. Diracův impuls je naintegrován do malého kapacitoru Cf. Poté na výstupu CSA je v ideálním případě napěťový skok s amplitudou Q/Cf viz. \ref{fig:pixel_frontend}. Výstupní puls je poté porovnán s prahovou úrovní. Nastavením prahové úrovně lze eliminovat zbytkový proud, takzvaný \textit{leakage current}, závěrného směru polovodičové struktury, který zde vznikl kvůli připojenému vysokému napětí. Pokud je signál větší než daná nastavená úroveň, je inkrementován digitální čítač \cite{Llopart}. Každý diskriminátor obsahuje 5-bitový DAC převodník. Tento 5 bitový DAC převodník umožňuje nastavit úroveň detekovatelného signálu pro každý pixel individuálně a tím eliminovat šum. Uuspořádaní pro analogovou část lze vidět na obrázku \ref{fig:tpx2_cel}, kde je zobrazeno uspořádání jednoho pixelu detektoru Medipix 2.
+\subsection{Matice pixelů}
+Detektro je tvořen maticí 256 x 256 pixelů s roztečí  55 $\mu$$m$. Každý pixel má vlastní analogovou a digitální část, tyto jednotlivé části budou popsány v následujících částech \ref{analog} a \ref{Digitálni cast}. Schematické zobrazení jednoho pixelu detektoru je možné najít na obrázku \ref{fig:tpx2_cell}.
+\subsubsection{Analogová část}	 %todo upravit
+\label{analog}
+Každý pixel z matice 256 x 256 pixelů má vlastní analogovou částí, viz obrázek \ref{fig:tpx2_cell}. Jak bylo zmíněno v kapitole týkající se obecného principu detekce ionizujícího záření za použití pixelových detektorů \ref{kap:2}, pokud částice interaguje na senzorové vrstvě dojde k vytvoření nábojového impulsu. Tento náboj je díky připojenému napětí přitažen k elektrodám. Vytvořený náboj může být charakterizován jako Diracův proudový impuls. Integrací Diracovo proudového impulsu dostaneme celkový generovaný náboj Q. 
+\par Tedy analogové zpracování signálů na úrovni jednotlivých pixelů probíhá tak, že diracův proudový impuls vytvořený na senzorové vrstvě je naintegrován do malého kapacitoru $C_{FB}$ z obrázku \ref{fig:tpx2_cell}. Poté na výstupu CSA je v ideálním případě napěťový skok s amplitudou Q/Cf viz. \ref{fig:tpx2_cell}. Výstupní puls je poté porovnán s prahovou úrovní. Nastavením prahové úrovně lze eliminovat zbytkový proud, takzvaný \textit{leakage current}, závěrného směru polovodičové struktury, který zde vznikl kvůli připojenému vysokému napětí. Pokud je signál větší než daná nastavená úroveň, je inkrementován digitální čítač \cite{Llopart}. Každý diskriminátor obsahuje 5-bitový DAC převodník. Tento 5 bitový DAC převodník umožňuje nastavit úroveň detekovatelného signálu pro každý pixel individuálně a tím eliminovat šum způsobený zbytkovým proudem polovodičové struktury.
+\par Pokud není povolena funkce adaptivního zesílení signálu, ve zpětné vazbě CSA z obrázku \ref{fig:tpx2_cell} je fixní hodnota kondenzátoru $C_{FB}$. Tedy dochází k rovnoměrnému zesílení vstupního signálu, bez ohledu na velikosti generovaného náboje. 
+\par Pokud je povolen režim adaptivního zesílení zpětné vazba CSA je tvořena kondenzátorem $C_{FB}$ paraelně s kapacitou MOS tranzistoru. Zesílení vstupního signálu je vysoké pro vstupní signály s malou amplitudou a nízké pro signály s vysokou amplitudou, více viz. \cite{MOS}.
 \begin{figure}[h!]
-	\begin{subfigure}{0.5\textwidth}
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[scale=0.70]{tpx2_cel.jpg}
-	\caption{Uspořádání jednoho pixelu} 
-	\label{fig:tpx2_cel}
-	\end{subfigure}
-	\begin{subfigure}{0.5\textwidth}
-		\centering
-		\includegraphics[scale=0.50]{pixel_frontend.jpg}
-		\caption{První stupeň zpracování signálu, CSA}
-		\label{fig:pixel_frontend}
-	\end{subfigure}
-	\caption{Zpracování signálu na úrovni pixelů}
-	\label{fig:zpracování signálu}
+	\caption{Uspořádání jednoho pixelu \cite{Timepix2}}
+	\label{fig:tpx2_cell}
 \end{figure}
 
-\subsection{Digitální část}
+\subsubsection{Digitální část}
 \label{Digitálni cast}
-Každý pixel obsahuje čtyři digitální čítače typu LSFR. Každý n-bitový čítač generuje $2^n$ pseoudonáhodných čísel. V případě Timepix 2 každý pixel obsahuje dva 10-bitové (A,B) a dva 4-bitové (C,D) čítače. Například tedy 14-bitový čítač vznikne kombinací 10-bitového a 4-bitového čítače. Odpovídající 14-bitová hodnota je poté viz \ref{eq:1}. Celkem tedy pro každý pixel lze využít 28-bitů. Tyto čítače mouhou pracovat v různých módech. Tyto módy budou probrány v další části.
+Zobrazení digitální části jednotlivých pixelů, je možné vidět na obrázku \ref{fig:tpx2_cell}. Každý pixel obsahuje digitální 28 bitové čítače. Konkrétně se jedná o čtyři digitální čítače typu LSFR. V případě Timepix 2 každý pixel obsahuje dva 10-bitové (označení: A,B) a dva 4-bitové (označení: C,D) čítače. Tedy například 14-bitový čítač lze jednoduše vytvořit kombinací 10-bitového a 4-bitového čítače. Kvůli použití lineárně posuvného čítače LSFR, každý n-bitový čítač generuje $2^n$ pseoudonáhodných čísel. Odpovídající dekódovaná hodnota pseudonáhodného čísla lze pro příklad čtrnácti bitového čítače vidět v rovnici \ref{eq:1}. Digitální čítače, respektive části jednotlivých čítačů, mohou pracovat v různých módech, které budou následně popsány.
+
 \begin{equation}
 	14-bit = (hodnota_{4-bit} \cross 2^{10}) + hodnota_{10-bit}
 	\label{eq:1}
@@ -93,9 +90,9 @@ Každý pixel obsahuje čtyři digitální čítače typu LSFR. Každý n-bitov�
 
 Jak bylo zmíněno výše. Každý z digitálních čítačů může být nakonfigurován do jiného módu. Pro Timepix 2 jsou to následující módy \ref{fig:modes}. 
 \begin{itemize}
-	\item \textbf{Time over Threshold} (ToT): Čítač je inkrementován při každým hodinovým pulsu, kdy je signál nad nastavenou prahovou úrovní
-	\item \textbf{Time of Arrival} (ToA): Čítač je inkrementován při každým hodinovým pulsu, kdy signál překročí nastavenou úroveň a inkrementuje se až do konce akvizice.
-	\item \textbf{Coutnig mode}: Čítač je inkrementován pokud signál překročí dvakrát nastavený práh, viz. obrázek \ref{fig:modes} 
+	\item \textbf{Time over Threshold} (ToT): Čítač je inkrementován při každém hodinovým pulsu, kdy je signál nad nastavenou prahovou úrovní
+	\item \textbf{Time of Arrival} (ToA): Čítač je inkrementován při každém hodinovým pulsu, kdy signál překročí nastavenou úroveň a inkrementuje se až do konce akvizice.
+	\item \textbf{Coutnig mode}: Čítač je inkrementován pokud pokud došlo k překročení nastavené prahové úrovně detekce.
 \end{itemize}
 \begin{figure}[h!]
 	\centering
@@ -104,17 +101,20 @@ Jak bylo zmíněno výše. Každý z digitálních čítačů může být nakonf
 	\caption{Digitální módy Timepix 2 \cite{Manek}} 
 	\label{fig:modes}
 \end{figure}	
+\par Celkem lze použít 8 digitálních módu. Každý jednotlivý mód určuje, jaká informace bude v jakém čítači uložena. Například při použití digitálního módu 1 je do 10 bitového čítače ukládána informace ToT a do 18 bitového čítače je ukládána informace ToA. Více o jednotlivých digitálních módech Timepix 2 lze dohledat v technické dokumentaci \cite{tpx2_manual}.
 
-Jakou energii interagující částice zanechala v senzoru můžeme zjistit z ToT měření. Počet hodinových cyklů odpovídá času, po který hodnota analogového napětí byla nad nastavenou detekovatelnou úrovní. Více o způsobu měření energie například viz. \cite{JAKUBEK2011S262}.
+\par Výhodou detektoru Timepix 2 je, že pro použití módu ToT a ToA lze použít rozdílný zdroj hodinového signálu pro měření.
+
+\par Digitální čítače mimo výše popsaných digitálních módů můžou pracovat buď v simultánním, nebo kontinuálním režimu. Simultánní režim znamená, že naměřená data musí být vyčtena z 28 bitového digitálního čítače, kdy při vyčítání není možné měřit příchozí ionizující záření. Doba kdy detektor nemůže měřit příchozí záření vlivem samotného vyčítaní dat se nazývá mrtvá doba detektoru. Pro Timepix 2 při použití sériového komunikačního rozhraní s frekvencí hodinového signálu 100 MHz je tato doba 2.6 ms. Druhým režimem je režim kontinuální. Výhodou kontinuálního režimu je, že zde je nulová mrtvá doba. Princip činnosti je zjednodušeně, že dva digitální čítače jsou nastaveny na stejnou velikost, přičemž do jednoho z čítačů se ukládá informace, dle nastaveného měřícího módu. Tento čítač je zřetězení s druhým čítačem s identickou velikostí, ze kterého se pouze vyčítá. 
+
+\par Příkladem použití digitálních módů může být způsob měření energie, kterou interagující částice zanechala v senzoru. Tuto energii můžeme zjistit pokud vybereme digitální mód, při kterém se do některého z čítačů ukládá informace z ToT měření. Počet zaznamenaných hodinových taktů odpovídá času, po který hodnota analogového napětí signálu byla nad nastavenou detekovatelnou úrovní. Více o způsobu měření energie, kterou částice zanechala v detektoru lze dohledat například v \cite{JAKUBEK2011S262}.
 
 %TODO zminit ze countery mouhu ruzne kombinovat a zaroven jejich mody. PLUS zminit maskovani pixelu -> spotreba
 
 \subsection{Komunikační rozhraní}
 \label{Komunikacni rozhrani}
-\subsubsection{Logické úrovně} 	% TODO nazev
-\label{kap:3.2.1}
-Timepix 2 umožňuje komunikaci po paraelním nebo sériovém datovém kanálu. Pro komunikaci přes paraelní bránu je možno využít 32 paraelních vodičů. Paraelní brána dosahuje násobně vyšších přenosových rychlostí, než sériový kanál, viz. obrázek \ref{fig:rychlosti}. Dosažením takovýchto rychlostí je zapotřebí na straně vyčítací elektroniky použít velmi rychlé rozhraní, například FPGA.  
-\par Veškerá sériová komunikace probíhá po diferenciálních datových párech. Konkrétně se jedná o specifikaci SLVS \cite{SLVS}. Napěťové úrovně této specifikace lze najít na obrázku \ref{fig:SLVS_LVDS}. Jak lze na obrázku \ref{fig:SLVS_LVDS} vidět, specifikace SLVS je analogická se specifikací LVDS \cite{LVDS}. Výhody sériové komunikace jsou především v návrhu a spotřebě vyčítacího zařízení. Maximální datové rychlost, respektive rychlost komunikačních hodin je dle \cite{tpx2_manual} 100 Mhz. Lze tedy pro návrh použít například mikroprocesor. Hlavní nevýhodou sériové komunikace je oproti paraelní komunikaci vyčítací rychlost, která je násobně nižší \ref{fig:rychlosti}.
+Timepix 2 umožňuje komunikaci po paraelním nebo sériovém datovém rozhraní. Pro paraelní komunikaci je možno využít 32 paraelních vodičů. Paraelní brána dosahuje násobně vyšších přenosových rychlostí, záleží na počtu použitých paraelních vodičů, než sériové rozhraní, viz. obrázek \ref{fig:rychlosti}. Pro dosažením takovýchto rychlostí, respektive paraelního zpracování dat je zapotřebí na straně vyčítací elektroniky použít velmi rychlé rozhraní, například FPGA.  
+\par Sériová komunikace probíhá po diferenciálních datových párech. Konkrétně se jedná o komunikační specifikaci SLVS \cite{SLVS}. Napěťové úrovně této specifikace lze najít na obrázku \ref{fig:SLVS_LVDS}. Jak lze z obrázku \ref{fig:SLVS_LVDS} vidět, specifikace SLVS je analogická ke komunikační specifikaci LVDS \cite{LVDS}. Maximální rychlost komunikačních hodin pro použití sériového rozhraní je dle manuálu Timepix 2 \cite{tpx2_manual} 100 Mhz. Z uvedených parametrů týkající se maximální rychlosti komunikace, lze na straně vyčítacího zařízení navrhnout například použití mikroprocesoru. Hlavní nevýhodou sériové komunikace je maximální vyčítací rychlost, která je násobně nižší než při použití komunikace paraelní \ref{fig:rychlosti}. Naopak výhody sériové komunikace jsou především jednoduchost implementace a také teoreticky nižší spotřeba vyčítacího zařízení detektoru.
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
@@ -122,27 +122,14 @@ Timepix 2 umožňuje komunikaci po paraelním nebo sériovém datovém kanálu. 
 	\caption{SLVS specifikace \cite{SLVS}} 
 	\label{fig:SLVS_LVDS}
 \end{figure}	
-\begin{figure}[h!]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[scale=0.40]{rychlosti.jpg}
-	\caption{Vyčítací rychlosti snímků z Timepix2. Frekvence hodin $f_{clock}$ = 100 MHz \cite{tpx2_manual}} 
-	\label{fig:rychlosti}
-\end{figure}	
 
-\subsubsection{Struktura komunikace}
-V této podkapitole bude popsána struktura komunikace s Timepix 2 za použití sériové komunikace popsané v \ref{kap:3.2.1}.  
-%TODO popis signalu SPI pro TPX2 a casovani. Zminit i pakety SET/GET a jejich strukturu? 
-Komunikace s Timepix 2 se rozděluje na příkazy SET a GET. Příkazy SET nastavujeme příslušný registr a příkazy GET daný registr vyčítáme. 
-%TODO signaly potrebne pro komunikaci, ale pak i dac out atd ?.. 
-
-%TODO MCLOCK
-\subsection{Technická specifikace} %napáječky, kom. rozhraní, prikazy atd.., VN, hodiny pro měření, I/O piny
+%TODO MCLOCK????
+\subsection{Technické specifikace} %napáječky, kom. rozhraní, prikazy atd.., VN, hodiny pro měření, I/O piny
 \label{Technicka specifikace}
-Timepix 2 je rozdělen do 256 x 256 pixelů. Rozteč mezi jednotlivými pixely je 55 $\mu$$m$. Celkově pak Timepix 2 má rozměry 16.6 x 14.14 mm. Vyčítací část detektoru tvoří ASCI chip navržen ve 130 nm CMOS technologii. Samotná výroba ASIC je zajišťována jedním z předních výrobců chipů, firmou TSMC \cite{TSMC} na Taiwanu. Všechny technické informace, nebude-li uvedeno jinak jsou čerpány z manuálu k detektoru Timepix 2 \cite{tpx2_manual}.
+Timepix 2 je rozdělen do 256 x 256 pixelů. Rozteč mezi jednotlivými pixely je 55 $\mu$$m$. Celkově rozměry Timepix 2 jsou 16.6 x 14.14 mm. Vyčítací část detektoru tvoří ASCI chip navržen ve 130 nm CMOS technologii. Samotná výroba ASIC je zajišťována jedním z předních výrobců chipů, firmou TSMC \cite{TSMC} na Taiwanu. Všechny technické informace, nebude-li uvedeno jinak jsou čerpány z manuálu k detektoru Timepix 2. \cite{tpx2_manual}.
 
 \subsubsection{Napájení}	
-Timepix 2 ke své činnosti potřebuj celkem 3 napájení viz. tabulka \ref{tab:tpx2_napajeni}. Napájení VDD a VDDA slouží k napájení jádra Timepix 2, napájení VDDIO pak k napájení vstupních výstupních bran. Pokud chceme z Timepix 2 vyčíst CHIP ID, musíme na pin VDD33 aplikovat napájecí napětí 2.5 V. Při normální činnosti detektoru, je požadováno napětí 1.2 V. Celková spotřeba Timepix 2 při zapnutí všech pixelů a frekvenci datových hodin $f_{clock}$ = Mhz je dle \cite{Timepix2} nižší než 900 mW.
+Timepix 2 ke své činnosti potřebuj celkem 3 napájení viz. tabulka \ref{tab:tpx2_napajeni}. Napájení VDD slouží pro napájení digitální části jádra Timepix2 a VDDA slouží k napájení analogové části jádra Timepix  2. Napájení VDDIO slouží k napájení vstupních/výstupních bran. Posledním uvedeným napájení v tabulce \ref{tab:tpx2_napajeni} je napájení VDD33. Toto napájení je potřeba přepínat, podle potřebné funkcionality detektoru. Pokud chceme z Timepix 2 vyčíst CHIP ID, musíme na pin VDD33 aplikovat napájecí napětí 2.5 V. Při ostatní činnosti detektoru, je požadováno aby napětí označené VDD33 bylo 1.2 V. 
 \begin{table}[h!]
 	\centering
 	\begin{tabular}{ |P{3cm}||P{5cm}|  }
@@ -158,18 +145,29 @@ Timepix 2 ke své činnosti potřebuj celkem 3 napájení viz. tabulka \ref{tab:
 	\caption{Napájecí úrovně Timepix 2}
 	\label{tab:tpx2_napajeni}
 \end{table}
-%TODO HV
-\par Speciální kategorií napájení je napájení pro zajištění vysokého napětí, které se připojí na senzorovou vrstvu. Toto napětí zajistí vyprázdnění oblasti v polovodičové struktuře. Požadavky na parametry vysokého napětí záleží na typu a tloušťce senzorové vrstvy. Nejčastěji používaným materiálem senzorové vrstvy je křemík. Příklad vysokého napětí, které bylo použito pro testování Timepix 2 se senzorovou vrstvou křemíku o tloušťce 500 $\mu$m dle \cite{Timepix2_500um} bylo 100 V. Další příklady velikosti vysokého napětí používaných pro různé senzorové vrstvy lze najít v odkazech \cite{Timepix_500um_Pospisil}, \cite{Timepix_500um_Huston}. Důležitou vlastností vysokonapěťových zdrojů je možnost nastavení výstupního vysokého napětí v určitém rozsahu.   
+\par Speciální kategorií napájení je napájení pro zajištění vysokého napětí, které je připojeno na senzorovou vrstvu. Toto napětí zajistí vyprázdnění oblasti v polovodičové struktuře. Požadavky na parametry vysokého napětí záleží na typu a tloušťce senzorové vrstvy. Nejčastěji používaným materiálem senzorové vrstvy je křemík, ovšem záleží na příkladu použití detektoru. Uvedu-li příklad vysokého napětí, které bylo použito pro testování Timepix 2 s křemíkovou senzorovou vrstvou o tloušťce 500 $\mu$m dle \cite{Timepix2_500um} bylo 100 V. Další příklady velikosti vysokého napětí používaných pro různé senzorové vrstvy lze najít v odkazech \cite{Timepix_500um_Pospisil}, \cite{Timepix_500um_Huston}. Důležitou vlastností vysokonapěťových zdrojů je možnost nastavení výstupního vysokého napětí v určitém rozsahu.   
 
-\subsubsection{Rozhraní pro připojení Timepix 2 k desce plošných spojů}	% TODO nazev
-Připojení Timepix 2 k desce plošných spojů je nejčastěji realizováno pomocí technologie \textit{wire bonding}. Timepix 2 má celkem 152 pinů pro přichycení wire bondů. Rozložení pinů je zobrazeno na obrázku \ref{fig:tpx2_floorplan} ve spodní části. Rozteč mezi jednotlivými plošky je 108 $\mu$m.
+\subsubsection{Spotřeba}	
+Celková spotřeba Timepix 2 dle \cite{Timepix2} při zapnutí všech pixelů a frekvenci datových hodin $f_{clock}$ = Mhz je nižší než 900 mW. Přičemž spotřeba jednoho pixelu je 5 $z\mu$A.
+\par Timepix 2 disponuje možnostmi, jak celkovou spotřebu detektoru snížit. Ke celkovému snížení spotřeby slouží funkcionalita, která umožňuje zamaskovat pixely, které nebudou dále použity pro ukládání informace z měření. Dojde k téměř kompletnímu vypnutí vybraných pixelů. Z výše uvedené spotřeby pro jeden pixel, se pro vybraný pixel, který má být vypnut, dostáváme na spotřebu okolo jednotek nA na pixel.
+
+\subsubsection{Rychlost komunikace}
+V části \ref{Komunikacni rozhrani}, byly popsány možnosti využití paraelního, či sériového rozhraní pro komunikaci s Timepix 2. Dobra pro vyčtení celé matice pixelů pro oba typy rozhraní lze vidět na obrázku \ref{fig:rychlosti}. 
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.80]{tpx2_floorplan.png}
-	\caption{Rozložení detektoru Timepix 2 \cite{tpx2_manual}} 
-	\label{fig:tpx2_floorplan}
+	\includegraphics[scale=0.65]{rychlosti.jpg}
+	\caption{Vyčítací rychlosti snímků z Timepix2. Frekvence hodin $f_{clock}$ = 100 MHz \cite{Timepix2}} 
+	\label{fig:rychlosti}
 \end{figure}	
+
+Poslední možností vyčítání dat z Timepix 2 je použití ZCS módu. Tento mód lze použít při vyčítání dat přes sériové rozhraní. Na obrázku \ref{fig:rychlosti}, lze vidět, že tento mód je rychlejší než použití sériového rozhraní při vyčítání celých snímku. Při použití ZCS módu nejprve detektor odešle 256 bitů, které odpovídají jednotlivým sloupcům detektoru. V těchto 256 bitech je uložena informace o tom, zda-li došlo v příslušném sloupci k detekci ionizujícího záření. Pokud ano, bude sloupec nastaven na logickou hodnotu 1. V opačném případě zůstává hodnota sloupce v logické nule. Po obdržení 256 bitů je přijato tolik dat, kolik sloupců bylo zasaženo. Avšak minimálně bude vždy posláno 16 sloupců i kdyby nebyla detekována žádná částice. Velikost poslaných dat za použití ZCS módu je tedy vždy závislá na aktivitě ionizujícího záření a s tím i spojená vyčítací rychlost. Pokud by byly aktivovány všechny pixely, bude rychlost ZCS módu nanejvýše stejně rychlá, jako při vyčtení celého snímku. Na obrázku \ref{fig:rychlosti} je pro ZCS mód uvažováno vyčtení 16 sloupců matice.
+
+
+
+\subsubsection{Rozhraní pro připojení Timepix 2 k desce plošných spojů}	% TODO nazev
+Připojení Timepix 2 k desce plošných spojů je nejčastěji realizováno pomocí technologie \textit{wire bonding}. Timepix 2 má celkem 152 pinů pro přichycení wire bondů. Rozložení pinů je zobrazeno na obrázku \ref{fig:tpx2_floorplan} ve spodní části. Rozteč mezi jednotlivými plošky je 108 $\mu$m.
+
 Dalším možným způsobem připojení Timepix 2 k desce plošných spojů je pomocí technologie zvané TSV. Respektive pomocí této technologie je možné signály vyvést ze zadní strany Timepix 2 k pájecím ploškám. Vznikne tím tak uspořádání, známe z technologie výroby pouzder BGA elektronických součástek. 
 \par Běžnější způsob připojení Timepix 2 k desce plošných spojů je pomocí wire bondů. Použití wire bondů i technologie BGA je možné vidět na obrázku \ref{fig:bga}. Výhodou oproti technologii wire bondů je lepší praktické zacházení, díky absenci tenkých wire bondů, které jsou velmi náchylné na mechanické poškození. Další výhodou je poté technologicky méně náročné připojení detektoru. Avšak nevýhodou této technologie je vystavení chipu vysoké teplotě při pájení.
 \begin{figure}[h!]
