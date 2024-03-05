@@ -123,6 +123,10 @@ V.~Re, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
 {S}{T}{M}croelectronics, ``{R}{M}0456 reference manual {S}{T}{M}32{U}5{A}.''
   Dostupné z: \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
 
+\bibitem{SPI}
+A.~Devices, ``{I}ntroduction to {S}{P}{I} {I}nterface.'' Dostupné z:
+  \url{https://www.analog.com/en/resources/analog-dialogue/articles/introduction-to-spi-interface.html}.
+
 \bibitem{CPLD}
 {L}attice {S}emiconductor, ``{M}ach{X}{O}2.'' Dostupné z:
   \url{https://www.latticesemi.com/Products/FPGAandCPLD/MachXO2}.

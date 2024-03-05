@@ -21,7 +21,10 @@
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Měření napájecí sekvence základní desky\relax }}{18}{figure.caption.29}%
 \contentsline {figure}{\numberline {4.6}{\ignorespaces Konfigurace a napájení STM32U5A9\relax }}{20}{figure.caption.32}%
 \contentsline {figure}{\numberline {4.7}{\ignorespaces Konfigurace hodinového signálu pro jádro mikrokontroléru\relax }}{21}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Programování mikrokontroléru\relax }}{22}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces STM32U5A9 PCB realizace\relax }}{23}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Popis signálů periférií SPI, sloužící pro komunikaci s Timepix 2\relax }}{22}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Programování mikrokontroléru\relax }}{23}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces STM32U5A9 PCB realizace\relax }}{24}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Konverze Sub-LVDS na SLVS\relax }}{25}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Odporová síť v porovnání s diskrétními odpory\relax }}{26}{figure.caption.50}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }

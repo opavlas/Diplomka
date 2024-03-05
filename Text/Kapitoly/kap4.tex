@@ -116,9 +116,8 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	
 	\subsubsection{Konfigurace mikrokontroléru}
 	Pro práci s mikrokontrolérem jsem použil vývojové prostředí STM32CubeIDE dodávané od společnosti STMicroelectronics, která je výrobcem vybraného mikrokontroléru. Výhodou vývojového prostředí je přímočará grafická konfigurace celého mikrokontroléru s kombinací klasické programové konfigurace. Na obrázku \ref{fig:STM32CubeIde} můžete vidět příklad nakonfigurovaného mikrokotroléru STM32U5A9 v pouzdře TFBGA216. Tmavě zelené body mezi piny znamenají uživatelsky nastavené rozhraní daného pinů mikrokontroléru.
-	
 	\subsubsection{Napájení}
-	Na obrázku \ref{fig:napajeni_stm32} můžete vidět potřebná napájení pro vybraný mikrokontrolér. Více podrobností ohledně napájení lze najít v referenčním manuálu viz. \cite{STM32U5A9_RM}. Realizace shematického zapojení napájení mikrokontroléru viz přiložená příloha. %TODO odkaz na prilohu
+	Na obrázku \ref{fig:napajeni_stm32} můžete vidět potřebná napájení pro vybraný mikrokontrolér.  
 	\begin{figure}[h!]
 		\begin{subfigure}{0.5\textwidth}
 			\centering
@@ -141,7 +140,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\centering
 		\begin{tabular}{ |P{3cm}||P{10cm}|  }
 			\hline
-			\multicolumn{2}{|c|}{Napájení základní desky vyčítacího rozhraní} \\
+			\multicolumn{2}{|c|}{Napájení potřebné pro mikrokotrolér} \\
 			\hline
 			Napájení  & Popis\\ \hline \hline 
 			VBAT & Napájení z externí baterie 1.65 - 3.6 V\\ \hline		
@@ -157,9 +156,10 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\caption{Napájení mikrokontroléru STM32U5A9}
 		\label{tab:napajeni_stm32}
 	\end{table}
-	Výhodou vybraného mikrokontroléru je, že pro napájení jádra a digitálních periferií využívá spínaného regulátoru integrovaného přímo na čipu, který má nižší spotřebu oproti lineárnímu regulátoru. Nevýhodou tohoto napájení je požadavek připojení externí cívky, která je nezbytná pro provoz interního spínaného stabilizátoru a tím tak větší požadavky na rozměry celého zapojení. 
+	Výhodou vybraného mikrokontroléru je, že pro napájení jádra a digitálních periferií využívá spínaného regulátoru integrovaného přímo na čipu, který má nižší spotřebu oproti lineárnímu regulátoru. Nevýhodou tohoto napájení je požadavek připojení externí cívky, která je nezbytná pro provoz interního spínaného stabilizátoru a tím tak větší požadavky na rozměry celého zapojení. Více podrobností ohledně napájení lze najít v referenčním manuálu viz. \cite{STM32U5A9_RM}. Celá realizace shematického zapojení napájení mikrokontroléru viz. přiložená příloha. %TODO odkaz na prilohu
+	
 	\subsubsection{Konfigurace hodinových signálů} %Pro USB HS plus konfigurace ostatnich periferii ?
-	Hodinový signál (SYSCLK) pro jádro mikrokontroléru může být vybrán jeden ze čtyř dostupných zdrojů hodinového signálu, kterými jsou:
+	Hodinový signál označován jako SYSCLK, může být pro jádro mikrokontroléru jeden ze čtyř dostupných zdrojů hodinového signálu, kterými jsou:
 	\begin{itemize}
 		\setlength\itemsep{0.005em}
 		\item HSE : Externí krystal s parametry frekvencí hodin od 4 MHz do 50 Mhz
@@ -167,7 +167,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\item MSI : Interní RC oscilátor s programově nastavitelnou frekvencí od 100 kHz do 48 MHz
 		\item PLL : Fázový závěs, který může mít vstup jeden ze 3 výše uvedených zdrojů hodinového signálu
 	\end{itemize}
-	Pro realizaci vyčítacího rohraní byl jako zdroj hodinového signálu vzbrán výstup fázového závěsu, který ze vstupního hodinového signálu HSI generuje hodinový signál o frekvenci 160 MHz. Tento hodinový signál je použit jako zdroj hodinového signálu pro jádro mikrokontroléru a také pro komunikační rozhraní, až na komunikační rozhraní USB. Více o popisu konfigurace hodinového signálu pro USB periferii viz část textu \ref{USB}. Konfiguraci hodinového signálu (SYSCLK) pro jádro procesoru s využitím fázového závěsu, lze najít na obrázku \ref{fig:hodinovy_signal} 
+	Pro realizaci vyčítacího rohraní byl jako zdroj hodinového signálu vzbrán výstup z fázového závěsu, který ze vstupního hodinového signálu HSI generuje hodinový signál o frekvenci 160 MHz. Tento hodinový signál je použit jako zdroj hodinového signálu pro jádro mikrokontroléru a také pro komunikační rozhraní, až na komunikační rozhraní USB. Více o popisu konfigurace hodinového signálu pro USB periferii bude v této části \ref{USB}. Samotnou konfiguraci hodinového signálu pro jádro procesoru s využitím fázového závěsu, lze najít na obrázku \ref{fig:hodinovy_signal}
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -176,35 +176,50 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\label{fig:hodinovy_signal}
 	\end{figure}
 
-	\subsubsection{Konfigurace komunikačních sběrnic}
+	\subsubsection{Konfigurace periférií SPI}
 	Celkem pro implementaci vyčítacího rozhraní byly použity tři SPI periférie:
 	 \begin{itemize}
 	 	\setlength\itemsep{0.005em}
 	 	\item SPI1 : Použito jako obecné SPI pro komunikaci se senzory, mimo Timepix 2
-	 	\item SPI2 : Slouží ke komunikaci s Timepix 2. Konfigurace master. 
-	 	\item SPI3 : Slouží ke komunikaci s Timepix 2  Konfigurace slave.
+	 	\item SPI2 : Slouží ke komunikaci s Timepix 2. V konfigurace Master. 
+	 	\item SPI3 : Slouží ke komunikaci s Timepix 2. V konfigurace Slave.
 	 \end{itemize}
- 	Sběrnice SPI1 je nakonfigurována v modu Full-Duplex Master. K určení jaké zařízení budou komunikovat po sběrnici slouží signály chip select (nCS), prefix n, značí, že signál je aktivní v logické nule. Pro komunikaci s Timepix 2 byly svoleny dvě periférie SPI. SPI1 je nakonfigurována jako master. Tedy pomocí této sběrnice se odesílají data do detektoru Timepix 2. SP2 je nakonfigurována jako typ slave, tedy pomocí této sběrnice se příjmají data z detektoru Timepix 2.
+ 	Sběrnice SPI1 je nakonfigurována v módu Full-Duplex Master, neboli po sběrnici je možné data z mikrokontroléru odesílat i přijímat. K určení jaké zařízení, připojené do sběrnice SPI1, budou komunikovat slouží signály chip select označován jako nCS (pozn.: prefix n, značí, že signál je aktivní v logické nule). 
+ 	\par Pro komunikaci s Timepix 2 pomocí sériového rozhraní, byly zvoleny dvě periférie SPI. Popis signálů pro sběrnice SPI2 a SPI3 můžete vidět na obrázku \ref{fig:SPI}. Jak lze ze zapojení vidět pro komunikace bylo využito celkem 6 signálů. Základní napěťové úrovně, které mají být na signálech, jsou určeny pull down, respektive pull up rezistory. % TODO dát to jinam ? Konkrétně ze zapojení \ref{fig:SPI} je vidět, že v návrhu byla použita odporová síť. Výhoda použití odporové sítě oproti diskrétních SMD rezistorů, je především v ušetření místa na desce plošných spojů. + uvest usetreni mista  
  	
- 	\par Další sběrnicí používané vyčítacím rozhraním je sběrnice I2C. Pro celé rozhraní byla použita právě jedna I2C periférie. Pomocí této sběrnice mikrokotrolér monitoruje teplotu na druhé desce plošného spoje, chipboardu. Více o komunikaci s teplotním senzorem viz. \ref{Mereni teploty}.
+ 	%TODO Rozvinout ?? popsat casovani atd.. 
+ 	\par Sběrnice SPI2 je nakonfigurována jako Half-Duplex Master. Pomocí této sběrnice se odesílají data do detektoru Timepix 2. Dalšími důležitými parametry nastavení SPI sběrnice jsou její časování, které musí odpovídat technické specifikaci detektoru Timepix 2. S odkazem na tuto specifikaci \cite{Timepix2}, byla periferie SPI2 nastavena dle \cite{SPI} do módu 3. Neboli pro typ Half-Duplex Master to znamená, že data jsou vysílaná na sestupnou hranu hodinového signálu, přičemž klidový stav hodinového signálu je v logické jedničce.
  	
- 	\par Dále byla nakonfigurována periférie UART, tato periférie umožňuje monitorovat průběh firmwaru za použití výpisu do příkazové řádky. Signály UART sběrnice jsou vyvedeny na programovací konektor, jak bylo popsáno výše.
+ 	\par Sběrnice SPI3 je nakonfigurována jako typ Half-Duplex Slave. Pomocí této sběrnice se přijímají data z detektoru Timepix 2. Dle \cite{Timepix2} byla sběrnice nakonfigurována do módu 1 \cite{SPI}. příchozí data z detektoru Timepix 2 jsou vzorkována na sestupnou hranu hodinového signálu, který je společně s daty generován detektorem Timepix 2. Klidový stav hodinového signálu je poté v logické nule.
+	\begin{figure}[h!]
+ 		\centering
+ 		\captionsetup{justification=centering}
+ 		\includegraphics[scale=0.65]{SPI.jpg}
+ 		\caption{Popis signálů periférií SPI, sloužící pro komunikaci s Timepix 2} 
+ 		\label{fig:SPI}
+ 	\end{figure}
+ 	
+ 	\subsubsection{Konfigurace periférií I2C}
+ 	Další sběrnicí, používanou vyčítacím rozhraním je sběrnice I2C. Pro celé rozhraní byla použita právě jedna I2C periférie. Pomocí této sběrnice mikrokotrolér monitoruje teplotu na druhé desce plošného spoje, chipboardu. Více o komunikaci s teplotním senzorem viz. \ref{Mereni teploty}. Pokud by I2C sběrnici bylo připojeno více senzorů, určení toho, kdo po sběrnici bude přijímat data závisí na fyzické adrese připojeného zařízení. V tomto případě ale musí být zajištěno, že na sběrnici neexistují dvě zařízení se stejnou fyzickou adresou. 
+ 	
+ 	\subsubsection{Konfigurace periférií UART}
+ 	\par Nakonfigurovaná periférie UART umožňuje monitorovat průběh programu, který je nahrán do mikrokontroléru, za použití výpisu přes sériovou linku, do příkazové řádky. Signály UART sběrnice jsou vyvedeny na programovací konektor, více viz následující část.
 
 %TODO zminit literaturu ZAHLAVA A MCU
 	\subsubsection{Programování}
-	Mikrokontrolér je programován pomocí JTAG rozhraní za využití programovacího konektoru, který je umístěn na spodní straně desky, viz obrázek \ref{fig:programator}. Jedná se o 12 pinový konektor pro plochý kabel. Pro programování mikrokontroléru byly konkrétně vyvedeny signály: JTMS/SWDIO a JTCK/SWCLK. Zbylé piny konektoru byly využity pro programování MachXO2 \cite{CPLD}. Tedy přes plochý konektor z obrázku \ref{fig:programator} lze progrmovat jak mikrokontolér, tak na základní dece použité CPLD: MachXO2 \ref{CPLD}. Posledními signály vyvedenými na programovací konektor jsou signály pro monitorování běhu programu, jedná se o signály komunikačního rozhraní sběrnice UART. Signály jsou za pomocího plochého kabelu vyvedeny z plochého konektrou z obrázku \ref{fig:programator} na redukční desku, na které je možné pomocí propojovacích kabelů připojit použitý programátor ST-Link, právě s navrženou konverzní deskou. Toto jednoduché PCB můžete vidět na obrázku \ref{fig:konverzni_deska}. 
+	Mikrokontrolér je programován pomocí JTAG rozhraní za využití programovacího konektoru, který je umístěn na spodní straně základní desky \ref{fig:programator}. Jedná se o 12 pinový konektor pro plochý kabel. Na programování mikrokontroléru byly z mikrokontroléru vyvedeny signály: JTMS/SWDIO a JTCK/SWCLK. Zbylé piny konektoru byly využity pro programování MachXO2 \cite{CPLD}. Tedy přes plochý konektor z obrázku \ref{fig:programator} lze progrmovat jak mikrokontolér, tak na základní dece použité CPLD: MachXO2 \ref{CPLD}. Posledními signály vyvedenými na programovací konektor jsou signály pro monitorování běhu programu, jedná se o signály komunikačního rozhraní sběrnice UART. Signály jsou za pomocího plochého kabelu vyvedeny z plochého konektrou z obrázku \ref{fig:programator} na redukční desku, na které je možné pomocí propojovacích kabelů připojit použitý programátor ST-Link, právě s navrženou konverzní deskou. Toto jednoduché PCB můžete vidět na obrázku \ref{fig:konverzni_deska}. 
 \begin{figure}[h!]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.50]{programator.jpg}
+		\includegraphics[scale=0.48]{programator.jpg}
 		\caption{Programovací konektor} 
 		\label{fig:programator}
 	\end{subfigure}
 	\begin{subfigure}{0.5\textwidth}
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.30]{konverzni_deska.jpg}
+		\includegraphics[scale=0.22]{konverzni_deska.jpg}
 		\caption{Konverzní PCB pro připojení ST-Link programátoru} 
 		\label{fig:konverzni_deska}
 	\end{subfigure}
@@ -213,7 +228,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 \end{figure} 
 
 	\subsubsection{PCB}
-	Realizované PCB pro část mikrokontroléru můžete vidět na obrázku \ref{fig:ST_layout}. Na obrázku nejsou uvedeny 3 zbylé vrstvy PCB, kterými jsou 2., 3. a 5. vrstva. Vrstva 2 a 5 tvoří pod částí mikrokontroléru souvislou zemní plochu a vrstva 3 slouží jako vrstva signálová. Blokovací kondenzátory napájení dle specifikací \cite{STM32U5A9_RM} jsou umístěny co nejblíže příslušným pinům, z druhé strany, než je samotná mikrokontrolér, viz. \ref{fig:ST_BOT}. 
+	Realizované PCB pro část mikrokontroléru můžete vidět na obrázku \ref{fig:ST_layout}. Na obrázku nejsou uvedeny 3 zbylé vrstvy PCB, kterými jsou 2., 3. a 5. vrstva. Vrstva 2 a 5 tvoří pod částí mikrokontroléru souvislou zemní plochu a vrstva 3 slouží jako vrstva signálová. Blokovací kondenzátory napájení dle specifikací \cite{STM32U5A9_RM} jsou umístěny co nejblíže příslušným pinům, z druhé strany, než je samotný mikrokontrolér, viz. \ref{fig:ST_BOT}. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -240,13 +255,67 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\caption{STM32U5A9 PCB realizace}
 		\label{fig:ST_layout}
 	\end{figure}
-	Rozteč mezi jednotlivými piny mikrokontroléru je 0.8 mm. Jak lze vidět na obrázku \ref{fig:ST_TOP}, mezi pájecími plošky jsou umístěny prokovy. Vnitřní průměr prokovů je 0.3 mm a vnější rozměr 0.4 mm. Prokovy jsou kvůli zvolenému pouzdru mikrokontroléru (BGA) zamaskované, aby při procesu pájení nedošlo ke zkratování prokovů s piny mikrokontroléru.
+	Rozteč mezi jednotlivými piny mikrokontroléru je 0.8 mm. Jak lze vidět na obrázku \ref{fig:ST_TOP}, mezi pájecími plošky jsou umístěny prokovy. Vnitřní průměr prokovů je 0.3 mm a vnější rozměr 0.4 mm. Prokovy jsou kvůli zvolenému pouzdru BGA mikrokontroléru zamaskované a vyplněné epoxidem, aby při procesu pájení nedošlo ke zkratování prokovů s piny mikrokontroléru.
 	\par Osazení mikrokontroléru proběhlo na půdě ČVUT v laboratoři LVR (Laboratoř pro Vývoj a Realizaci). Pro osazení byl použita rework stanice: ERSA - IRPL650A.
 	
 	\subsection{CPLD}	% CPLDcko - delice, urovne. Odporove site
 	\label{CPLD}
+	Dlaší hlavní součástí základní desky, je CPLD. Pro tuto práci bylo konkrétně vybráno CPLD od společnosti Lattice Semiconductor s označením MachXO2 \cite{CPLD}. Jak bude popsáno v následné části, CPLD je použito pro konverzi logických úrovní a generování diferenciálních signálů které jsou potřebné pro komunikaci s detektorem Timepix 2. S ohledem na tyto požadavky bylo vybráno právě CPLD MachXO2 v pouzdře QFN-48. Programování CPLD probíhalo v prostředí Lattice Diamond.
+	
+	\subsubsection{Napájení}
+	V tabulce \ref{tab:napajni_cpld} můžete vidět napájecí úrovně pro MachXO2. Pro napájení jádra CPLD a vstupních/výstupních bran 0, 1 a 2 je použito napájení +3.3V. Pro vstupní/výstupní bránu 3, je napájecí napětí +1.2 V. Toto napájení bylo zvoleno s ohledem na použití této brány jako typ LVCMOS12D, pro generování diferenciálních páru odpovídající specifikaci SLVS \ref{fig:SLVS_LVDS}.
+	\begin{table}[h!]
+		\centering
+		\begin{tabular}{ |P{3cm}||P{5cm}||P{3cm}|  }
+				\hline
+			\multicolumn{3}{|c|}{Napájení CPLD MachXO2} \\
+			\hline
+			Napájení  & Popis & Hodnota [V]\\ \hline \hline 
+			VCC & Hlavní napájení jádra CPLD & +3.3 V\\ \hline		
+			VCCIO0, 1, 2 & Napájení brány 0, 1, 2 & +3.3V\\ \hline 		 
+			VCCIO3 & Napájení brány 3 & +1.2 V \\ \hline
+		\end{tabular}
+		\caption{Napájení CPLD MachXO2}
+		\label{tab:napajni_cpld}
+	\end{table}
+
 	\subsubsection{Konverze logických úrovní}
-	Dle \ref{kap:3.2.1}, je zapotřebí při komunikaci s Timepix 2 po sériové sběrnici použít diferenciální páry, konkrétněji použít komunikační specifikaci SLVS. Použití mikrokontrolér \ref{mikrokontolér}, je kompatibilní pouze s CMOS 3.3V logikou. Pro převod 
+	Dle \ref{Komunikacni rozhrani}, je zapotřebí pro komunikaci s Timepix 2 při využití sériového rozhraní použít komunikační specifikaci typu SLVS \ref{fig:SLVS_LVDS}, využívající diferenciální páry. Použití mikrokontrolér \ref{mikrokontolér}, je kompatibilní pouze s CMOS 3.3 V logikou. Použité CPLD umožňuje převod těchto úrovní. Respektive převod CMOS 3.3 V logiky na SLVS specifikaci a opačně.
+	\par Použité CPLD umožňuje generovat pouze signály ze specifikace Sub-LVDS. Aby bylo dosaženo parametrů potřebných pro SLVS specifikaci, bylo pro každý generovaný výstupní diferenciální pár použito zapojení s odpory z pravé části obrázku \ref{fig:sub_lvds_slvs}. Pro vstupní diferenciální páry, byla pouze co nejblíže k CPLD umístěna terminace, viz. levá část obrázku \ref{fig:sub_lvds_slvs}.
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.70]{sub_lvds_slvs.jpg}
+		\caption{Konverze Sub-LVDS na SLVS} 
+		\label{fig:sub_lvds_slvs}
+	\end{figure}
+	Programová implementace firmware pro MachXO2 obsahující pouze část architektury pro konverzi logických úrovní je zobrazena v ukázkovém kódu \ref{kod_vhdl}.
+\begin{lstlisting}[frame=single, language=VHDL, caption={Ukázkový kód ve VHDL pro CPLD}, label=kod_vhdl]
+architecture behavioral of t2m is
+begin
+-- CMOS -> SLVS
+DATA_IN_SLVS	<= DATA_IN;
+nCS_IN_SLVS	<= nCS_IN;
+DCLOCK_IN_SLVS	<= DCLOCK_IN;
+MCLOCK_SLVS	<= MCLOCK;
+-- SLVS -> CMOS
+DATA_OUT	<= DATA_OUT_SLVS;
+DCLOCK_OUT	<= DCLOCK_OUT_SLVS;
+nCS_OUT		<= nCS_OUT_SLVS;
+end architecture behavioral ;
+\end{lstlisting}
+	\subsubsection{Programování}
+	Pro programování byla zvolena dvojí možnost. Primární možností je programování CPLD, přes externí programovací konektor, který se také používá pro programování mikrokontroléru \ref{fig:programator}. Na tento konektor jsou vyvedeny signály: TDO, TDI, TMS a TCK. Druhou možností je programování CPLD pomocí mikrokontroléru za využití SPI sběrnice. Výhodou možnosti programování CPLD z mikrokontroléru je možnost měnit konfiguraci CPLD za běhu programu. V této realizaci je tato možnost pouze připravena pro  případné budoucí využití. S ohledem na využití CPLD v této práci jako převaděč úrovní, není zapotřebí jakkoliv překonfigurovávat CPLD po nahrání programu přes JTAG rozhraní.
+	\subsubsection{Využití odporových sítí} % TODO davat to sem?
+	Jak bylo možné vidět na obrázcích \ref{fig:sub_lvds_slvs}, nebo \ref{fig:SPI}, pro zapojení s odpory byly použity odporové sítě. Výhodou použití odporových sítí je především možnost ušetření místa na desce plošných spojů, oproti použití diskrétních odporů. Ušetření místa za použití odporových sítí můžete vidět na obrázku \ref{fig:odpor_sit}, kde je porovnána odporová síť se čtyřmi odpory vůči použití čtyř diskrétních odporů v pouzdře 0402.
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.60]{odpor_sit.jpg}
+		\caption{Odporová síť v porovnání s diskrétními odpory} 
+		\label{fig:odpor_sit}
+	\end{figure}
+	
 	\subsection{USB} % Navrh plosnaku, USB C ochrana, popis USB C konektoru
 	\label{USB}
 
