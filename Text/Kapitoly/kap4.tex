@@ -2,11 +2,15 @@
 \label{realizace}
 % promereni zapojeni jestli vse funguje 
 % TODO + struktura firmware a provadeni digitalniho testu -> KAM TO ZARADIT? mozna do subsection realizace?
-V této části bude popsána detailní realizace celého zařízení. V předchozích částech byly zmíněny základní požadavky na návrh celého vyčítacího rozhraní. Při výběru individuálních částí rozhraní byly tyto části respektovány. Dále jednotlivé části byly vybírány s ohledem na miniaturizaci rozhraní a spotřebu. Cílem návrhu bylo co nejvíce funkcionalit rozhraní implementovat na základní desce. Prvním důvodem bylo, že druhá deska plošných spojů (chipboard) obsahuje detektor Timepix 2, který je v celém návrhu nejdůležitější a nejsložitější částí. Pokud by bylo vše implementováno na jedné desce plošných spojů, při jakémkoliv problému musí být vyměněna celá deska i s detektorem Timepix 2. Přitom při rozložení rozhraní na dvě desky plošných spojů dojde při případném problému k výměně jen základní desky, popřípadě desky chipboardové. 
+V této části bude popsána detailní realizace celého zařízení. V předchozích částech byly zmíněny základní požadavky \ref{Technicka specifikace} na návrh celého vyčítacího rozhraní a uveden základní koncept řešení \ref{Koncept reseni}. Při výběru individuálních částí rozhraní byly tyto části respektovány. Dále jednotlivé části byly vybírány s ohledem na miniaturizaci rozhraní a celkovou spotřebu. 
+
+\par Pro další části textu bude označení desek plošných spojů navrženého rozhraní shodné, s označením schematického návrhu konceptu řešení z obrázku \ref{fig:navrh_reseni}. Cílem řešení bylo co nejvíce funkcionalit rozhraní implementovat na základní desce. Prvním důvodem bylo, že druhá deska plošných spojů - chipboard, obsahuje detektor Timepix 2, který je v celém návrhu nejdůležitější a nejsložitější částí. Pokud by bylo vše implementováno na jedné desce plošných spojů, při jakémkoliv problému musí být vyměněna celá deska i s detektorem Timepix 2. Přitom při rozložení rozhraní na dvě desky plošných spojů dojde při případném problému k výměně jen základní desky, popřípadě chipboardové desky. 
 \par Druhým důvodem rozložení rozhraní na dvě desky plošných spojů je minimalizace rozměrů rozhraní. Za použití konektoru celé rozhraní zvýší své rozměry pouze na výšku o 3 mm přitom rozměry chipboardové desky mohou být stejné jako desky základní.
 
+\par Realizace návrhu desek plošných spojů probíhala v programu Altium Designer. Mechanické integrace rozhraní, především validace případných kolizí plošných spojů s navrženou mechanikou, probíhala v programu Autodesk Inventor.
+
 \section{Základní deska}	
-	Základní deska je navržena na šesti vrstvém plošném spoji. Rozložení jednotlivých vrstev lze vidět na obrázku \ref{tab:pcb_vrstvy}. Celková tloušťka výsledného PCB je dle celkové skladby z obrázku \ref{fig:PCB_mother_stackup}, 1.6 mm. Vnější rozměry základní desky jsou 53 x 17 mm.
+	Základní deska je navržena na šesti vrstvém plošném spoji. Rozložení jednotlivých vrstev lze vidět na obrázku \ref{tab:pcb_vrstvy}. Celková tloušťka výsledného PCB je dle celkové skladby z obrázku \ref{fig:PCB_mother_stackup}, 1.6 mm. Vnější rozměry základní desky jsou 53 x 17 mm. Obecné části, které jsou na základní desce, jsou shodné s konceptem řešení \ref{fig:navrh_reseni}. Dále bude popsána detailní struktura jednotlivých částí základní desky.
 
 \begin{figure}
 	\begin{minipage}[b]{.45\linewidth}
@@ -36,7 +40,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 \end{figure}
 
 	\subsection{Napájení}
-	Na základní desce je realizováno veškeré napájení, které je dále používáno pro celé výčítací rozhraní. Celkem jsou zde tři spínané synchronní step-down buck regulátory. Konkrétně se jedná o regulátor MP2333H \cite{MPH2333} od společnosti Monolithic Power Systems. Regulátor pracuje v rozsahu vstupních napětí on 4.2 - 18 V. Maximální výstupní proud jsou 3 A, spínací frekvence regulátoru je 1.2 MHz. Regulátor je možné pořídit v pouzdře SOT583, s rozměry 1.6x2 mm, které jsou pro úlohu minimalizace zařízení vyhovující. V tabulce \ref{tab:napajeni} můžete vidět seznam napájení dostupných na základní desce.
+	Na základní desce je realizováno napájení, které je dále používáno pro celé výčítací rozhraní. Celkem jsou zde tři spínané synchronní step-down buck regulátory. Konkrétně se jedná o regulátor MP2333H \cite{MPH2333} od společnosti Monolithic Power Systems. Regulátor pracuje v rozsahu vstupních napětí on 4.2 - 18 V. Maximální výstupní proud jsou 3 A, spínací frekvence regulátoru je 1.2 MHz. Regulátor je možné pořídit v pouzdře SOT583, s rozměry 1.6x2 mm, které jsou pro úlohu miniaturizace rozhraní vyhovující. V tabulce \ref{tab:napajeni} můžete vidět seznam napájení generujících na základní desce.
 	\begin{table}[h!]
 		\centering
 		\begin{tabular}{ |P{3cm}||P{10cm}|  }
@@ -47,12 +51,12 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 			+5V & Externí napájení vyčítacího rozhraní přes USB typu C. \\ \hline		
 			+3V3 & Napájení pro mikrokontrolér, CPLD a další 3.3V periférie \\ \hline 		 
 			+2V5 & Napájení vstupní a výstupní brány detektoru Timepix 2 \\ \hline
-			+1V2 & Napájení jádra Timepix 2 a vstupní/výstupní brány CPLD.\\ \hline
+			+1V2 & Napájení vstupní/výstupní brány CPLD.\\ \hline
 		\end{tabular}
 		\caption{Napájení základní desky vyčítacího rozhraní}
 		\label{tab:napajeni}
 	\end{table}
-	Všechny napájení uvedené v tabulce \ref{tab:napajeni} jsou dostupné také na druhé desce plošných spojů, chipboardu. Více o propojení signálů základní desky a chipboardové desky lze dohledat v části \ref{konektor}. Ukázkové schematické zapojení jednoho ze tří spínaných regulátorů, můžete vidět na obrázku \ref{fig:mp2333h}. Konkrétně se jedná o zapojení, při kterém regulátor reguluje z +5 V napájení na napájení +1.2 V.
+	Napájení uvedené v tabulce \ref{tab:napajeni} jsou až napájení 1.2 V, dostupné také na druhé desce plošných spojů - chipboardu. Více o propojení signálů základní desky a chipboardové desky lze dohledat v části textu \ref{konektor}. Ukázkové schematické zapojení jednoho ze tří spínaných regulátorů, můžete vidět na obrázku \ref{fig:mp2333h}. Konkrétně se jedná o zapojení, při kterém regulátor reguluje ze vstupních +5 V na napájení +1.2 V.
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -61,7 +65,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\label{fig:mp2333h}
 	\end{figure}
 	\subsubsection{Napájecí sekvence}
-	Napájecí sekvenci je možné vidět na zjednodušeném diagramu na obrázku \ref{fig:napajeci_sekvecne}. Po připojení USB typu C do konektoru na základní dece je dostupné napájení +5 V. Těchto +5 V spíná první regulátor, který generuje na výstupu +3.3 V napájení. Pokud je toto výstupní napájení +3.3 V v pořádku, integrovaný obvod tuto informaci signalizuje pomocí pinu PG. Právě tento pin PG, signál PG\_3V3, je připojen na vstupní pin dalšího regulátoru a to na pin regulátoru generující výstupní napětí +2.5 V. Poslední regulátor s výstupním napětí +1.2 V je řízený z mikrokontroléru, jeho vstupní pin EN je propojen signálem EN\_1V2 s výstupní bránou mikrokontroléru.
+	Napájecí sekvenci je možné vidět na zjednodušeném diagramu na obrázku \ref{fig:napajeci_sekvecne}. Po připojení USB typu C do konektoru na základní dece je dostupné napájení +5 V. Těchto +5 V spíná první regulátor, který generuje na výstupu +3.3 V. Pokud je toto výstupní napájení +3.3 v pořádku, integrovaný obvod tuto informaci signalizuje pomocí pinu PG. Právě tento pin PG, signál PG\_3V3 může být je připojen na vstupní pin dalšího regulátoru a to na pin regulátoru generující výstupní napětí +2.5 V. V návrhu řešení je regulátor pro napájení +2.5 V, také možno řídit z mikrokontroléru. Poslední regulátor s výstupním napětím +1.2 V je řízený z mikrokontroléru, neboli jeho vstupní pin EN je propojen signálem EN\_1V2 s výstupní bránou mikrokontroléru.
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -75,12 +79,12 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\label{eq:Vout}
 	\end{equation}
 
-	\par Z obrázku \ref{fig:napajeci_sekvecne} je vidět, že spínaná stabilizátory pro +3.3 V a +2.5 V nejsou programově ovladatelné z mikrokontroléru. Spínaný stabilizátor +3.3 V, z mikrokontroléru řídit nelze, protože právě těchto +3.3 V je napájením pro vybraný mikrokontrolér. Možností jakým mimo jiné zajistit dodržení vhodného časování napájecí sekvence základní desky, je propojení PG signálu stabilizátoru +3.3 V na signál EN stabilizátoru +2.5 V. Další možností rozfázování napájecí sekvence je volba vhodného kondenzátoru mezi pinem SS a zemním pinem ze zapojení \ref{fig:mp2333h}. Kde $V_{REF}$ = 805 mV a $I_{SS}$ = 7.3 $\mu$A.
+	\par Z obrázku \ref{fig:napajeci_sekvecne} je vidět, že spínaný stabilizátor pro +3.3 V není programově ovladatelný z mikrokontroléru. Spínaný stabilizátor +3.3 V, z mikrokontroléru řídit nelze, protože právě těchto +3.3 V je napájením pro vybraný mikrokontrolér. Možností jakým mimo jiné zajistit dodržení vhodného časování napájecí sekvence základní desky, je propojení PG signálu stabilizátoru +3.3 V na signál EN stabilizátoru +2.5 V, nebo řízení stabilizátoru pro +2.5 V programově. Další možností rozfázování napájecí sekvence je volba vhodného kondenzátoru mezi pinem SS a zemním pinem ze zapojení \ref{fig:mp2333h}. Závislost velikosti výběru kondenzátoru na době rozběhu stabilizátoru je uvedena dle rovnice \ref{eq:Tss}.
 	\begin{equation}
 		T_{SS}\,[ms] = \frac{2V_{REF} \cdot C_{SS} \,[nF]}{I_{SS}}
 		\label{eq:Tss}
 	\end{equation}
-	Ze zapojení \ref{fig:mp2333h} a dosazení do vzorce \ref{eq:Tss} můžeme dopočítat, že rozběhový čas spínaného zdroje bude 1.4 ms. Ověření funkčnosti napájecí sekvence viz. \ref{fig:napajeci_sekvence_real}. Kde CH1 je napájení +1.2 V, CH2 je +2.5 V a CH3 je vstupních +5V. Na nastavených kurzorech je také vidět, že teoreticky vypočítaný čas, doby rozběhu regulátoru z rovnice \ref{eq:Tss}, souhlasí s prakticky naměřenými hodnoty. 
+	Kde $V_{REF}$ = 805 mV a $I_{SS}$ = 7.3 $\mu$A. Ze zapojení \ref{fig:mp2333h} a dosazení do vzorce \ref{eq:Tss} můžeme dopočítat, že rozběhový čas spínaného zdroje bude 1.4 ms. Ověření funkčnosti napájecí sekvence viz. \ref{fig:napajeci_sekvecne_real}. Kde CH1 je napájení +1.2 V, CH2 je +2.5 V a CH3 je vstupních +5V. Při tomto měření byl vstupní pin EN regulátoru pro +2.5 V propojen s výstupním pinem PG, regulátoru pro +3.3 V. Na nastavených kurzorech je také vidět, že teoreticky vypočítaný čas, doby rozběhu regulátoru z rovnice \ref{eq:Tss}, souhlasí s prakticky naměřenými hodnoty. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -88,9 +92,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\caption{Měření napájecí sekvence základní desky} 
 		\label{fig:napajeci_sekvecne_real}
 	\end{figure}
-	
-	\par Ochrana vstupního napájení bude popsána v části \ref{USB}. Pouze ve shrnutí, pokud dojde k jakýmkoliv podmínkám které by mohli elektricky ohrozit vyčítací rozhraní obvody z části \ref{USB} zajistí vypnutí napájení pomocí externího tranzistoru. 
-	%TODO Dodat ??? spabilita napapájení
+	\par Zajištění ochrany, především před elektrostatickým výbojem vstupního napájení, bude popsána v části \ref{USB}. Pouze ve shrnutí, pokud dojde k jakýmkoliv podmínkám které by mohli elektricky ohrozit vyčítací rozhraní obvody z části \ref{USB} zajistí vypnutí externího napájení rozhraní pomocí externího tranzistoru. 
 
 	\subsection{Mikrokontrolér}
 	\label{mikrokontolér}
@@ -100,20 +102,20 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\setlength\itemsep{0.005em}
 		\item Jádro : Arm 32-bit Cortex-M33 s DSP a FPU. Frekvence 160 MHz
 		\item Napájení 1.7 - 3.6 V
-		\item Při provozu 18.5 $\mu$A/MHz
-		\item 4-Mbyte flash s EEC
+		\item Spotřeba 18.5 $\mu$A/MHz
+		\item 4-Mbyte flash s kontrolou EEC
 		\item 2514-Kbyte RAM, 66 Kbytes s EEC
 		\item 25 Komunikačních periférií
 		\item 156 konfigurovatelných vstupních/výstupních pinů
 		\item 1 USB OTG high-speed s embedded PHY 
 		\item Pouzdro : TFBGA216. 13 x 13 mm, 0.8 mm mezi pájecími plošky
 	\end{itemize}
-	\par Prvním požadavkem na mikrokontrolér bylo, aby bylo možné komunikovat přes sériovou datovou linku s detektorem Timepix 2. V již popsané části textu \ref{Komunikacni rozhrani}, bylo zmíněno, že Timepix 2, dokáže komunikovat po sériové lince s maximální frekvencí 100 Mhz. Výše uvedený vybraný mikrokontrolér umožňuje konfiguraci komunikačního kanálu, konkrétněji specfikace SPI až do frekvence 160 MHz. 
-	\par Dalším důležitým parametrem při výběru mikrokontroléru byla velikost paměti. Pro vyčtení jedné matice pixelů z detektoru Timepix 2, z výše popsané části textu \ref{Digitálni cast} vyplývá, že je zapotřebí vyčíst 28x256x256 bitů dat, tedy 229.376 kB. Výše vybrané parametry pamětí mikrokontroléru jsou pro tento datový tok dostačující.
-	\par Nejméně důležitým parametrem při výběru mikrokontroléru byl parametr integrovaného USB přímo uvnitř mikrokontroléru. Není tedy zapotřebí při návrhu USB umísťovat další součástky pro implementaci USB komunikace. Tímto parametrem mikrokontroléru dokážeme výrazně snížit počet použitých součástek a tím tak i rozměry celého vyčítacího rozhraní.
+	\par Prvním požadavkem na mikrokontrolér bylo, aby bylo možné komunikovat přes sériovou datovou linku s detektorem Timepix 2. V již popsané části textu \ref{Komunikacni rozhrani}, bylo zmíněno, že Timepix 2, dokáže komunikovat po sériové lince s maximální frekvencí 100 Mhz. Výše uvedený vybraný mikrokontrolér umožňuje konfiguraci sériového komunikačního rozhraní, konkrétněji specfikace SPI až do frekvence 160 MHz. 
+	\par Dalším důležitým parametrem při výběru mikrokontroléru byla velikost paměti. Pro vyčtení celé matice pixelů z detektoru Timepix 2, dle \ref{Digitálni cast} vyplývá, že je zapotřebí vyčíst 28 x 256 x 256 bitů dat, tedy 229.376 kB. Výše vybrané parametry pamětí mikrokontroléru jsou pro tento datový tok dostačující.
+	\par Nejméně důležitým parametrem při výběru mikrokontroléru byl parametr integrovaného USB přímo uvnitř mikrokontroléru. Neboli není tedy zapotřebí při návrhu USB umísťovat další externí součástky pro implementaci USB komunikace. Tímto parametrem mikrokontroléru dokážeme výrazně snížit počet použitých součástek a tím i rozměry celého vyčítacího rozhraní.
 	
 	\subsubsection{Konfigurace mikrokontroléru}
-	Pro práci s mikrokontrolérem jsem použil vývojové prostředí STM32CubeIDE dodávané od společnosti STMicroelectronics, která je výrobcem vybraného mikrokontroléru. Výhodou vývojového prostředí je přímočará grafická konfigurace celého mikrokontroléru. Na obrázku \ref{fig:STM32CubeIde} můžete vidět příklad nakonfigurovaného mikrokotroléru STM32U5A9 v pouzdře TFBGA216. Tmavě zelené body mezi piny znamenají uživatelsky nastavené rozhraní daného pinů mikrokontroléru.
+	Pro práci s mikrokontrolérem jsem použil vývojové prostředí STM32CubeIDE dodávané od společnosti STMicroelectronics, která je výrobcem vybraného mikrokontroléru. Výhodou vývojového prostředí je přímočará grafická konfigurace celého mikrokontroléru s kombinací klasické programové konfigurace. Na obrázku \ref{fig:STM32CubeIde} můžete vidět příklad nakonfigurovaného mikrokotroléru STM32U5A9 v pouzdře TFBGA216. Tmavě zelené body mezi piny znamenají uživatelsky nastavené rozhraní daného pinů mikrokontroléru.
 	
 	\subsubsection{Napájení}
 	Na obrázku \ref{fig:napajeni_stm32} můžete vidět potřebná napájení pro vybraný mikrokontrolér. Více podrobností ohledně napájení lze najít v referenčním manuálu viz. \cite{STM32U5A9_RM}. Realizace shematického zapojení napájení mikrokontroléru viz přiložená příloha. %TODO odkaz na prilohu

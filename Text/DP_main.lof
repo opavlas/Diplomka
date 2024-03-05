@@ -14,14 +14,14 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Koncept řešení vyčítacího rozhraní pro detektor Timepix 2\relax }}{13}{figure.caption.23}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozložení vrstev PCB základní desky\relax }}{15}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev PCB základní desky\relax }}{15}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H\relax }}{15}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky\relax }}{16}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Měření napájecí sekvence základní desky\relax }}{17}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Konfigurace a napájení STM32U5A9\relax }}{19}{figure.caption.33}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Konfigurace hodinového signálu pro jádro mikrokontroléru\relax }}{20}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Programování mikrokontroléru\relax }}{21}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces STM32U5A9 PCB realizace\relax }}{21}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Rozložení vrstev PCB základní desky\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev PCB základní desky\relax }}{16}{figure.caption.24}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H\relax }}{17}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky\relax }}{17}{figure.caption.28}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Měření napájecí sekvence základní desky\relax }}{18}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Konfigurace a napájení STM32U5A9\relax }}{20}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Konfigurace hodinového signálu pro jádro mikrokontroléru\relax }}{21}{figure.caption.35}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Programování mikrokontroléru\relax }}{22}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces STM32U5A9 PCB realizace\relax }}{23}{figure.caption.40}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
