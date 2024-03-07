@@ -156,7 +156,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\caption{Napájení mikrokontroléru STM32U5A9}
 		\label{tab:napajeni_stm32}
 	\end{table}
-	Výhodou vybraného mikrokontroléru je, že pro napájení jádra a digitálních periferií využívá spínaného regulátoru integrovaného přímo na čipu, který má nižší spotřebu oproti lineárnímu regulátoru. Nevýhodou tohoto napájení je požadavek připojení externí cívky, která je nezbytná pro provoz interního spínaného stabilizátoru a tím tak větší požadavky na rozměry celého zapojení. Více podrobností ohledně napájení lze najít v referenčním manuálu viz. \cite{STM32U5A9_RM}. Celá realizace shematického zapojení napájení mikrokontroléru viz. přiložená příloha. %TODO odkaz na prilohu
+	Výhodou vybraného mikrokontroléru je, že pro napájení jádra a digitálních periferií využívá spínaného regulátoru integrovaného přímo na čipu, který má nižší spotřebu oproti lineárnímu regulátoru. Nevýhodou tohoto napájení je požadavek připojení externí cívky, která je nezbytná pro provoz interního spínaného stabilizátoru a tím tak větší požadavky na rozměry celého zapojení. Více podrobností ohledně napájení lze najít v referenčním manuálu viz. \cite{STM32U5A9_RM}. Celá realizace shematického zapojení napájení mikrokontroléru viz. přiložená příloha \ref{Priloha základní deska}.
 	
 	\subsubsection{Konfigurace hodinových signálů} %Pro USB HS plus konfigurace ostatnich periferii ?
 	Hodinový signál označován jako SYSCLK, může být pro jádro mikrokontroléru jeden ze čtyř dostupných zdrojů hodinového signálu, kterými jsou:
@@ -306,7 +306,7 @@ end architecture behavioral ;
 \end{lstlisting}
 	\subsubsection{Programování}
 	Pro programování byla zvolena dvojí možnost. Primární možností je programování CPLD, přes externí programovací konektor, který se také používá pro programování mikrokontroléru \ref{fig:programator}. Na tento konektor jsou vyvedeny signály: TDO, TDI, TMS a TCK. Druhou možností je programování CPLD pomocí mikrokontroléru za využití SPI sběrnice. Výhodou možnosti programování CPLD z mikrokontroléru je možnost měnit konfiguraci CPLD za běhu programu. V této realizaci je tato možnost pouze připravena pro  případné budoucí využití. S ohledem na využití CPLD v této práci jako převaděč úrovní, není zapotřebí jakkoliv překonfigurovávat CPLD po nahrání programu přes JTAG rozhraní.
-	\subsubsection{Využití odporových sítí} % TODO davat to sem?
+	\subsubsection{Využití odporových sítí} % TODO davat to sem, nebo nekam? Je to ohledne miniaturizace mozna dobre zminit, ze se slo do detailu aby se usetrilo misto
 	Jak bylo možné vidět na obrázcích \ref{fig:sub_lvds_slvs}, nebo \ref{fig:SPI}, pro zapojení s odpory byly použity odporové sítě. Výhodou použití odporových sítí je především možnost ušetření místa na desce plošných spojů, oproti použití diskrétních odporů. Ušetření místa za použití odporových sítí můžete vidět na obrázku \ref{fig:odpor_sit}, kde je porovnána odporová síť se čtyřmi odpory vůči použití čtyř diskrétních odporů v pouzdře 0402.
 	\begin{figure}[h!]
 		\centering
@@ -318,13 +318,72 @@ end architecture behavioral ;
 	
 	\subsection{USB} % Navrh plosnaku, USB C ochrana, popis USB C konektoru
 	\label{USB}
+	Jako uživatelské rozhraní bylo zvoleno rozhraní USB s konektorem typu USB C. Konkrétně byla použita specifikace USB 2.0 High Speed. Tato specifikace umožňuje komunikovat s maximální přenosovou rychlostí 480 Mbit/s. Vzhledem k maximální vyčítací rychlosti z detektoru Timepix 2, která je dle \ref{Technicka specifikace} 100 Mbit/s, je použití této konkrétní specifikace dostačující. 
+	\subsubsection{Konektror}
+	Pro tuto práci byl použit konektor typu USB C. Jednou z výhod konektoru USB C je symetrické zapojení pinů na konektoru. Díky této vlastnosti může uživatel konektor zapojit do vyčítacího rozhraní s libovolnou orientací. Symetrické zapojení signálu na USB C konektoru je možné vidět na obrázku \ref{fig:USBC_full}. K detekci orientace zapojení konektoru, slouží signály označené jako CC1 a CC2. Další funkce těchto signálů je, že pomocí nich je možné nastavit konkrétní velikost proudu dodávaného do zařízení. 
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.50]{USBC_full.jpg}
+		\caption{Konektor USB C} 
+		\label{fig:USBC_full}
+	\end{figure} 
 
+	\subsubsection{Zapojení}
+	Vzhledem k použité specifikaci USB 2.0, je možné některé piny ze zapojení konektoru \ref{fig:USBC_full} nezapojit. Konkrétně to jsou piny s označením TXxx a RXxx, tyto piny slouží pro přenos vysokorychlostní komunikace z USB standartu 3.0 a vyšší. Celkové zapojení použitého konektoru a potřebných elektro statických ochran je možné vidět na obrázku \ref{fig:USBC_zapojeni}. Pro elektorostatickou ochranu diferenciálních datových párů D+ a D- byla použita součástka ECMF02-2AMX6. Dalším prvkem pro ochranu USB C signálů byla použita součástka TCPP01-M12. Tato součástka zajišťuje ochranu před přepětím na napájecím napětí VBUS. Dále zajišťuje ochranu pinů CC před případných zkratem s napájecím napětí. Odporovým děličem ze zapojení \ref{fig:USBC_zapojeni}, který je tvořený odpory R34 a R36, je možné nastavit maximální hodnotu napájecího napětí, které bude dodáváno na výstupu pinu VBUS. V této práci je nastaveno maximální napájecí napětí na +6 V. V případě překročení této nastavené úrovně dojde pomocí externího tranzistoru Q1, k odpojení napájecího napětí zařízení. Jedinou částí vyčítacího rozhraní, ke které bude mít uživatel fyzický přístup je právě USB C konektor, proto bylo zvoleno zapojení ochrany, v podobě paraelního zapojení odporu R37 a kondenzátoru 56, na stínění konektoru USB C. 
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.70]{USBC_zapojeni.jpg}
+		\caption{Zapojení konektoru USB C} 
+		\label{fig:USBC_zapojeni}
+	\end{figure} 
+	
+	\subsubsection{PCB}
+	Jak bylo zmíněno v předchozí části, maximální komunikační rychlost specifikace USB 2.0 High Speed může bít 480 Mbit/s. Proto návrh PCB musel odpovídat požadavkům pro návrh PCB pro vysokorychlostní komunikaci. Délka diferenciálních datových párů D+ a D- byla vůči sobě vykompenzována na vzdálenost 1 mm. Dle technické specifikace USB 2.0 High Speed je doba náběžné ($t_r$), respektive sestupné ($t_f$) hrany 500 ps. Časové zpoždění ($\Delta t$) mezi datovými páry D+ a D- by mělo být výrazně menší, než doba ($t_r$), respektive ($t_f$). Pokud zvolíme maximální časové zpoždění mezi páry D+ a D- na hodnotu 25 ps, při hodnotě zpoždění 0.1 ns/cm na DPS, je nutné diferenciální signály vykompenzovat, tak aby maximální rozdíl délek vodičů diferenciálních párů, nebyl větší než 2.5 mm. Jak bylo již zmíněno, v uvedené práci došlo ke délky diferenciálních párů na 1 mm, tedy šasové zpoždění mezi páry, nebude větší než 10 ps.
+	\par Diferenciální páry D+ a D- byly po PCB vedeny ve vrchní a spodní vrstvě. Dle celkové skladby PCB základní desky z tabulky \ref{tab:pcb_vrstvy} odpovídá, že sousedící vrstva, respektive vrstvy pod vrchní a spodní vrstvou je vždy souvislá zemní plocha. Z celkové skladby PCB z obrázku \ref{fig:PCB_mother_stackup}, byly výrobcem PCb dodané parametry pro fyzické rozměry diferenciálních vodičů aby došlo k dodržení impedančního přizpůsobení $100 \Omega$. Realizaci vedení signálů D+ a D- na desce plošných spojů je možné vidět na obrázku \ref{fig:usb_layout}
+	
+	\begin{figure}[h!]
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\captionsetup{justification=centering}
+			\includegraphics[scale=0.33]{usb_hs_top.jpg}
+			\caption{Signály D+ a D-, vrchní vrstva PCB} 
+			\label{fig:usb_top}
+		\end{subfigure} \hfill
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\captionsetup{justification=centering}
+			\includegraphics[scale=0.33]{usb_hs_bot.jpg}
+			\caption{Signály D+ a D-, spodní vrstva PCB} 
+			\label{fig:usb_bot}
+		\end{subfigure}
+		\caption{Vedení diferenciálních datových páru USB}
+		\label{fig:usb_layout}
+	\end{figure} 
 %TODO kde popisu cely cyklus vycitani? v Testovani?
 % TODO cite zahlava
 \section{Deska s Timepix 2}
-	\subsection{Timepix 2}	% 
-		\subsubsection{Rozhraní pro připojení Timepix 2}	% wirebondovaci plosky, HV zdroj
-		\subsubsection{Napájení}	% popsat jak se bere z konektoru plus prepinani pro chipID
+	Druhou deskou plošných spojů v této práci je deska označovaná jako chipboard ze schématického obrázku konceptu řešení \ref{fig:navrh_reseni}. Tato deska je propojena se základní deskou za pomocí 60 pinového konektoru ze série DF40 od společnosti Hirose Electric Group. Rozložení signálů na konektoru lze najít v příloze zapojení celé práce \ref{Priloha základní deska}.
+	
+	\par Deska s Timepix 2 je navržena na šestivrstvém plošném spoji. Skladba plošného spoje je analogická, jako skladba PCB pro základní desku viz obrázek \ref{fig:PCB_mother_stackup} a tabulka \ref{tab:pcb_vrstvy}. Rozměry PCB jsou poté 53 x 17 mm. 
+\subsection{Timepix 2}	% 
+	Nejduležitější částí celé práce je samotný pixelový detektor radiace Timepix 2. PCB bylo navrhnuto s ohledem na technické specifikace detektoru Timepix 2 popsané v části \ref{Technicka specifikace}.
+	\subsubsection{Napájení}	% popsat jak se bere z konektoru plus prepinani pro chipID
+	Dle \ref{tab:tpx2_napajeni} je pro korektní provoz Timepix 2 zapotřebí celkem 3 napájecí napětí. Napájecí napětí pro vstupní/výstupní bránu detektoru Timepix 2 označovanou jako VDDIO s velikostí napájecího napětí +2.5 V se pro generuje na základní desce. Tedy toto napájení je vedeno přes konektor a přivedeno k příslušným pinům Timepix 2.
+	\par Napájení pro digitální a analogovou část Timepix2 se generuje přímo na chipboardové desce. Z označení z tabulky \ref{tab:tpx2_napajeni} se jedná o napájení VDD a VDDA. Zapojení regulátorů pro tyto napájecí napětí můžete vidět na obrázku \ref{fig:tpx_pwr}. Pro napájení digitální části Timepix 2 byl použit stejný spínaný regulátor, jako na základní desce \ref{fig:mp2333h}. Pro napájení analogové části byl použit lineární stabilizátor od společnosti Texas Instruments TPS7A94.  
+	
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.80]{tpx_pwr.jpg}
+		\caption{Analogové a Digitální napájení Timepix 2} 
+		\label{fig:tpx_pwr}
+	\end{figure} 
+	
+	\subsubsection{Rozhraní pro připojení Timepix 2}	% wirebondovaci plosky, HV zdroj
+	
+		
 	\subsection{Vysokonapěťový zdroj}	% MAX1932 zapojeni vysvetleni
 		\subsubsection{Měření vysokého napětí} % napetovy sledovac plus konfigurace AD v STM32
 	\subsection{Měření teploty}	% proces nastaveni senzoru atd

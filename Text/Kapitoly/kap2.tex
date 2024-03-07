@@ -133,15 +133,15 @@ Timepix 2 je rozdělen do 256 x 256 pixelů. Rozteč mezi jednotlivými pixely j
 Timepix 2 ke své činnosti potřebuj celkem 3 napájení viz. tabulka \ref{tab:tpx2_napajeni}. Napájení VDD slouží pro napájení digitální části jádra Timepix2 a VDDA slouží k napájení analogové části jádra Timepix  2. Napájení VDDIO slouží k napájení vstupních/výstupních bran. Posledním uvedeným napájení v tabulce \ref{tab:tpx2_napajeni} je napájení VDD33. Toto napájení je potřeba přepínat, podle potřebné funkcionality detektoru. Pokud chceme z Timepix 2 vyčíst CHIP ID, musíme na pin VDD33 aplikovat napájecí napětí 2.5 V. Při ostatní činnosti detektoru, je požadováno aby napětí označené VDD33 bylo 1.2 V. 
 \begin{table}[h!]
 	\centering
-	\begin{tabular}{ |P{3cm}||P{5cm}|  }
+	\begin{tabular}{ |P{3cm}||P{5cm}||P{3cm}|  }
 		\hline
-		\multicolumn{2}{|c|}{Napájecí úrovně Timepix 2} \\
+		\multicolumn{3}{|c|}{Napájecí úrovně Timepix 2} \\
 		\hline
-		Název pinu& Hodnota napájecího napětí [V] \\ \hline \hline 
-		VDDIO & 2.5 \\ \hline		
-		VDD & 1.2 \\ \hline 		 
-		VDDA & 1.2 \\ \hline
-		VDD33 & 2.5 (1.2)\\ \hline
+		Název pinu& Hodnota napájecího napětí [V] & Počet pinů\\ \hline \hline 
+		VDDIO & 2.5 & 7\\ \hline		
+		VDD & 1.2 & 15\\ \hline 		 
+		VDDA & 1.2 & 18\\ \hline
+		VDD33 & 2.5 (1.2)& 1\\ \hline
 	\end{tabular}
 	\caption{Napájecí úrovně Timepix 2}
 	\label{tab:tpx2_napajeni}
