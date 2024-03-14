@@ -10,6 +10,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 \par Realizace návrhu desek plošných spojů probíhala v programu Altium Designer. Mechanické integrace rozhraní, především validace případných kolizí plošných spojů s navrženou mechanikou, probíhala v programu Autodesk Inventor.
 
 \section{Základní deska}	
+	\label{zakladni deska}
 	Základní deska je navržena na šesti vrstvém plošném spoji. Rozložení jednotlivých vrstev lze vidět na obrázku \ref{tab:pcb_vrstvy}. Celková tloušťka výsledného PCB je dle celkové skladby z obrázku \ref{fig:PCB_mother_stackup}, 1.6 mm. Vnější rozměry základní desky jsou 53 x 17 mm. Obecné části, které jsou na základní desce, jsou shodné s konceptem řešení \ref{fig:navrh_reseni}. Dále bude popsána detailní struktura jednotlivých částí základní desky.
 
 \begin{figure}
@@ -60,7 +61,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.80]{mp2333h.jpg}
+		\includegraphics[scale=0.50]{mp2333h.pdf}
 		\caption{Zapojení regulátoru MP2333H} 
 		\label{fig:mp2333h}
 	\end{figure}
@@ -194,7 +195,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
  		\centering
  		\captionsetup{justification=centering}
- 		\includegraphics[scale=0.65]{SPI.jpg}
+ 		\includegraphics[scale=0.40]{SPI.pdf}
  		\caption{Popis signálů periférií SPI, sloužící pro komunikaci s Timepix 2} 
  		\label{fig:SPI}
  	\end{figure}
@@ -285,7 +286,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.70]{sub_lvds_slvs.jpg}
+		\includegraphics[scale=0.50]{sub_lvds_slvs.pdf}
 		\caption{Konverze Sub-LVDS na SLVS} 
 		\label{fig:sub_lvds_slvs}
 	\end{figure}
@@ -334,14 +335,15 @@ end architecture behavioral ;
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.70]{USBC_zapojeni.jpg}
+		%\includepdf[scale=0.7]{usbc.pdf}
+		\includegraphics[scale=0.60]{usbc.pdf}
 		\caption{Zapojení konektoru USB C} 
 		\label{fig:USBC_zapojeni}
 	\end{figure} 
 	
 	\subsubsection{PCB}
 	Jak bylo zmíněno v předchozí části, maximální komunikační rychlost specifikace USB 2.0 High Speed může bít 480 Mbit/s. Proto návrh PCB musel odpovídat požadavkům pro návrh PCB pro vysokorychlostní komunikaci. Délka diferenciálních datových párů D+ a D- byla vůči sobě vykompenzována na vzdálenost 1 mm. Dle technické specifikace USB 2.0 High Speed je doba náběžné ($t_r$), respektive sestupné ($t_f$) hrany 500 ps. Časové zpoždění ($\Delta t$) mezi datovými páry D+ a D- by mělo být výrazně menší, než doba ($t_r$), respektive ($t_f$). Pokud zvolíme maximální časové zpoždění mezi páry D+ a D- na hodnotu 25 ps, při hodnotě zpoždění 0.1 ns/cm na DPS, je nutné diferenciální signály vykompenzovat, tak aby maximální rozdíl délek vodičů diferenciálních párů, nebyl větší než 2.5 mm. Jak bylo již zmíněno, v uvedené práci došlo ke délky diferenciálních párů na 1 mm, tedy šasové zpoždění mezi páry, nebude větší než 10 ps.
-	\par Diferenciální páry D+ a D- byly po PCB vedeny ve vrchní a spodní vrstvě. Dle celkové skladby PCB základní desky z tabulky \ref{tab:pcb_vrstvy} odpovídá, že sousedící vrstva, respektive vrstvy pod vrchní a spodní vrstvou je vždy souvislá zemní plocha. Z celkové skladby PCB z obrázku \ref{fig:PCB_mother_stackup}, byly výrobcem PCb dodané parametry pro fyzické rozměry diferenciálních vodičů aby došlo k dodržení impedančního přizpůsobení $100 \Omega$. Realizaci vedení signálů D+ a D- na desce plošných spojů je možné vidět na obrázku \ref{fig:usb_layout}
+	\par Diferenciální páry D+ a D- byly po PCB vedeny ve vrchní a spodní vrstvě. Dle celkové skladby PCB základní desky z tabulky \ref{tab:pcb_vrstvy} odpovídá, že sousedící vrstva, respektive vrstvy pod vrchní a spodní vrstvou je vždy souvislá zemní plocha. Z celkové skladby PCB z obrázku \ref{fig:PCB_mother_stackup}, byly výrobcem PCB dodané parametry pro fyzické rozměry diferenciálních vodičů aby došlo k dodržení impedančního přizpůsobení $100 \Omega$. Realizaci vedení signálů D+ a D- na desce plošných spojů je možné vidět na obrázku \ref{fig:usb_layout}
 	
 	\begin{figure}[h!]
 		\begin{subfigure}{0.5\textwidth}
@@ -368,25 +370,53 @@ end architecture behavioral ;
 	
 	\par Deska s Timepix 2 je navržena na šestivrstvém plošném spoji. Skladba plošného spoje je analogická, jako skladba PCB pro základní desku viz obrázek \ref{fig:PCB_mother_stackup} a tabulka \ref{tab:pcb_vrstvy}. Rozměry PCB jsou poté 53 x 17 mm. 
 \subsection{Timepix 2}	% 
-	Nejduležitější částí celé práce je samotný pixelový detektor radiace Timepix 2. PCB bylo navrhnuto s ohledem na technické specifikace detektoru Timepix 2 popsané v části \ref{Technicka specifikace}.
+	Nejduležitější částí celé práce je samotný pixelový detektor radiace Timepix 2. Specifikace pixelového detektoru Timepix 2 byly popsány v části \ref{Technicka specifikace}. Nadále bude popsána realizace pro splnění všech specifikacích nutných pro provoz pixelového detektoru Timepix 2.
 	\subsubsection{Napájení}	% popsat jak se bere z konektoru plus prepinani pro chipID
-	Dle \ref{tab:tpx2_napajeni} je pro korektní provoz Timepix 2 zapotřebí celkem 3 napájecí napětí. Napájecí napětí pro vstupní/výstupní bránu detektoru Timepix 2 označovanou jako VDDIO s velikostí napájecího napětí +2.5 V se pro generuje na základní desce. Tedy toto napájení je vedeno přes konektor a přivedeno k příslušným pinům Timepix 2.
-	\par Napájení pro digitální a analogovou část Timepix2 se generuje přímo na chipboardové desce. Z označení z tabulky \ref{tab:tpx2_napajeni} se jedná o napájení VDD a VDDA. Zapojení regulátorů pro tyto napájecí napětí můžete vidět na obrázku \ref{fig:tpx_pwr}. Pro napájení digitální části Timepix 2 byl použit stejný spínaný regulátor, jako na základní desce \ref{fig:mp2333h}. Pro napájení analogové části byl použit lineární stabilizátor od společnosti Texas Instruments TPS7A94.  
+	Dle \ref{tab:tpx2_napajeni} je pro korektní provoz Timepix 2 zapotřebí celkem třech napájecí napětí. Napájecí napětí pro vstupní/výstupní bránu detektoru Timepix 2 označovanou jako VDDIO s velikostí napájecího napětí +2.5 V se generuje na základní desce. Tedy toto napájení je vedeno přes konektor ze základní desky a je poté na desce chipboard přivedeno k příslušným pinům Timepix 2.
+	\par Napájení pro digitální a analogovou část Timepix 2 se generuje přímo na chipboardové desce. Z označení z tabulky \ref{tab:tpx2_napajeni} se jedná o napájení VDD a VDDA. Zapojení regulátorů pro tyto napájecí napětí můžete vidět na obrázku \ref{fig:tpx_pwr}. Pro napájení digitální části Timepix 2 byl použit stejný spínaný regulátor, jako na základní desce \ref{fig:mp2333h}. Pro napájení analogové části byl použit lineární stabilizátor od společnosti Texas Instruments TPS7A94, který ze vstupních +2.5 V reguluje napětí na výstupních +1.2 V. Oba uvedené regulátory jsou řízené z mikrokontroléru, který je umístěn na základní desce \ref{zakladni deska}.
 	
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.80]{tpx_pwr.jpg}
+		\includegraphics[scale=0.60]{tpx_pwr.pdf}
 		\caption{Analogové a Digitální napájení Timepix 2} 
 		\label{fig:tpx_pwr}
 	\end{figure} 
 	
 	\subsubsection{Rozhraní pro připojení Timepix 2}	% wirebondovaci plosky, HV zdroj
+	Pro připojení Timepix 2 k desce plošných spojů byly použity wirebondovcí plošky na vrchní straně Timepix 2, které je možné vidět na spodní straně obrázku \ref{fig:tpx2_floorplan}. Celekm bylo u této práce realizovat propojení 128 wirebondovacích plošek z Timepix 2 na chipboardovou desku. Plošky na straně PCB jsou umístěny ve dvou řadách. Rozteč mezi jednotlivými plošky je 0.2mm, šířka plošek je poté 0.1 mm. V pravé části obrázku \ref{fig:tpx_wire} můžete vidět plošku pro připojení vysokého napětí na senzorovou vrstvu Timepix 2. Toto vysoké napětí slouží k vytvoření vyprázdněné oblasti v senzorové vrstvě, více viz. \ref{kap:2.1}. 
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.60]{tpx_wire.png}
+		\caption{Rozložení wirebondovacích plošek k připojení Timepix 2} 
+		\label{fig:tpx_wire}
+	\end{figure} 
 	
 		
 	\subsection{Vysokonapěťový zdroj}	% MAX1932 zapojeni vysvetleni
+	Vysokonapěťový zdroj pro tuto práci byl realizován za použití součástky od společnosti Analog Devices, konkrétně byla použita součástka MAX1932. Jedná se o vysokonapěťový zdroj s nastavitelnou úrovní výstupního napětí 30 - 148 V. Úroveň výstupního napětí se nastavuje pomocí SPI komunikace v uvedeném rozsahu s rozlišením 256 hodnot. Schematické zapojení vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv}. Hodnota velikosti výstupního napětí lze nastavit pomocí odporů ve zpětné vazbě regulátoru ze zapojení \ref{fig:hv}. 
+	
+	\begin{equation}
+		R5 = (V_{OUT01} - V_{OUTFF})\cdot (R6/1.25V)
+		\label{eq:R5}
+	\end{equation}
+
+	\begin{equation}
+		R6 = \frac{1.25V \cdot R5}{V_{OUTFF}}
+		\label{eq:R6}
+	\end{equation}
+	
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.60]{hv.pdf}
+		\caption{Zapojení vysokonapěťového zdroje MAX1932} 
+		\label{fig:hv}
+	\end{figure} 
 		\subsubsection{Měření vysokého napětí} % napetovy sledovac plus konfigurace AD v STM32
 	\subsection{Měření teploty}	% proces nastaveni senzoru atd
 	\label{Mereni teploty}
 	\subsection{Konektor}	% popis konektoru, zarazeni zmneni mezi piny
 	\label{konektor}
+
