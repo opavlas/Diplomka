@@ -41,6 +41,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 \end{figure}
 
 	\subsection{Napájení}
+	\label{napajeni}
 	Na základní desce je realizováno napájení, které je dále používáno pro celé výčítací rozhraní. Celkem jsou zde tři spínané synchronní step-down buck regulátory. Konkrétně se jedná o regulátor MP2333H \cite{MPH2333} od společnosti Monolithic Power Systems. Regulátor pracuje v rozsahu vstupních napětí on 4.2 - 18 V. Maximální výstupní proud jsou 3 A, spínací frekvence regulátoru je 1.2 MHz. Regulátor je možné pořídit v pouzdře SOT583, s rozměry 1.6x2 mm, které jsou pro úlohu miniaturizace rozhraní vyhovující. V tabulce \ref{tab:napajeni} můžete vidět seznam napájení generujících na základní desce.
 	\begin{table}[h!]
 		\centering
@@ -366,6 +367,7 @@ end architecture behavioral ;
 %TODO kde popisu cely cyklus vycitani? v Testovani?
 % TODO cite zahlava
 \section{Deska s Timepix 2}
+	\label{Deska s Timepix2}
 	Druhou deskou plošných spojů v této práci je deska označovaná jako chipboard ze schématického obrázku konceptu řešení \ref{fig:navrh_reseni}. Tato deska je propojena se základní deskou za pomocí 60 pinového konektoru ze série DF40 od společnosti Hirose Electric Group. Rozložení signálů na konektoru lze najít v příloze zapojení celé práce \ref{Priloha základní deska}.
 	
 	\par Deska s Timepix 2 je navržena na šestivrstvém plošném spoji. Skladba plošného spoje je analogická, jako skladba PCB pro základní desku viz obrázek \ref{fig:PCB_mother_stackup} a tabulka \ref{tab:pcb_vrstvy}. Rozměry PCB jsou poté 53 x 17 mm. 
@@ -395,17 +397,18 @@ end architecture behavioral ;
 	
 		
 	\subsection{Vysokonapěťový zdroj}	% MAX1932 zapojeni vysvetleni
-	Vysokonapěťový zdroj pro tuto práci byl realizován za použití součástky od společnosti Analog Devices, konkrétně byla použita součástka MAX1932. Jedná se o vysokonapěťový zdroj s nastavitelnou úrovní výstupního napětí 30 - 148 V. Úroveň výstupního napětí se nastavuje pomocí SPI komunikace v uvedeném rozsahu s rozlišením 256 hodnot. Schematické zapojení vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv}. Hodnota velikosti výstupního napětí lze nastavit pomocí odporů ve zpětné vazbě regulátoru ze zapojení \ref{fig:hv}. 
-	
+	\label{VN zdroj}
+	Vysokonapěťový zdroj pro tuto práci byl realizován za použití součástky od společnosti Analog Devices, konkrétně byla použita součástka MAX1932 \cite{MAX1932}. Jedná se o vysokonapěťový zdroj s nastavitelnou úrovní výstupního napětí 30 - 148 V. Úroveň výstupního napětí se nastavuje pomocí SPI komunikace v uvedeném rozsahu s rozlišením 256 hodnot. Schematické zapojení vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv}. Hodnota velikosti výstupního napětí lze nastavit pomocí odporů ve zpětné vazbě regulátoru ze zapojení \ref{fig:hv} a to dle následujících rovnic \ref{eq:R5} a \ref{eq:R6}. 
 	\begin{equation}
 		R5 = (V_{OUT01} - V_{OUTFF})\cdot (R6/1.25V)
 		\label{eq:R5}
 	\end{equation}
 
 	\begin{equation}
-		R6 = \frac{1.25V \cdot R5}{V_{OUTFF}}
+		R8 = \frac{1.25V \cdot R5}{V_{OUTFF}}
 		\label{eq:R6}
 	\end{equation}
+	Kde $V_{OUT01}$ je maximimální nastavené výstupní napětí a $V_{OUTFF}$ je minimální nastavené napětí. 
 	
 	\begin{figure}[h!]
 		\centering
@@ -414,9 +417,27 @@ end architecture behavioral ;
 		\caption{Zapojení vysokonapěťového zdroje MAX1932} 
 		\label{fig:hv}
 	\end{figure} 
-		\subsubsection{Měření vysokého napětí} % napetovy sledovac plus konfigurace AD v STM32
+	\subsubsection{Měření vysokého napětí} % napetovy sledovac plus konfigurace AD v STM32
+	Pro měření vysokého napětí byl použit operační zesilovač v zapojení napěťového sledovače z obrázku \ref{fig:hv} v pravé části. Přesněji byl použit operační zesliovač od společnosti Analog Devices LTC6262 \cite{LTC6252}. Výstup operačního zesilovače je poté připojen na vstupní pin mikrokontroléru, který je nakonfigurován jako analogový vstup. Pomocí interního AD převodníku mikrokontroléru je převedena analogová hodnota odpovídající hodnotě vysokého napětí do digitální formy. Následně je tato hodnota dostupná pro pro další programové zpracování. 
+
 	\subsection{Měření teploty}	% proces nastaveni senzoru atd
 	\label{Mereni teploty}
+	Pro mření teploty na chipboardové desce byl použit senzor TMP100 \cite{TMP100} od společnosti Texas Instruments. Jedná se o senzor disponující 12 bitovým rozlišením s přesností $\pm 1^{\circ} C$ v rozsahu teplot od $-55^{\circ}C$ do $125^{\circ}C$. Komunikace se senzorem a vyčítaní dat probíhá pomocí I2C sběrnice. Zapojení senzoru je vidět na obrázku \ref{fig:tmp100}. Adresa zařízení je nastavena pomocí pinů ADD0 a ADD1 na hexadecimální hodnotu 0x48.
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.30]{temp.pdf}
+		\caption{Zapojení teplotního senzoru TMP100} 
+		\label{fig:tmp100}
+	\end{figure} 
 	\subsection{Konektor}	% popis konektoru, zarazeni zmneni mezi piny
-	\label{konektor}
+	Rozložení konektoru mezi základní deskou \ref{zakladni deska} a deskou s Timepix 2 \ref{Deska s Timepix2} je vidět na obrázku \ref{fig:konektor}. Pro propojení desek byl použit konektor DF40C-60DP-0.4V(51) od společnosti Hihorse Connector. Rozteč jednotlivých kontaktů konektoru je 0.4 mm. Jmenovitý proud 300 mA a jmenovité napětí poté 30 V. Tento konektor byl použit ve variantě, kdy celková výška mezi základní deskou a deskou s Timepix 2 je 2.5 mm. Výhodou tohoto konektoru je možnost volby výšky konektoru dle výběru nabízeného výrobcem. Na desce s Timepix 2 jsou ze záladní desky dostupné celkem 3 napájecí úrovně a to +2.5 V, +3.3 V a +5V. Rozložení vysokorychlostních diferenciálních párů na konektoru bylo pro každý diferenciální pár odděleno zapojením země mezi jednotlivé páry, jak je vidět ze zapojení \ref{fig:konektor} v pravé části. Toto zapojení bylo navrhnuto s ohledem na minimalizaci možných přeslechů komunikace mezi jednotlivými diferenciálními páry.
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.40]{conn.pdf}
+		\caption{Zapojení konektoru mezi základní deskou \ref{zakladni deska} a deskou s Timepix 2 \ref{Deska s Timepix2}} 
+		\label{fig:konektor}
+	\end{figure} 
+	
 

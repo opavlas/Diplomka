@@ -51,23 +51,22 @@
 \contentsline {subsection}{\numberline {4.2.2}Vysokonapěťový zdroj}{31}{subsection.4.2.2}%
 \contentsline {subsubsection}{Měření vysokého napětí}{31}{section*.62}%
 \contentsline {subsection}{\numberline {4.2.3}Měření teploty}{31}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Konektor}{31}{subsection.4.2.4}%
-\contentsline {chapter}{\numberline {5}Testování}{33}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Napájení}{33}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Vysokonapěťový zdroj}{33}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Měření teploty}{33}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Komunikační rozhraní s Timepix 2}{33}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Digitální test Timepix 2}{33}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Vyčtení chip ID}{33}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}}{33}{subsection.5.5.2}%
-\contentsline {subsection}{\numberline {5.5.3}Vyčtení a zapsání pixelových matic}{33}{subsection.5.5.3}%
-\contentsline {section}{\numberline {5.6}USB komunikace}{33}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Měření spotřeby}{33}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Porovnání spotřeby}{33}{subsection.5.7.1}%
-\contentsline {section}{\numberline {5.8}Dosažené parametry}{33}{section.5.8}%
-\contentsline {chapter}{\numberline {6}Závěr}{34}{chapter.6}%
-\contentsline {chapter}{Seznam použité literatury}{37}{chapter*.63}%
-\contentsline {chapter}{Seznam použitých symbolů}{38}{chapter*.64}%
-\contentsline {chapter}{Seznam použitých zkratek}{39}{chapter*.65}%
-\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{40}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Základní deska}{41}{appendix.B}%
+\contentsline {subsection}{\numberline {4.2.4}Konektor}{32}{subsection.4.2.4}%
+\contentsline {chapter}{\numberline {5}Testování}{34}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Napájení}{34}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Vysokonapěťový zdroj}{35}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Měření teploty}{35}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Komunikační rozhraní s Timepix 2}{36}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Digitální test Timepix 2}{36}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Vyčtení chip ID}{36}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Vyčtení a zapsání pixelových matic}{36}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}USB komunikace}{36}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Měření spotřeby}{36}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Porovnání spotřeby}{36}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}Dosažené parametry}{36}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Závěr}{37}{chapter.6}%
+\contentsline {chapter}{Seznam použité literatury}{40}{chapter*.68}%
+\contentsline {chapter}{Seznam použitých symbolů}{41}{chapter*.69}%
+\contentsline {chapter}{Seznam použitých zkratek}{42}{chapter*.70}%
+\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{43}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Základní deska}{44}{appendix.B}%

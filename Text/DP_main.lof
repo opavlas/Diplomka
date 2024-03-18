@@ -32,7 +32,12 @@
 \contentsline {figure}{\numberline {4.16}{\ignorespaces Analogové a Digitální napájení Timepix 2\relax }}{30}{figure.caption.58}%
 \contentsline {figure}{\numberline {4.17}{\ignorespaces Rozložení wirebondovacích plošek k připojení Timepix 2\relax }}{31}{figure.caption.60}%
 \contentsline {figure}{\numberline {4.18}{\ignorespaces Zapojení vysokonapěťového zdroje MAX1932\relax }}{32}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Zapojení teplotního senzoru TMP100\relax }}{32}{figure.caption.63}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Zapojení konektoru mezi základní deskou \ref {zakladni deska} a deskou s Timepix 2 \ref {Deska s Timepix2}\relax }}{33}{figure.caption.64}%
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zvlnění napětí výstupních napětí +2.5V, +3.3 V a +1.2 V \relax }}{34}{figure.caption.65}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Stjenosměrné úrovně výstupních napětí spínaných regulátorů na základní desce \ref {zakladni deska}\relax }}{35}{figure.caption.66}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Diagram průběhu vyčtení teploty ze senzoru TMP 100 na desce s Timepix 2\relax }}{35}{figure.caption.67}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
