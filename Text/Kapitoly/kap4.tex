@@ -262,7 +262,9 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	
 	\subsection{CPLD}	% CPLDcko - delice, urovne. Odporove site
 	\label{CPLD}
-	Dlaší hlavní součástí základní desky, je CPLD. Pro tuto práci bylo konkrétně vybráno CPLD od společnosti Lattice Semiconductor s označením MachXO2 \cite{CPLD}. Jak bude popsáno v následné části, CPLD je použito pro konverzi logických úrovní a generování diferenciálních signálů které jsou potřebné pro komunikaci s detektorem Timepix 2. S ohledem na tyto požadavky bylo vybráno právě CPLD MachXO2 v pouzdře QFN-48. Programování CPLD probíhalo v prostředí Lattice Diamond.
+	Dlaší hlavní součástí základní desky, je CPLD. Pro tuto práci bylo konkrétně vybráno CPLD od společnosti Lattice Semiconductor s označením MachXO2 \cite{CPLD}. Jak bude popsáno v následné části, CPLD je použito v této práci pro konverzi logických úrovní a generování diferenciálních signálů, které jsou potřebné pro komunikaci s detektorem Timepix 2. S ohledem na tyto požadavky a miniaturizaci rozhraní bylo vybráno právě CPLD MachXO2 v pouzdře QFN-48. 
+	\par Další nabízenou variantou převodu logických úrovní bylo použití vysílače a přijímače LVDS napěťových úrovní. Nevýhodou použití tohoto zapojení je plocha potřebná pro zapojení součástek na desce plošných spojů v důsledku velikosti pouzder vysílače a přijímače LVDS komunikace. Další nevýhodou je výsledná spotřeba zapojení. Jak bylo popsáno v \ref{Komunikacni rozhrani}, potřebné logické úrovně pro Timepix 2 jsou nižší než úrovně LVDS specifikace, tedy bylo by nutné generované úrovně LVDS vysílače upravit na požadovanou úroveň specifikace SLVS. Tato úprava pomocí zapojení odporů je ovšem energeticky neúsporná.
+	Samotné programování CPLD probíhalo v prostředí Lattice Diamond.
 	
 	\subsubsection{Napájení}
 	V tabulce \ref{tab:napajni_cpld} můžete vidět napájecí úrovně pro MachXO2. Pro napájení jádra CPLD a vstupních/výstupních bran 0, 1 a 2 je použito napájení +3.3V. Pro vstupní/výstupní bránu 3, je napájecí napětí +1.2 V. Toto napájení bylo zvoleno s ohledem na použití této brány jako typ LVCMOS12D, pro generování diferenciálních páru odpovídající specifikaci SLVS \ref{fig:SLVS_LVDS}.
@@ -281,7 +283,9 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\label{tab:napajni_cpld}
 	\end{table}
 
+\\
 	\subsubsection{Konverze logických úrovní}
+	\label{CPLD konverze}
 	Dle \ref{Komunikacni rozhrani}, je zapotřebí pro komunikaci s Timepix 2 při využití sériového rozhraní použít komunikační specifikaci typu SLVS \ref{fig:SLVS_LVDS}, využívající diferenciální páry. Použití mikrokontrolér \ref{mikrokontolér}, je kompatibilní pouze s CMOS 3.3 V logikou. Použité CPLD umožňuje převod těchto úrovní. Respektive převod CMOS 3.3 V logiky na SLVS specifikaci a opačně.
 	\par Použité CPLD umožňuje generovat pouze signály ze specifikace Sub-LVDS. Aby bylo dosaženo parametrů potřebných pro SLVS specifikaci, bylo pro každý generovaný výstupní diferenciální pár použito zapojení s odpory z pravé části obrázku \ref{fig:sub_lvds_slvs}. Pro vstupní diferenciální páry, byla pouze co nejblíže k CPLD umístěna terminace, viz. levá část obrázku \ref{fig:sub_lvds_slvs}.
 	\begin{figure}[h!]
@@ -386,7 +390,7 @@ end architecture behavioral ;
 	\end{figure} 
 	
 	\subsubsection{Rozhraní pro připojení Timepix 2}	% wirebondovaci plosky, HV zdroj
-	Pro připojení Timepix 2 k desce plošných spojů byly použity wirebondovcí plošky na vrchní straně Timepix 2, které je možné vidět na spodní straně obrázku \ref{fig:tpx2_floorplan}. Celekm bylo u této práce realizovat propojení 128 wirebondovacích plošek z Timepix 2 na chipboardovou desku. Plošky na straně PCB jsou umístěny ve dvou řadách. Rozteč mezi jednotlivými plošky je 0.2mm, šířka plošek je poté 0.1 mm. V pravé části obrázku \ref{fig:tpx_wire} můžete vidět plošku pro připojení vysokého napětí na senzorovou vrstvu Timepix 2. Toto vysoké napětí slouží k vytvoření vyprázdněné oblasti v senzorové vrstvě, více viz. \ref{kap:2.1}. 
+	Pro připojení Timepix 2 k desce plošných spojů byly použity wirebondovcí plošky na vrchní straně Timepix 2, které je možné vidět na spodní straně obrázku \ref{fig:tpx2_floorplan}. Celekm bylo u této práce realizováno propojení 128 wirebondovacích plošek z Timepix 2 na chipboardovou desku. Plošky na straně PCB jsou umístěny ve dvou řadách. Rozteč mezi jednotlivými plošky je 0.2mm, šířka plošek je poté 0.1 mm. V pravé části obrázku \ref{fig:tpx_wire} můžete vidět plošku pro připojení vysokého napětí na senzorovou vrstvu Timepix 2. Toto vysoké napětí slouží k vytvoření vyprázdněné oblasti v senzorové vrstvě, více viz. \ref{kap:2.1}. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}

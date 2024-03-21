@@ -36,37 +36,39 @@
 \contentsline {subsubsection}{Programování}{23}{section*.40}%
 \contentsline {subsubsection}{PCB}{23}{section*.42}%
 \contentsline {subsection}{\numberline {4.1.3}CPLD}{24}{subsection.4.1.3}%
-\contentsline {subsubsection}{Napájení}{24}{section*.44}%
+\contentsline {subsubsection}{Napájení}{25}{section*.44}%
 \contentsline {subsubsection}{Konverze logických úrovní}{25}{section*.46}%
 \contentsline {subsubsection}{Programování}{26}{section*.48}%
 \contentsline {subsubsection}{Využití odporových sítí}{26}{section*.49}%
-\contentsline {subsection}{\numberline {4.1.4}USB}{26}{subsection.4.1.4}%
+\contentsline {subsection}{\numberline {4.1.4}USB}{27}{subsection.4.1.4}%
 \contentsline {subsubsection}{Konektror}{27}{section*.51}%
 \contentsline {subsubsection}{Zapojení}{27}{section*.53}%
 \contentsline {subsubsection}{PCB}{28}{section*.55}%
 \contentsline {section}{\numberline {4.2}Deska s Timepix 2}{29}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Timepix 2}{29}{subsection.4.2.1}%
-\contentsline {subsubsection}{Napájení}{29}{section*.57}%
-\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2}{30}{section*.59}%
+\contentsline {subsubsection}{Napájení}{30}{section*.57}%
+\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2}{31}{section*.59}%
 \contentsline {subsection}{\numberline {4.2.2}Vysokonapěťový zdroj}{31}{subsection.4.2.2}%
 \contentsline {subsubsection}{Měření vysokého napětí}{31}{section*.62}%
-\contentsline {subsection}{\numberline {4.2.3}Měření teploty}{31}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.3}Měření teploty}{32}{subsection.4.2.3}%
 \contentsline {subsection}{\numberline {4.2.4}Konektor}{32}{subsection.4.2.4}%
 \contentsline {chapter}{\numberline {5}Testování}{34}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Napájení}{34}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Vysokonapěťový zdroj}{35}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Měření teploty}{35}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Komunikační rozhraní s Timepix 2}{36}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Digitální test Timepix 2}{36}{section.5.5}%
-\contentsline {subsection}{\numberline {5.5.1}Vyčtení chip ID}{36}{subsection.5.5.1}%
-\contentsline {subsection}{\numberline {5.5.2}Vyčtení a zapsání pixelových matic}{36}{subsection.5.5.2}%
-\contentsline {section}{\numberline {5.6}USB komunikace}{36}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Měření spotřeby}{36}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Porovnání spotřeby}{36}{subsection.5.7.1}%
-\contentsline {section}{\numberline {5.8}Dosažené parametry}{36}{section.5.8}%
-\contentsline {chapter}{\numberline {6}Závěr}{37}{chapter.6}%
-\contentsline {chapter}{Seznam použité literatury}{40}{chapter*.68}%
-\contentsline {chapter}{Seznam použitých symbolů}{41}{chapter*.69}%
-\contentsline {chapter}{Seznam použitých zkratek}{42}{chapter*.70}%
-\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{43}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Základní deska}{44}{appendix.B}%
+\contentsline {section}{\numberline {5.3}Měření teploty}{36}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Měření teploty vyčítacího rozhraní}{36}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Měření teploty Timepix2}{36}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Komunikační rozhraní s Timepix 2}{37}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Digitální test Timepix 2}{38}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Vyčtení chip ID}{38}{subsection.5.5.1}%
+\contentsline {subsection}{\numberline {5.5.2}Vyčtení a zapsání pixelových matic}{38}{subsection.5.5.2}%
+\contentsline {section}{\numberline {5.6}USB komunikace}{38}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Měření spotřeby}{39}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Porovnání spotřeby}{39}{subsection.5.7.1}%
+\contentsline {section}{\numberline {5.8}Dosažené parametry}{39}{section.5.8}%
+\contentsline {chapter}{\numberline {6}Závěr}{40}{chapter.6}%
+\contentsline {chapter}{Seznam použité literatury}{43}{chapter*.72}%
+\contentsline {chapter}{Seznam použitých symbolů}{44}{chapter*.73}%
+\contentsline {chapter}{Seznam použitých zkratek}{45}{chapter*.74}%
+\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{46}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Základní deska}{47}{appendix.B}%
