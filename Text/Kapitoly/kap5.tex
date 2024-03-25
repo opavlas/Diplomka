@@ -93,7 +93,7 @@ Funkčnost komunikace s detektorem Timepix 2 byla ověřena pomocí digitálníc
 	%TODO hodnota CHIP ID
 	\subsection{Vyčtení a zapsání pixelových matic}
 	Pomocí výše uvedeného testu, vyčtení CHIP ID detektoru došlo k otestování vyčítaní základních registrů detektoru Timepix 2. Dalším digitálním testem je poté zápis a vyčtení všech čítačů, používajících se na měření. Popis čítačů Timepix 2, lze najít v části \ref{Digitálni cast}.
-	\par Zápis do digitálních čítačů slouží jen pro digitální testování, při samotném měření se tato funkce nevyužívá. Celkem při tomto digitálním testu dojde k zápisu hodnot do všech čtyřech dostupných čítačů Timepix 2 a následnému vyčtení. Celkem je zapsáno 5 testujících obrazů. Zapsané obrazce byly zvoleny viz. tabulka \ref{tab:obraz} Při tomto digitálním dochází k zápisu 327 680B dat a jejich opětovnému vyčtení. Digi
+	\par Zápis do digitálních čítačů slouží jen pro digitální testování, při samotném měření se tato funkce nevyužívá. Celkem při tomto digitálním testu dochází k zápisu hodnot do všech čtyřech dostupných čítačů Timepix 2 a následnému vyčtení. Celkem je zapsáno 5 testujících obrazů. Zapsané obrazce byly zvoleny viz. tabulka \ref{tab:obraz}. Při tomto digitálním testu dochází k zápisu 327 680B dat a jejich opětovnému vyčtení. Digitální test byl prováděn s frekvencí datových hodin 40 Mhz. Po každém digitálním testu bylo vyresetováno napájení detektoru Timepix 2 a digitální test byl proveden znovu. Test byl opakován 100 krát s úspěšností 100\%.
 	\begin{table}[h!]
 		\centering
 		\begin{tabular}{ |P{3cm}|P{3cm}|  }
@@ -110,8 +110,31 @@ Funkčnost komunikace s detektorem Timepix 2 byla ověřena pomocí digitálníc
 		\caption{Digitální test, zapisované hodnoty}
 		\label{tab:obraz}
 	\end{table}
-\section{USB komunikace}s
+\section{USB komunikace}
 %todo, dokumentace funkčnosti... -> VCM, pak UDP pres USB
+Fyzická implementace USB byla popsána v části textu \ref{USB}. Pro testování USB komunikace byly použity dvě USB třídy. První třídou USB byl virtuální sériový port přes USB. Druhou USB třídou byla pak třída RNDIS, neboli virtuální ethernet přes USB.
+\subsection{Virtuální sériový port}
+	První třídou testující funkčnost USB byl virtuální sériový port. Tato třída byla na začátek vybrána díky své jednoduchosti. Nakonfigurované USB zařízení, tedy vyčítací rozhraní z této práce, připojené do PC s operačním systémem Windows 10 můžete vidět na obrázku \ref{fig:USB_VCM}. Tato konfigurace sloužila pouze pro první ověření funkcionality USB rozhraní.
+	%TODO vypis ze seriaku/USBTreeViewer
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.50]{tpx2_temp.jpg}
+		\caption{Výpis virtuální sériové komunikace přes USB} 
+		\label{fig:USB_VCM}
+	\end{figure}
+\subsection{Virtuální ethernet přes USB}
+	Další USB třídou, která se již použila v konečné implementaci byla USB třída RNDIS. Jedná se o třídu zařízení kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP komunikace. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{TrackLab}. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Ukázka nakonfigurovaného zařízení jako třída RNDIS lze vidět na obrázku \ref{fig:RNDIS}.
+	%TODO USB RNDIS konfigurace
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.50]{tpx2_temp.jpg}
+		\caption{Vyčítací rozhraní nakonfigurované jako zařízení z USB třídy RNDIS} 
+		\label{fig:RNDIS}
+	\end{figure}
+%TODO mam dat zvlast tridu o TrackLabu?
+	
 
 \section{Měření spotřeby}
 %todo spotreba, bez chipu, s chipem, zavislosti?

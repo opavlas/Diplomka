@@ -41,6 +41,8 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Diagram průběhu vyčtení teploty ze senzoru TMP 100 na desce s Timepix 2\relax }}{36}{figure.caption.68}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Simulace teploty detektoru Timepix2 v závisloti na hodnotě napěťové reference \cite {tpx2_manual}.\relax }}{37}{figure.caption.69}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Průběh hodinového signálu pro komunikaci s Timepix 2\relax }}{37}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Výpis virtuální sériové komunikace přes USB\relax }}{39}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Vyčítací rozhraní nakonfigurované jako zařízení z USB třídy RNDIS\relax }}{40}{figure.caption.73}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

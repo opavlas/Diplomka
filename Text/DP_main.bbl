@@ -140,4 +140,10 @@ A.~Devices, ``{D}igitally {C}ontrolled, 0.5\% {A}ccurate, {S}afest {A}{P}{D}
 A.~Devices, ``{E}fficient {R}ail-to-{R}ail {I}/{O} {O}p {A}mps.'' Dostupné z:
   \url{https://www.analog.com/media/en/technical-documentation/data-sheets/625234fc.pdf}.
 
+\bibitem{TrackLab}
+P.~Mánek, P.~Burian, E.~David-Bosne, P.~Smolyanskiy, and B.~Bergmann, ``Track
+  lab: extensible data acquisition software for fast pixel detectors, online
+  analysis and automation,'' {\em Journal of Instrumentation}, vol.~19,
+  p.~C01008, jan 2024.
+
 \end{thebibliography}
