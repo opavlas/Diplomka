@@ -13,6 +13,10 @@ Repeated entry---line 464 of file references.bib
  : @misc{LTC6252
  :              ,
 I'm skipping whatever remains of this entry
+Repeated entry---line 472 of file references.bib
+ : @misc{Advacam
+ :              ,
+I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "TMP100"
 Warning--empty author in LVDS
 You've used 29 entries,
@@ -56,4 +60,4 @@ warning$ -- 1
 while$ -- 42
 width$ -- 31
 write$ -- 252
-(There was 1 error message)
+(There were 2 error messages)

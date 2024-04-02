@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.5.22)  25 MAR 2024 18:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.5.22)  2 APR 2024 23:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -984,7 +984,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 \c@lstlisting=\count365
-<./ObrazkyDP//symbol.jpg, id=206, 142.25145pt x 142.25145pt>
+<./ObrazkyDP//symbol.jpg, id=202, 142.25145pt x 142.25145pt>
 File: ./ObrazkyDP//symbol.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//symbol.jpg>
 Package pdftex.def Info: ./ObrazkyDP//symbol.jpg  used on input line 107.
@@ -1100,36 +1100,39 @@ l.1 \chapter
 ]
 Kapitola 2.
 
-Underfull \hbox (badness 1688) in paragraph at lines 8--9
+Underfull \hbox (badness 1688) in paragraph at lines 9--10
 []\OT1/cmr/m/n/10.95 Senzorova vrstva je tvorena polovodicovym materialem.
  Dulezitymi parametry
  []
 
-<./ObrazkyDP//Timepix.png, id=428, 544.85295pt x 295.99278pt>
+<./ObrazkyDP//Timepix.png, id=424, 544.85295pt x 295.99278pt>
 File: ./ObrazkyDP//Timepix.png Graphic file (type png)
 <use ./ObrazkyDP//Timepix.png>
-Package pdftex.def Info: ./ObrazkyDP//Timepix.png  used on input line 13.
+Package pdftex.def Info: ./ObrazkyDP//Timepix.png  used on input line 14.
 (pdftex.def)             Requested size: 299.67004pt x 162.79652pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.17 
+l.18 
       [2
 
 ]
-<./ObrazkyDP//usb_lite.jpg, id=443, 296.62122pt x 201.72757pt>
+<./ObrazkyDP//usb_lite.jpg, id=439, 296.62122pt x 201.72757pt>
 File: ./ObrazkyDP//usb_lite.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//usb_lite.jpg>
-Package pdftex.def Info: ./ObrazkyDP//usb_lite.jpg  used on input line 26.
+Package pdftex.def Info: ./ObrazkyDP//usb_lite.jpg  used on input line 28.
 (pdftex.def)             Requested size: 163.14217pt x 110.9505pt.
-<./ObrazkyDP//sprinter.jpg, id=447, 412.88165pt x 298.50652pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ObrazkyDP//sprinter.jpg, id=444, 412.88165pt x 298.50652pt>
 File: ./ObrazkyDP//sprinter.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//sprinter.jpg>
-Package pdftex.def Info: ./ObrazkyDP//sprinter.jpg  used on input line 36.
+Package pdftex.def Info: ./ObrazkyDP//sprinter.jpg  used on input line 38.
 (pdftex.def)             Requested size: 227.0856pt x 164.17908pt.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1138,19 +1141,26 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[3 <./ObrazkyDP//Timepix.png> <./ObrazkyDP//usb_lite.jpg>]
-<./ObrazkyDP//Katherine2.jpg, id=460, 311.07521pt x 196.70009pt>
+[3 <./ObrazkyDP//Timepix.png>]
+<./ObrazkyDP//Katherine2.jpg, id=459, 311.07521pt x 196.70009pt>
 File: ./ObrazkyDP//Katherine2.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//Katherine2.jpg>
-Package pdftex.def Info: ./ObrazkyDP//Katherine2.jpg  used on input line 47.
+Package pdftex.def Info: ./ObrazkyDP//Katherine2.jpg  used on input line 49.
 (pdftex.def)             Requested size: 233.30583pt x 147.52469pt.
-<./ObrazkyDP//tpx2_floorplan.png, id=472, 439.27591pt x 431.7347pt>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ObrazkyDP//tpx2_floorplan.png, id=471, 439.27591pt x 431.7347pt>
 File: ./ObrazkyDP//tpx2_floorplan.png Graphic file (type png)
 <use ./ObrazkyDP//tpx2_floorplan.png>
-Package pdftex.def Info: ./ObrazkyDP//tpx2_floorplan.png  used on input line 62
+Package pdftex.def Info: ./ObrazkyDP//tpx2_floorplan.png  used on input line 64
 .
 (pdftex.def)             Requested size: 351.42119pt x 345.38821pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1159,9 +1169,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[4 <./ObrazkyDP//sprinter.jpg> <./ObrazkyDP//Katherine2.jpg>]
-Underfull \vbox (badness 4608) has occurred while \output is active []
+[4 <./ObrazkyDP//usb_lite.jpg> <./ObrazkyDP//sprinter.jpg>]
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 74--75
+\OT1/cmr/m/n/10.95 vysokemu napet. Pokud je vystupn signal vets ne
+z dana nastavena uroven, je
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1171,26 +1187,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[5 <./ObrazkyDP//tpx2_floorplan.png>]
-<./ObrazkyDP//tpx2_cel.jpg, id=499, 615.86609pt x 287.82314pt>
+[5 <./ObrazkyDP//Katherine2.jpg>]
+<./ObrazkyDP//tpx2_cel.jpg, id=497, 615.86609pt x 287.82314pt>
 File: ./ObrazkyDP//tpx2_cel.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//tpx2_cel.jpg>
-Package pdftex.def Info: ./ObrazkyDP//tpx2_cel.jpg  used on input line 78.
+Package pdftex.def Info: ./ObrazkyDP//tpx2_cel.jpg  used on input line 80.
 (pdftex.def)             Requested size: 431.10332pt x 201.47481pt.
 
-Overfull \hbox (4.31198pt too wide) in paragraph at lines 78--79
+Overfull \hbox (4.31198pt too wide) in paragraph at lines 80--81
  [][] 
  []
 
 
-Underfull \hbox (badness 2941) in paragraph at lines 74--82
-[]\OT1/cmr/m/n/10.95 Pokud je povolen rezim adaptivnho zeslen zpetne v
-azba CSA je tvorena
+Underfull \hbox (badness 2409) in paragraph at lines 76--84
+[]\OT1/cmr/m/n/10.95 Pokud je povolen rezim adaptivnho zeslen, zpetna 
+vazba CSA je tvorena
  []
 
 
-Underfull \vbox (badness 1521) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1200,14 +1215,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[6 <./ObrazkyDP//tpx2_cel.jpg>]
-<./ObrazkyDP//modes.jpg, id=510, 678.70956pt x 404.712pt>
+[6 <./ObrazkyDP//tpx2_floorplan.png>]
+<./ObrazkyDP//modes.jpg, id=509, 678.70956pt x 404.712pt>
 File: ./ObrazkyDP//modes.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//modes.jpg>
 Package pdftex.def Info: ./ObrazkyDP//modes.jpg  used on input line 101.
 (pdftex.def)             Requested size: 305.41649pt x 182.11871pt.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1215,19 +1233,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[7 <./ObrazkyDP//modes.jpg>]
-Underfull \hbox (badness 1939) in paragraph at lines 111--112
-[]\OT1/cmr/m/n/10.95 Prkladem pouzit digitalnch modu muze byt zp
+[7 <./ObrazkyDP//tpx2_cel.jpg>]
+Underfull \hbox (badness 1817) in paragraph at lines 108--110
+[]\OT1/cmr/m/n/10.95 Prkladem pouzit digitalnho modu muze byt zp
 usob meren energie, kterou
  []
 
-<./ObrazkyDP//SLVS_LVDS.png, id=532, 484.52322pt x 179.10391pt>
-File: ./ObrazkyDP//SLVS_LVDS.png Graphic file (type png)
-<use ./ObrazkyDP//SLVS_LVDS.png>
-Package pdftex.def Info: ./ObrazkyDP//SLVS_LVDS.png  used on input line 122.
-(pdftex.def)             Requested size: 266.48859pt x 98.50745pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 1466) in paragraph at lines 108--110
+\OT1/cmr/m/n/10.95 Nasledne pocet namerenych hodinovych pulsu odpovd
+a casu, pro ktery hodnota
+ []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1241,7 +1257,16 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[8]
+[8 <./ObrazkyDP//modes.jpg>]
+<./ObrazkyDP//SLVS_LVDS.png, id=537, 484.52322pt x 179.10391pt>
+File: ./ObrazkyDP//SLVS_LVDS.png Graphic file (type png)
+<use ./ObrazkyDP//SLVS_LVDS.png>
+Package pdftex.def Info: ./ObrazkyDP//SLVS_LVDS.png  used on input line 124.
+(pdftex.def)             Requested size: 266.48859pt x 98.50745pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1251,10 +1276,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9 <./ObrazkyDP//SLVS_LVDS.png>]
-<./ObrazkyDP//rychlosti.jpg, id=560, 536.05487pt x 179.10391pt>
+<./ObrazkyDP//rychlosti.jpg, id=558, 536.05487pt x 179.10391pt>
 File: ./ObrazkyDP//rychlosti.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//rychlosti.jpg>
-Package pdftex.def Info: ./ObrazkyDP//rychlosti.jpg  used on input line 160.
+Package pdftex.def Info: ./ObrazkyDP//rychlosti.jpg  used on input line 157.
 (pdftex.def)             Requested size: 348.43153pt x 116.41615pt.
 
 
@@ -1266,11 +1291,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [10 <./ObrazkyDP//rychlosti.jpg>]
-<./ObrazkyDP//bga.jpg, id=575, 575.01782pt x 313.58896pt>
+<./ObrazkyDP//bga.jpg, id=573, 575.01782pt x 313.58896pt>
 File: ./ObrazkyDP//bga.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//bga.jpg>
-Package pdftex.def Info: ./ObrazkyDP//bga.jpg  used on input line 177.
+Package pdftex.def Info: ./ObrazkyDP//bga.jpg  used on input line 173.
 (pdftex.def)             Requested size: 316.26077pt x 172.47444pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ) (Kapitoly/kap3.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1280,28 +1309,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11 <./ObrazkyDP//bga.jpg>]
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[12 <./ObrazkyDP//bga.jpg>]
 Kapitola 3.
-<./ObrazkyDP//navrh_reseni.jpg, id=590, 514.05965pt x 238.80522pt>
+<./ObrazkyDP//navrh_reseni.jpg, id=592, 512.80278pt x 238.80522pt>
 File: ./ObrazkyDP//navrh_reseni.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//navrh_reseni.jpg>
-Package pdftex.def Info: ./ObrazkyDP//navrh_reseni.jpg  used on input line 17.
-(pdftex.def)             Requested size: 411.24828pt x 191.04442pt.
+Package pdftex.def Info: ./ObrazkyDP//navrh_reseni.jpg  used on input line 15.
+(pdftex.def)             Requested size: 410.24278pt x 191.04442pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4686) has occurred while \output is active []
 
- [12
+ [13
 
 ]
-Underfull \hbox (badness 3635) in paragraph at lines 30--31
+Underfull \hbox (badness 3635) in paragraph at lines 28--29
 []\OT1/cmr/m/n/10.95 Dalsm potrebnym napajenm potrebnym pro navrzen
 y koncept je napajen
  []
 
 )
+Underfull \vbox (badness 3179) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1310,7 +1351,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[13 <./ObrazkyDP//navrh_reseni.jpg>] (Kapitoly/kap4.tex
+[14 <./ObrazkyDP//navrh_reseni.jpg>] (Kapitoly/kap4.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1319,9 +1360,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[14]
+[15]
 Kapitola 4.
-<./ObrazkyDP//PCB_mother_stackup.jpg, id=614, 321.7586pt x 254.51608pt>
+<./ObrazkyDP//PCB_mother_stackup.jpg, id=617, 321.7586pt x 254.51608pt>
 File: ./ObrazkyDP//PCB_mother_stackup.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//PCB_mother_stackup.jpg>
 Package pdftex.def Info: ./ObrazkyDP//PCB_mother_stackup.jpg  used on input lin
@@ -1338,13 +1379,13 @@ Overfull \hbox (20.48808pt too wide) in paragraph at lines 26--38
  []
 
 
-LaTeX Warning: Reference `konektor' on page 15 undefined on input line 61.
+LaTeX Warning: Reference `konektor' on page 16 undefined on input line 61.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//mp2333h.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//mp2333h.pdf, id=619, 794.97pt x 614.295pt>
+<./ObrazkyDP//mp2333h.pdf, id=622, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//mp2333h.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//mp2333h.pdf>
 Package pdftex.def Info: ./ObrazkyDP//mp2333h.pdf  used on input line 65.
@@ -1352,27 +1393,18 @@ Package pdftex.def Info: ./ObrazkyDP//mp2333h.pdf  used on input line 65.
 
 Underfull \vbox (badness 1708) has occurred while \output is active []
 
- [15
+ [16
 
 ]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ObrazkyDP//napajeci_sekvence.jpg, id=626, 480.75261pt x 95.52208pt>
+<./ObrazkyDP//napajeci_sekvence.jpg, id=628, 480.75261pt x 95.52208pt>
 File: ./ObrazkyDP//napajeci_sekvence.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//napajeci_sekvence.jpg>
 Package pdftex.def Info: ./ObrazkyDP//napajeci_sekvence.jpg  used on input line
  74.
 (pdftex.def)             Requested size: 384.6026pt x 76.41776pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[16 <./ObrazkyDP//PCB_mother_stackup.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1381,8 +1413,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[17 <./ObrazkyDP//mp2333h.pdf> <./ObrazkyDP//napajeci_sekvence.jpg>]
-<./ObrazkyDP//napajeci_sekvence_real.png, id=663, 642.4pt x 481.8pt>
+[17 <./ObrazkyDP//PCB_mother_stackup.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[18 <./ObrazkyDP//mp2333h.pdf> <./ObrazkyDP//napajeci_sekvence.jpg>]
+<./ObrazkyDP//napajeci_sekvence_real.png, id=666, 642.4pt x 481.8pt>
 File: ./ObrazkyDP//napajeci_sekvence_real.png Graphic file (type png)
 <use ./ObrazkyDP//napajeci_sekvence_real.png>
 Package pdftex.def Info: ./ObrazkyDP//napajeci_sekvence_real.png  used on input
@@ -1396,13 +1437,13 @@ electronics, presneji
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[18 <./ObrazkyDP//napajeci_sekvence_real.png>]
+[19 <./ObrazkyDP//napajeci_sekvence_real.png>]
 Underfull \hbox (badness 1755) in paragraph at lines 115--116
 \OT1/cmr/m/n/10.95 bylo zmneno, ze Timepix 2, dokaze komunikovat po seri
 ove lince s maximaln
@@ -1420,13 +1461,13 @@ Underfull \hbox (badness 1502) in paragraph at lines 117--118
 dy za-potreb pri navrhu USB
  []
 
-<./ObrazkyDP//STM32CubeIde.jpg, id=678, 288.45157pt x 304.16243pt>
+<./ObrazkyDP//STM32CubeIde.jpg, id=681, 288.45157pt x 304.16243pt>
 File: ./ObrazkyDP//STM32CubeIde.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//STM32CubeIde.jpg>
 Package pdftex.def Info: ./ObrazkyDP//STM32CubeIde.jpg  used on input line 127.
 
 (pdftex.def)             Requested size: 173.07227pt x 182.49886pt.
-<./ObrazkyDP//STM32_napajeni.jpg, id=679, 374.54713pt x 477.61043pt>
+<./ObrazkyDP//STM32_napajeni.jpg, id=682, 374.54713pt x 477.61043pt>
 File: ./ObrazkyDP//STM32_napajeni.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//STM32_napajeni.jpg>
 Package pdftex.def Info: ./ObrazkyDP//STM32_napajeni.jpg  used on input line 13
@@ -1450,26 +1491,26 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[19]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[20 <./ObrazkyDP//STM32CubeIde.jpg> <./ObrazkyDP//STM32_napajeni.jpg>]
-<./ObrazkyDP//hodinovy_signal.jpg, id=694, 597.64148pt x 217.43843pt>
+[20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[21 <./ObrazkyDP//STM32CubeIde.jpg> <./ObrazkyDP//STM32_napajeni.jpg>]
+<./ObrazkyDP//hodinovy_signal.jpg, id=698, 597.64148pt x 217.43843pt>
 File: ./ObrazkyDP//hodinovy_signal.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//hodinovy_signal.jpg>
 Package pdftex.def Info: ./ObrazkyDP//hodinovy_signal.jpg  used on input line 1
@@ -1478,31 +1519,31 @@ Package pdftex.def Info: ./ObrazkyDP//hodinovy_signal.jpg  used on input line 1
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[21 <./ObrazkyDP//hodinovy_signal.jpg>]
-
-pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//SPI.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//SPI.pdf, id=708, 614.295pt x 794.97pt>
-File: ./ObrazkyDP//SPI.pdf Graphic file (type pdf)
-<use ./ObrazkyDP//SPI.pdf>
-Package pdftex.def Info: ./ObrazkyDP//SPI.pdf  used on input line 199.
-(pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[22 <./ObrazkyDP//SPI.pdf>]
-<./ObrazkyDP//programator.jpg, id=738, 502.74783pt x 143.28313pt>
+[22 <./ObrazkyDP//hodinovy_signal.jpg>]
+
+pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//SPI.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<./ObrazkyDP//SPI.pdf, id=711, 614.295pt x 794.97pt>
+File: ./ObrazkyDP//SPI.pdf Graphic file (type pdf)
+<use ./ObrazkyDP//SPI.pdf>
+Package pdftex.def Info: ./ObrazkyDP//SPI.pdf  used on input line 199.
+(pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[23 <./ObrazkyDP//SPI.pdf>]
+<./ObrazkyDP//programator.jpg, id=741, 502.74783pt x 143.28313pt>
 File: ./ObrazkyDP//programator.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//programator.jpg>
 Package pdftex.def Info: ./ObrazkyDP//programator.jpg  used on input line 217.
@@ -1512,7 +1553,7 @@ Overfull \hbox (27.92055pt too wide) in paragraph at lines 217--218
  [][] 
  []
 
-<./ObrazkyDP//konverzni_deska.jpg, id=739, 559.30696pt x 345.0107pt>
+<./ObrazkyDP//konverzni_deska.jpg, id=742, 559.30696pt x 345.0107pt>
 File: ./ObrazkyDP//konverzni_deska.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//konverzni_deska.jpg>
 Package pdftex.def Info: ./ObrazkyDP//konverzni_deska.jpg  used on input line 2
@@ -1529,7 +1570,7 @@ Underfull \hbox (badness 1152) in paragraph at lines 212--231
 uzit programovacho
  []
 
-<./ObrazkyDP//ST_TOP.jpg, id=743, 468.81235pt x 439.27591pt>
+<./ObrazkyDP//ST_TOP.jpg, id=746, 468.81235pt x 439.27591pt>
 File: ./ObrazkyDP//ST_TOP.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//ST_TOP.jpg>
 Package pdftex.def Info: ./ObrazkyDP//ST_TOP.jpg  used on input line 239.
@@ -1539,12 +1580,12 @@ Overfull \hbox (12.60608pt too wide) in paragraph at lines 239--240
  [][] 
  []
 
-<./ObrazkyDP//ST_PWR.jpg, id=744, 386.4874pt x 478.86731pt>
+<./ObrazkyDP//ST_PWR.jpg, id=747, 386.4874pt x 478.86731pt>
 File: ./ObrazkyDP//ST_PWR.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//ST_PWR.jpg>
 Package pdftex.def Info: ./ObrazkyDP//ST_PWR.jpg  used on input line 246.
 (pdftex.def)             Requested size: 115.94711pt x 143.6613pt.
-<./ObrazkyDP//ST_BOT.jpg, id=745, 473.2114pt x 458.12895pt>
+<./ObrazkyDP//ST_BOT.jpg, id=748, 473.2114pt x 458.12895pt>
 File: ./ObrazkyDP//ST_BOT.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//ST_BOT.jpg>
 Package pdftex.def Info: ./ObrazkyDP//ST_BOT.jpg  used on input line 253.
@@ -1556,30 +1597,30 @@ Overfull \hbox (13.92581pt too wide) in paragraph at lines 253--254
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[23 <./ObrazkyDP//programator.jpg> <./ObrazkyDP//konverzni_deska.jpg>]
-Underfull \vbox (badness 1024) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[24 <./ObrazkyDP//ST_TOP.jpg> <./ObrazkyDP//ST_PWR.jpg> <./ObrazkyDP//ST_BOT.jp
+[24 <./ObrazkyDP//programator.jpg> <./ObrazkyDP//konverzni_deska.jpg>]
+Underfull \vbox (badness 1024) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[25 <./ObrazkyDP//ST_TOP.jpg> <./ObrazkyDP//ST_PWR.jpg> <./ObrazkyDP//ST_BOT.jp
 g>]
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//sub_lvds_slvs.pdf): PDF inclusi
 on: found PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//sub_lvds_slvs.pdf, id=769, 794.97pt x 614.295pt>
+<./ObrazkyDP//sub_lvds_slvs.pdf, id=772, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//sub_lvds_slvs.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//sub_lvds_slvs.pdf>
 Package pdftex.def Info: ./ObrazkyDP//sub_lvds_slvs.pdf  used on input line 294
@@ -1595,14 +1636,14 @@ Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 299.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[25]
-<./ObrazkyDP//odpor_sit.jpg, id=795, 272.11226pt x 253.25922pt>
+[26]
+<./ObrazkyDP//odpor_sit.jpg, id=798, 272.11226pt x 253.25922pt>
 File: ./ObrazkyDP//odpor_sit.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//odpor_sit.jpg>
 Package pdftex.def Info: ./ObrazkyDP//odpor_sit.jpg  used on input line 320.
@@ -1617,14 +1658,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[26 <./ObrazkyDP//sub_lvds_slvs.pdf>]
-<./ObrazkyDP//USBC_full.jpg, id=813, 405.34044pt x 158.36557pt>
+[27 <./ObrazkyDP//sub_lvds_slvs.pdf>]
+<./ObrazkyDP//USBC_full.jpg, id=817, 405.34044pt x 158.36557pt>
 File: ./ObrazkyDP//USBC_full.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//USBC_full.jpg>
 Package pdftex.def Info: ./ObrazkyDP//USBC_full.jpg  used on input line 333.
@@ -1633,7 +1674,7 @@ Package pdftex.def Info: ./ObrazkyDP//USBC_full.jpg  used on input line 333.
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//usbc.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//usbc.pdf, id=817, 794.97pt x 614.295pt>
+<./ObrazkyDP//usbc.pdf, id=821, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//usbc.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//usbc.pdf>
 Package pdftex.def Info: ./ObrazkyDP//usbc.pdf  used on input line 344.
@@ -1645,23 +1686,23 @@ Overfull \hbox (50.19435pt too wide) in paragraph at lines 344--345
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[27 <./ObrazkyDP//odpor_sit.jpg> <./ObrazkyDP//USBC_full.jpg>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[28 <./ObrazkyDP//usbc.pdf>]
-<./ObrazkyDP//usb_hs_top.jpg, id=859, 649.80156pt x 328.67139pt>
+[28 <./ObrazkyDP//odpor_sit.jpg> <./ObrazkyDP//USBC_full.jpg>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[29 <./ObrazkyDP//usbc.pdf>]
+<./ObrazkyDP//usb_hs_top.jpg, id=862, 649.80156pt x 328.67139pt>
 File: ./ObrazkyDP//usb_hs_top.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//usb_hs_top.jpg>
 Package pdftex.def Info: ./ObrazkyDP//usb_hs_top.jpg  used on input line 357.
@@ -1671,7 +1712,7 @@ Overfull \hbox (1.03952pt too wide) in paragraph at lines 357--358
  [][] 
  []
 
-<./ObrazkyDP//usb_hs_bot.jpg, id=860, 647.28783pt x 321.7586pt>
+<./ObrazkyDP//usb_hs_bot.jpg, id=863, 647.28783pt x 321.7586pt>
 File: ./ObrazkyDP//usb_hs_bot.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//usb_hs_bot.jpg>
 Package pdftex.def Info: ./ObrazkyDP//usb_hs_bot.jpg  used on input line 364.
@@ -1689,11 +1730,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[29 <./ObrazkyDP//usb_hs_top.jpg> <./ObrazkyDP//usb_hs_bot.jpg>]
+[30 <./ObrazkyDP//usb_hs_top.jpg> <./ObrazkyDP//usb_hs_bot.jpg>]
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//tpx_pwr.pdf): PDF inclusion: fo
 und PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//tpx_pwr.pdf, id=875, 794.97pt x 614.295pt>
+<./ObrazkyDP//tpx_pwr.pdf, id=878, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//tpx_pwr.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//tpx_pwr.pdf>
 Package pdftex.def Info: ./ObrazkyDP//tpx_pwr.pdf  used on input line 387.
@@ -1703,7 +1744,7 @@ Overfull \hbox (50.19435pt too wide) in paragraph at lines 387--388
  [][] 
  []
 
-<./ObrazkyDP//tpx_wire.png, id=879, 476.982pt x 135.74191pt>
+<./ObrazkyDP//tpx_wire.png, id=882, 476.982pt x 135.74191pt>
 File: ./ObrazkyDP//tpx_wire.png Graphic file (type png)
 <use ./ObrazkyDP//tpx_wire.png>
 Package pdftex.def Info: ./ObrazkyDP//tpx_wire.png  used on input line 397.
@@ -1720,7 +1761,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[30 <./ObrazkyDP//tpx_pwr.pdf>]
+[31 <./ObrazkyDP//tpx_pwr.pdf>]
 Underfull \hbox (badness 3179) in paragraph at lines 405--406
 \OT1/cmr/m/n/10.95 Analog Devices, konkretne byla pouzita soucastka MAX193
 2 [[]]. Jedna se o
@@ -1730,7 +1771,7 @@ Underfull \hbox (badness 3179) in paragraph at lines 405--406
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//hv.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//hv.pdf, id=908, 794.97pt x 614.295pt>
+<./ObrazkyDP//hv.pdf, id=911, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//hv.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//hv.pdf>
 Package pdftex.def Info: ./ObrazkyDP//hv.pdf  used on input line 420.
@@ -1744,13 +1785,13 @@ Overfull \hbox (50.19435pt too wide) in paragraph at lines 420--421
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `TMP100' on page 31 undefined on input line 429.
+LaTeX Warning: Citation `TMP100' on page 32 undefined on input line 429.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//temp.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//temp.pdf, id=912, 794.97pt x 614.295pt>
+<./ObrazkyDP//temp.pdf, id=915, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//temp.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//temp.pdf>
 Package pdftex.def Info: ./ObrazkyDP//temp.pdf  used on input line 433.
@@ -1763,7 +1804,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[31 <./ObrazkyDP//tpx_wire.png>]
+[32 <./ObrazkyDP//tpx_wire.png>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1771,7 +1812,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//conn.pdf): PDF inclusion: found
  PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//conn.pdf, id=928, 794.97pt x 614.295pt>
+<./ObrazkyDP//conn.pdf, id=931, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//conn.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//conn.pdf>
 Package pdftex.def Info: ./ObrazkyDP//conn.pdf  used on input line 442.
@@ -1784,7 +1825,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[32 <./ObrazkyDP//hv.pdf>]) (Kapitoly/kap5.tex
+[33 <./ObrazkyDP//hv.pdf>]) (Kapitoly/kap5.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1793,10 +1834,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[33 <./ObrazkyDP//temp.pdf> <./ObrazkyDP//conn.pdf>]
+[34 <./ObrazkyDP//temp.pdf> <./ObrazkyDP//conn.pdf>]
 Kapitola 5.
 <./ObrazkyDP//./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.png, i
-d=980, 642.4pt x 481.8pt>
+d=984, 642.4pt x 481.8pt>
 File: ./ObrazkyDP//./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.p
 ng Graphic file (type png)
 <use ./ObrazkyDP//./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.pn
@@ -1804,7 +1845,7 @@ g>
 Package pdftex.def Info: ./ObrazkyDP//./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1
 V2 - CH1, 2x 47uF.png  used on input line 12.
 (pdftex.def)             Requested size: 256.95544pt x 192.71658pt.
-<./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png, id=981, 642.4pt x 481.8pt>
+<./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png, id=985, 642.4pt x 481.8pt>
 File: ./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png Graphic file (type png)
 <use ./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png>
 Package pdftex.def Info: ./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png  used o
@@ -1817,7 +1858,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP//./Mereni/hv_hex_small.pdf): PDF
  inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP//./Mereni/hv_hex_small.pdf, id=987, 794.97pt x 614.295pt>
+<./ObrazkyDP//./Mereni/hv_hex_small.pdf, id=991, 794.97pt x 614.295pt>
 File: ./ObrazkyDP//./Mereni/hv_hex_small.pdf Graphic file (type pdf)
 <use ./ObrazkyDP//./Mereni/hv_hex_small.pdf>
 Package pdftex.def Info: ./ObrazkyDP//./Mereni/hv_hex_small.pdf  used on input 
@@ -1826,7 +1867,7 @@ line 32.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [34
+ [35
 
  <./ObrazkyDP//./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.png>]
 
@@ -1841,9 +1882,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[35 <./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png> <./ObrazkyDP//./Mereni/hv_
+[36 <./ObrazkyDP//./Mereni/vout 3V3 & 2V5 & 1V2.png> <./ObrazkyDP//./Mereni/hv_
 hex_small.pdf>]
-<./ObrazkyDP//teplota diagram.jpg, id=1002, 375.804pt x 215.55313pt>
+<./ObrazkyDP//teplota diagram.jpg, id=1006, 375.804pt x 215.55313pt>
 File: ./ObrazkyDP//teplota diagram.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//teplota diagram.jpg>
 Package pdftex.def Info: ./ObrazkyDP//teplota diagram.jpg  used on input line 4
@@ -1875,13 +1916,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[36 <./ObrazkyDP//teplota diagram.jpg>]
-<./ObrazkyDP//tpx2_temp.jpg, id=1022, 514.05965pt x 290.9653pt>
+[37 <./ObrazkyDP//teplota diagram.jpg>]
+<./ObrazkyDP//tpx2_temp.jpg, id=1026, 514.05965pt x 290.9653pt>
 File: ./ObrazkyDP//tpx2_temp.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//tpx2_temp.jpg>
 Package pdftex.def Info: ./ObrazkyDP//tpx2_temp.jpg  used on input line 71.
 (pdftex.def)             Requested size: 257.02919pt x 145.48228pt.
-<./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png, id=1029, 642.4pt x 481.8pt>
+<./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png, id=1033, 642.4pt x 481.8pt>
 File: ./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png Graphic file (type png)
 <use ./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png>
 Package pdftex.def Info: ./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png  used on i
@@ -1896,7 +1937,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[37 <./ObrazkyDP//tpx2_temp.jpg> <./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png>]
+[38 <./ObrazkyDP//tpx2_temp.jpg> <./ObrazkyDP//./Mereni/MCLOCK_DIFF_PROBE.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1905,7 +1946,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[38]
+[39]
 File: ./ObrazkyDP//tpx2_temp.jpg Graphic file (type jpg)
 <use ./ObrazkyDP//tpx2_temp.jpg>
 Package pdftex.def Info: ./ObrazkyDP//tpx2_temp.jpg  used on input line 122.
@@ -1921,13 +1962,13 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ) (Kapitoly/kap6.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[39]
+[40]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1936,9 +1977,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[40]
+[41]
 Kapitola 6.
-) [41
+) [42
 
 ]
 \openout2 = `literatura.aux'.
@@ -1949,7 +1990,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--29
 9b52d5fbe242f & pid =
  []
 
-[42
+[43
 
 
 ]
@@ -2002,7 +2043,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[43]
+[44]
 Underfull \hbox (badness 10000) in paragraph at lines 114--117
 \OT1/cmtt/m/n/10.95 www . monolithicpower . com / en / documentview / productdo
 cument / index / version /
@@ -2023,69 +2064,69 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[44]
+[45]
 \openout2 = `zkratky.aux'.
 
- (zkratky.tex [45
+ (zkratky.tex [46
 
 
 
 
-]) [46
+]) [47
 
 ]
-<./zadani.pdf, id=1122, 597.50829pt x 845.0471pt>
+<./zadani.pdf, id=1126, 597.50829pt x 845.0471pt>
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf>
-Package pdftex.def Info: ./zadani.pdf  used on input line 180.
+Package pdftex.def Info: ./zadani.pdf  used on input line 182.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf>
-Package pdftex.def Info: ./zadani.pdf  used on input line 180.
+Package pdftex.def Info: ./zadani.pdf  used on input line 182.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<./zadani.pdf, id=1125, page=1, 597.50829pt x 845.0471pt>
+<./zadani.pdf, id=1129, page=1, 597.50829pt x 845.0471pt>
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
-Package pdftex.def Info: ./zadani.pdf , page1 used on input line 180.
+Package pdftex.def Info: ./zadani.pdf , page1 used on input line 182.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
-Package pdftex.def Info: ./zadani.pdf , page1 used on input line 180.
+Package pdftex.def Info: ./zadani.pdf , page1 used on input line 182.
 (pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
-Package pdftex.def Info: ./zadani.pdf , page1 used on input line 180.
+Package pdftex.def Info: ./zadani.pdf , page1 used on input line 182.
 (pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
-Package pdftex.def Info: ./zadani.pdf , page1 used on input line 180.
+Package pdftex.def Info: ./zadani.pdf , page1 used on input line 182.
 (pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
 
 P\v {r}\'{\i }loha A.
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
-Package pdftex.def Info: ./zadani.pdf , page1 used on input line 180.
+Package pdftex.def Info: ./zadani.pdf , page1 used on input line 182.
 (pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
-[47
+[48
 
 
 
  <./zadani.pdf>]
 P\v {r}\'{\i }loha B.
-[48
+[49
 
 ] (DP_main.aux (literatura.aux) (zkratky.aux))
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `DP_main.out' has not changed.
-(rerunfilecheck)             Checksum: EC576FEB916F79D4B44DA57291E0AD8A;7761.
+(rerunfilecheck)             Checksum: 3B419012BAD3C91576C4B21B3A9AFFE4;7587.
  ) 
 Here is how much of TeX's memory you used:
- 28564 strings out of 478659
- 506129 string characters out of 2855777
- 1232608 words of memory out of 3000000
- 45827 multiletter control sequences out of 15000+600000
+ 28562 strings out of 478659
+ 506097 string characters out of 2855777
+ 1232604 words of memory out of 3000000
+ 45824 multiletter control sequences out of 15000+600000
  414892 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,18n,92p,1502b,1334s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2102,9 +2143,9 @@ X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
 onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
 9.pfb>
-Output written on DP_main.pdf (58 pages, 4495311 bytes).
+Output written on DP_main.pdf (59 pages, 4501586 bytes).
 PDF statistics:
- 1296 PDF objects out of 1440 (max. 8388607)
- 240 named destinations out of 1000 (max. 500000)
- 643 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1301 PDF objects out of 1440 (max. 8388607)
+ 241 named destinations out of 1000 (max. 500000)
+ 635 words of extra memory for PDF output out of 10000 (max. 10000000)
 
