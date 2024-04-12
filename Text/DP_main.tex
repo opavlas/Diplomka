@@ -1,4 +1,4 @@
-\documentclass[twoside, 11pt]{report}
+\documentclass[twoside, 11pt, openany]{report}
 \usepackage[a4paper,width=150mm,top=25mm,bottom=25mm,bindingoffset=6mm, hcentering]{geometry}
 \usepackage[czech]{babel}
 
@@ -177,11 +177,19 @@
 % TODO edit zkratky
 \include{zkratky}
 % TODO include zadnání diplomky plus prilohy (viz. BP)
-\appendix
 
+\appendix
 \includepdf[scale=0.7, offset=20 -80,pages=1,pagecommand=\chapter{Zadání Diplomové práce}]{./zadani.pdf}
-\chapter{Základní deska}
+
+%todo davat obe prilohy?
+\includepdf[scale=0.7, offset=20 -80,pages=1,pagecommand=\chapter{Základní deska}]{./ObrazkyDP/tpx2min_v2.PDF}
+\includepdf[scale=0.9,fitpaper, page= {1-}]{./ObrazkyDP/tpx2min_v2.PDF}
 \label{Priloha základní deska}
+
+\includepdf[scale=0.7, offset=20 -80,pages=1,pagecommand=\chapter{Deska s Timepix 2}]{./ObrazkyDP/tpx2min_chipboard_v2.PDF}
+\includepdf[scale=0.9,fitpaper, page= {1-}]{./ObrazkyDP/tpx2min_chipboard_v2.PDF}
+\label{Priloha eska s Timepix 2}
+
 
 	
 \end{document}

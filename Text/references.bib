@@ -362,6 +362,8 @@
 	abstract = {The semiconductor pixel detector Timepix (256×256 pixels with pitch of 55μm) is a successor of the Medipix2 device. Each Timepix pixel can be independently operated in one of three possible modes: (1) counting of the detected particles; (2) measurement of the particle energy; and (3) measurement of the time of interaction. The energy measurement in the second mode is performed via the determination of the “time-over-threshold” (TOT). The energy measurement with the Timepix detector in TOT mode requires knowledge of the energy calibration of each pixel of the matrix. Such calibration is very nonlinear in the low energy range and can be described by a surrogate function depending on four parameters. The determination of all these parameters can be performed by measurement and evaluation of the response of each pixel in at least four calibration points. The procedure is extremely demanding: it requires the analysis of at least 250 thousand spectra and the performance of 330 thousand least-squares fits. In this article, it is demonstrated that even better result can be achieved with only two or three calibration points halving the number of least-squares fits needed. The method is based on precise analysis of the shape of spectral peaks. The article also discusses the performance of energy calibrated device for spectrometry of heavy charged particles.}
 }
 
+
+
 @misc{Timepix_500um_Pospisil,
 	author = {Stanislav Pospisil},
 	title = {{T}imePix hybrid pixels detectors for
@@ -472,7 +474,24 @@
 @misc{Advacam,
 	author = {Advacam},
 	title = {{W}eb presentation of the {A}dvacam},
-	howpublished = {Dostupné z:  \url{https://advacam.com/}}},
+	howpublished = {Dostupné z:  \url{https://advacam.com/}},
 }
+@article{Manek_2024,
+	doi = {10.1088/1748-0221/19/01/C01008},
+	url = {https://dx.doi.org/10.1088/1748-0221/19/01/C01008},
+	year = {2024},
+	month = {jan},
+	publisher = {IOP Publishing},
+	volume = {19},
+	number = {01},
+	pages = {C01008},
+	author = {P. Mánek and P. Burian and E. David-Bosne and P. Smolyanskiy and B. Bergmann},
+	title = {Track Lab: extensible data acquisition software for fast pixel detectors, online analysis and automation},
+	journal = {Journal of Instrumentation},
+	abstract = {Fast, incremental evolution of physics instrumentation raises the question of efficient software abstraction and transferability of algorithms across similar technologies. This contribution aims to provide an answer by introducing Track Lab, a modern data acquisition program focusing on extensibility and high performance. Shipping with documented API and more than 20 standard modules, Track Lab allows complex analysis pipelines to be constructed from simple, reusable building blocks. Thanks to multi-threaded infrastructure, data can be clustered, filtered, aggregated and plotted concurrently in real-time. In addition, full hardware support for Timepix2, Timepix3 pixel detectors and embedded photomultiplier systems enables such analysis to be carried out online during data acquisition. Repetitive procedures can be automated with support for motorized stages and X-ray tubes. Freely distributed on 7 popular operating systems and 2 CPU architectures, Track Lab is a versatile tool for high energy physics research.}
+}
+
+
+
 
 

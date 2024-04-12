@@ -1,5 +1,15 @@
 \begin{thebibliography}{10}
 
+\bibitem{Medpix}
+CERN, ``{W}eb presentation of the {M}edipix {C}ollaboration.'' Dostupné z:
+  \url{www.cern.ch/medipix}.
+
+\bibitem{Manek_2024}
+P.~Mánek, P.~Burian, E.~David-Bosne, P.~Smolyanskiy, and B.~Bergmann, ``Track
+  lab: extensible data acquisition software for fast pixel detectors, online
+  analysis and automation,'' {\em Journal of Instrumentation}, vol.~19,
+  p.~C01008, jan 2024.
+
 \bibitem{Llopart}
 X.~{Llopart Cudié}, {\em Design and characterization of 64{K} pixels chips
   working in single photon processing mode}.
@@ -10,10 +20,6 @@ X.~{Llopart Cudié}, {\em Design and characterization of 64{K} pixels chips
 J.~Alozy, R.~Ballabriga, I.~Kremastiotis, X.~Llopart, T.~Poikela, V.~Sriskaran,
   and W.~Wong, ``Timepix2 {M}anual (v2.1),'' April 12 2019.
 \newblock CERN, Geneva.
-
-\bibitem{Medpix}
-CERN, ``{W}eb presentation of the {M}edipix {C}ollaboration.'' Dostupné z:
-  \url{www.cern.ch/medipix}.
 
 \bibitem{Platkevic}
 M.~Platkevič, {\em {S}ignal {P}rocessing and {D}ata {R}ead-{O}ut from
@@ -78,6 +84,10 @@ J.~Jakubek, ``Precise energy calibration of pixel detector working in
   Equipment}, vol.~633, pp.~S262--S266, 2011.
 \newblock 11th International Workshop on Radiation Imaging Detectors (IWORID).
 
+\bibitem{TSMC}
+TSMC, ``{W}eb presentation of the {T}{S}{M}{C}.'' Dostupné z:
+  \url{https://www.tsmc.com/english}.
+
 \bibitem{SLVS}
 F.~Tavernier and P.~Moreira, ``{SLVS} interface circuits.'' Dostupné z:
   \url{https://indico.cern.ch/event/404345/contributions/1850202/attachments/809975/1109940/SLVS_IO}.
@@ -85,10 +95,6 @@ F.~Tavernier and P.~Moreira, ``{SLVS} interface circuits.'' Dostupné z:
 \bibitem{LVDS}
 ``Ieee standard for low-voltage differential signals (lvds) for scalable
   coherent interface (sci),'' {\em IEEE Std 1596.3-1996}, pp.~1--34, 1996.
-
-\bibitem{TSMC}
-TSMC, ``{W}eb presentation of the {T}{S}{M}{C}.'' Dostupné z:
-  \url{https://www.tsmc.com/english}.
 
 \bibitem{Timepix2_500um}
 S.~George, D.~Turecek, S.~Wheeler, S.~Kodaira, and L.~Pinsky, ``First tests
