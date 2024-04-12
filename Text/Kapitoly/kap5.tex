@@ -29,7 +29,7 @@ Velkou část ověření funkčnosti navrženého rozhraní v této práci tvoř
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.70]{tpx2_temp.jpg}
+	\includegraphics[scale=0.55]{tracklab_info.jpg}
 	\caption{Hlavní panel programu TrackLab \cite{Manek_2024}} 
 	\label{fig:Tracklab}
 \end{figure}
@@ -112,11 +112,20 @@ Funkčnost komunikace s detektorem Timepix 2 byla, také ověřena pomocí digit
 		\caption{Digitální test, zapisované hodnoty}
 		\label{tab:obraz}
 	\end{table}
+\section{Timepix 2 DAC}
+	Dalším testem ověřením funkčnosti navrženého vyčítacího rozhraní byl DAC sken Timepix 2. Test při kterém do 18 interních DAC kanálů detektoru Timepix 2 byla pro každý kanál zapsána digitální 8-bitová hodnota v rozsahu 0 až 255. Následně byl zvolen DAC kanál, který bude výstupem na pinu DACOUT detektoru Timepix 2. Tato již analogová hodnota z výstupního pinu DACOUT byla převedena interním 12-bitovým AD převodníkem mikrokontroléru. DAC sken pro 18 interních kanálů s výpisem do programu TrackLab můžete vidět na obrázku \ref{fig:dacscan}. 
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.50]{tracklab_dac.jpg}
+		\caption{DAC sken detektoru Timepix 2.} 
+		\label{fig:dacscan}
+	\end{figure}
 \section{USB komunikace}
 %todo, dokumentace funkčnosti... -> VCM, pak UDP pres USB
 Fyzická implementace USB byla popsána v části textu \ref{USB}. Pro testování USB komunikace byly použity dvě USB třídy. První třídou USB byl virtuální sériový port přes USB. Druhou třídou byla pak třída RNDIS, neboli virtuální ethernet přes USB, jež byla použita pro přenos UDP protokolu přes USB.
 \subsection{Virtuální ethernet přes USB}
-	Další USB třídou, která byla použita v konečné implementaci byla třída RNDIS. Jedná se o třídu zařízení kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP protokol. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{TrackLab}. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Ukázka nakonfigurovaného zařízení jako třídy RNDIS lze vidět na obrázku \ref{fig:RNDIS}. Snímek konfigurace zařízení byl pořízen z programu USBTreeView. 
+	Další USB třídou, která byla použita v konečné implementaci byla třída RNDIS. Jedná se o třídu zařízení kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP protokol. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{Manek_2024}. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Ukázka nakonfigurovaného zařízení jako třídy RNDIS lze vidět na obrázku \ref{fig:RNDIS}. Snímek konfigurace zařízení byl pořízen z programu USBTreeView. 
 	%TODO USB RNDIS konfigurace
 	\begin{figure}[h!]
 		\centering

@@ -64,13 +64,14 @@
 \contentsline {section}{\numberline {5.6}Digitální test Timepix 2}{40}{section.5.6}%
 \contentsline {subsection}{\numberline {5.6.1}Vyčtení chip ID}{40}{subsection.5.6.1}%
 \contentsline {subsection}{\numberline {5.6.2}Vyčtení a zapsání pixelových matic}{41}{subsection.5.6.2}%
-\contentsline {section}{\numberline {5.7}USB komunikace}{41}{section.5.7}%
-\contentsline {subsection}{\numberline {5.7.1}Virtuální ethernet přes USB}{41}{subsection.5.7.1}%
-\contentsline {section}{\numberline {5.8}Měření spotřeby}{42}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Dosažené parametry}{42}{section.5.9}%
-\contentsline {chapter}{\numberline {6}Závěr}{43}{chapter.6}%
-\contentsline {chapter}{Seznam použité literatury}{46}{chapter*.75}%
-\contentsline {chapter}{Seznam použitých zkratek}{47}{chapter*.76}%
-\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{48}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Základní deska}{49}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Deska s Timepix 2}{64}{appendix.C}%
+\contentsline {section}{\numberline {5.7}Timepix 2 DAC}{41}{section.5.7}%
+\contentsline {section}{\numberline {5.8}USB komunikace}{41}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Virtuální ethernet přes USB}{42}{subsection.5.8.1}%
+\contentsline {section}{\numberline {5.9}Měření spotřeby}{43}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Dosažené parametry}{43}{section.5.10}%
+\contentsline {chapter}{\numberline {6}Závěr}{44}{chapter.6}%
+\contentsline {chapter}{Seznam použité literatury}{47}{chapter*.76}%
+\contentsline {chapter}{Seznam použitých zkratek}{48}{chapter*.77}%
+\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{49}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Základní deska}{50}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Deska s Timepix 2}{65}{appendix.C}%
