@@ -285,26 +285,30 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\label{CPLD konverze}
 	Dle \ref{Komunikacni rozhrani}, je zapotřebí pro komunikaci s Timepix 2 při využití sériového rozhraní použít komunikační specifikaci typu SLVS \ref{fig:SLVS_LVDS}, využívající diferenciální páry. Použitý mikrokontrolér \ref{mikrokontolér}, je kompatibilní pouze s CMOS 3.3 V logikou. CPLD umožňuje převod těchto úrovní. Respektive převod CMOS 3.3 V logiky na SLVS specifikaci a opačně.
 	\par Použité CPLD umožňuje generovat pouze signály ze specifikace Sub-LVDS. Aby bylo dosaženo parametrů potřebných pro SLVS specifikaci, bylo pro každý generovaný výstupní diferenciální pár použito zapojení s odpory z pravé části obrázku \ref{fig:sub_lvds_slvs}. Pro vstupní diferenciální páry, byla pouze co nejblíže k CPLD umístěna terminace, viz. levá část obrázku \ref{fig:sub_lvds_slvs}.
+	% TODO davat sem?
+\begin{comment} 
 	Programová implementace generování diferenciálních signálů pro MachXO2 obsahující pouze část architektury pro konverzi logických úrovní je zobrazena v ukázkovém kódu \ref{kod_vhdl}.
 \begin{lstlisting}[frame=single, language=VHDL, caption={Ukázkový kód ve VHDL pro CPLD}, label=kod_vhdl]
-architecture behavioral of t2m is
-begin
--- CMOS -> SLVS
-DATA_IN_SLVS	<= DATA_IN;
-nCS_IN_SLVS	<= nCS_IN;
-DCLOCK_IN_SLVS	<= DCLOCK_IN;
-MCLOCK_SLVS	<= MCLOCK;
--- SLVS -> CMOS
-DATA_OUT	<= DATA_OUT_SLVS;
-DCLOCK_OUT	<= DCLOCK_OUT_SLVS;
-nCS_OUT		<= nCS_OUT_SLVS;
-end architecture behavioral ;
+	architecture behavioral of t2m is
+	begin
+	-- CMOS -> SLVS
+	DATA_IN_SLVS	<= DATA_IN;
+	nCS_IN_SLVS	<= nCS_IN;
+	DCLOCK_IN_SLVS	<= DCLOCK_IN;
+	MCLOCK_SLVS	<= MCLOCK;
+	-- SLVS -> CMOS
+	DATA_OUT	<= DATA_OUT_SLVS;
+	DCLOCK_OUT	<= DCLOCK_OUT_SLVS;
+	nCS_OUT		<= nCS_OUT_SLVS;
+	end architecture behavioral ;
 \end{lstlisting}
+\end{comment}
+	
 	\begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[scale=0.50]{sub_lvds_slvs.pdf}
-	\caption{Konverze Sub-LVDS na SLVS} 
+	\caption{Konverze napěťových úrovní standartu Sub-LVDS na SLVS.} 
 	\label{fig:sub_lvds_slvs}
 	\end{figure}
 	\subsubsection{Programování}
@@ -315,7 +319,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.60]{odpor_sit.jpg}
-		\caption{Odporová síť v porovnání s diskrétními odpory} 
+		\caption{Miniaturizace za použití odporových sítí v porovnání s diskrétními odpory.} 
 		\label{fig:odpor_sit}
 	\end{figure}
 	
@@ -328,7 +332,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.50]{USBC_full.jpg}
-		\caption{Schematické rozložení konektoru USB C} 
+		\caption{Schematické rozložení konektoru USB C.} 
 		\label{fig:USBC_full}
 	\end{figure} 
 
@@ -339,7 +343,7 @@ end architecture behavioral ;
 		\captionsetup{justification=centering}
 		%\includepdf[scale=0.7]{usbc.pdf}
 		\includegraphics[scale=0.60]{usbc.pdf}
-		\caption{Schematické zapojení USB periférie.} 
+		\caption{Schematické zapojení periférie USB.} 
 		\label{fig:USBC_zapojeni}
 	\end{figure} 
 	
@@ -352,17 +356,17 @@ end architecture behavioral ;
 			\centering
 			\captionsetup{justification=centering}
 			\includegraphics[scale=0.33]{usb_hs_top.jpg}
-			\caption{Signály D+ a D-, vrchní vrstva PCB.} 
+			\caption{Signály USB, D+ a D-, vrchní vrstva PCB.} 
 			\label{fig:usb_top}
 		\end{subfigure} \hfill
 		\begin{subfigure}{0.5\textwidth}
 			\centering
 			\captionsetup{justification=centering}
 			\includegraphics[scale=0.33]{usb_hs_bot.jpg}
-			\caption{Signály D+ a D-, spodní vrstva PCB.} 
+			\caption{Signály USB, D+ a D-, spodní vrstva PCB.} 
 			\label{fig:usb_bot}
 		\end{subfigure}
-		\caption{Vedení diferenciálních datových páru USB komunikace.}
+		\caption{Vedení diferenciálních datových páru periférie USB.}
 		\label{fig:usb_layout}
 	\end{figure} 
 
@@ -381,7 +385,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.60]{tpx_pwr.pdf}
-		\caption{Analogové a Digitální napájení Timepix 2} 
+		\caption{Realizace analogového a digitální napájení detektoru Timepix 2.} 
 		\label{fig:tpx_pwr}
 	\end{figure} 
 	\subsubsection{Rozhraní pro připojení Timepix 2}	% wirebondovaci plosky, HV zdroj
@@ -390,7 +394,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.60]{tpx_wire.png}
-		\caption{Rozložení wirebondovacích plošek k připojení Timepix 2} 
+		\caption{Rozložení pinů pro připojení Timepix 2 k desce plošných spojů.} 
 		\label{fig:tpx_wire}
 	\end{figure} 
 	\subsection{Vysokonapěťový zdroj}	% MAX1932 zapojeni vysvetleni
@@ -410,7 +414,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.60]{hv.pdf}
-		\caption{Zapojení vysokonapěťového zdroje MAX1932} 
+		\caption{Schematické zapojení vysokonapěťového zdroje MAX1932.} 
 		\label{fig:hv}
 	\end{figure} 
 	\subsubsection{Měření vysokého napětí} % napetovy sledovac plus konfigurace AD v STM32
@@ -423,7 +427,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.30]{temp.pdf}
-		\caption{Zapojení teplotního senzoru TMP100} 
+		\caption{Zapojení teplotního senzoru TMP100.} 
 		\label{fig:tmp100}
 	\end{figure} 
 	\subsection{Konektor}	% popis konektoru, zarazeni zmneni mezi piny
@@ -433,7 +437,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.40]{conn.pdf}
-		\caption{Zapojení konektoru mezi základní deskou \ref{zakladni deska} a deskou s Timepix 2 \ref{Deska s Timepix2}} 
+		\caption{Zapojení konektoru mezi základní deskou \ref{zakladni deska} a deskou s Timepix 2 \ref{Deska s Timepix2}.} 
 		\label{fig:konektor}
 	\end{figure} 
 	
@@ -444,7 +448,7 @@ end architecture behavioral ;
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.60]{tpx2_temp.jpg}
-		\caption{Mechanická krabička navrženého vyčítacího rozhraní} 
+		\caption{Mechanická krabička navrženého vyčítacího rozhraní.} 
 		\label{fig:mechanika}
 	\end{figure}
 
