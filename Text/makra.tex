@@ -1,0 +1,9 @@
+% Toto makro definuje kapitolu, která není očíslovaná, ale je uvedena v obsahu.
+\def\chapwithtoc#1{
+	\chapter*{#1}
+	\addcontentsline{toc}{chapter}{#1}
+}
+
+%%% Prostředí pro sazbu kódu, případně vstupu/výstupu počítačových
+%%% programů. (Vyžaduje balíček fancyvrb -- fancy verbatim.)
+\DefineVerbatimEnvironment{code}{Verbatim}{fontsize=\small, frame=single}

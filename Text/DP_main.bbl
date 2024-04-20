@@ -1,0 +1,149 @@
+\begin{thebibliography}{10}
+
+\bibitem{Medpix}
+CERN, ``{W}eb presentation of the {M}edipix {C}ollaboration.'' Dostupné z:
+  \url{www.cern.ch/medipix}.
+
+\bibitem{Manek_2024}
+P.~Mánek, P.~Burian, E.~David-Bosne, P.~Smolyanskiy, and B.~Bergmann, ``Track
+  lab: extensible data acquisition software for fast pixel detectors, online
+  analysis and automation,'' {\em Journal of Instrumentation}, vol.~19,
+  p.~C01008, jan 2024.
+
+\bibitem{Llopart}
+X.~{Llopart Cudié}, {\em Design and characterization of 64{K} pixels chips
+  working in single photon processing mode}.
+\newblock PhD thesis, Mid Sweden University, 2007.
+\newblock ISBN: 978-91-85317-56-1.
+
+\bibitem{tpx2_manual}
+J.~Alozy, R.~Ballabriga, I.~Kremastiotis, X.~Llopart, T.~Poikela, V.~Sriskaran,
+  and W.~Wong, ``Timepix2 {M}anual (v2.1),'' April 12 2019.
+\newblock CERN, Geneva.
+
+\bibitem{Platkevic}
+M.~Platkevič, {\em {S}ignal {P}rocessing and {D}ata {R}ead-{O}ut from
+  {P}osition {S}ensitive {P}ixel {D}etectors}.
+\newblock PhD thesis, ČVUT, 2014.
+
+\bibitem{usb_lite}
+Z.~Vykydal and J.~Jakůbek, ``{USB} lite - {M}iniaturized readout interface for
+  {M}edipix2 detector,'' {\em Nuclear Instruments and Methods in Physics
+  Research A}, vol.~633, pp.~48--49, 2011.
+\newblock Dostupné z:
+  \url{https://www.sciencedirect.com/science/article/pii/S0168900210013082/pdfft?md5=733e9d449a2e198b6559b52d5fbe242f&pid=1-s2.0-S0168900210013082-main.pdf}.
+
+\bibitem{Medpix2}
+CERN, ``{W}eb presentation of the {M}edipix {C}ollaboration.'' Dostupné z:
+  \url{https://medipix.web.cern.ch/medipix2}.
+
+\bibitem{Advacam}
+ADVACAM, ``{W}eb presentation of the {M}ini{P}{I}{X}
+  {S}{P}{R}{I}{N}{T}{E}{R}.'' Dostupné z:
+  \url{https://advacam.com/camera/minipix-sprinter}.
+
+\bibitem{Burian_2020}
+P.~Burian, P.~Broulím, B.~Bergmann, and L.~Tlustos, ``Ethernet embedded
+  readout interface for timepix2—katherine readout for timepix2,'' {\em
+  Journal of Instrumentation}, vol.~15, p.~C01037, jan 2020.
+
+\bibitem{Timepix3}
+T.~Poikela, J.~Plosila, T.~Westerlund, M.~Campbell, M.~D. Gaspari, X.~Llopart,
+  V.~Gromov, R.~Kluit, M.~van Beuzekom, F.~Zappon, V.~Zivkovic, C.~Brezina,
+  K.~Desch, Y.~Fu, and A.~Kruth, ``Timepix3: a 65k channel hybrid pixel readout
+  chip with simultaneous toa/tot and sparse readout,'' {\em Journal of
+  Instrumentation}, vol.~9, p.~C05013, may 2014.
+
+\bibitem{Timepix2}
+W.~Wong, J.~Alozy, R.~Ballabriga, M.~Campbell, I.~Kremastiotis, X.~Llopart,
+  T.~Poikela, V.~Sriskaran, L.~Tlustos, and D.~Turecek, ``Introducing timepix2,
+  a frame-based pixel detector readout asic measuring energy deposition and
+  arrival time,'' {\em Radiation Measurements}, vol.~131, p.~106230, 2020.
+
+\bibitem{Timepix4}
+X.~Llopart, J.~Alozy, R.~Ballabriga, M.~Campbell, R.~Casanova, V.~Gromov,
+  E.~Heijne, T.~Poikela, E.~Santin, V.~Sriskaran, L.~Tlustos, and
+  A.~Vitkovskiy, ``Timepix4, a large area pixel detector readout chip which can
+  be tiled on 4 sides providing sub-200 ps timestamp binning,'' {\em Journal of
+  Instrumentation}, vol.~17, p.~C01044, jan 2022.
+
+\bibitem{MOS}
+M.~Manghisoni, D.~Comotti, L.~Gaioni, L.~Ratti, and V.~Re, ``Dynamic
+  compression of the signal in a charge sensitive amplifier: From concept to
+  design,'' {\em IEEE Transactions on Nuclear Science}, vol.~62, no.~5,
+  pp.~2318--2326, 2015.
+
+\bibitem{Manek}
+P.~Mánek, ``{M}achine learning approach to ionizing particle recognition using
+  hybrid active pixel detector,'' Master's thesis, ČVUT, 2018.
+
+\bibitem{JAKUBEK2011S262}
+J.~Jakubek, ``Precise energy calibration of pixel detector working in
+  time-over-threshold mode,'' {\em Nuclear Instruments and Methods in Physics
+  Research Section A: Accelerators, Spectrometers, Detectors and Associated
+  Equipment}, vol.~633, pp.~S262--S266, 2011.
+\newblock 11th International Workshop on Radiation Imaging Detectors (IWORID).
+
+\bibitem{TSMC}
+TSMC, ``{W}eb presentation of the {T}{S}{M}{C}.'' Dostupné z:
+  \url{https://www.tsmc.com/english}.
+
+\bibitem{SLVS}
+F.~Tavernier and P.~Moreira, ``{SLVS} interface circuits.'' Dostupné z:
+  \url{https://indico.cern.ch/event/404345/contributions/1850202/attachments/809975/1109940/SLVS_IO}.
+
+\bibitem{LVDS}
+``Ieee standard for low-voltage differential signals (lvds) for scalable
+  coherent interface (sci),'' {\em IEEE Std 1596.3-1996}, pp.~1--34, 1996.
+
+\bibitem{Timepix2_500um}
+S.~George, D.~Turecek, S.~Wheeler, S.~Kodaira, and L.~Pinsky, ``First tests
+  with timepix2 and heavy ions,'' {\em Nuclear Instruments and Methods in
+  Physics Research Section A: Accelerators, Spectrometers, Detectors and
+  Associated Equipment}, vol.~958, p.~162725, 2020.
+\newblock Proceedings of the Vienna Conference on Instrumentation 2019.
+
+\bibitem{Timepix_500um_Pospisil}
+S.~Pospisil, ``{T}imepix hybrid pixels detectors for particle identification
+  and dosimetry.'' Dostupné z:
+  \url{https://indico.cern.ch/event/954194/contributions/4009245/attachments/2156334/3637201/Stanislav%20Pospisil%20-%20SP-Dakar-Timepix-lecture-fin.pdf}.
+
+\bibitem{Timepix_500um_Huston}
+L.~S. Pinsky, ``{A}n {U}pdate on the {T}imepix2.'' Dostupné z:
+  \url{https://wrmiss.org/workshops/twentyfourth/Pinsky.pdf}.
+
+\bibitem{TSV}
+V.~Re, ``{W}eb presentation of the {T}{S}{V}.'' Dostupné z:
+  \url{https://indico.cern.ch/event/710050/contributions/3185372/attachments/1741432/2817619/11_20_Re_Vertex_2018.pdf}.
+
+\bibitem{MPH2333}
+{M}onolithic~{P}ower {S}ystems, ``{S}ynchronous {B}uck {C}onverter.'' Dostupné
+  z:
+  \url{https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2333H/document_id/4409/}.
+
+\bibitem{STM32U5A9}
+{S}{T}{M}croelectronics, ``Datasheet {S}{T}{M}32{U}5{A}xxx.'' Dostupné z:
+  \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
+
+\bibitem{STM32U5A9_RM}
+{S}{T}{M}croelectronics, ``{R}{M}0456 reference manual {S}{T}{M}32{U}5{A}.''
+  Dostupné z: \url{https://www.st.com/resource/en/datasheet/stm32u5a9nj.pdf}.
+
+\bibitem{SPI}
+A.~Devices, ``{I}ntroduction to {S}{P}{I} {I}nterface.'' Dostupné z:
+  \url{https://www.analog.com/en/resources/analog-dialogue/articles/introduction-to-spi-interface.html}.
+
+\bibitem{CPLD}
+{L}attice {S}emiconductor, ``{M}ach{X}{O}2.'' Dostupné z:
+  \url{https://www.latticesemi.com/Products/FPGAandCPLD/MachXO2}.
+
+\bibitem{MAX1932}
+A.~Devices, ``{D}igitally {C}ontrolled, 0.5\% {A}ccurate, {S}afest {A}{P}{D}
+  {B}ias {S}upply.'' Dostupné z:
+  \url{https://www.analog.com/media/en/technical-documentation/data-sheets/MAX1932.pdf}.
+
+\bibitem{LTC6252}
+A.~Devices, ``{E}fficient {R}ail-to-{R}ail {I}/{O} {O}p {A}mps.'' Dostupné z:
+  \url{https://www.analog.com/media/en/technical-documentation/data-sheets/625234fc.pdf}.
+
+\end{thebibliography}

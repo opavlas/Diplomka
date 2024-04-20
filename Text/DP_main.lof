@@ -1,0 +1,51 @@
+\babel@toc {czech}{}\relax 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Rozložení hybridního pixelového detektoru Timepix \cite {Platkevic}\relax }}{3}{figure.caption.6}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Vyčítací zařízení \textit {USB lite}\relax }}{4}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Vyčítací zařízení MiniPIX SPRINTER\relax }}{4}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Vyčítací zařízení Katherine pro Timepix 2 \cite {Burian_2020}\relax }}{5}{figure.caption.9}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Schematické rozložení detektoru Timepix 2 \cite {tpx2_manual}\relax }}{6}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Uspořádání jednoho pixelu \cite {Timepix2}\relax }}{7}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Digitální módy Timepix 2 \cite {Manek}\relax }}{8}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces SLVS specifikace \cite {SLVS}\relax }}{9}{figure.caption.16}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Vyčítací rychlosti snímků z Timepix2. Frekvence hodin $f_{clock}$ = 100 MHz \cite {Timepix2}\relax }}{10}{figure.caption.21}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Připojení detektoru Timepix 2 k desce plošných spojů \cite {TSV}\relax }}{12}{figure.caption.23}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Koncept řešení vyčítacího rozhraní pro detektor Timepix 2\relax }}{14}{figure.caption.24}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Základní deska. Rozložení vrstev.\relax }}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev základní desky.\relax }}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H.\relax }}{18}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky.\relax }}{18}{figure.caption.29}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Měření napájecí sekvence základní desky.\relax }}{19}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Konfigurace a napájení mikrokontroléru STM32U5A9.\relax }}{21}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Konfigurace hodinového signálu pro jádro mikrokontroléru.\relax }}{22}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Popis signálů periférií SPI, sloužící pro komunikaci s Timepix 2\relax }}{24}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Programování mikrokontroléru.\relax }}{24}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces STM32U5A9 PCB realizace.\relax }}{25}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Konverze napěťových úrovní standartu Sub-LVDS na SLVS.\relax }}{27}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Miniaturizace za použití odporových sítí v porovnání s diskrétními odpory.\relax }}{28}{figure.caption.51}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Schematické rozložení konektoru USB C.\relax }}{28}{figure.caption.53}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Schematické zapojení periférie USB.\relax }}{29}{figure.caption.55}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Vedení diferenciálních datových páru periférie USB.\relax }}{30}{figure.caption.57}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Realizace analogového a digitální napájení detektoru Timepix 2.\relax }}{31}{figure.caption.59}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Rozložení pinů pro připojení Timepix 2 k desce plošných spojů.\relax }}{32}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Schematické zapojení vysokonapěťového zdroje MAX1932.\relax }}{33}{figure.caption.62}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Zapojení teplotního senzoru TMP100.\relax }}{34}{figure.caption.64}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Zapojení konektoru mezi základní deskou \ref {zakladni deska} a deskou s Timepix 2 \ref {Deska s Timepix2}.\relax }}{34}{figure.caption.65}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Mechanická krabička navrženého vyčítacího rozhraní.\relax }}{35}{figure.caption.66}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Zvlnění výstupních napětí +2.5V, +3.3 V a +1.2 V, generovaných na základní desce \ref {zakladni deska}.\relax }}{36}{figure.caption.67}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Stejnosměrné úrovně výstupních napětí, +2.5V, +3.3 V a +1.2 V, spínaných regulátorů na základní desce \ref {zakladni deska}.\relax }}{37}{figure.caption.68}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Závislost vstupní 8 bitové hodnoty na výstupním napětí VN zdroje.\relax }}{37}{figure.caption.69}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Vyčítací rozhraní nakonfigurované jako zařízení z USB třídy RNDIS.\relax }}{38}{figure.caption.70}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Hlavní panel programu TrackLab \cite {Manek_2024}.\relax }}{39}{figure.caption.71}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Simulace teploty detektoru Timepix2 v závislosti na hodnotě napěťové reference \cite {tpx2_manual}.\relax }}{40}{figure.caption.72}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Průběh komunikačního hodinového signálu Timepix 2.\relax }}{41}{figure.caption.73}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces DAC sken detektoru Timepix 2.\relax }}{42}{figure.caption.75}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Ekvalizace Timepix 2 čipu z programu TrackLab.\relax }}{43}{figure.caption.76}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
