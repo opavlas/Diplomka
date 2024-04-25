@@ -1,24 +1,22 @@
 \chapter{Realizace}
 \label{realizace}
-% promereni zapojeni jestli vse funguje 
-% TODO + struktura firmware a provadeni digitalniho testu -> KAM TO ZARADIT? mozna do subsection realizace?
 V této části bude popsána detailní realizace celého zařízení. V předchozích částech byly zmíněny základní požadavky \ref{Technicka specifikace} na návrh celého vyčítacího rozhraní a uveden základní koncept řešení \ref{Koncept reseni}. Při realizaci individuálních částí rozhraní byly tyto požadavky respektovány. Dále jednotlivé části realizace byly vybírány s ohledem na miniaturizaci a celkovou spotřebu vyčítacího rozhraní. 
 
 \par Pro další části textu bude označení desek plošných spojů navrženého rozhraní shodné, s označením schematického návrhu konceptu řešení z obrázku \ref{fig:navrh_reseni}. Cílem řešení bylo co nejvíce funkcionalit rozhraní implementovat na základní desce. Prvním důvodem bylo, že druhá deska plošných spojů, obsahuje detektor Timepix 2, který je v celém návrhu nejdůležitější a nejsložitější částí. Pokud by bylo vše implementováno na jedné desce plošných spojů, při jakémkoliv problému musí být vyměněna celá deska i s detektorem Timepix 2. Při rozložení rozhraní na dvě desky plošných spojů dojde při případném problému k výměně jen základní desky, popřípadě desky s detektorem Timepix 2. 
-\par Druhým důvodem rozložení rozhraní na dvě desky plošných spojů je miniaturizace vyčítacího rozhraní. Za použití dvou desek plošných spojů, spojenými konektorem celé rozhraní zvýší své rozměry pouze na výšku o 3 mm přitom rozměry desky s detektorem Timepix 2 mohou být stejné jako desky základní.
+\par Druhým důvodem rozložení rozhraní na dvě desky plošných spojů je miniaturizace vyčítacího rozhraní. Za použití dvou desek plošných spojů, spojenými konektorem, celé rozhraní zvýší své rozměry pouze na výšku o 3 mm přitom rozměry desky s detektorem Timepix 2 mohou být stejné jako desky základní.
 
 \par Realizace návrhu obou desek plošných spojů probíhala v programu Altium Designer. Mechanické integrace rozhraní, především validace případných kolizí plošných spojů s navrženou mechanikou, probíhala v programu Autodesk Inventor. Pokud nebude uvedenou jinak, pořízené obrázky dokumentace řešení jsou z těchto programů.
 
 \section{Základní deska}	
 	\label{zakladni deska}
-	Základní deska je navržena na šesti vrstvém plošném spoji. Rozložení jednotlivých vrstev lze vidět na obrázku \ref{tab:pcb_vrstvy}. Celková tloušťka navrženého PCB je dle celkové skladby z obrázku \ref{fig:PCB_mother_stackup}, 1.6 mm. Vnější rozměry základní desky jsou 53 x 17 mm. Obecné složení základní desky, je shodné s blokovým konceptem řešení z části \ref{fig:navrh_reseni}. Dále bude popsána detailní struktura jednotlivých částí navržené základní desky.
+	Základní deska je navržena na šesti vrstvém plošném spoji. Rozložení jednotlivých vrstev lze vidět na obrázku \ref{tab:pcb_vrstvy}. Celková tloušťka navrženého PCB je dle celkové skladby z obrázku \ref{fig:PCB_mother_stackup}, 1.6 mm. Vnější rozměry základní desky jsou 53 x 17 mm. Obecné části realizované na základní desce jsou shodné s blokovým konceptem řešení z části \ref{fig:navrh_reseni}. Dále bude popsána detailní struktura jednotlivých částí navržené základní desky.
 
 \begin{figure}
 	\begin{minipage}[b]{.45\linewidth}
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.60]{PCB_mother_stackup.jpg}
-		\caption{Základní deska. Rozložení vrstev.} 
+		\caption{PCB: Základní deska. Rozložení vrstev.} 
 		\label{fig:PCB_mother_stackup}
 	\end{minipage}\hfill
 	\begin{minipage}[b]{.45\linewidth}
@@ -58,7 +56,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\caption{Napájení základní desky vyčítacího rozhraní.}
 		\label{tab:napajeni}
 	\end{table}
-	Napájení uvedené v tabulce \ref{tab:napajeni} jsou až na napájení 1.2 V, dostupné také na druhé desce plošných spojů s detektorem Timepix 2. Více o propojení signálů základní desky a desky s detektorem Timepix 2 lze dohledat v části textu \ref{konektor}. Ukázkové schematické zapojení jednoho ze tří spínaných regulátorů, můžete vidět na obrázku \ref{fig:mp2333h}. Konkrétně se jedná o zapojení, při kterém uvedený regulátor reguluje ze vstupních +5 V na výstupní napájení +1.2 V.
+	Napájení uvedené v tabulce \ref{tab:napajeni} jsou až na napájení 1.2 V, dostupné také na druhé desce plošných spojů s detektorem Timepix 2. Více o propojení signálů základní desky a desky s detektorem Timepix 2 lze dohledat v části textu \ref{konektor}. Ukázkové schematické zapojení jednoho ze tří spínaných regulátorů, můžete vidět na obrázku \ref{fig:mp2333h}. Konkrétně se jedná o zapojení, při kterém uvedený regulátor reguluje ze vstupních +5 V na výstupní napájení +1.2 V. Fyzické umístění součástek na desce plošných spojů probíhalo s ohledem na minimalizaci zemních smyček výstupního napětí. Umístění výstupních kondenzátorů co neblíže výstupní cívce a dále omezení vedení citlivých analogových signálů v oblastech, kde dochází k vysokofrekvenčnímu spínání.
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -67,7 +65,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\label{fig:mp2333h}
 	\end{figure}
 	\subsubsection{Napájecí sekvence}
-	Napájecí sekvenci je možné vidět na zjednodušeném diagramu na obrázku \ref{fig:napajeci_sekvecne}. Po připojení USB typu C do konektoru na základní dece je dostupné napájení +5 V. Těchto +5 V spíná v napájecí sekvenci první regulátor, který generuje na výstupu +3.3 V. Pokud je toto výstupní napájení +3.3 V v pořádku, integrovaný obvod tuto informaci signalizuje pomocí pinu PG. Právě tento pin PG, signál PG\_3V3, může být je připojen na vstupní pin dalšího regulátoru a to na pin regulátoru generující výstupní napětí +2.5 V. V návrhu řešení je možné vybrat mezi uvedeným propojením, nebo je možné regulátor pro napájení +2.5 V možné řídit z mikrokontroléru. Poslední regulátor na základní desce s výstupním napětím +1.2 V je řízený z mikrokontroléru, neboli jeho vstupní pin EN je propojen signálem EN\_1V2 s výstupní bránou mikrokontroléru.
+	Napájecí sekvenci základní desky je možné vidět na zjednodušeném diagramu na obrázku \ref{fig:napajeci_sekvecne}. Po připojení USB typu C do konektoru na základní dece je dostupné napájení +5 V. Těchto +5 V spíná v napájecí sekvenci první regulátor, který generuje na výstupu +3.3 V. Pokud je toto výstupní napětí +3.3 V v pořádku, integrovaný obvod tuto informaci signalizuje pomocí pinu PG. Právě tento pin PG, signál PG\_3V3, může být připojen na vstupní pin dalšího regulátoru a to na pin regulátoru generující výstupní napětí +2.5 V. V návrhu řešení je možné vybrat mezi uvedeným propojením, nebo je možné regulátor pro napájení +2.5 V řídit z mikrokontroléru. Poslední regulátor na základní desce s výstupním napětím +1.2 V je řízený z mikrokontroléru, neboli jeho vstupní pin EN je propojen signálem EN\_1V2 s výstupní bránou mikrokontroléru.
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -90,7 +88,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.50]{napajeci_sekvence_real.png}
+		\includegraphics[scale=0.45]{napajeci_sekvence_real.png}
 		\caption{Měření napájecí sekvence základní desky.} 
 		\label{fig:napajeci_sekvecne_real}
 	\end{figure}
@@ -165,8 +163,8 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{itemize}
 		\setlength\itemsep{0.005em}
 		\item HSE : Externí krystal s parametry frekvence signálu od 4 MHz do 50 Mhz
-		\item HSI : 16 MHz interní RC oscilátor 
-		\item MSI : Interní RC oscilátor s programově nastavitelnou frekvencí od 100 kHz do 48 MHz
+		\item HSI : Interní RC oscilátor s frekvencí 16 MHz
+		\item MSI : Interní RC oscilátor s nastavitelnou frekvencí od 100 kHz do 48 MHz
 		\item PLL : Fázový závěs, který může mít vstup jeden ze 3 výše uvedených zdrojů hodinových signálů
 	\end{itemize}
 	Pro realizaci vyčítacího rozhraní byl jako zdroj hodinového signálu vybrán výstup z fázového závěsu, který ze vstupního hodinového signálu HSI generuje hodinový signál o frekvenci 160 MHz. Tento hodinový signál je použit jako zdroj hodinového signálu pro jádro mikrokontroléru a také pro komunikační rozhraní, až na komunikační rozhraní USB. Více informací o konfiguraci hodinového signálu pro USB periferii bude v části \ref{USB}. Samotnou konfiguraci hodinového signálu pro jádro procesoru s využitím fázového závěsu, lze najít na obrázku \ref{fig:hodinovy_signal}
@@ -182,7 +180,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	Celkem pro implementaci vyčítacího rozhraní byly použity tři SPI periférie:
 	 \begin{itemize}
 	 	\setlength\itemsep{0.005em}
-	 	\item SPI1 : Obecná SPI periférie pro komunikaci se senzory, mimo Timepix 2
+	 	\item SPI1 : Obecná SPI periférie pro komunikaci se senzory, mimo Timepix 2.
 	 	\item SPI2 : Použita ke komunikaci s Timepix 2. V konfigurace Master. 
 	 	\item SPI3 : Použita ke komunikaci s Timepix 2. V konfigurace Slave.
 	 \end{itemize}
@@ -194,7 +192,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
  		\centering
  		\captionsetup{justification=centering}
  		\includegraphics[scale=0.40]{SPI.pdf}
- 		\caption{Popis signálů periférií SPI, sloužící pro komunikaci s Timepix 2} 
+ 		\caption{Popis signálů periférií SPI, sloužící pro komunikaci s Timepix 2.} 
  		\label{fig:SPI}
  	\end{figure}
  	
@@ -204,9 +202,8 @@ V této části bude popsána detailní realizace celého zařízení. V předch
  	\subsubsection{Periférie UART}
  	\par Periférie UART umožňuje monitorovat průběh programu, který je nahrán do mikrokontroléru, za použití výpisu sériové linky, do příkazové řádky. Signály UART sběrnice jsou vyvedeny na programovací konektor. Popsání programovacího konektoru bude uvedeno následně.
 
-%TODO zminit literaturu ZAHLAVA A MCU
 	\subsubsection{Programování}
-	Mikrokontrolér je programován pomocí JTAG programovacího rozhraní za využití programovacího konektoru, který je umístěn na spodní straně základní desky \ref{fig:programator}. Jedná se o 12 pinový konektor pro připojení plochého kabelu. Na programování mikrokontroléru byly z mikrokontroléru vyvedeny signály: JTMS/SWDIO a JTCK/SWCLK. Zbylé piny konektoru byly využity pro programování CPLD MachXO2 \cite{CPLD}. Přes plochý konektor z obrázku \ref{fig:programator} lze programovat, jak mikrokontrolér, tak na základní dece použité CPLD MachXO2 \ref{CPLD}. Posledními signály, které byly vyvedeny na programovací konektor jsou signály, pro monitorování běhu programu v mikrokontroléru. Jedná se o signály komunikačního rozhraní sběrnice UART. Signály jsou za pomocí plochého kabelu vyvedeny na redukční desku z obrázku \ref{fig:programator}, na které je možné pomocí propojovacích kabelů připojit programátor ST-Link, kterým je možné použitý mikrokontrolér naprogramovat. 
+	Mikrokontrolér je programován pomocí JTAG programovacího rozhraní za využití programovacího konektoru, který je umístěn na spodní straně základní desky \ref{fig:programator}. Jedná se o 12 pinový konektor pro připojení plochého kabelu. Pro programování mikrokontroléru byly z mikrokontroléru vyvedeny signály: JTMS/SWDIO a JTCK/SWCLK. Zbylé piny konektoru byly využity pro programování CPLD MachXO2 \cite{CPLD}. Přes plochý konektor z obrázku \ref{fig:programator} lze programovat, jak mikrokontrolér, tak na základní dece použité CPLD MachXO2 \ref{CPLD}. Posledními signály, které byly vyvedeny na programovací konektor jsou signály, pro monitorování běhu programu v mikrokontroléru. Jedná se o signály komunikačního rozhraní sběrnice UART. Signály jsou za pomocí plochého kabelu vyvedeny na redukční desku z obrázku \ref{fig:programator}, na které je možné pomocí propojovacích kabelů připojit programátor ST-Link, kterým je možné použitý mikrokontrolér naprogramovat. 
 \begin{figure}[h!]
 	\begin{subfigure}{0.5\textwidth}
 		\centering
@@ -227,7 +224,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 \end{figure} 
 
 	\subsubsection{PCB}
-	Realizované PCB pro část mikrokontroléru můžete vidět na obrázku \ref{fig:ST_layout}. Na obrázku nejsou uvedeny 3 tři vrstvy PCB, kterými jsou 2., 3. a 5. vrstva. Vrstva 2 a 5 tvoří pod částí mikrokontroléru souvislou zemní plochu a vrstva 3 slouží jako vrstva signálová. Blokovací kondenzátory napájení mikrokotroléru, jsou dle specifikace \cite{STM32U5A9_RM} umístěny co nejblíže příslušným pinům, z druhé strany PCB, než je samotný mikrokontrolér. Toto zapojení je možné vidět na obrázku \ref{fig:ST_BOT}. 
+	Realizované PCB pro část mikrokontroléru můžete vidět na obrázku \ref{fig:ST_layout}. Na obrázku nejsou uvedeny tři vrstvy PCB, kterými jsou 2., 3. a 5. vrstva. Vrstva 2 a 5 tvoří pod částí mikrokontroléru souvislou zemní plochu a vrstva 3 slouží jako vrstva signálová. Blokovací kondenzátory napájení mikrokontroléru, jsou dle specifikace \cite{STM32U5A9_RM} umístěny co nejblíže příslušným pinům, z druhé strany PCB, než je samotný mikrokontrolér. Toto zapojení je možné vidět na obrázku \ref{fig:ST_BOT}. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -283,9 +280,8 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 
 	\subsubsection{Konverze logických úrovní}
 	\label{CPLD konverze}
-	Dle \ref{Komunikacni rozhrani}, je zapotřebí pro komunikaci s Timepix 2 při využití sériového rozhraní použít komunikační specifikaci typu SLVS \ref{fig:SLVS_LVDS}, využívající diferenciální páry. Použitý mikrokontrolér \ref{mikrokontolér}, je kompatibilní pouze s CMOS 3.3 V logikou. CPLD umožňuje převod těchto úrovní. Respektive převod CMOS 3.3 V logiky na SLVS specifikaci a opačně.
+	Dle \ref{Komunikacni rozhrani}, je zapotřebí pro komunikaci s Timepix 2 při využití sériového rozhraní použít komunikační specifikaci typu SLVS \ref{fig:SLVS_LVDS}, využívající komunikační diferenciální páry. Použitý mikrokontrolér \ref{mikrokontolér}, je kompatibilní pouze s CMOS 3.3 V logikou. Použité CPLD umožňuje převod těchto úrovní. Respektive převod CMOS 3.3 V logiky na SLVS specifikaci a opačně.
 	\par Použité CPLD umožňuje generovat pouze signály ze specifikace Sub-LVDS. Aby bylo dosaženo parametrů potřebných pro SLVS specifikaci, bylo pro každý generovaný výstupní diferenciální pár použito zapojení s odpory z pravé části obrázku \ref{fig:sub_lvds_slvs}. Pro vstupní diferenciální páry, byla pouze co nejblíže k CPLD umístěna terminace, viz. levá část obrázku \ref{fig:sub_lvds_slvs}.
-	% TODO davat sem?
 \begin{comment} 
 	Programová implementace generování diferenciálních signálů pro MachXO2 obsahující pouze část architektury pro konverzi logických úrovní je zobrazena v ukázkovém kódu \ref{kod_vhdl}.
 \begin{lstlisting}[frame=single, language=VHDL, caption={Ukázkový kód ve VHDL pro CPLD}, label=kod_vhdl]
@@ -307,7 +303,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.50]{sub_lvds_slvs.pdf}
+	\includegraphics[scale=0.40]{sub_lvds_slvs.pdf}
 	\caption{Konverze napěťových úrovní standartu Sub-LVDS na SLVS.} 
 	\label{fig:sub_lvds_slvs}
 	\end{figure}
@@ -331,7 +327,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.50]{USBC_full.jpg}
+		\includegraphics[scale=0.60]{USBC_full.jpg}
 		\caption{Schematické rozložení konektoru USB C.} 
 		\label{fig:USBC_full}
 	\end{figure} 
@@ -348,7 +344,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\end{figure} 
 	
 	\subsubsection{PCB}
-	Jak bylo zmíněno v předchozí části, maximální komunikační rychlost specifikace USB 2.0 High Speed je 480 Mbit/s. Návrh PCB musel pro část USB musel odpovídat požadavkům pro návrh PCB pro vysokorychlostní komunikaci. Délka diferenciálních datových párů D+ a D- byla vůči sobě vykompenzována na vzdálenost 1 mm. Dle technické specifikace USB 2.0 High Speed je doba náběžné ($t_r$), respektive sestupné ($t_f$) hrany 500 ps. Časové zpoždění ($\Delta t$) mezi datovými páry D+ a D- by mělo být výrazně menší, než doba ($t_r$), respektive ($t_f$). Pokud zvolíme maximální časové zpoždění mezi páry D+ a D- na hodnotu 25 ps, při uvažované hodnotě zpoždění 0.1 ns/cm na plošném spoji, je nutné diferenciální signály vykompenzovat, tak aby maximální rozdíl délek vodičů diferenciálních párů, nebyl větší než 2.5 mm. Jak bylo již zmíněno, v uvedené práci došlo ke délky diferenciálních párů na 1 mm. Tedy časové zpoždění mezi páry, nebude větší než 10 ps.
+	Jak bylo zmíněno v předchozí části, maximální komunikační rychlost specifikace USB 2.0 High Speed je 480 Mbit/s. Návrh PCB musel pro část USB musel odpovídat požadavkům pro návrh PCB pro vysokorychlostní komunikaci. Délka diferenciálních datových párů D+ a D- byla vůči sobě vykompenzována na vzdálenost lišící se nanejvýš o 1 mm. Dle technické specifikace USB 2.0 High Speed je doba náběžné ($t_r$), respektive sestupné ($t_f$) hrany 500 ps. Časové zpoždění ($\Delta t$) mezi datovými páry D+ a D- by mělo být výrazně menší, než doba ($t_r$), respektive ($t_f$). Pokud zvolíme maximální časové zpoždění mezi páry D+ a D- na hodnotu 25 ps, při uvažované hodnotě zpoždění 0.1 ns/cm na plošném spoji, je nutné diferenciální signály vykompenzovat, tak aby maximální rozdíl délek vodičů diferenciálních párů, nebyl větší než 2.5 mm. Jak bylo již zmíněno, v uvedené práci došlo ke délky diferenciálních párů na 1 mm. Tedy časové zpoždění mezi páry, nebude větší než 10 ps.
 	\par Diferenciální páry D+ a D- byly po PCB vedeny ve vrchní a spodní vrstvě plošného spoje. Dle celkové skladby PCB základní desky z tabulky \ref{tab:pcb_vrstvy} odpovídá, že sousedící vrstva, respektive vrstvy pod vrchní a spodní vrstvou je vždy souvislou zemní plochou. Z celkové skladby PCB z obrázku \ref{fig:PCB_mother_stackup}, byly výrobcem PCB dodané parametry pro fyzické rozměry diferenciálních vodičů, aby bylo možné dodržení impedančního přizpůsobení $100 \Omega$. Realizaci vedení signálů D+ a D- na desce plošných spojů je možné vidět na obrázku \ref{fig:usb_layout}
 	
 	\begin{figure}[h!]
@@ -393,7 +389,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.60]{tpx_wire.png}
+		\includegraphics[scale=0.80]{tpx_wire.png}
 		\caption{Rozložení pinů pro připojení Timepix 2 k desce plošných spojů.} 
 		\label{fig:tpx_wire}
 	\end{figure} 
@@ -442,13 +438,23 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\end{figure} 
 	
 \section{Mechanika}
-	Mechanickým řešením byla zvolena výroba hliníkové krabičky. Hliník byl vybrán díky svým teplo vodivým vlastnostem, váhou a dobrou obrobitelností. Navržená mechanická krabička byla vyfrézovaná na CNC zařízení. Na výsledný povrch mechanické krabičky byl nanesen černý elox s potiskem loga Ústavu Technické a Experimentální Fyziky ČVUT, kde celá tato práce byla realizována. Výslednou mechanickou krabičku je možné vidět na obrázku \ref{fig:mechanika}. Na obrázku můžete vidět nalepenou teplo vodivou pásku která slouží pro zlepšení odvodu tepla z detektoru Timepix 2 do celého objemu navržené mechanické krabičky. Na vrchní straně krabičky je možné vidět posuvné okénko, jež slouží po složení celé mechaniky k zakrytí části s detektorem Timepix 2, aby při manipulaci s rozhraním nedošlo k poškození detektoru. Při měření je možné toto výsuvné okénko nastavit do pozice otevřeno. Rozměry mechaniky jsou 73.4 x 22 x 13.5 mm. 
+	Mechanickým řešením byla zvolena výroba hliníkové krabičky. Hliník byl vybrán díky svým teplo vodivým vlastnostem, váhou a dobrou obrobitelností. Dále byl vybrán s ohledem na prostřední ve kterém bude navržené rozhraní používáno, tedy prostředí se zvýšenou radiací. Navržená mechanická krabička byla vyfrézovaná na CNC zařízení. Na výsledný povrch mechanické krabičky byl nanesen černý elox s potiskem loga Ústavu Technické a Experimentální Fyziky ČVUT, kde celá tato práce byla realizována. Výslednou mechanickou krabičku je možné vidět na obrázku \ref{fig:mechanika}. Na obrázku můžete vidět teplo vodivou pásku která slouží pro zlepšení odvodu tepla z detektoru Timepix 2 do celého objemu navržené mechanické krabičky. Analýzu odvodu tepla ze zařízení je možné vidět na obrázku \ref{fig:teplo}, kdy snímek byl pořízen termokamerou ve stavu, kdy navržené vyčítací rozhraní bylo v procesu ekvalizace. Na vrchní straně krabičky je možné vidět posuvné okénko, jež slouží po složení celé mechaniky k zakrytí části s detektorem Timepix 2, aby při manipulaci s rozhraním nedošlo k poškození detektoru. Při měření je možné toto výsuvné okénko nastavit do pozice otevřeno. Rozměry mechaniky jsou 73.4 x 22 x 13.5 mm. 
 	%TODO krabika fota
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.60]{tpx2_temp.jpg}
-		\caption{Mechanická krabička navrženého vyčítacího rozhraní.} 
+		\includegraphics[scale=0.15]{./Mechanika/mechanika_open.jpeg}
+		\caption{Rozložená mechanická krabička navrženého vyčítacího rozhraní.} 
 		\label{fig:mechanika}
 	\end{figure}
+	
+		\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.99]{./Mechanika/teplo_1.jpg}
+		\caption{Odvod tepla z navrženého vyčítacího rozhraní.} 
+		\label{fig:teplo}
+	\end{figure}
+	
 
+	

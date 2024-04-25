@@ -1,4 +1,5 @@
 \chapter{Testování}
+\label{testovani}
 %TODO vysledky zobrozene v TrackLabu !
 
 %TODO mozna neco z testovani zaradit do sekce realizace. predevsim nejake promerovani parametru? a tady nechat jen zasadni info o dulezitych testech
@@ -6,7 +7,7 @@
 \section{Napájení}
 % TODO V2 uvest rozbehove sekvence celeho zarizeni  !!
 % TODO V2 stailita 1V2ANA 1V2DIG pro Timepix2 !!
-Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V externího napájení USB, jak bylo uvedeno v sekci \ref{napajeni}. A to napájecí úrovně +1.2 V, +2.5 V a +3.3 V. Zvlnění výstupního napětí bylo poté vždy měřeno na výstupu každého spínaného regulátoru se snahou vytvoření co nejkratší zemní smyčky mezi měřícím bodem a připojenou zemí osciloskopu. Měření nebylo ve všech případech s ohledem na velikost zemní smyčky ideální vzhledem k zapojení ve kterém je realizováno vyčítací rozhraní a to tedy v zapojení, kdy je deska s Timepix 2 nad základní deskou a tedy není možné se připojit sondou osciloskopu na vrchní stranu základní desky. I s ohledem na zmíněné problémy byly naměřeny tyto průběhy \ref{fig:napeti}. Kde CH3 je +2.5 V, CH2 +3.3V a CH1 poté +1.2 V. Stejnosměrné hodnoty výše uvedených napájecích úrovní je možné vidět na obrázku \ref{fig:urovne}.
+Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V externího napájení USB, jak bylo uvedeno v sekci \ref{napajeni}. A to napájecí úrovně +1.2 V, +2.5 V a +3.3 V. Zvlnění výstupních napětí bylo poté vždy měřeno co nejblíže výstupu každého spínaného regulátoru se snahou vytvoření co nejkratší zemní smyčky mezi měřícím bodem a připojenou zemnící sondou osciloskopu. Měření nebylo ve všech případech s ohledem na velikost zemní smyčky ideální vzhledem k zapojení ve kterém je realizováno vyčítací rozhraní a to tedy v zapojení, kdy je deska s Timepix 2 nad základní deskou a tedy není možné se připojit sondou osciloskopu na vrchní stranu základní desky, která se nachází pod deskou s detektorem Timepix 2. I s ohledem na zmíněné problémy byly naměřeny tyto průběhy \ref{fig:napeti} zvlnění výstupních napětí. Kde CH3: +2.5 V, CH2: +3.3V a CH1: +1.2 V. Stejnosměrné hodnoty výše uvedených napájecích úrovní je možné vidět na obrázku \ref{fig:urovne}.
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
@@ -23,21 +24,30 @@ Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V extern�
 	\label{fig:urovne}
 \end{figure}
 
-\section{Vysokonapěťový zdroj}
-% Nastaveni VN zdroje
-Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, které je generováno na desce s Timepix 2 \ref{Deska s Timepix2} je popsán v části textu \ref{VN zdroj}. Velikost vysokého napětí je nastavována přes SPI komunikaci z mikrokontroléru. Velikost výstupního napětí je poté možné nastavit v rozsahu 8-bitového čísla, tedy 256 hodnot. Závislost 8-bitové hodnoty na výstupním napětí vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv_hex}, kdy nastavené vysoké napětí bylo zpětnovazebně měřeno mikrokontrolérem. Monitorované vysoké napětí je poté monitorováno programem TrackLab, jak lze vidět na obrázku \ref{fig:Tracklab}.
-\begin{figure}[h!]
+\section{Měření spotřeby}
+%TODO zmenit nastaveni MachXO2 -: zlepsi se to ?
+Měření spotřeby probíhalo měřením úbytku napětí na 100 $m\Omega$ odporu zapojeného do série v +5 V napájecí větvi. Naměřené parametry můžete vidět v tabulce \ref{tab:spotreba}. 
+\begin{table}[h!]
 	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[scale=0.40]{./Mereni/hv_hex_small.pdf}
-	\caption{Závislost vstupní 8 bitové hodnoty na výstupním napětí VN zdroje.} 
-	\label{fig:hv_hex}
-\end{figure}
+	\begin{tabular}{ |P{8cm}|P{2cm}|P{2cm}|  }
+		\hline
+		\multicolumn{3}{|c|}{Spotřeba navrženého rozhraní} \\
+		\hline
+		Část rozhraní & Naměřené napětí [mV] & Spotřeba [mW]\\ \hline \hline 
+		Základní Deska & 8.9 & 445\\ \hline 	
+		Celé rozhraní, před int. TPX2 & 16 & 800\\ \hline
+		Celé rozhraní, po int. TPX2 & 29.1 & 1455\\ \hline
+		Celé rozhraní, 1/2 TPX2 zamaskovaná & 21.8 & 1090\\ \hline
+		Celé rozhraní, TPX2 zamaskovaný & 16.5 & 825\\ \hline
+	\end{tabular}
+	\caption{Spotřeba navrženého vyčítacího rozhraní}
+	\label{tab:spotreba}
+\end{table}
 
 \section{USB komunikace}
-Fyzická implementace USB byla popsána v části textu \ref{USB}. Pro testování USB komunikace byly použity dvě USB třídy. První třídou USB byl virtuální sériový port přes USB. Tato třída sloužila pouze pro rychlé ověření funkčnosti USB periférie. Druhou třídou byla třída RNDIS, neboli virtuální ethernet přes USB, jež byla použita pro přenos UDP protokolu přes USB z navrženého vyčítacího rozhraní do rozhraní uživatelského.
+Fyzická implementace USB byla popsána v části textu \ref{USB}. Pro testování USB komunikace byly použity dvě USB třídy. První třídou USB byl virtuální sériový port přes USB. Tato třída sloužila pouze pro rychlé ověření funkčnosti USB periférie. Druhou třídou byla třída RNDIS, neboli virtuální ethernet přes USB, tato třída byla použita pro přenos UDP protokolu přes USB, tedy z navrženého vyčítacího rozhraní do rozhraní uživatelského.
 \subsection{Virtuální ethernet přes USB}
-Další USB třídou, která byla použita v konečné implementaci byla třída RNDIS. Jedná se o třídu zařízení kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP protokol. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{Manek_2024}. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Ukázka nakonfigurovaného zařízení jako třídy RNDIS lze vidět na obrázku \ref{fig:RNDIS}. Snímek konfigurace zařízení byl pořízen z programu USBTreeView. 
+Hlavní USB třída, která byla použita v konečné implementaci byla třída RNDIS. Jedná se o třídu USB kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP protokol. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{Manek_2024} a již existující komunikační protokol, využívající právě UDP komunikaci. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Navržené miniaturizované rozhraní se tedy programu TrackLab jeví jako právě zmíněné vyčítací rozhraní Katherine pro Timepix 2. Ukázka nakonfigurovaného zařízení jako třídy RNDIS lze vidět na obrázku \ref{fig:RNDIS}. Snímek konfigurace zařízení byl pořízen z programu USBTreeView. 
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
@@ -47,7 +57,7 @@ Další USB třídou, která byla použita v konečné implementaci byla třída
 \end{figure}
 
 \section{Integrace rozhraní do programu TrackLab}
-Velkou část ověření funkčnosti navrženého rozhraní v této práci tvořila integrace rozhraní do programu TrackLab \cite{Manek_2024}. Tento program slouží pro zpracování dat z pixelových detektorů, online analýzu dat a automatizaci. Navržené rozhraní je připojeno pomocí virtuálního ethernetu pes USB do uživatelského rozhraní. Protokol, kterým rozhraní komunikuje je analogický, jako pro vyčítací rozhraní Katherine pro Timepix 2, které bylo popsáno v části \ref{Katherine}. Protokol je založen na 6 B rámcích, které jsou posílány pomocí UDP protokolu. Pokud nebude uvedeno jinak, pořízené snímky ověřující funkcionalitu rozhraní jsou z právě programu TrackLab \cite{Manek_2024}.
+Velkou část ověření funkčnosti navrženého rozhraní v této práci tvořila integrace rozhraní do programu TrackLab \cite{Manek_2024} a následné ovládání rozhraní právě z tohoto programu. Tento program slouží pro zpracování dat z pixelových detektorů, online analýzu dat a automatizaci. Navržené rozhraní je připojeno pomocí virtuálního ethernetu přes USB do uživatelského rozhraní. Protokol, kterým rozhraní komunikuje je analogický, jako pro vyčítací rozhraní Katherine pro Timepix 2, které bylo popsáno v části \ref{Katherine}. Protokol je založen na 6 B rámcích, které jsou posílány pomocí UDP protokolu. Pokud nebude uvedeno jinak, pořízené snímky ověřující funkcionalitu rozhraní jsou z právě programu TrackLab \cite{Manek_2024}.
 
 \begin{figure}[h!]
 	\centering
@@ -57,13 +67,27 @@ Velkou část ověření funkčnosti navrženého rozhraní v této práci tvoř
 	\label{fig:Tracklab}
 \end{figure}
 
+\section{Vysokonapěťový zdroj}
+% Nastaveni VN zdroje
+Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, které je generováno na desce s Timepix 2 \ref{Deska s Timepix2} je popsán v části textu \ref{VN zdroj}. Velikost vysokého napětí je nastavována přes SPI komunikaci z mikrokontroléru. Velikost výstupního napětí je poté možné nastavit v rozsahu 8-bitového čísla, tedy v rozsahu 256 hodnot. Závislost zapsané 8-bitové hodnoty na výstupním napětí vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv_hex}, kdy nastavené vysoké napětí bylo zpětnovazebně měřeno mikrokontrolérem. Nastavené vysoké napětí je poté monitorováno programem TrackLab, jak lze vidět na obrázku \ref{fig:Tracklab}.
+\begin{figure}[h!]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[scale=0.40]{./Mereni/hv_hex_small.pdf}
+	\caption{Závislost vstupní 8 bitové hodnoty na výstupním napětí VN zdroje.} 
+	\label{fig:hv_hex}
+\end{figure}
+
+
+
 % TODO promereni teploty s mechanikou ??, termokamra ??
 \section{Měření teploty}
 V této práci bylo implementováno měření teploty pomocí externího teplotního senzoru na desce s detektorem Timepix 2 \ref{Deska s Timepix2} a měření teploty za využití interního měření teploty detektoru Timepix 2.
 \subsection{Měření teploty vyčítacího rozhraní}
-Typ senzoru který byl pro tuto práci vybrán pro měření teploty na desce s Timepix 2 byl podrobně popsán v části \ref{Mereni teploty}. Pokud dojde k uživatelskému příkazu, který požaduje informaci o teplotě, následuje proces vyčtení teploty ze senzoru pomocí I2C komunikace. Poté následuje dekódování přijatého čísla na odpovídající skutečnou hodnotu. Zobrazení teploty na desce s detektorem Timepix 2 je poté monitorováno z programu TrackLab \cite{Manek_2024}. Zobrazení teploty lze vidět na obrázku \ref{fig:Tracklab}.
+Typ senzoru který byl pro tuto práci vybrán pro měření teploty na desce s Timepix 2 byl podrobně popsán v části \ref{Mereni teploty}. Pokud dojde k uživatelskému příkazu, který požaduje informaci o teplotě, následuje proces vyčtení teploty ze senzoru pomocí I2C komunikace. Poté následuje dekódování přijatého čísla na odpovídající skutečnou analogovou hodnotu. Zobrazení teploty na desce s detektorem Timepix 2 je poté monitorováno z programu TrackLab \cite{Manek_2024}. Zobrazení teploty lze vidět na obrázku \ref{fig:Tracklab}.
 \subsection{Měření teploty Timepix2}
-Pixelový detektor Timepix 2 umožňuje monitorovat vnitřní teplotu detektoru. Hodnota výsledné teploty detektoru je poté dle simulace teploty detektoru v závislosti na napěťové referenci popsána na obrázku \ref{fig:tpx2_temp}. Pro získání teploty detektoru je zapotřebí naměření dvou analogových hodnot z obrázku \ref{fig:tpx2_temp}, označovaných jako Vtemp a Vbg. Pro získání těchto analogových hodnot je nejprve zapotřebí nastavit, jaká hodnota analogového napětí bude na výstupu pinu Timepix 2 označovaného jako DACOUT. Výstup pinu DACOUT Timepix 2 je poté zpracován interním 12-bitovým AD převodníkem mikrokontroléru na základní desce \ref{zakladni deska}. Příklad výběru hodnoty na výstup DACOUT detektoru Timepix 2 a převod získaných hodnot na odpovídající teplotu lze vidět v \ref{kod_temp_tpx2}.
+\label{teplota}
+Pixelový detektor Timepix 2 umožňuje monitorovat vnitřní teplotu detektoru. Hodnota výsledné teploty detektoru je poté dle simulace teploty detektoru v závislosti na napěťové referenci popsána na obrázku \ref{fig:tpx2_temp}. Pro získání teploty detektoru je zapotřebí naměření dvou analogových hodnot z obrázku \ref{fig:tpx2_temp}, označovaných jako Vtemp a Vbg. Pro získání těchto analogových hodnot je nejprve zapotřebí nastavit, jaká hodnota analogového napětí bude na výstupu pinu Timepix 2 označovaného jako DACOUT. Výstup pinu DACOUT Timepix 2 je poté zpracován interním 12-bitovým AD převodníkem mikrokontroléru na základní desce \ref{zakladni deska}. Příklad výběru hodnoty na výstup DACOUT detektoru Timepix 2 a převod získané hodnoty na odpovídající teplotu lze vidět v zjednodušeném kódu \ref{kod_temp_tpx2}. Zpracovaná teplota je následně odeslána do programu TrackLab. Zobrazení teploty v programu TrackLab detektoru Timepix 2 lze najít na obrázku \ref{fig:Tracklab}.  
 \begin{lstlisting}[frame=single, language=C, caption={Výběr výstupu DACOUT detektoru Timepix2 a odečtení hodnoty detektoru.}, label=kod_temp_tpx2]
 // GET DAC : VBG_TEMP
 uint8_t set_dacoutsel[0] = VBG_TEMP; 
@@ -78,34 +102,34 @@ if(board_tpx2_get_dacout(TPXA, &vtemp) != BOARD_OK) {
 // Sim. -> TT. // Temp. into real value in ^C.
 float tpx2_temp = 471.99*(vtemp - vbg)/1000 - 179.14;					
 \end{lstlisting}
-Následně zpracovaná teplota je odeslána do programu TrackLab. Zobrazení teploty detektoru Timepix 2 lze najít na obrázku \ref{fig:Tracklab}.  
+
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
 	\includegraphics[scale=0.50]{tpx2_temp.jpg}
-	\caption{Simulace teploty detektoru Timepix2 v závislosti na hodnotě napěťové reference \cite{tpx2_manual}.} 
+	\caption{Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite{tpx2_manual}.} 
 	\label{fig:tpx2_temp}
 \end{figure}
 
 \section{Komunikační rozhraní s Timepix 2}		% promřování logických urovni komunkikace, rychlosti atd..
 %todo logicke urovne SLVS, rychlosti komunikace -> need V2. MCLOCK..
-Komunikační rozhraní detektoru Timepix 2 bylo popsáno v části textu \ref{Komunikacni rozhrani}. Následná  realizace komunikace s Timepix 2, pak v části \ref{CPLD konverze}. K měření diferenciálních komunikačních signálů byla použita aktivní diferenciální sonda s osciloskopem. Měření probíhalo při frekvenci komunikačních hodin 20 Mhz. Na obrázku \ref{fig:MCLOCK_DIFF_PROBE} můžete vidět průběh komunikačních hodin. Konkrétně CH 2 z obrázku \ref{fig:MCLOCK_DIFF_PROBE} je výstup hodinového signálu SPI komunikace z mikrokontroléru. Kanál CH 1 je poté naměřený diferenciální signál aktivní diferenciální sondou po konverzi logické úrovně v CPLD, který je poté na vstupu detektoru Timepix 2.  
+Komunikační rozhraní detektoru Timepix 2 bylo popsáno v části textu \ref{Komunikacni rozhrani}. Následná  realizace komunikace s Timepix 2, pak v části \ref{CPLD konverze}. K měření diferenciálních komunikačních signálů byla použita aktivní diferenciální sonda s osciloskopem. Měření probíhalo při frekvenci komunikačních hodin 20 Mhz. Na obrázku \ref{fig:MCLOCK_DIFF_PROBE} můžete vidět průběh komunikačních hodin. Konkrétně CH2 z obrázku \ref{fig:MCLOCK_DIFF_PROBE} je výstup hodinového signálu SPI komunikace z mikrokontroléru. Kanál CH1 je poté naměřený diferenciální signál aktivní diferenciální sondou po konverzi logické úrovně v CPLD, který je poté na vstupu detektoru Timepix 2.  
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.40]{./Mereni/MCLOCK_DIFF_PROBE.png}
+	\includegraphics[scale=0.50]{./Mereni/MCLOCK_DIFF_PROBE.png}
 	\caption{Průběh komunikačního hodinového signálu Timepix 2.} 
 	\label{fig:MCLOCK_DIFF_PROBE}
 \end{figure}
 
 \section{Digitální test Timepix 2} %popis prubehu a vysledku
-Funkčnost komunikace s detektorem Timepix 2 byla, také ověřena pomocí digitálních testů, jednotlivé testy budou popsány v následujících částech.
+Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitálních testů, jednotlivé testy budou popsány v následujících částech.
 	\subsection{Vyčtení chip ID}
 	Prvním digitálním testem, který byl implementován byl test, který vyčítá sériové výrobní číslo detektoru, označované jako CHIP ID, které je pro každý detektor Timepix 2 jedinečné a předem známé. Pro správné vyčtení CHIP ID detektoru je nejprve zapotřebí přivést napájecí napětí +2.5 V na pin VDD33, jak bylo popsáno v části \ref{Technicka specifikace}. Hodnota CHIP ID je poté uložena v 32-bitové registru Timepix 2. Vyčtením tohoto registru dostáváme 32 bitovou hodnotu, kterou pomocí známé transformace převedeme na skutečnou hodnotu CHIP ID, která odpovídá předem známému sériovému číslu detektoru Timepix 2. Program TrackLab, před každým připojením nového rozhraní vyčte sérové číslo připojeného detektoru. Výpis získaného CHIP ID v programu TrackLab lze vidět na obrázku \ref{fig:Tracklab}.
 
 	\subsection{Vyčtení a zapsání pixelových matic}
-	Pomocí výše uvedeného testu, vyčtení CHIP ID detektoru došlo k otestování vyčítaní základních registrů detektoru Timepix 2. Dalším digitálním testem je poté zápis a vyčtení všech čítačů, používajících se pro měření. Popis čítačů Timepix 2, lze najít v části \ref{Digitálni cast}.
-	\par Zápis do digitálních čítačů slouží jen pro digitální testování, při samotném měření se tato funkce nevyužívá. S výjimkou nastavení konfigurační matice a matice lokálních prahových úrovní, které využívají pro nastavení 10-bitový a 4-bitový čítač. Celkem při digitálním testu došlo k zápisu hodnot do všech dostupných čítačů Timepix 2 a následnému vyčtení. Celkem bylo zapsáno 5 testujících obrazů. Zapsané obrazy byly zvoleny dle tabulky \ref{tab:obraz}. Při digitálním testu tedy došlo k zápisu 327 680B dat a jejich opětovnému vyčtení. Digitální test byl prováděn s frekvencí datových hodin 40 Mhz. Po každém digitálním testu bylo resetováno napájení detektoru Timepix 2 a digitální test byl proveden znovu. Při opakovaném digitálním testu, nebyly pozorovány problémy. %Test byl opakován 100 krát s úspěšností 100\%.
+	Pomocí výše uvedeného testu, vyčtení CHIP ID detektoru došlo k otestování vyčítaní základních registrů detektoru Timepix 2. Dalším digitálním testem je poté zápis a vyčtení všech digitálních čítačů, používajících se pro měření. Popis čítačů Timepix 2, lze najít v části \ref{Digitálni cast}.
+	\par Zápis do digitálních čítačů slouží jen pro digitální testování, při samotném měření se tato funkce nevyužívá. S výjimkou nastavení konfigurační matice a matice lokálních prahových úrovní, které se využívají pro nastavení 10-bitového a 4-bitového čítače. Celkem při digitálním testu došlo k zápisu hodnot do všech dostupných čítačů Timepix 2 a následnému vyčtení. Celkem bylo zapsáno 5 testujících obrazů. Zapsané obrazy byly zvoleny dle tabulky \ref{tab:obraz}. Při digitálním testu tedy došlo k zápisu 327 680 B dat a jejich opětovnému vyčtení. Digitální test byl prováděn s frekvencí datových hodin 40 Mhz. Po každém digitálním testu bylo resetováno napájení detektoru Timepix 2 a digitální test byl proveden znovu. Při opakovaném digitálním testu, nebyly pozorovány problémy.
 	\begin{table}[h!]
 		\centering
 		\begin{tabular}{ |P{3cm}|P{4cm}|  }
@@ -123,17 +147,17 @@ Funkčnost komunikace s detektorem Timepix 2 byla, také ověřena pomocí digit
 		\label{tab:obraz}
 	\end{table}
 \section{Timepix 2 DAC sken}
-	Dalším testem ověřením funkčnosti navrženého vyčítacího rozhraní byl DAC sken Timepix 2. Test při kterém do 18 interních DAC kanálů detektoru Timepix 2 byla pro každý kanál zapsána digitální 8-bitová hodnota v rozsahu 0 až 255. Následně byl zvolen DAC kanál, který bude výstupem na pinu DACOUT detektoru Timepix 2. Tato již analogová hodnota z výstupního pinu DACOUT byla převedena interním 12-bitovým AD převodníkem mikrokontroléru. DAC sken pro 18 interních kanálů s výpisem do programu TrackLab můžete vidět na obrázku \ref{fig:dacscan}. 
+	Dalším testem ověřujícím funkčnost navrženého vyčítacího rozhraní byl sken interních DAC Timepix 2. Test při kterém do 18 interních DAC kanálů detektoru Timepix 2 byla pro každý kanál zapsána digitální 8-bitová hodnota v rozsahu 0 až 255. Následně byl jednotlivě zvolen DAC kanál, který bude výstupem na pinu DACOUT detektoru Timepix 2. Tato výstupní, již analogová hodnota z výstupního pinu DACOUT byla převedena interním 12-bitovým AD převodníkem mikrokontroléru. Princip volby, které DAC bude na výstupu pinu DACOUT je analogický s popsaným kódem v části \ref{teplota}. DAC sken pro 18 interních DAC kanálů s výpisem do programu TrackLab můžete vidět na obrázku \ref{fig:dacscan}. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.40]{tracklab_dac.jpg}
+		\includegraphics[scale=0.50]{tracklab_dac.jpg}
 		\caption{DAC sken detektoru Timepix 2.} 
 		\label{fig:dacscan}
 	\end{figure}
 
 \section{Ekvalizace Timepix 2}
-	Komplexním testem testující spolehlivou funkčnost navrženého rozhraní byl proces ekvalizace Timepix 2 čipu v programu TrackLab. Jak bylo popsáno v části \ref{analog}, každý z 256 x 256 pixelů matice obsahuje lokální DAC převodník pro nastavení lokální prahové úrovně detekovatelného signálu. Právě tato lokální úroveň detekovatelného signálu je optimalizačně nastavována z programu TrackLab. Další funkcionalita Timepix 2 čipu využívající se při ekvalizaci čipu je možnost maskování pixelů. Neboli ten pixel, který byl vybrán jako maskovací vypíná daný pixel. Kombinací maskování pixelů a optimalizačním výběrem lokálních prahových úrovní lze získat parametry potřebné pro nastavení detektoru Timepix 2, aby byl minimalizován šum detektoru. Prvním získaným parametrem je takzvaná matice lokálních prahových úrovní. Neboli matice 256 x 256 x 5 bitů nesoucí informaci, jakou 5-bitovou lokální úroveň nastavit pro daný pixel. Dalšími parametry jsou maskovací matice a hodnota globální prahové úrovně. Maskovací matice, jak již bylo popsáno nese informaci, jaký pixel z matice má být zamaskován, či odmaskován. Globální prahová úroveň je poté společná úroveň detekovatelného signálu pro celý detektor. Výsledek ekvalizace z programu TrackLab můžete vidět na obrázku \ref{fig:tracklab_eql}.
+	Komplexním testem testující spolehlivou funkčnost navrženého rozhraní byl proces ekvalizace detektoru Timepix 2 v programu TrackLab. Jak bylo popsáno v části \ref{analog}, každý z 256 x 256 pixelů matice obsahuje lokální DAC převodník pro nastavení lokální prahové úrovně detekovatelného signálu. Právě tato lokální úroveň detekovatelného signálu je optimalizačně nastavována z programu TrackLab. Další funkcionalita Timepix 2 čipu využívající se při ekvalizaci čipu je možnost maskování pixelů. Neboli pixel, který byl vybrán jako maskovací, vypíná daný pixel. Kombinací maskování pixelů a optimalizačního výběru lokálních prahových úrovní lze získat parametry potřebné pro nastavení detektoru Timepix 2, aby byl minimalizován šum detektoru. Prvním získaným parametrem je takzvaná matice lokálních prahových úrovní. Neboli matice 256 x 256 x 5 bitů nesoucí informaci, jakou 5-bitovou lokální úroveň nastavit pro daný pixel. Dalšími parametry jsou maskovací matice a hodnota globální prahové úrovně. Maskovací matice, jak již bylo popsáno nese informaci, jaký pixel z matice má být zamaskován, či odmaskován. Globální prahová úroveň je poté společná úroveň detekovatelného signálu pro celý detektor. Výsledek ekvalizace z programu TrackLab můžete vidět na obrázku \ref{fig:tracklab_eql}. Kdy globální prahová úroveň byla vypočítaná jako 2068 se směrodatnou odchylkou 5.97. Získaná globální prahová úroveň je poté převedena na digitální hodnotu pomocí známé transformace a následně zapsána do detektoru Timepix 2.
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
@@ -142,28 +166,29 @@ Funkčnost komunikace s detektorem Timepix 2 byla, také ověřena pomocí digit
 		\label{fig:tracklab_eql}
 	\end{figure}
 
-\section{Měření spotřeby}
-%TODO zmenit nastaveni MachXO2 -: zlepsi se to ?
-	Měření spotřeby probíhalo měřením úbytku napětí na 100 $m\Omega$ odporu zapojeného do série v +5 V napájecí větvi. Naměřené parametry můžete vidět v tabulce \ref{tab:spotreba}
-	\begin{table}[h!]
-		\centering
-		\begin{tabular}{ |P{8cm}|P{2cm}|P{2cm}|  }
-			\hline
-			\multicolumn{3}{|c|}{Spotřeba navrženého rozhraní} \\
-			\hline
-			Část rozhraní & Naměřené napětí [mV] & Spotřeba [mW]\\ \hline \hline 
-			Základní Deska & 8.9 & 445\\ \hline 	
-			Celé rozhraní, před int. TPX2 & 16 & 800\\ \hline
-			Celé rozhraní, po int. TPX2 & 29.1 & 1455\\ \hline
-			Celé rozhraní, 1/2 TPX2 zamaskovaná & 21.8 & 1090\\ \hline
-			Celé rozhraní, TPX2 zamaskovaný & 16.5 & 825\\ \hline
-		\end{tabular}
-		\caption{Spotřeba navrženého vyčítacího rozhraní}
-		\label{tab:spotreba}
-	\end{table}
+\section{Měření v laboratoři CERN}
+	Od 29.4 do 9.5 je naplánováno měření v CERNu. Tato část bude doplněna po tomto datu..
 
-	
+
+%TODO davat sem nebo jen popsat poradne zaver?	
 \section{Dosažené parametry}
-% TODO shrnuti nosazenych parametru namerenych vyse
+Navržené vyčítací rozhraní bylo otestováno výše popsanými testy funkčnosti. Na základně těchto testů je možné stanovit parametry navrženého vyčítacího rozhraní viz tabulka \ref{tab:parametry}.
 
+	\begin{table}[h!]
+	\centering
+	\begin{tabular}{ |P{7cm}|P{3cm}|P{2cm}|  }
+		\hline
+		\multicolumn{3}{|c|}{Parametry navrženého vyčítacího rozhraní} \\
+		\hline
+		Parametr & Hodnota &Jednotky\\ \hline \hline 
+		Rozměry & 73.4 x 22 x 13.5 & [mm]\\ \hline 	
+		Hmotnost & 35 & [g]	\\ \hline
+		Spotřeba TPX2 ON & 1455 & [mW]\\ \hline
+		Spotřeba TPX2 OFF & 825 & [mW]\\ \hline
+		Rychlost vyčítaní dat z TPX2 & 40 & [Mbit/s]\\ \hline
+		Max. rychlost vyčítaní dat z rozhraní & 480 & [Mbit/s]\\ \hline
+	\end{tabular}
+	\caption{Parametry navrženého vyčítacího rozhraní}
+	\label{tab:parametry}
+\end{table}
 
