@@ -1,13 +1,11 @@
-\chapter{Testování}
+\chapter{Funkční testy}
 \label{testovani}
-%TODO vysledky zobrozene v TrackLabu !
-
-%TODO mozna neco z testovani zaradit do sekce realizace. predevsim nejake promerovani parametru? a tady nechat jen zasadni info o dulezitych testech
-
 \section{Napájení}
-% TODO V2 uvest rozbehove sekvence celeho zarizeni  !!
-% TODO V2 stailita 1V2ANA 1V2DIG pro Timepix2 !!
-Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V externího napájení USB, jak bylo uvedeno v sekci \ref{napajeni}. A to napájecí úrovně +1.2 V, +2.5 V a +3.3 V. Zvlnění výstupních napětí bylo poté vždy měřeno co nejblíže výstupu každého spínaného regulátoru se snahou vytvoření co nejkratší zemní smyčky mezi měřícím bodem a připojenou zemnící sondou osciloskopu. Měření nebylo ve všech případech s ohledem na velikost zemní smyčky ideální vzhledem k zapojení ve kterém je realizováno vyčítací rozhraní a to tedy v zapojení, kdy je deska s Timepix 2 nad základní deskou a tedy není možné se připojit sondou osciloskopu na vrchní stranu základní desky, která se nachází pod deskou s detektorem Timepix 2. I s ohledem na zmíněné problémy byly naměřeny tyto průběhy \ref{fig:napeti} zvlnění výstupních napětí. Kde CH3: +2.5 V, CH2: +3.3V a CH1: +1.2 V. Stejnosměrné hodnoty výše uvedených napájecích úrovní je možné vidět na obrázku \ref{fig:urovne}.
+Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V externího napájení USB, jak bylo uvedeno v sekci \ref{napajeni}. A to napájecí úrovně +1.2 V, +2.5 V a +3.3 V. Parametry generovaných napájení budou uvedeny v následujících částech.
+
+%TODO jak uvest zatez?
+\subsection{Zvlnění výstupních napětí}
+ Zvlnění výstupních napětí bylo vždy měřeno co nejblíže výstupu každého spínaného regulátoru se snahou vytvoření co nejkratší zemní smyčky mezi měřícím bodem a připojenou zemnící sondou osciloskopu. Měření nebylo ve všech případech s ohledem na velikost zemní smyčky ideální vzhledem k zapojení ve kterém je realizováno vyčítací rozhraní a to tedy v zapojení, kdy je deska s Timepix 2 nad základní deskou a tedy není možné se připojit sondou osciloskopu na vrchní stranu základní desky, která se nachází pod deskou s detektorem Timepix 2. I s ohledem na zmíněné problémy byly naměřeny tyto průběhy \ref{fig:napeti} zvlnění výstupních napětí. Kde CH3: +2.5 V, CH2: +3.3V a CH1: +1.2 V.  
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
@@ -15,7 +13,24 @@ Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V extern�
 	\caption{Zvlnění výstupních napětí +2.5V, +3.3 V a +1.2 V, generovaných na základní desce \ref{zakladni deska}.} 
 	\label{fig:napeti}
 \end{figure}
+Výsledné hodnoty zvlnění výstupních napětí je možné najít v uvedené tabulce \ref{tab:zvlneni}.
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{ |P{2cm}|P{4cm}|P{4cm}|P{3cm}|  }
+		\hline
+		\multicolumn{4}{|c|}{Parametry výstupních napětí} \\
+		\hline
+		Typ napětí & Max. Zvlnění [mV] & RMS max. [V] & RMS min. [V]\\ \hline \hline 
+		+1.2 V & 11.2 & 1.22 & 1.21\\ \hline 	
+		+2.5 V & 15.0 & 2.57 & 2.55\\ \hline
+		+3.3 V & 11.2 & 3.30 & 3.28\\ \hline
+	\end{tabular}
+	\caption{Parametry výstupních napětí}
+	\label{tab:zvlneni}
+\end{table}
 
+\subsection{Stejnosměrné úrovně výstupních napětí}
+Stejnosměrné hodnoty výše uvedených napájecích úrovní je možné vidět na obrázku \ref{fig:urovne}. Shrnující údaje o stejnosměrné hodnotě výstupního napětí lze také dohledat z tabulce \ref{tab:zvlneni}.
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
@@ -24,7 +39,17 @@ Na základní desce jsou generované celkem 3 napájecí úrovně z +5 V extern�
 	\label{fig:urovne}
 \end{figure}
 
-\section{Měření spotřeby}
+\subsection{Napájecí sekvence}
+Ověření rozfázování napájecí sekvence je uvedeno na obrázku \ref{fig:napajeci_sekvecne_real}. Kde CH1 je napájení +1.2 V, CH2 je +2.5 V a CH3 je vstupních +5V. Při tomto měření byl vstupní pin EN regulátoru pro +2.5 V propojen s výstupním pinem PG, regulátoru s výstupním napětím +3.3 V. Na nastavených kurzorech je také vidět, že teoreticky vypočítaný čas \ref{eq:Tss}, doby rozběhu regulátoru z rovnice \ref{eq:Tss}, souhlasí s prakticky naměřenými hodnoty. 
+\begin{figure}[h!]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[scale=0.45]{napajeci_sekvence_real.png}
+	\caption{Měření napájecí sekvence základní desky.} 
+	\label{fig:napajeci_sekvecne_real}
+\end{figure}
+
+\subsection{Měření spotřeby}
 %TODO zmenit nastaveni MachXO2 -: zlepsi se to ?
 Měření spotřeby probíhalo měřením úbytku napětí na 100 $m\Omega$ odporu zapojeného do série v +5 V napájecí větvi. Naměřené parametry můžete vidět v tabulce \ref{tab:spotreba}. 
 \begin{table}[h!]
@@ -43,6 +68,16 @@ Měření spotřeby probíhalo měřením úbytku napětí na 100 $m\Omega$ odpo
 	\caption{Spotřeba navrženého vyčítacího rozhraní}
 	\label{tab:spotreba}
 \end{table}
+
+\section{Odvod tepla z vyčítacího rozhraní}
+Analýzu odvodu tepla ze zařízení je možné vidět na obrázku \ref{fig:teplo}, kdy snímek byl pořízen termokamerou ve stavu, kdy navržené vyčítací rozhraní bylo v procesu ekvalizace.
+\begin{figure}[h!]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[scale=0.99]{./Mechanika/teplo_1.jpg}
+	\caption{Odvod tepla z navrženého vyčítacího rozhraní.} 
+	\label{fig:teplo}
+\end{figure}
 
 \section{USB komunikace}
 Fyzická implementace USB byla popsána v části textu \ref{USB}. Pro testování USB komunikace byly použity dvě USB třídy. První třídou USB byl virtuální sériový port přes USB. Tato třída sloužila pouze pro rychlé ověření funkčnosti USB periférie. Druhou třídou byla třída RNDIS, neboli virtuální ethernet přes USB, tato třída byla použita pro přenos UDP protokolu přes USB, tedy z navrženého vyčítacího rozhraní do rozhraní uživatelského.
@@ -69,7 +104,7 @@ Velkou část ověření funkčnosti navrženého rozhraní v této práci tvoř
 
 \section{Vysokonapěťový zdroj}
 % Nastaveni VN zdroje
-Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, které je generováno na desce s Timepix 2 \ref{Deska s Timepix2} je popsán v části textu \ref{VN zdroj}. Velikost vysokého napětí je nastavována přes SPI komunikaci z mikrokontroléru. Velikost výstupního napětí je poté možné nastavit v rozsahu 8-bitového čísla, tedy v rozsahu 256 hodnot. Závislost zapsané 8-bitové hodnoty na výstupním napětí vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv_hex}, kdy nastavené vysoké napětí bylo zpětnovazebně měřeno mikrokontrolérem. Nastavené vysoké napětí je poté monitorováno programem TrackLab, jak lze vidět na obrázku \ref{fig:Tracklab}.
+Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, které je generováno na desce s Timepix 2 \ref{Deska s Timepix2} je popsán v části textu \ref{VN zdroj}. Závislost zapsané 8-bitové hodnoty na výstupním napětí vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv_hex}, kdy nastavené vysoké napětí bylo zpětnovazebně měřeno mikrokontrolérem. Nastavené vysoké napětí je poté monitorováno programem TrackLab, jak lze vidět na obrázku \ref{fig:Tracklab}.
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
@@ -82,26 +117,9 @@ Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, kte
 
 % TODO promereni teploty s mechanikou ??, termokamra ??
 \section{Měření teploty}
-V této práci bylo implementováno měření teploty pomocí externího teplotního senzoru na desce s detektorem Timepix 2 \ref{Deska s Timepix2} a měření teploty za využití interního měření teploty detektoru Timepix 2.
+V této práci bylo implementováno měření teploty pomocí externího teplotního senzoru na desce s detektorem Timepix 2 \ref{Deska s Timepix2} a měření teploty za využití interního měření teploty detektoru Timepix 2. Měření teploty za využití detektoru Timepix 2, bude uvedeno v části \ref{teplota}.
 \subsection{Měření teploty vyčítacího rozhraní}
 Typ senzoru který byl pro tuto práci vybrán pro měření teploty na desce s Timepix 2 byl podrobně popsán v části \ref{Mereni teploty}. Pokud dojde k uživatelskému příkazu, který požaduje informaci o teplotě, následuje proces vyčtení teploty ze senzoru pomocí I2C komunikace. Poté následuje dekódování přijatého čísla na odpovídající skutečnou analogovou hodnotu. Zobrazení teploty na desce s detektorem Timepix 2 je poté monitorováno z programu TrackLab \cite{Manek_2024}. Zobrazení teploty lze vidět na obrázku \ref{fig:Tracklab}.
-\subsection{Měření teploty Timepix2}
-\label{teplota}
-Pixelový detektor Timepix 2 umožňuje monitorovat vnitřní teplotu detektoru. Hodnota výsledné teploty detektoru je poté dle simulace teploty detektoru v závislosti na napěťové referenci popsána na obrázku \ref{fig:tpx2_temp}. Pro získání teploty detektoru je zapotřebí naměření dvou analogových hodnot z obrázku \ref{fig:tpx2_temp}, označovaných jako Vtemp a Vbg. Pro získání těchto analogových hodnot je nejprve zapotřebí nastavit, jaká hodnota analogového napětí bude na výstupu pinu Timepix 2 označovaného jako DACOUT. Výstup pinu DACOUT Timepix 2 je poté zpracován interním 12-bitovým AD převodníkem mikrokontroléru na základní desce \ref{zakladni deska}. Příklad výběru hodnoty na výstup DACOUT detektoru Timepix 2 a převod získané hodnoty na odpovídající teplotu lze vidět v zjednodušeném kódu \ref{kod_temp_tpx2}. Zpracovaná teplota je následně odeslána do programu TrackLab. Zobrazení teploty v programu TrackLab detektoru Timepix 2 lze najít na obrázku \ref{fig:Tracklab}.  
-\begin{lstlisting}[frame=single, language=C, caption={Výběr výstupu DACOUT detektoru Timepix2 a odečtení hodnoty detektoru.}, label=kod_temp_tpx2]
-// GET DAC : VBG_TEMP
-uint8_t set_dacoutsel[0] = VBG_TEMP; 
-float vtemp = 0;
-// set what type of DAC will be on DACOUT output								   
-if(tpx2_set_reg_8b(TPXA, SET_DACOUTSEL, set_dacoutsel) != TPX_OK) {    
-	Error_Handler();
-}
-if(board_tpx2_get_dacout(TPXA, &vtemp) != BOARD_OK) {
-	Error_Handler();
-}
-// Sim. -> TT. // Temp. into real value in ^C.
-float tpx2_temp = 471.99*(vtemp - vbg)/1000 - 179.14;					
-\end{lstlisting}
 
 \begin{figure}[h!]
 	\centering
@@ -117,10 +135,28 @@ Komunikační rozhraní detektoru Timepix 2 bylo popsáno v části textu \ref{K
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.50]{./Mereni/MCLOCK_DIFF_PROBE.png}
+	\includegraphics[scale=0.45]{./Mereni/MCLOCK_DIFF_PROBE.png}
 	\caption{Průběh komunikačního hodinového signálu Timepix 2.} 
 	\label{fig:MCLOCK_DIFF_PROBE}
 \end{figure}
+
+\section{Měření teploty Timepix2}
+\label{teplota}
+Pixelový detektor Timepix 2 umožňuje monitorovat vnitřní teplotu detektoru. Hodnota výsledné teploty detektoru je poté dle simulace teploty detektoru v závislosti na napěťové referenci popsána na obrázku \ref{fig:tpx2_temp}. Pro získání teploty detektoru je zapotřebí naměření dvou analogových hodnot z obrázku \ref{fig:tpx2_temp}, označovaných jako Vtemp a Vbg. Pro získání těchto analogových hodnot je nejprve zapotřebí nastavit, jaká hodnota analogového napětí bude na výstupu pinu Timepix 2 označovaného jako DACOUT. Výstup pinu DACOUT Timepix 2 je poté zpracován interním 12-bitovým AD převodníkem mikrokontroléru na základní desce \ref{zakladni deska}. Příklad výběru hodnoty na výstup DACOUT detektoru Timepix 2 a převod získané hodnoty na odpovídající teplotu lze vidět v zjednodušeném kódu \ref{kod_temp_tpx2}. Zpracovaná teplota je následně odeslána do programu TrackLab. Zobrazení teploty v programu TrackLab detektoru Timepix 2 lze najít na obrázku \ref{fig:Tracklab}.  
+\begin{lstlisting}[frame=single, language=C, caption={Výběr výstupu DACOUT detektoru Timepix2 a odečtení hodnoty detektoru.}, label=kod_temp_tpx2]
+	// GET DAC : VBG_TEMP
+	uint8_t set_dacoutsel[0] = VBG_TEMP; 
+	float vtemp = 0;
+	// set what type of DAC will be on DACOUT output								   
+	if(tpx2_set_reg_8b(TPXA, SET_DACOUTSEL, set_dacoutsel) != TPX_OK) {    
+		Error_Handler();
+	}
+	if(board_tpx2_get_dacout(TPXA, &vtemp) != BOARD_OK) {
+		Error_Handler();
+	}
+	// Sim. -> TT. // Temp. into real value in ^C.
+	float tpx2_temp = 471.99*(vtemp - vbg)/1000 - 179.14;					
+\end{lstlisting}
 
 \section{Digitální test Timepix 2} %popis prubehu a vysledku
 Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitálních testů, jednotlivé testy budou popsány v následujících částech.
@@ -146,13 +182,13 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 		\caption{Digitální test Timepix 2, zapsané hodnoty.}
 		\label{tab:obraz}
 	\end{table}
-\section{Timepix 2 DAC sken}
+\section{Vyčítaní DAC převodníku Timepix 2}
 	Dalším testem ověřujícím funkčnost navrženého vyčítacího rozhraní byl sken interních DAC Timepix 2. Test při kterém do 18 interních DAC kanálů detektoru Timepix 2 byla pro každý kanál zapsána digitální 8-bitová hodnota v rozsahu 0 až 255. Následně byl jednotlivě zvolen DAC kanál, který bude výstupem na pinu DACOUT detektoru Timepix 2. Tato výstupní, již analogová hodnota z výstupního pinu DACOUT byla převedena interním 12-bitovým AD převodníkem mikrokontroléru. Princip volby, které DAC bude na výstupu pinu DACOUT je analogický s popsaným kódem v části \ref{teplota}. DAC sken pro 18 interních DAC kanálů s výpisem do programu TrackLab můžete vidět na obrázku \ref{fig:dacscan}. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.50]{tracklab_dac.jpg}
-		\caption{DAC sken detektoru Timepix 2.} 
+		\includegraphics[scale=0.35]{tracklab_dac.jpg}
+		\caption{Zobrazení vyčtených hodnot DAC převodníků Timepix 2 v celém rozsahu.} 
 		\label{fig:dacscan}
 	\end{figure}
 
@@ -161,16 +197,73 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.40]{tracklab_eql.jpg}
+		\includegraphics[scale=0.35]{tracklab_eql.jpg}
 		\caption{Ekvalizace Timepix 2 čipu z programu TrackLab.} 
 		\label{fig:tracklab_eql}
 	\end{figure}
 
+% TODO DOPOCITAT a vysledky
 \section{Měření v laboratoři CERN}
-	Od 29.4 do 9.5 je naplánováno měření v CERNu. Tato část bude doplněna po tomto datu..
+	Posledním testem navrženého vyčítacího rozhraní bylo měření na urychlovači částic Proton Synchrotron (PS) \cite{PS} v laboratoři CERN \cite{CERN}. Navržené vyčítací rozhraní bylo umístěno do vyúsťujícího svazku z již uvedeného urychlovače PS. Respektive do středu svazku byl umístěn detektor Timepix 2. Rozložení navrženého experimentu je možné vidět na obrázku \ref{fig:setup_meas_beam}. Pozice vyčítacího rozhraní vůči středu svazku je poté zobrazena na obrázku \ref{fig:setup_meas_beam_1}.
+	\par
+	Vyčítací zařízení bylo umístěno na rotačním a posuvném stole, který je možné vidět na obrázku \ref{fig:setup_meas_beam}. Umístění zařízení tedy bylo možné měnit ve třech osách. Pomocí dvou posuvných os bylo zařízení přesně umístěno do středu svazku vyúsťujícího z urychlovače částic. Pomocí rotační osy byl pak volen úhel natočení vyčítacího rozhraní vůči svazku. Přesný úhel se kterou urychlené částice dopadli na detektor lze dopočítat. Dopadající svazek byl tvořen hadrony o energii 10 GeV.
+	\par
+	 Na obrázcích \ref{fig:tracks} můžete vidět vybrané snímky pořízené detektorem, během měření. Na uvedených obrázcích lze vidět závislost délky stopy interagující částice na velikosti nastaveného úhlu. Kvůli vysoké intenzitě částic, byl na detektoru Timepix 2 při měření aktivovaný column trigger mód. Tento mód zajistí, že pokud je v pixelové matici zasaženo více než počet nastavených sloupců, dojde k zastavení akvizice a data jsou dostupná k vyčtení. Pokud by nebyl zasažen dostačující počet sloupců na aktivaci tohoto signálu, dojde k přerušení akvizice po uplynutí nastaveného akvizičního času.
+	
+	\begin{figure}[h!]
+		\captionsetup{justification=centering}
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[scale=0.38]{setup_meas_beam.png}
+			\caption{Pohled ze směru svazku na vyčítací zařízení}
+			\label{fig:setup_meas_beam}
+		\end{subfigure}
+		\begin{subfigure}{0.5\textwidth}
+			\centering
+			\includegraphics[scale = 0.38]{setup_meas_beam_1.png}
+			\caption{Pozice vyčítacího zařízení vůči středu svazku}
+			\label{fig:setup_meas_beam_1}
+		\end{subfigure}
+		\caption{Umístění detektorů vůči svazku z urychlovače částic}. %
+		\label{fig:T_all}
+	\end{figure}
 
+	
+	    \begin{figure*}
+		\centering
+		\begin{subfigure}[b]{0.475\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{./beam/0deg/10GeV_hadrons_0deg_3.png}
+			\caption{Úhel 0$^{\circ}$}
+			\label{fig:0}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.475\textwidth}  
+			\centering 
+			\includegraphics[width=\textwidth]{./beam/50deg/10GeV_hadrons_50deg_rep_99.png}
+			\caption{Úhel 50$^{\circ}$}
+			\label{fig:50}
+		\end{subfigure}
+		\vskip\baselineskip
+		\begin{subfigure}[b]{0.475\textwidth}   
+			\centering 
+			\includegraphics[width=\textwidth]{./beam/70deg/10GeV_hadrons_70deg_6_3}
+			\caption{Úhel 70$^{\circ}$}
+			\label{fig:70}
+		\end{subfigure}
+		\hfill
+		\begin{subfigure}[b]{0.475\textwidth}   
+			\centering 
+			\includegraphics[width=\textwidth]{./beam/80deg/10GeV_hadrons_80deg_4_1}
+			\caption{Úhel 80$^{\circ}$}
+			\label{fig:80}
+		\end{subfigure}
+		\captionsetup{justification=centering}
+		\caption[]
+		{Snímky pořízené vyčítacím rozhraním, s různým úhlem natočením detektoru Timepix 2, vůči svazku.} 
+		\label{fig:tracks}
+	\end{figure*}
 
-%TODO davat sem nebo jen popsat poradne zaver?	
 \section{Dosažené parametry}
 Navržené vyčítací rozhraní bylo otestováno výše popsanými testy funkčnosti. Na základně těchto testů je možné stanovit parametry navrženého vyčítacího rozhraní viz tabulka \ref{tab:parametry}.
 

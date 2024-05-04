@@ -19,61 +19,65 @@
 \contentsline {chapter}{\numberline {3}Návrh řešení}{13}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Koncept řešení}{13}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Komunikace s Timepix 2}{14}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Uživatelské rozhraní}{14}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.2}Uživatelské komunikační rozhraní}{14}{subsection.3.1.2}%
 \contentsline {subsection}{\numberline {3.1.3}Napájení}{14}{subsection.3.1.3}%
 \contentsline {subsection}{\numberline {3.1.4}Mechanika}{15}{subsection.3.1.4}%
 \contentsline {chapter}{\numberline {4}Realizace}{16}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Základní deska}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.1}Návrh základní desky}{16}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}Napájení}{17}{subsection.4.1.1}%
 \contentsline {subsubsection}{Napájecí sekvence}{18}{section*.28}%
-\contentsline {subsection}{\numberline {4.1.2}Mikrokontrolér}{20}{subsection.4.1.2}%
-\contentsline {subsubsection}{Konfigurace mikrokontroléru}{20}{section*.31}%
-\contentsline {subsubsection}{Napájení}{21}{section*.34}%
-\contentsline {subsubsection}{Konfigurace hodinových signálů}{22}{section*.35}%
-\contentsline {subsubsection}{Periférie SPI}{22}{section*.37}%
-\contentsline {subsubsection}{Periférie I2C}{24}{section*.39}%
-\contentsline {subsubsection}{Periférie UART}{24}{section*.40}%
-\contentsline {subsubsection}{Programování}{24}{section*.41}%
-\contentsline {subsubsection}{PCB}{25}{section*.43}%
+\contentsline {subsection}{\numberline {4.1.2}Mikrokontrolér}{19}{subsection.4.1.2}%
+\contentsline {subsubsection}{Konfigurace mikrokontroléru}{20}{section*.30}%
+\contentsline {subsubsection}{Napájení}{21}{section*.33}%
+\contentsline {subsubsection}{Konfigurace hodinových signálů}{21}{section*.34}%
+\contentsline {subsubsection}{Periférie SPI}{22}{section*.36}%
+\contentsline {subsubsection}{Periférie I2C}{23}{section*.38}%
+\contentsline {subsubsection}{Periférie UART}{24}{section*.39}%
+\contentsline {subsubsection}{Programování}{24}{section*.40}%
+\contentsline {subsubsection}{PCB}{24}{section*.42}%
 \contentsline {subsection}{\numberline {4.1.3}CPLD}{25}{subsection.4.1.3}%
-\contentsline {subsubsection}{Napájení}{26}{section*.45}%
-\contentsline {subsubsection}{Konverze logických úrovní}{26}{section*.47}%
-\contentsline {subsubsection}{Programování}{26}{section*.49}%
-\contentsline {subsubsection}{Využití odporových sítí}{27}{section*.50}%
-\contentsline {subsection}{\numberline {4.1.4}USB}{28}{subsection.4.1.4}%
-\contentsline {subsubsection}{Konektor}{28}{section*.52}%
-\contentsline {subsubsection}{Zapojení}{28}{section*.54}%
-\contentsline {subsubsection}{PCB}{29}{section*.56}%
-\contentsline {section}{\numberline {4.2}Deska s Timepix 2}{30}{section.4.2}%
+\contentsline {subsubsection}{Napájení}{25}{section*.44}%
+\contentsline {subsubsection}{Konverze logických úrovní}{26}{section*.46}%
+\contentsline {subsubsection}{Programování}{27}{section*.48}%
+\contentsline {subsubsection}{Využití odporových sítí}{27}{section*.49}%
+\contentsline {subsection}{\numberline {4.1.4}USB}{27}{subsection.4.1.4}%
+\contentsline {subsubsection}{Konektor}{28}{section*.51}%
+\contentsline {subsubsection}{Zapojení}{28}{section*.53}%
+\contentsline {subsubsection}{PCB}{28}{section*.55}%
+\contentsline {section}{\numberline {4.2}Návrh desky s Timepix 2}{30}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Timepix 2}{30}{subsection.4.2.1}%
-\contentsline {subsubsection}{Napájení}{30}{section*.58}%
-\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2}{31}{section*.60}%
-\contentsline {subsection}{\numberline {4.2.2}Vysokonapěťový zdroj}{32}{subsection.4.2.2}%
-\contentsline {subsubsection}{Měření vysokého napětí}{32}{section*.63}%
-\contentsline {subsection}{\numberline {4.2.3}Měření teploty}{33}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Konektor}{33}{subsection.4.2.4}%
+\contentsline {subsubsection}{Napájení}{30}{section*.57}%
+\contentsline {subsubsection}{Rozhraní pro připojení Timepix 2}{31}{section*.59}%
+\contentsline {subsection}{\numberline {4.2.2}Vysokonapěťový zdroj}{31}{subsection.4.2.2}%
+\contentsline {subsubsection}{Měření vysokého napětí}{32}{section*.62}%
+\contentsline {subsection}{\numberline {4.2.3}Měření teploty}{32}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Zapojení konektoru mezi desky}{32}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}Mechanika}{34}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Testování}{36}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Funkční testy}{36}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Napájení}{36}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Měření spotřeby}{37}{section.5.2}%
-\contentsline {section}{\numberline {5.3}USB komunikace}{37}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Virtuální ethernet přes USB}{38}{subsection.5.3.1}%
-\contentsline {section}{\numberline {5.4}Integrace rozhraní do programu TrackLab}{38}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Vysokonapěťový zdroj}{38}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Měření teploty}{40}{section.5.6}%
-\contentsline {subsection}{\numberline {5.6.1}Měření teploty vyčítacího rozhraní}{40}{subsection.5.6.1}%
-\contentsline {subsection}{\numberline {5.6.2}Měření teploty Timepix2}{40}{subsection.5.6.2}%
+\contentsline {subsection}{\numberline {5.1.1}Zvlnění výstupních napětí}{36}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Stejnosměrné úrovně výstupních napětí}{37}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Napájecí sekvence}{37}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}Měření spotřeby}{38}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Odvod tepla z vyčítacího rozhraní}{38}{section.5.2}%
+\contentsline {section}{\numberline {5.3}USB komunikace}{39}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Virtuální ethernet přes USB}{39}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}Integrace rozhraní do programu TrackLab}{39}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Vysokonapěťový zdroj}{40}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Měření teploty}{41}{section.5.6}%
+\contentsline {subsection}{\numberline {5.6.1}Měření teploty vyčítacího rozhraní}{41}{subsection.5.6.1}%
 \contentsline {section}{\numberline {5.7}Komunikační rozhraní s Timepix 2}{41}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Digitální test Timepix 2}{42}{section.5.8}%
-\contentsline {subsection}{\numberline {5.8.1}Vyčtení chip ID}{42}{subsection.5.8.1}%
-\contentsline {subsection}{\numberline {5.8.2}Vyčtení a zapsání pixelových matic}{42}{subsection.5.8.2}%
-\contentsline {section}{\numberline {5.9}Timepix 2 DAC sken}{43}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Ekvalizace Timepix 2}{43}{section.5.10}%
-\contentsline {section}{\numberline {5.11}Měření v laboratoři CERN}{44}{section.5.11}%
-\contentsline {section}{\numberline {5.12}Dosažené parametry}{44}{section.5.12}%
-\contentsline {chapter}{\numberline {6}Závěr}{46}{chapter.6}%
-\contentsline {chapter}{Seznam použité literatury}{49}{chapter*.80}%
-\contentsline {chapter}{Seznam použitých zkratek}{50}{chapter*.81}%
-\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{51}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Základní deska}{52}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Deska s Timepix 2}{63}{appendix.C}%
+\contentsline {section}{\numberline {5.8}Měření teploty Timepix2}{42}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Digitální test Timepix 2}{43}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Vyčtení chip ID}{43}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Vyčtení a zapsání pixelových matic}{43}{subsection.5.9.2}%
+\contentsline {section}{\numberline {5.10}Vyčítaní DAC převodníku Timepix 2}{44}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Ekvalizace Timepix 2}{44}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Měření v laboratoři CERN}{46}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Dosažené parametry}{48}{section.5.13}%
+\contentsline {chapter}{\numberline {6}Závěr}{49}{chapter.6}%
+\contentsline {chapter}{Seznam použité literatury}{52}{chapter*.84}%
+\contentsline {chapter}{Seznam použitých zkratek}{54}{chapter*.85}%
+\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{55}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Základní deska}{56}{appendix.B}%
+\contentsline {chapter}{\numberline {C}Deska s Timepix 2}{67}{appendix.C}%

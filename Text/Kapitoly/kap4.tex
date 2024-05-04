@@ -7,7 +7,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 
 \par Realizace návrhu obou desek plošných spojů probíhala v programu Altium Designer. Mechanické integrace rozhraní, především validace případných kolizí plošných spojů s navrženou mechanikou, probíhala v programu Autodesk Inventor. Pokud nebude uvedenou jinak, pořízené obrázky dokumentace řešení jsou z těchto programů.
 
-\section{Základní deska}	
+\section{Návrh základní desky}	
 	\label{zakladni deska}
 	Základní deska je navržena na šesti vrstvém plošném spoji. Rozložení jednotlivých vrstev lze vidět na obrázku \ref{tab:pcb_vrstvy}. Celková tloušťka navrženého PCB je dle celkové skladby z obrázku \ref{fig:PCB_mother_stackup}, 1.6 mm. Vnější rozměry základní desky jsou 53 x 17 mm. Obecné části realizované na základní desce jsou shodné s blokovým konceptem řešení z části \ref{fig:navrh_reseni}. Dále bude popsána detailní struktura jednotlivých částí navržené základní desky.
 
@@ -84,14 +84,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		T_{SS}\,[ms] = \frac{2V_{REF} \cdot C_{SS} \,[nF]}{I_{SS}}
 		\label{eq:Tss}
 	\end{equation}
-	Kde $V_{REF}$ = 805 mV a $I_{SS}$ = 7.3 $\mu$A. Ze zapojení \ref{fig:mp2333h} a dosazení do vzorce \ref{eq:Tss} můžeme dopočítat, že náběhový čas spínaného zdroje bude 1.4 ms. Ověření rozfázování napájecí sekvence je uvedeno na obrázku \ref{fig:napajeci_sekvecne_real}. Kde CH1 je napájení +1.2 V, CH2 je +2.5 V a CH3 je vstupních +5V. Při tomto měření byl vstupní pin EN regulátoru pro +2.5 V propojen s výstupním pinem PG, regulátoru s výstupním napětím +3.3 V. Na nastavených kurzorech je také vidět, že teoreticky vypočítaný čas, doby rozběhu regulátoru z rovnice \ref{eq:Tss}, souhlasí s prakticky naměřenými hodnoty. 
-	\begin{figure}[h!]
-		\centering
-		\captionsetup{justification=centering}
-		\includegraphics[scale=0.45]{napajeci_sekvence_real.png}
-		\caption{Měření napájecí sekvence základní desky.} 
-		\label{fig:napajeci_sekvecne_real}
-	\end{figure}
+	Kde $V_{REF}$ = 805 mV a $I_{SS}$ = 7.3 $\mu$A. Ze zapojení \ref{fig:mp2333h} a dosazení do vzorce \ref{eq:Tss} můžeme dopočítat, že náběhový čas spínaného zdroje bude 1.4 ms.
 	\par Zajištění ochrany, především před elektrostatickým výbojem vstupního napájení, bude popsána v části \ref{USB}. Pouze ve shrnutí, pokud dojde k jakýmkoliv podmínkám, které by mohli elektrostaticky ohrozit vyčítací rozhraní, obvody z části \ref{USB} zajistí vypnutí externího napájení pomocí externího tranzistoru. 
 
 	\subsection{Mikrokontrolér}
@@ -180,7 +173,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	Celkem pro implementaci vyčítacího rozhraní byly použity tři SPI periférie:
 	 \begin{itemize}
 	 	\setlength\itemsep{0.005em}
-	 	\item SPI1 : Obecná SPI periférie pro komunikaci se senzory, mimo Timepix 2.
+	 	\item SPI1 : Obecná SPI pro komunikaci se periferními obvody, mimo Timepix 2.
 	 	\item SPI2 : Použita ke komunikaci s Timepix 2. V konfigurace Master. 
 	 	\item SPI3 : Použita ke komunikaci s Timepix 2. V konfigurace Slave.
 	 \end{itemize}
@@ -367,7 +360,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\end{figure} 
 
 
-\section{Deska s Timepix 2}
+\section{Návrh desky s Timepix 2}
 	\label{Deska s Timepix2}
 	Druhou deskou plošných spojů v této práci je deska s detektorem Timepix 2 z blokového zapojení z obrázku konceptu řešení \ref{fig:navrh_reseni}. Tato deska je propojena se základní deskou za pomocí 60 pinového konektoru ze série DF40 od společnosti Hirose Electric Group. Rozložení signálů na konektoru lze najít v příloze zapojení celé práce \ref{Priloha základní deska}, nebo v části textu \ref{konektor}.
 	
@@ -395,7 +388,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\end{figure} 
 	\subsection{Vysokonapěťový zdroj}	% MAX1932 zapojeni vysvetleni
 	\label{VN zdroj}
-	Vysokonapěťový zdroj pro tuto práci byl realizován za použití součástky od společnosti Analog Devices, konkrétně byla použita součástka MAX1932 \cite{MAX1932}. Jedná se o vysokonapěťový zdroj s nastavitelnou úrovní výstupního napětí 30 - 148 V. Úroveň výstupního napětí se nastavuje pomocí SPI komunikace v uvedeném rozsahu s rozlišením 256 hodnot. Schematické zapojení vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv}. Hodnota velikosti výstupního napětí lze nastavit pomocí odporů ve zpětné vazbě regulátoru ze zapojení \ref{fig:hv} a to dle následujících rovnic \ref{eq:R5} a \ref{eq:R6}. 
+	Vysokonapěťový zdroj pro tuto práci byl realizován za použití součástky od společnosti Analog Devices, konkrétně byla použita součástka MAX1932 \cite{MAX1932}. Jedná se o vysokonapěťový zdroj s nastavitelnou úrovní výstupního napětí 30 - 148 V. Úroveň výstupního napětí se nastavuje pomocí SPI komunikace v uvedeném rozsahu s rozlišením 256 hodnot. Schematické zapojení vysokonapěťového zdroje je možné vidět na obrázku \ref{fig:hv}. Rozsah hodnot výstupního napětí lze nastavit pomocí odporů ve zpětné vazbě regulátoru ze zapojení \ref{fig:hv} a to dle následujících rovnic \ref{eq:R5} a \ref{eq:R6}. 
 	\begin{equation}
 		R5 = (V_{OUT01} - V_{OUTFF})\cdot (R6/1.25V)
 		\label{eq:R5}
@@ -414,7 +407,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\label{fig:hv}
 	\end{figure} 
 	\subsubsection{Měření vysokého napětí} % napetovy sledovac plus konfigurace AD v STM32
-	Pro měření vysokého napětí byl použit operační zesilovač v zapojení napěťového sledovače z obrázku \ref{fig:hv} v pravé části. Přesněji byl použit operační zesilovač od společnosti Analog Devices LTC6262 \cite{LTC6252}. Výstup operačního zesilovače je poté připojen na vstupní pin mikrokontroléru, který je nakonfigurován jako analogový vstup. Pomocí interního 14-bitového AD převodníku mikrokontroléru je převedena analogová hodnota odpovídající hodnotě vysokého napětí do digitální formy. Následně je tato hodnota dostupná pro pro další programové zpracování. 
+	Pro monitorování vysokého napětí byl použit operační zesilovač v zapojení napěťového sledovače z obrázku \ref{fig:hv} v pravé části. Přesněji byl použit operační zesilovač od společnosti Analog Devices LTC6262 \cite{LTC6252}. Výstup operačního zesilovače je poté připojen na vstupní pin mikrokontroléru, který je nakonfigurován jako analogový vstup. Pomocí interního 14-bitového AD převodníku mikrokontroléru je převedena analogová hodnota odpovídající hodnotě vysokého napětí do digitální formy. Následně je tato hodnota dostupná pro pro další programové zpracování. 
 
 	\subsection{Měření teploty}	% proces nastaveni senzoru atd
 	\label{Mereni teploty}
@@ -426,7 +419,7 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 		\caption{Zapojení teplotního senzoru TMP100.} 
 		\label{fig:tmp100}
 	\end{figure} 
-	\subsection{Konektor}	% popis konektoru, zarazeni zmneni mezi piny
+	\subsection{Zapojení konektoru mezi desky}	% popis konektoru, zarazeni zmneni mezi piny
 	\label{konektor}
 	Rozložení konektoru mezi základní deskou \ref{zakladni deska} a deskou s Timepix 2 \ref{Deska s Timepix2} je vidět na obrázku \ref{fig:konektor}. Pro propojení desek byl použit konektor DF40C-60DP-0.4V(51) od společnosti Hihorse Connector. Rozteč jednotlivých kontaktů konektoru je 0.4 mm. Tento konektor byl použit ve variantě, kdy celková výška mezi základní deskou a deskou s Timepix 2 je 2.5 mm. Výhodou tohoto konektoru je možnost volby výšky konektoru, dle výběru, nabízeného výrobcem. Na desce s Timepix 2 jsou ze záladní desky dostupné celkem 3 napájecí úrovně a to +2.5 V, +3.3 V a +5 V. Rozložení vysokorychlostních diferenciálních párů na konektoru bylo pro každý diferenciální pár odděleno zapojením země mezi jednotlivé páry, jak lze vidět ze zapojení \ref{fig:konektor} v pravé části. Toto zapojení bylo navrhnuto s ohledem na minimalizaci přeslechů mezi jednotlivými diferenciálními páry.
 	\begin{figure}[h!]
@@ -438,23 +431,19 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\end{figure} 
 	
 \section{Mechanika}
-	Mechanickým řešením byla zvolena výroba hliníkové krabičky. Hliník byl vybrán díky svým teplo vodivým vlastnostem, váhou a dobrou obrobitelností. Dále byl vybrán s ohledem na prostřední ve kterém bude navržené rozhraní používáno, tedy prostředí se zvýšenou radiací. Navržená mechanická krabička byla vyfrézovaná na CNC zařízení. Na výsledný povrch mechanické krabičky byl nanesen černý elox s potiskem loga Ústavu Technické a Experimentální Fyziky ČVUT, kde celá tato práce byla realizována. Výslednou mechanickou krabičku je možné vidět na obrázku \ref{fig:mechanika}. Na obrázku můžete vidět teplo vodivou pásku která slouží pro zlepšení odvodu tepla z detektoru Timepix 2 do celého objemu navržené mechanické krabičky. Analýzu odvodu tepla ze zařízení je možné vidět na obrázku \ref{fig:teplo}, kdy snímek byl pořízen termokamerou ve stavu, kdy navržené vyčítací rozhraní bylo v procesu ekvalizace. Na vrchní straně krabičky je možné vidět posuvné okénko, jež slouží po složení celé mechaniky k zakrytí části s detektorem Timepix 2, aby při manipulaci s rozhraním nedošlo k poškození detektoru. Při měření je možné toto výsuvné okénko nastavit do pozice otevřeno. Rozměry mechaniky jsou 73.4 x 22 x 13.5 mm. 
-	%TODO krabika fota
+	Zapouzdření navržených desek plošných spojů popsaných v částech \ref{zakladni deska} a \ref{Deska s Timepix2} bylo realizováno výrobou hliníkové krabičky. Hliník byl vybrán díky svým teplo vodivým vlastnostem, váhou a dobrou obrobitelností. Dále byl vybrán s ohledem na prostřední ve kterém bude navržené rozhraní používáno, tedy prostředí se zvýšenou radiací. Navržená krabička, skládající se ze tří částí, byla vyfrézovaná na CNC zařízení. Na výsledný povrch mechanické krabičky byl nanesen černý elox s potiskem loga Ústavu Technické a Experimentální Fyziky ČVUT, kde celá tato práce byla realizována. Výsledné zapouzdření je možné vidět na obrázku \ref{fig:mechanika}. Na obrázku můžete vidět teplo vodivou pásku která slouží pro zlepšení odvodu tepla z detektoru Timepix 2 do celého objemu navržené mechanické krabičky. Na vrchní straně krabičky je posuvné okénko, jež slouží po složení celé mechaniky k zakrytí části s detektorem Timepix 2, aby při manipulaci s rozhraním nedošlo k poškození detektoru. Při měření je možné toto výsuvné okénko nastavit do pozice otevřeno. Rozměry mechaniky jsou 73.4 x 22 x 13.5 mm. 
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.15]{./Mechanika/mechanika_open.jpeg}
+		\includegraphics[scale=0.17]{./Mechanika/mechanika_open.jpeg}
 		\caption{Rozložená mechanická krabička navrženého vyčítacího rozhraní.} 
 		\label{fig:mechanika}
 	\end{figure}
-	
-		\begin{figure}[h!]
+	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.99]{./Mechanika/teplo_1.jpg}
-		\caption{Odvod tepla z navrženého vyčítacího rozhraní.} 
-		\label{fig:teplo}
+		\includegraphics[scale=0.20]{./Mechanika/t2m.jpeg}
+		\caption{Navržené miniaturizované vyčítací rozhraní pro pixelový detektor radiace Timepix 2.} 
+		\label{fig:t2m}
 	\end{figure}
-	
-
 	

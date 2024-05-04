@@ -10,6 +10,15 @@ P.~Mánek, P.~Burian, E.~David-Bosne, P.~Smolyanskiy, and B.~Bergmann, ``Track
   analysis and automation,'' {\em Journal of Instrumentation}, vol.~19,
   p.~C01008, jan 2024.
 
+\bibitem{Grupen_Shwartz_2008}
+C.~Grupen and B.~Shwartz, {\em Particle Detectors}.
+\newblock Cambridge Monographs on Particle Physics, Nuclear Physics and
+  Cosmology, Cambridge University Press, 2~ed., 2008.
+
+\bibitem{Rossi2006}
+{\em Pixel Detector Applications}, pp.~225--259.
+\newblock Berlin, Heidelberg: Springer Berlin Heidelberg, 2006.
+
 \bibitem{Llopart}
 X.~{Llopart Cudié}, {\em Design and characterization of 64{K} pixels chips
   working in single photon processing mode}.
@@ -54,12 +63,6 @@ T.~Poikela, J.~Plosila, T.~Westerlund, M.~Campbell, M.~D. Gaspari, X.~Llopart,
   chip with simultaneous toa/tot and sparse readout,'' {\em Journal of
   Instrumentation}, vol.~9, p.~C05013, may 2014.
 
-\bibitem{Timepix2}
-W.~Wong, J.~Alozy, R.~Ballabriga, M.~Campbell, I.~Kremastiotis, X.~Llopart,
-  T.~Poikela, V.~Sriskaran, L.~Tlustos, and D.~Turecek, ``Introducing timepix2,
-  a frame-based pixel detector readout asic measuring energy deposition and
-  arrival time,'' {\em Radiation Measurements}, vol.~131, p.~106230, 2020.
-
 \bibitem{Timepix4}
 X.~Llopart, J.~Alozy, R.~Ballabriga, M.~Campbell, R.~Casanova, V.~Gromov,
   E.~Heijne, T.~Poikela, E.~Santin, V.~Sriskaran, L.~Tlustos, and
@@ -72,6 +75,12 @@ M.~Manghisoni, D.~Comotti, L.~Gaioni, L.~Ratti, and V.~Re, ``Dynamic
   compression of the signal in a charge sensitive amplifier: From concept to
   design,'' {\em IEEE Transactions on Nuclear Science}, vol.~62, no.~5,
   pp.~2318--2326, 2015.
+
+\bibitem{Timepix2}
+W.~Wong, J.~Alozy, R.~Ballabriga, M.~Campbell, I.~Kremastiotis, X.~Llopart,
+  T.~Poikela, V.~Sriskaran, L.~Tlustos, and D.~Turecek, ``Introducing timepix2,
+  a frame-based pixel detector readout asic measuring energy deposition and
+  arrival time,'' {\em Radiation Measurements}, vol.~131, p.~106230, 2020.
 
 \bibitem{Manek}
 P.~Mánek, ``{M}achine learning approach to ionizing particle recognition using
@@ -145,5 +154,13 @@ A.~Devices, ``{D}igitally {C}ontrolled, 0.5\% {A}ccurate, {S}afest {A}{P}{D}
 \bibitem{LTC6252}
 A.~Devices, ``{E}fficient {R}ail-to-{R}ail {I}/{O} {O}p {A}mps.'' Dostupné z:
   \url{https://www.analog.com/media/en/technical-documentation/data-sheets/625234fc.pdf}.
+
+\bibitem{PS}
+CERN, ``{W}eb presentation of the {T}he {P}roton {S}ynchrotron.'' Dostupné z:
+  \url{https://home.cern/science/accelerators/proton-synchrotron}.
+
+\bibitem{CERN}
+CERN, ``{W}eb presentation of the {C}{E}{R}{N}.'' Dostupné z:
+  \url{https://home.cern/}.
 
 \end{thebibliography}

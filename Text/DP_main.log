@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  25 APR 2024 10:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.20)  4 MAY 2024 16:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -990,7 +990,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
 \c@lstlisting=\count369
-<./ObrazkyDP/symbol.jpg, id=214, 142.25145pt x 142.25145pt>
+<./ObrazkyDP/symbol.jpg, id=230, 142.25145pt x 142.25145pt>
 File: ./ObrazkyDP/symbol.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/symbol.jpg>
 Package pdftex.def Info: ./ObrazkyDP/symbol.jpg  used on input line 108.
@@ -1111,11 +1111,11 @@ Underfull \hbox (badness 1688) in paragraph at lines 9--10
 ri^^Salem. D^^Wule^^Tzit^^Symi parametry
  []
 
-<./ObrazkyDP/Timepix.png, id=460, 544.85295pt x 295.99278pt>
+<./ObrazkyDP/Timepix.png, id=488, 700.11563pt x 403.5075pt>
 File: ./ObrazkyDP/Timepix.png Graphic file (type png)
 <use ./ObrazkyDP/Timepix.png>
 Package pdftex.def Info: ./ObrazkyDP/Timepix.png  used on input line 14.
-(pdftex.def)             Requested size: 299.67004pt x 162.79652pt.
+(pdftex.def)             Requested size: 280.04129pt x 161.40013pt.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
@@ -1125,16 +1125,20 @@ l.18
       [2
 
 ]
-<./ObrazkyDP/usb_lite.jpg, id=474, 296.62122pt x 201.72757pt>
+Underfull \hbox (badness 1275) in paragraph at lines 21--22
+\OT1/cmr/m/n/10.95 vy^^Tc^^S^^Ptac^^S^^Pho rozhran^^S^^P. Pokus^^S^^Pm se tedy 
+p^^Tredev^^Ts^^S^^Pm uv^^Sest p^^Tr^^S^^Pklady miniaturizovan^^Sych
+ []
+
+<./ObrazkyDP/usb_lite.jpg, id=504, 296.62122pt x 201.72757pt>
 File: ./ObrazkyDP/usb_lite.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/usb_lite.jpg>
 Package pdftex.def Info: ./ObrazkyDP/usb_lite.jpg  used on input line 28.
 (pdftex.def)             Requested size: 163.14217pt x 110.9505pt.
 
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ObrazkyDP/sprinter.jpg, id=479, 412.88165pt x 298.50652pt>
+<./ObrazkyDP/sprinter.jpg, id=509, 412.88165pt x 298.50652pt>
 File: ./ObrazkyDP/sprinter.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/sprinter.jpg>
 Package pdftex.def Info: ./ObrazkyDP/sprinter.jpg  used on input line 38.
@@ -1148,7 +1152,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [3 <./ObrazkyDP/Timepix.png>]
-<./ObrazkyDP/Katherine2.jpg, id=494, 311.07521pt x 196.70009pt>
+<./ObrazkyDP/Katherine2.jpg, id=524, 311.07521pt x 196.70009pt>
 File: ./ObrazkyDP/Katherine2.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/Katherine2.jpg>
 Package pdftex.def Info: ./ObrazkyDP/Katherine2.jpg  used on input line 49.
@@ -1157,14 +1161,14 @@ Package pdftex.def Info: ./ObrazkyDP/Katherine2.jpg  used on input line 49.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ObrazkyDP/tpx2_floorplan.png, id=506, 439.27591pt x 431.7347pt>
+<./ObrazkyDP/tpx2_floorplan.png, id=534, 439.27591pt x 431.7347pt>
 File: ./ObrazkyDP/tpx2_floorplan.png Graphic file (type png)
 <use ./ObrazkyDP/tpx2_floorplan.png>
 Package pdftex.def Info: ./ObrazkyDP/tpx2_floorplan.png  used on input line 64.
 
 (pdftex.def)             Requested size: 351.42119pt x 345.38821pt.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 4036) has occurred while \output is active []
 
 
 
@@ -1180,12 +1184,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 74--75
-\OT1/cmr/m/n/10.95 vysok^^Semu nap^^Tet^^S^^P. Pokud je v^^Systupn^^S^^P sign^^
-Sal v^^Tet^^Ts^^S^^P ne^^Tz dan^^Sa nastaven^^Sa ^^Surove^^Tn, je
- []
-
-
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
 (fancyhdr)                \setlength{\headheight}{13.59999pt}.
@@ -1194,7 +1192,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [5 <./ObrazkyDP/Katherine2.jpg>]
-<./ObrazkyDP/tpx2_cel.jpg, id=532, 615.86609pt x 287.82314pt>
+<./ObrazkyDP/tpx2_cel.jpg, id=560, 615.86609pt x 287.82314pt>
 File: ./ObrazkyDP/tpx2_cel.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/tpx2_cel.jpg>
 Package pdftex.def Info: ./ObrazkyDP/tpx2_cel.jpg  used on input line 80.
@@ -1222,7 +1220,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [6 <./ObrazkyDP/tpx2_floorplan.png>]
-<./ObrazkyDP/modes.jpg, id=544, 678.70956pt x 404.712pt>
+<./ObrazkyDP/modes.jpg, id=572, 678.70956pt x 404.712pt>
 File: ./ObrazkyDP/modes.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/modes.jpg>
 Package pdftex.def Info: ./ObrazkyDP/modes.jpg  used on input line 101.
@@ -1240,13 +1238,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [7 <./ObrazkyDP/tpx2_cel.jpg>]
-Underfull \hbox (badness 1817) in paragraph at lines 108--110
+Underfull \hbox (badness 1817) in paragraph at lines 108--109
 []\OT1/cmr/m/n/10.95 P^^Tr^^S^^Pkladem pou^^Tzit^^S^^P digit^^Saln^^S^^Pho m^^S
 od^^Wu m^^Wu^^Tze b^^Syt zp^^Wusob m^^Te^^Tren^^S^^P energie, kterou
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 108--110
+Underfull \hbox (badness 1466) in paragraph at lines 108--109
 \OT1/cmr/m/n/10.95 N^^Sasledn^^Te po^^Tcet nam^^Te^^Tren^^Sych hodinov^^Sych pu
 ls^^Wu odpov^^S^^Pd^^Sa ^^Tcasu, pro kter^^Sy hodnota
  []
@@ -1264,10 +1262,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [8 <./ObrazkyDP/modes.jpg>]
-<./ObrazkyDP/SLVS_LVDS.png, id=572, 484.52322pt x 179.10391pt>
+<./ObrazkyDP/SLVS_LVDS.png, id=600, 484.52322pt x 179.10391pt>
 File: ./ObrazkyDP/SLVS_LVDS.png Graphic file (type png)
 <use ./ObrazkyDP/SLVS_LVDS.png>
-Package pdftex.def Info: ./ObrazkyDP/SLVS_LVDS.png  used on input line 124.
+Package pdftex.def Info: ./ObrazkyDP/SLVS_LVDS.png  used on input line 121.
 (pdftex.def)             Requested size: 266.48859pt x 98.50745pt.
 
 
@@ -1282,11 +1280,14 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [9 <./ObrazkyDP/SLVS_LVDS.png>]
-<./ObrazkyDP/rychlosti.jpg, id=593, 536.05487pt x 179.10391pt>
+<./ObrazkyDP/rychlosti.jpg, id=620, 536.05487pt x 179.10391pt>
 File: ./ObrazkyDP/rychlosti.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/rychlosti.jpg>
-Package pdftex.def Info: ./ObrazkyDP/rychlosti.jpg  used on input line 157.
+Package pdftex.def Info: ./ObrazkyDP/rychlosti.jpg  used on input line 154.
 (pdftex.def)             Requested size: 348.43153pt x 116.41615pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1296,11 +1297,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[10 <./ObrazkyDP/rychlosti.jpg>]
-<./ObrazkyDP/bga.jpg, id=608, 575.01782pt x 313.58896pt>
+[10]
+<./ObrazkyDP/bga.jpg, id=636, 575.01782pt x 313.58896pt>
 File: ./ObrazkyDP/bga.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/bga.jpg>
-Package pdftex.def Info: ./ObrazkyDP/bga.jpg  used on input line 173.
+Package pdftex.def Info: ./ObrazkyDP/bga.jpg  used on input line 170.
 (pdftex.def)             Requested size: 316.26077pt x 172.47444pt.
 
 
@@ -1315,7 +1316,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[11]
+[11 <./ObrazkyDP/rychlosti.jpg>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1326,7 +1327,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [12 <./ObrazkyDP/bga.jpg>]
 Kapitola 3.
-<./ObrazkyDP/navrh_reseni.jpg, id=627, 512.80278pt x 238.80522pt>
+<./ObrazkyDP/navrh_reseni.jpg, id=655, 512.80278pt x 238.80522pt>
 File: ./ObrazkyDP/navrh_reseni.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/navrh_reseni.jpg>
 Package pdftex.def Info: ./ObrazkyDP/navrh_reseni.jpg  used on input line 15.
@@ -1368,7 +1369,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [15]
 Kapitola 4.
-<./ObrazkyDP/PCB_mother_stackup.jpg, id=652, 321.7586pt x 254.51608pt>
+<./ObrazkyDP/PCB_mother_stackup.jpg, id=680, 321.7586pt x 254.51608pt>
 File: ./ObrazkyDP/PCB_mother_stackup.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/PCB_mother_stackup.jpg>
 Package pdftex.def Info: ./ObrazkyDP/PCB_mother_stackup.jpg  used on input line
@@ -1393,7 +1394,7 @@ Underfull \hbox (badness 4168) in paragraph at lines 36--36
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/mp2333h.pdf): PDF inclusion: fou
 nd PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/mp2333h.pdf, id=658, 794.97pt x 614.295pt>
+<./ObrazkyDP/mp2333h.pdf, id=686, 794.97pt x 614.295pt>
 File: ./ObrazkyDP/mp2333h.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/mp2333h.pdf>
 Package pdftex.def Info: ./ObrazkyDP/mp2333h.pdf  used on input line 63.
@@ -1404,7 +1405,7 @@ Package pdftex.def Info: ./ObrazkyDP/mp2333h.pdf  used on input line 63.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ObrazkyDP/napajeci_sekvence.jpg, id=664, 480.75261pt x 95.52208pt>
+<./ObrazkyDP/napajeci_sekvence.jpg, id=692, 480.75261pt x 95.52208pt>
 File: ./ObrazkyDP/napajeci_sekvence.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/napajeci_sekvence.jpg>
 Package pdftex.def Info: ./ObrazkyDP/napajeci_sekvence.jpg  used on input line 
@@ -1435,16 +1436,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [18 <./ObrazkyDP/mp2333h.pdf> <./ObrazkyDP/napajeci_sekvence.jpg>]
-<./ObrazkyDP/napajeci_sekvence_real.png, id=700, 642.4pt x 481.8pt>
-File: ./ObrazkyDP/napajeci_sekvence_real.png Graphic file (type png)
-<use ./ObrazkyDP/napajeci_sekvence_real.png>
-Package pdftex.def Info: ./ObrazkyDP/napajeci_sekvence_real.png  used on input 
-line 91.
-(pdftex.def)             Requested size: 289.07733pt x 216.80798pt.
-
-Underfull \hbox (badness 2103) in paragraph at lines 99--101
+Underfull \hbox (badness 2103) in paragraph at lines 92--94
 \OT1/cmr/m/n/10.95 Pro tuto pr^^Saci byl vybr^^San mikrokontrol^^Ser od firmy S
 TMicroelectronics, p^^Tresn^^Teji
+ []
+
+
+Underfull \hbox (badness 2020) in paragraph at lines 106--107
+[]\OT1/cmr/m/n/10.95 Prvn^^S^^Pm po^^Tzadavkem na mikrokontrol^^Ser bylo, aby b
+ylo mo^^Tzn^^Se komunikovat s
  []
 
 
@@ -1455,44 +1455,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[19 <./ObrazkyDP/napajeci_sekvence_real.png>]
-Underfull \hbox (badness 2020) in paragraph at lines 113--114
-[]\OT1/cmr/m/n/10.95 Prvn^^S^^Pm po^^Tzadavkem na mikrokontrol^^Ser bylo, aby b
-ylo mo^^Tzn^^Se komunikovat s
- []
-
-
-Overfull \hbox (3.57176pt too wide) in paragraph at lines 115--116
+[19]
+Overfull \hbox (3.57176pt too wide) in paragraph at lines 108--109
 []\OT1/cmr/m/n/10.95 Nejm^^Sen^^Te d^^Wule^^Tzit^^Sym pa-ra-me-t-rem p^^Tri v^^
 Syb^^Teru mi-k-ro-kon-t-rol^^Seru byl pa-ra-metr in-te-gro-van^^Seho
  []
 
-<./ObrazkyDP/STM32CubeIde.jpg, id=715, 345.0107pt x 364.49217pt>
+<./ObrazkyDP/STM32CubeIde.jpg, id=740, 345.0107pt x 364.49217pt>
 File: ./ObrazkyDP/STM32CubeIde.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/STM32CubeIde.jpg>
-Package pdftex.def Info: ./ObrazkyDP/STM32CubeIde.jpg  used on input line 123.
+Package pdftex.def Info: ./ObrazkyDP/STM32CubeIde.jpg  used on input line 116.
 (pdftex.def)             Requested size: 200.10634pt x 211.4056pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/stm32u5_pwr.pdf): PDF inclusion:
  found PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/stm32u5_pwr.pdf, id=716, 614.295pt x 794.97pt>
+<./ObrazkyDP/stm32u5_pwr.pdf, id=741, 614.295pt x 794.97pt>
 File: ./ObrazkyDP/stm32u5_pwr.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/stm32u5_pwr.pdf>
-Package pdftex.def Info: ./ObrazkyDP/stm32u5_pwr.pdf  used on input line 130.
+Package pdftex.def Info: ./ObrazkyDP/stm32u5_pwr.pdf  used on input line 123.
 (pdftex.def)             Requested size: 233.43452pt x 302.09174pt.
 
-Overfull \hbox (20.03886pt too wide) in paragraph at lines 130--131
+Overfull \hbox (20.03886pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 120--134
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 113--127
 [][] [] 
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 118--157
+Underfull \hbox (badness 1728) in paragraph at lines 111--150
 \OT1/cmr/m/n/10.95 od spole^^Tcnosti STMicroelectronics, kter^^Sa je v^^Syrobce
 m vybran^^Seho mikrokontrol^^Seru.
  []
@@ -1501,7 +1495,8 @@ m vybran^^Seho mikrokontrol^^Seru.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1521,11 +1516,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [21 <./ObrazkyDP/STM32CubeIde.jpg> <./ObrazkyDP/stm32u5_pwr.pdf>]
-<./ObrazkyDP/hodinovy_signal.jpg, id=735, 597.64148pt x 217.43843pt>
+<./ObrazkyDP/hodinovy_signal.jpg, id=761, 597.64148pt x 217.43843pt>
 File: ./ObrazkyDP/hodinovy_signal.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/hodinovy_signal.jpg>
-Package pdftex.def Info: ./ObrazkyDP/hodinovy_signal.jpg  used on input line 17
-4.
+Package pdftex.def Info: ./ObrazkyDP/hodinovy_signal.jpg  used on input line 16
+7.
 (pdftex.def)             Requested size: 388.46236pt x 141.33328pt.
 
 
@@ -1540,11 +1535,21 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/SPI.pdf): PDF inclusion: found P
 DF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/SPI.pdf, id=748, 614.295pt x 794.97pt>
+<./ObrazkyDP/SPI.pdf, id=773, 614.295pt x 794.97pt>
 File: ./ObrazkyDP/SPI.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/SPI.pdf>
-Package pdftex.def Info: ./ObrazkyDP/SPI.pdf  used on input line 194.
+Package pdftex.def Info: ./ObrazkyDP/SPI.pdf  used on input line 187.
 (pdftex.def)             Requested size: 245.71364pt x 317.98236pt.
+
+Underfull \hbox (badness 4441) in paragraph at lines 196--197
+\OT1/cmr/m/n/10.95 Perif^^Serie UART umo^^Tz^^Tnuje monitorovat pr^^Wub^^Teh pr
+ogramu, kter^^Sy je nahr^^San do
+ []
+
+
+Underfull \vbox (badness 6995) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1554,66 +1559,60 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [23 <./ObrazkyDP/SPI.pdf>]
-Underfull \hbox (badness 4441) in paragraph at lines 203--204
-\OT1/cmr/m/n/10.95 Perif^^Serie UART umo^^Tz^^Tnuje monitorovat pr^^Wub^^Teh pr
-ogramu, kter^^Sy je nahr^^San do
- []
-
-<./ObrazkyDP/programator.jpg, id=777, 502.74783pt x 143.28313pt>
+<./ObrazkyDP/programator.jpg, id=802, 502.74783pt x 143.28313pt>
 File: ./ObrazkyDP/programator.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/programator.jpg>
-Package pdftex.def Info: ./ObrazkyDP/programator.jpg  used on input line 211.
+Package pdftex.def Info: ./ObrazkyDP/programator.jpg  used on input line 204.
 (pdftex.def)             Requested size: 241.31621pt x 68.7751pt.
 
-Overfull \hbox (27.92055pt too wide) in paragraph at lines 211--212
+Overfull \hbox (27.92055pt too wide) in paragraph at lines 204--205
  [][] 
  []
 
-<./ObrazkyDP/konverzni_deska.jpg, id=778, 559.30696pt x 345.0107pt>
+<./ObrazkyDP/konverzni_deska.jpg, id=803, 559.30696pt x 345.0107pt>
 File: ./ObrazkyDP/konverzni_deska.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/konverzni_deska.jpg>
 Package pdftex.def Info: ./ObrazkyDP/konverzni_deska.jpg  used on input line 21
-8.
+1.
 (pdftex.def)             Requested size: 123.0479pt x 75.90257pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 208--222
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 201--215
 [][] [] 
  []
 
 
-Underfull \hbox (badness 1152) in paragraph at lines 206--225
+Underfull \hbox (badness 1152) in paragraph at lines 199--218
 \OT1/cmr/m/n/10.95 Mikrokontrol^^Ser je programov^^San pomoc^^S^^P JTAG program
 ovac^^S^^Pho rozhran^^S^^P za vyu^^Tzit^^S^^P
  []
 
-<./ObrazkyDP/ST_TOP.jpg, id=782, 468.81235pt x 439.27591pt>
+<./ObrazkyDP/ST_TOP.jpg, id=807, 468.81235pt x 439.27591pt>
 File: ./ObrazkyDP/ST_TOP.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/ST_TOP.jpg>
-Package pdftex.def Info: ./ObrazkyDP/ST_TOP.jpg  used on input line 233.
+Package pdftex.def Info: ./ObrazkyDP/ST_TOP.jpg  used on input line 226.
 (pdftex.def)             Requested size: 140.64478pt x 131.78378pt.
 
-Overfull \hbox (12.60608pt too wide) in paragraph at lines 233--234
+Overfull \hbox (12.60608pt too wide) in paragraph at lines 226--227
  [][] 
  []
 
-<./ObrazkyDP/ST_PWR.jpg, id=783, 386.4874pt x 478.86731pt>
+<./ObrazkyDP/ST_PWR.jpg, id=808, 386.4874pt x 478.86731pt>
 File: ./ObrazkyDP/ST_PWR.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/ST_PWR.jpg>
-Package pdftex.def Info: ./ObrazkyDP/ST_PWR.jpg  used on input line 240.
+Package pdftex.def Info: ./ObrazkyDP/ST_PWR.jpg  used on input line 233.
 (pdftex.def)             Requested size: 115.94711pt x 143.6613pt.
-<./ObrazkyDP/ST_BOT.jpg, id=784, 473.2114pt x 458.12895pt>
+<./ObrazkyDP/ST_BOT.jpg, id=809, 473.2114pt x 458.12895pt>
 File: ./ObrazkyDP/ST_BOT.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/ST_BOT.jpg>
-Package pdftex.def Info: ./ObrazkyDP/ST_BOT.jpg  used on input line 247.
+Package pdftex.def Info: ./ObrazkyDP/ST_BOT.jpg  used on input line 240.
 (pdftex.def)             Requested size: 141.96451pt x 137.43974pt.
 
-Overfull \hbox (13.92581pt too wide) in paragraph at lines 247--248
+Overfull \hbox (13.92581pt too wide) in paragraph at lines 240--241
  [][] 
  []
 
 
-Underfull \vbox (badness 2762) has occurred while \output is active []
-
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1624,6 +1623,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [24 <./ObrazkyDP/programator.jpg> <./ObrazkyDP/konverzni_deska.jpg>]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1637,20 +1639,21 @@ Excluding 'comment' comment.
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/sub_lvds_slvs.pdf): PDF inclusio
 n: found PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/sub_lvds_slvs.pdf, id=808, 794.97pt x 614.295pt>
+<./ObrazkyDP/sub_lvds_slvs.pdf, id=833, 794.97pt x 614.295pt>
 File: ./ObrazkyDP/sub_lvds_slvs.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/sub_lvds_slvs.pdf>
-Package pdftex.def Info: ./ObrazkyDP/sub_lvds_slvs.pdf  used on input line 306.
+Package pdftex.def Info: ./ObrazkyDP/sub_lvds_slvs.pdf  used on input line 299.
 
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 2197) in paragraph at lines 311--312
+Underfull \hbox (badness 2197) in paragraph at lines 304--305
 \OT1/cmr/m/n/10.95 CPLD, p^^Tres extern^^S^^P programovac^^S^^P konektor, kter^
 ^Sy se pou^^Tz^^S^^Pv^^Sa pro programov^^San^^S^^P
  []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1660,12 +1663,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[26]
-<./ObrazkyDP/odpor_sit.jpg, id=820, 272.11226pt x 253.25922pt>
+[26 <./ObrazkyDP/sub_lvds_slvs.pdf>]
+<./ObrazkyDP/odpor_sit.jpg, id=852, 272.11226pt x 253.25922pt>
 File: ./ObrazkyDP/odpor_sit.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/odpor_sit.jpg>
-Package pdftex.def Info: ./ObrazkyDP/odpor_sit.jpg  used on input line 317.
+Package pdftex.def Info: ./ObrazkyDP/odpor_sit.jpg  used on input line 310.
 (pdftex.def)             Requested size: 163.2686pt x 151.9567pt.
+<./ObrazkyDP/USBC_full.jpg, id=856, 405.34044pt x 158.36557pt>
+File: ./ObrazkyDP/USBC_full.jpg Graphic file (type jpg)
+<use ./ObrazkyDP/USBC_full.jpg>
+Package pdftex.def Info: ./ObrazkyDP/USBC_full.jpg  used on input line 323.
+(pdftex.def)             Requested size: 243.20613pt x 95.02007pt.
+
+Underfull \vbox (badness 2781) has occurred while \output is active []
+
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1675,25 +1686,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[27 <./ObrazkyDP/sub_lvds_slvs.pdf> <./ObrazkyDP/odpor_sit.jpg>]
-<./ObrazkyDP/USBC_full.jpg, id=839, 405.34044pt x 158.36557pt>
-File: ./ObrazkyDP/USBC_full.jpg Graphic file (type jpg)
-<use ./ObrazkyDP/USBC_full.jpg>
-Package pdftex.def Info: ./ObrazkyDP/USBC_full.jpg  used on input line 330.
-(pdftex.def)             Requested size: 243.20613pt x 95.02007pt.
-
+[27 <./ObrazkyDP/odpor_sit.jpg>]
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/usbc.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/usbc.pdf, id=843, 794.97pt x 614.295pt>
+<./ObrazkyDP/usbc.pdf, id=867, 794.97pt x 614.295pt>
 File: ./ObrazkyDP/usbc.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/usbc.pdf>
-Package pdftex.def Info: ./ObrazkyDP/usbc.pdf  used on input line 341.
+Package pdftex.def Info: ./ObrazkyDP/usbc.pdf  used on input line 334.
 (pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
 
-Overfull \hbox (50.19435pt too wide) in paragraph at lines 341--342
+Overfull \hbox (50.19435pt too wide) in paragraph at lines 334--335
  [][] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1704,6 +1712,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [28 <./ObrazkyDP/USBC_full.jpg>]
+<./ObrazkyDP/usb_hs_top.jpg, id=878, 649.80156pt x 328.67139pt>
+File: ./ObrazkyDP/usb_hs_top.jpg Graphic file (type jpg)
+<use ./ObrazkyDP/usb_hs_top.jpg>
+Package pdftex.def Info: ./ObrazkyDP/usb_hs_top.jpg  used on input line 347.
+(pdftex.def)             Requested size: 214.43518pt x 108.46188pt.
+
+Overfull \hbox (1.03952pt too wide) in paragraph at lines 347--348
+ [][] 
+ []
+
+<./ObrazkyDP/usb_hs_bot.jpg, id=879, 647.28783pt x 321.7586pt>
+File: ./ObrazkyDP/usb_hs_bot.jpg Graphic file (type jpg)
+<use ./ObrazkyDP/usb_hs_bot.jpg>
+Package pdftex.def Info: ./ObrazkyDP/usb_hs_bot.jpg  used on input line 354.
+(pdftex.def)             Requested size: 213.60564pt x 106.18066pt.
+
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 344--358
+[][]  [] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \vbox (badness 4060) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -1713,26 +1748,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [29 <./ObrazkyDP/usbc.pdf>]
-<./ObrazkyDP/usb_hs_top.jpg, id=884, 649.80156pt x 328.67139pt>
-File: ./ObrazkyDP/usb_hs_top.jpg Graphic file (type jpg)
-<use ./ObrazkyDP/usb_hs_top.jpg>
-Package pdftex.def Info: ./ObrazkyDP/usb_hs_top.jpg  used on input line 354.
-(pdftex.def)             Requested size: 214.43518pt x 108.46188pt.
 
-Overfull \hbox (1.03952pt too wide) in paragraph at lines 354--355
+pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/tpx_pwr.pdf): PDF inclusion: fou
+nd PDF version <1.7>, but at most version <1.5> allowed
+<./ObrazkyDP/tpx_pwr.pdf, id=921, 794.97pt x 614.295pt>
+File: ./ObrazkyDP/tpx_pwr.pdf Graphic file (type pdf)
+<use ./ObrazkyDP/tpx_pwr.pdf>
+Package pdftex.def Info: ./ObrazkyDP/tpx_pwr.pdf  used on input line 376.
+(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
+
+Overfull \hbox (50.19435pt too wide) in paragraph at lines 376--377
  [][] 
  []
 
-<./ObrazkyDP/usb_hs_bot.jpg, id=885, 647.28783pt x 321.7586pt>
-File: ./ObrazkyDP/usb_hs_bot.jpg Graphic file (type jpg)
-<use ./ObrazkyDP/usb_hs_bot.jpg>
-Package pdftex.def Info: ./ObrazkyDP/usb_hs_bot.jpg  used on input line 361.
-(pdftex.def)             Requested size: 213.60564pt x 106.18066pt.
 
-Overfull \hbox (2.43332pt too wide) in paragraph at lines 351--365
-[][]  [] 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+<./ObrazkyDP/tpx_wire.png, id=925, 476.982pt x 135.74191pt>
+File: ./ObrazkyDP/tpx_wire.png Graphic file (type png)
+<use ./ObrazkyDP/tpx_wire.png>
+Package pdftex.def Info: ./ObrazkyDP/tpx_wire.png  used on input line 385.
+(pdftex.def)             Requested size: 381.5861pt x 108.59367pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1743,48 +1779,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [30 <./ObrazkyDP/usb_hs_top.jpg> <./ObrazkyDP/usb_hs_bot.jpg>]
 
-pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/tpx_pwr.pdf): PDF inclusion: fou
-nd PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/tpx_pwr.pdf, id=902, 794.97pt x 614.295pt>
-File: ./ObrazkyDP/tpx_pwr.pdf Graphic file (type pdf)
-<use ./ObrazkyDP/tpx_pwr.pdf>
-Package pdftex.def Info: ./ObrazkyDP/tpx_pwr.pdf  used on input line 383.
-(pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Overfull \hbox (50.19435pt too wide) in paragraph at lines 383--384
- [][] 
- []
 
-<./ObrazkyDP/tpx_wire.png, id=906, 476.982pt x 135.74191pt>
-File: ./ObrazkyDP/tpx_wire.png Graphic file (type png)
-<use ./ObrazkyDP/tpx_wire.png>
-Package pdftex.def Info: ./ObrazkyDP/tpx_wire.png  used on input line 392.
-(pdftex.def)             Requested size: 381.5861pt x 108.59367pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[31 <./ObrazkyDP/tpx_pwr.pdf>]
-Underfull \hbox (badness 3179) in paragraph at lines 398--399
+Underfull \hbox (badness 3179) in paragraph at lines 391--392
 \OT1/cmr/m/n/10.95 Analog Devices, konkr^^Setn^^Te byla pou^^Tzita sou^^Tc^^Sas
 tka MAX1932 [[]]. Jedn^^Sa se o
  []
 
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[31 <./ObrazkyDP/tpx_pwr.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/hv.pdf): PDF inclusion: found PD
 F version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/hv.pdf, id=935, 794.97pt x 614.295pt>
+<./ObrazkyDP/hv.pdf, id=960, 794.97pt x 614.295pt>
 File: ./ObrazkyDP/hv.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/hv.pdf>
-Package pdftex.def Info: ./ObrazkyDP/hv.pdf  used on input line 412.
+Package pdftex.def Info: ./ObrazkyDP/hv.pdf  used on input line 405.
 (pdftex.def)             Requested size: 476.98569pt x 368.57983pt.
 
-Overfull \hbox (50.19435pt too wide) in paragraph at lines 412--413
+Overfull \hbox (50.19435pt too wide) in paragraph at lines 405--406
  [][] 
  []
 
@@ -1792,17 +1813,29 @@ Overfull \hbox (50.19435pt too wide) in paragraph at lines 412--413
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation `TMP100' on page 32 undefined on input line 421.
+LaTeX Warning: Citation `TMP100' on page 32 undefined on input line 414.
 
 
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/temp.pdf): PDF inclusion: found 
 PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/temp.pdf, id=939, 794.97pt x 614.295pt>
+<./ObrazkyDP/temp.pdf, id=964, 794.97pt x 614.295pt>
 File: ./ObrazkyDP/temp.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/temp.pdf>
-Package pdftex.def Info: ./ObrazkyDP/temp.pdf  used on input line 425.
+Package pdftex.def Info: ./ObrazkyDP/temp.pdf  used on input line 418.
 (pdftex.def)             Requested size: 238.49284pt x 184.28992pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/conn.pdf): PDF inclusion: found 
+PDF version <1.7>, but at most version <1.5> allowed
+<./ObrazkyDP/conn.pdf, id=969, 794.97pt x 614.295pt>
+File: ./ObrazkyDP/conn.pdf Graphic file (type pdf)
+<use ./ObrazkyDP/conn.pdf>
+Package pdftex.def Info: ./ObrazkyDP/conn.pdf  used on input line 428.
+(pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -1812,50 +1845,38 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
 [32 <./ObrazkyDP/tpx_wire.png>]
+Underfull \vbox (badness 6625) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[33 <./ObrazkyDP/hv.pdf> <./ObrazkyDP/temp.pdf>]
+<./ObrazkyDP/./Mechanika/mechanika_open.jpeg, id=1019, 1463.4675pt x 1266.7325p
+t>
+File: ./ObrazkyDP/./Mechanika/mechanika_open.jpeg Graphic file (type jpg)
+<use ./ObrazkyDP/./Mechanika/mechanika_open.jpeg>
+Package pdftex.def Info: ./ObrazkyDP/./Mechanika/mechanika_open.jpeg  used on i
+nput line 438.
+(pdftex.def)             Requested size: 248.78618pt x 215.34167pt.
+<./ObrazkyDP/./Mechanika/t2m.jpeg, id=1020, 1541.76pt x 1336.995pt>
+File: ./ObrazkyDP/./Mechanika/t2m.jpeg Graphic file (type jpg)
+<use ./ObrazkyDP/./Mechanika/t2m.jpeg>
+Package pdftex.def Info: ./ObrazkyDP/./Mechanika/t2m.jpeg  used on input line 4
+45.
+(pdftex.def)             Requested size: 308.34654pt x 267.39426pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/conn.pdf): PDF inclusion: found 
-PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/conn.pdf, id=954, 794.97pt x 614.295pt>
-File: ./ObrazkyDP/conn.pdf Graphic file (type pdf)
-<use ./ObrazkyDP/conn.pdf>
-Package pdftex.def Info: ./ObrazkyDP/conn.pdf  used on input line 435.
-(pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[33 <./ObrazkyDP/hv.pdf>]
-<./ObrazkyDP/./Mechanika/mechanika_open.jpeg, id=985, 1463.4675pt x 1266.7325pt
->
-File: ./ObrazkyDP/./Mechanika/mechanika_open.jpeg Graphic file (type jpg)
-<use ./ObrazkyDP/./Mechanika/mechanika_open.jpeg>
-Package pdftex.def Info: ./ObrazkyDP/./Mechanika/mechanika_open.jpeg  used on i
-nput line 446.
-(pdftex.def)             Requested size: 219.51065pt x 190.00168pt.
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 13.59999pt, for example:
-(fancyhdr)                \setlength{\headheight}{13.59999pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
-
-[34 <./ObrazkyDP/temp.pdf> <./ObrazkyDP/conn.pdf>]
-<./ObrazkyDP/./Mechanika/teplo_1.jpg, id=1008, 240.9pt x 180.675pt>
-File: ./ObrazkyDP/./Mechanika/teplo_1.jpg Graphic file (type jpg)
-<use ./ObrazkyDP/./Mechanika/teplo_1.jpg>
-Package pdftex.def Info: ./ObrazkyDP/./Mechanika/teplo_1.jpg  used on input lin
-e 454.
-(pdftex.def)             Requested size: 238.49171pt x 178.86879pt.
 ) (Kapitoly/kap5.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1865,126 +1886,149 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[35 <./ObrazkyDP/./Mechanika/mechanika_open.jpeg> <./ObrazkyDP/./Mechanika/tepl
-o_1.jpg>]
+[34 <./ObrazkyDP/conn.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[35 <./ObrazkyDP/./Mechanika/mechanika_open.jpeg> <./ObrazkyDP/./Mechanika/t2m.
+jpeg>]
 Kapitola 5.
 <./ObrazkyDP/./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.png, id
-=1016, 642.4pt x 481.8pt>
+=1040, 642.4pt x 481.8pt>
 File: ./ObrazkyDP/./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.pn
 g Graphic file (type png)
 <use ./ObrazkyDP/./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.png
 >
 Package pdftex.def Info: ./ObrazkyDP/./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V
-2 - CH1, 2x 47uF.png  used on input line 14.
-(pdftex.def)             Requested size: 256.95544pt x 192.71658pt.
-<./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png, id=1019, 642.4pt x 481.8pt>
-File: ./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png Graphic file (type png)
-<use ./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png>
-Package pdftex.def Info: ./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png  used on
- input line 22.
+2 - CH1, 2x 47uF.png  used on input line 12.
 (pdftex.def)             Requested size: 256.95544pt x 192.71658pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[36
+<./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png, id=1046, 642.4pt x 481.8pt>
+File: ./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png Graphic file (type png)
+<use ./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png>
+Package pdftex.def Info: ./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png  used on
+ input line 37.
+(pdftex.def)             Requested size: 256.95544pt x 192.71658pt.
 
- <./ObrazkyDP/./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.png>]
-<./ObrazkyDP/usb_view.jpg, id=1032, 901.17548pt x 233.77774pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36
+
+]
+<./ObrazkyDP/napajeci_sekvence_real.png, id=1056, 642.4pt x 481.8pt>
+File: ./ObrazkyDP/napajeci_sekvence_real.png Graphic file (type png)
+<use ./ObrazkyDP/napajeci_sekvence_real.png>
+Package pdftex.def Info: ./ObrazkyDP/napajeci_sekvence_real.png  used on input 
+line 47.
+(pdftex.def)             Requested size: 289.07733pt x 216.80798pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[37 <./ObrazkyDP/./Mereni/ripple 3V3 - CH2 & 2V5 - CH3 & 1V2 - CH1, 2x 47uF.png
+> <./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png>]
+<./ObrazkyDP/./Mechanika/teplo_1.jpg, id=1065, 240.9pt x 180.675pt>
+File: ./ObrazkyDP/./Mechanika/teplo_1.jpg Graphic file (type jpg)
+<use ./ObrazkyDP/./Mechanika/teplo_1.jpg>
+Package pdftex.def Info: ./ObrazkyDP/./Mechanika/teplo_1.jpg  used on input lin
+e 77.
+(pdftex.def)             Requested size: 238.49171pt x 178.86879pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[38 <./ObrazkyDP/napajeci_sekvence_real.png>]
+<./ObrazkyDP/usb_view.jpg, id=1075, 901.17548pt x 233.77774pt>
 File: ./ObrazkyDP/usb_view.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/usb_view.jpg>
-Package pdftex.def Info: ./ObrazkyDP/usb_view.jpg  used on input line 54.
+Package pdftex.def Info: ./ObrazkyDP/usb_view.jpg  used on input line 89.
 (pdftex.def)             Requested size: 450.58664pt x 116.88858pt.
 
-Overfull \hbox (23.7953pt too wide) in paragraph at lines 54--55
+Overfull \hbox (23.7953pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[37 <./ObrazkyDP/./Mereni/vout 3V3 & 2V5 & 1V2.png>]
-<./ObrazkyDP/tracklab_info.jpg, id=1041, 597.01305pt x 411.62479pt>
-File: ./ObrazkyDP/tracklab_info.jpg Graphic file (type jpg)
-<use ./ObrazkyDP/tracklab_info.jpg>
-Package pdftex.def Info: ./ObrazkyDP/tracklab_info.jpg  used on input line 65.
-(pdftex.def)             Requested size: 328.35818pt x 226.39432pt.
-
-
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 13.59999pt, for example:
+(fancyhdr)                \setlength{\headheight}{13.59999pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
+
+[39 <./ObrazkyDP/./Mechanika/teplo_1.jpg>]
+<./ObrazkyDP/tracklab_info.jpg, id=1084, 597.01305pt x 411.62479pt>
+File: ./ObrazkyDP/tracklab_info.jpg Graphic file (type jpg)
+<use ./ObrazkyDP/tracklab_info.jpg>
+Package pdftex.def Info: ./ObrazkyDP/tracklab_info.jpg  used on input line 100.
+
+(pdftex.def)             Requested size: 328.35818pt x 226.39432pt.
 
 
 pdfTeX warning: pdflatex.exe (file ./ObrazkyDP/./Mereni/hv_hex_small.pdf): PDF 
 inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./ObrazkyDP/./Mereni/hv_hex_small.pdf, id=1048, 794.97pt x 614.295pt>
+<./ObrazkyDP/./Mereni/hv_hex_small.pdf, id=1091, 794.97pt x 614.295pt>
 File: ./ObrazkyDP/./Mereni/hv_hex_small.pdf Graphic file (type pdf)
 <use ./ObrazkyDP/./Mereni/hv_hex_small.pdf>
 Package pdftex.def Info: ./ObrazkyDP/./Mereni/hv_hex_small.pdf  used on input l
-ine 76.
+ine 111.
 (pdftex.def)             Requested size: 317.98236pt x 245.71364pt.
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[38 <./ObrazkyDP/usb_view.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[39 <./ObrazkyDP/tracklab_info.jpg> <./ObrazkyDP/./Mereni/hv_hex_small.pdf>]
-(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2023/02/27 1.9 listings language file
-)
-(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
-File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
-)
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 91.
-
-Overfull \hbox (208.24675pt too wide) in paragraph at lines 95--96
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][]  
- []
-
-
-Overfull \hbox (72.16716pt too wide) in paragraph at lines 103--104
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][]  
- []
-
-<./ObrazkyDP/tpx2_temp.jpg, id=1068, 514.05965pt x 290.9653pt>
-File: ./ObrazkyDP/tpx2_temp.jpg Graphic file (type jpg)
-<use ./ObrazkyDP/tpx2_temp.jpg>
-Package pdftex.def Info: ./ObrazkyDP/tpx2_temp.jpg  used on input line 109.
-(pdftex.def)             Requested size: 257.02919pt x 145.48228pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png, id=1075, 642.4pt x 481.8pt>
+
+Underfull \vbox (badness 2980) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[40 <./ObrazkyDP/usb_view.jpg> <./ObrazkyDP/tracklab_info.jpg>]
+<./ObrazkyDP/tpx2_temp.jpg, id=1101, 514.05965pt x 290.9653pt>
+File: ./ObrazkyDP/tpx2_temp.jpg Graphic file (type jpg)
+<use ./ObrazkyDP/tpx2_temp.jpg>
+Package pdftex.def Info: ./ObrazkyDP/tpx2_temp.jpg  used on input line 127.
+(pdftex.def)             Requested size: 257.02919pt x 145.48228pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png, id=1108, 642.4pt x 481.8pt>
 File: ./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png Graphic file (type png)
 <use ./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png>
 Package pdftex.def Info: ./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png  used on in
-put line 120.
-(pdftex.def)             Requested size: 321.19922pt x 240.8994pt.
+put line 138.
+(pdftex.def)             Requested size: 289.07733pt x 216.80798pt.
 
-Underfull \hbox (badness 2359) in paragraph at lines 116--124
+Underfull \hbox (badness 2359) in paragraph at lines 134--142
 \OT1/cmr/m/n/10.95 realizace komunikace s Timepix 2, pak v ^^Tc^^Sasti [][]4.1.
 3[][]. K m^^Te^^Tren^^S^^P diferenci^^Saln^^S^^Pch
  []
@@ -1997,9 +2041,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[40]
-Underfull \vbox (badness 7796) has occurred while \output is active []
+[41 <./ObrazkyDP/./Mereni/hv_hex_small.pdf>]
+(C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2023/02/27 1.9 listings language file
+)
+(C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
+)
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[42 <./ObrazkyDP/tpx2_temp.jpg> <./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png>]
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 146.
+
+Overfull \hbox (253.60661pt too wide) in paragraph at lines 150--151
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][]  
+ []
+
+
+Overfull \hbox (117.52702pt too wide) in paragraph at lines 158--159
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][]  
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2009,36 +2080,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[41 <./ObrazkyDP/tpx2_temp.jpg> <./ObrazkyDP/./Mereni/MCLOCK_DIFF_PROBE.png>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.4521pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.4521pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
-
-[42]
-<./ObrazkyDP/tracklab_dac.jpg, id=1109, 908.71669pt x 605.1827pt>
+[43]
+<./ObrazkyDP/tracklab_dac.jpg, id=1148, 908.71669pt x 605.1827pt>
 File: ./ObrazkyDP/tracklab_dac.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/tracklab_dac.jpg>
-Package pdftex.def Info: ./ObrazkyDP/tracklab_dac.jpg  used on input line 154.
-(pdftex.def)             Requested size: 454.35724pt x 302.5906pt.
+Package pdftex.def Info: ./ObrazkyDP/tracklab_dac.jpg  used on input line 190.
+(pdftex.def)             Requested size: 318.0556pt x 211.81711pt.
 
-Overfull \hbox (27.5659pt too wide) in paragraph at lines 154--155
- [][] 
- []
 
-<./ObrazkyDP/tracklab_eql.jpg, id=1112, 1211.62225pt x 647.28783pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./ObrazkyDP/tracklab_eql.jpg, id=1151, 1211.62225pt x 647.28783pt>
 File: ./ObrazkyDP/tracklab_eql.jpg Graphic file (type jpg)
 <use ./ObrazkyDP/tracklab_eql.jpg>
-Package pdftex.def Info: ./ObrazkyDP/tracklab_eql.jpg  used on input line 164.
-(pdftex.def)             Requested size: 484.64032pt x 258.91054pt.
+Package pdftex.def Info: ./ObrazkyDP/tracklab_eql.jpg  used on input line 200.
+(pdftex.def)             Requested size: 424.07414pt x 226.55412pt.
 
-Overfull \hbox (57.84898pt too wide) in paragraph at lines 164--165
- [][] 
- []
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
 
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[44]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 13.59999pt, for example:
@@ -2047,11 +2112,59 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-1.59999pt}.
 
-[43 <./ObrazkyDP/tracklab_dac.jpg>]
+[45 <./ObrazkyDP/tracklab_dac.jpg> <./ObrazkyDP/tracklab_eql.jpg>]
+<./ObrazkyDP/setup_meas_beam.png, id=1167, 500.62032pt x 669.2503pt>
+File: ./ObrazkyDP/setup_meas_beam.png Graphic file (type png)
+<use ./ObrazkyDP/setup_meas_beam.png>
+Package pdftex.def Info: ./ObrazkyDP/setup_meas_beam.png  used on input line 21
+7.
+(pdftex.def)             Requested size: 190.23769pt x 254.31775pt.
+<./ObrazkyDP/setup_meas_beam_1.png, id=1168, 497.60907pt x 665.48625pt>
+File: ./ObrazkyDP/setup_meas_beam_1.png Graphic file (type png)
+<use ./ObrazkyDP/setup_meas_beam_1.png>
+Package pdftex.def Info: ./ObrazkyDP/setup_meas_beam_1.png  used on input line 
+223.
+(pdftex.def)             Requested size: 189.0934pt x 252.88739pt.
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Overfull \hbox (2.43332pt too wide) in paragraph at lines 215--227
+[][] [] 
+ []
 
-) (Kapitoly/kap6.tex
+<./ObrazkyDP/./beam/0deg/10GeV_hadrons_0deg_3.png, id=1169, 468.24937pt x 469.0
+0218pt>
+File: ./ObrazkyDP/./beam/0deg/10GeV_hadrons_0deg_3.png Graphic file (type png)
+<use ./ObrazkyDP/./beam/0deg/10GeV_hadrons_0deg_3.png>
+Package pdftex.def Info: ./ObrazkyDP/./beam/0deg/10GeV_hadrons_0deg_3.png  used
+ on input line 236.
+(pdftex.def)             Requested size: 202.72849pt x 203.05534pt.
+<./ObrazkyDP/./beam/50deg/10GeV_hadrons_50deg_rep_99.png, id=1170, 474.27188pt 
+x 471.26062pt>
+File: ./ObrazkyDP/./beam/50deg/10GeV_hadrons_50deg_rep_99.png Graphic file (typ
+e png)
+<use ./ObrazkyDP/./beam/50deg/10GeV_hadrons_50deg_rep_99.png>
+Package pdftex.def Info: ./ObrazkyDP/./beam/50deg/10GeV_hadrons_50deg_rep_99.pn
+g  used on input line 243.
+(pdftex.def)             Requested size: 202.72849pt x 201.43724pt.
+<./ObrazkyDP/./beam/70deg/10GeV_hadrons_70deg_6_3.png, id=1171, 472.01344pt x 4
+72.01344pt>
+File: ./ObrazkyDP/./beam/70deg/10GeV_hadrons_70deg_6_3.png Graphic file (type p
+ng)
+<use ./ObrazkyDP/./beam/70deg/10GeV_hadrons_70deg_6_3.png>
+Package pdftex.def Info: ./ObrazkyDP/./beam/70deg/10GeV_hadrons_70deg_6_3.png  
+used on input line 250.
+(pdftex.def)             Requested size: 202.72849pt x 202.73134pt.
+<./ObrazkyDP/./beam/80deg/10GeV_hadrons_80deg_4_1.png, id=1172, 473.51906pt x 4
+72.76625pt>
+File: ./ObrazkyDP/./beam/80deg/10GeV_hadrons_80deg_4_1.png Graphic file (type p
+ng)
+<use ./ObrazkyDP/./beam/80deg/10GeV_hadrons_80deg_4_1.png>
+Package pdftex.def Info: ./ObrazkyDP/./beam/80deg/10GeV_hadrons_80deg_4_1.png  
+used on input line 257.
+(pdftex.def)             Requested size: 202.72849pt x 202.40543pt.
+
+Underfull \vbox (badness 2608) has occurred while \output is active []
+
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -2060,7 +2173,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[44 <./ObrazkyDP/tracklab_eql.jpg>]
+[46 <./ObrazkyDP/setup_meas_beam.png> <./ObrazkyDP/setup_meas_beam_1.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -2069,58 +2182,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[45]
-Kapitola 6.
-) [46
-
-]
-\openout2 = `literatura.aux'.
-
- (literatura.tex (DP_main.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 30--35
-\OT1/cmtt/m/n/10.95 pii / S0168900210013082 / pdfft ? md5 = 733e9d449a2e198b655
-9b52d5fbe242f & pid =
- []
-
-[47
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 81--86
-[]\OT1/cmr/m/n/10.95 J. Ja-ku-bek, ``Pre-cise energy ca-lib-ration of pi-xel de
--tec-tor wor-king in
- []
-
-
-Underfull \hbox (badness 2626) in paragraph at lines 81--86
-\OT1/cmr/m/it/10.95 Section A: Ac-ce-le-ra-tors, Spectro-me-ters, De-tec-tors a
-nd As-so-ci-a-ted Equi-p-ment\OT1/cmr/m/n/10.95 ,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
-[]\OT1/cmr/m/n/10.95 F. Ta-ver-nier and P. Mo-re-ira, ``SLVS in-ter-face ci-r-c
-u-its.'' Do-stupn^^Se z:
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--94
-[][]$\OT1/cmtt/m/n/10.95 https : / / indico . cern . ch / event / 404345 / cont
-ributions / 1850202 / attachments /
- []
-
-
-Underfull \hbox (badness 2334) in paragraph at lines 107--110
-[]\OT1/cmr/m/n/10.95 S. Po-spi-sil, ``Ti-me-pix hyb-rid pi-xels de-tec-tors for
- par-ticle iden-ti-fi-cation and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 107--110
-\OT1/cmtt/m/n/10.95 4009245 / attachments / 2156334 / 3637201 / Stanislav % 20P
-ospisil % 20-[] %
- []
-
+[47 <./ObrazkyDP/./beam/0deg/10GeV_hadrons_0deg_3.png> <./ObrazkyDP/./beam/50de
+g/10GeV_hadrons_50deg_rep_99.png> <./ObrazkyDP/./beam/70deg/10GeV_hadrons_70deg
+_6_3.png> <./ObrazkyDP/./beam/80deg/10GeV_hadrons_80deg_4_1.png>])
+(Kapitoly/kap6.tex
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.4521pt, for example:
@@ -2130,19 +2195,79 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
 [48]
-Underfull \hbox (badness 10000) in paragraph at lines 116--118
+Kapitola 6.
+) [49
+
+]
+\openout2 = `literatura.aux'.
+
+ (literatura.tex (DP_main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 39--44
+\OT1/cmtt/m/n/10.95 pii / S0168900210013082 / pdfft ? md5 = 733e9d449a2e198b655
+9b52d5fbe242f & pid =
+ []
+
+[50
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
+[]\OT1/cmr/m/n/10.95 J. Ja-ku-bek, ``Pre-cise energy ca-lib-ration of pi-xel de
+-tec-tor wor-king in
+ []
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 90--95
+\OT1/cmr/m/it/10.95 Section A: Ac-ce-le-ra-tors, Spectro-me-ters, De-tec-tors a
+nd As-so-ci-a-ted Equi-p-ment\OT1/cmr/m/n/10.95 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+[]\OT1/cmr/m/n/10.95 F. Ta-ver-nier and P. Mo-re-ira, ``SLVS in-ter-face ci-r-c
+u-its.'' Do-stupn^^Se z:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 101--103
+[][]$\OT1/cmtt/m/n/10.95 https : / / indico . cern . ch / event / 404345 / cont
+ributions / 1850202 / attachments /
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[51]
+Underfull \hbox (badness 2334) in paragraph at lines 116--119
+[]\OT1/cmr/m/n/10.95 S. Po-spi-sil, ``Ti-me-pix hyb-rid pi-xels de-tec-tors for
+ par-ticle iden-ti-fi-cation and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+\OT1/cmtt/m/n/10.95 4009245 / attachments / 2156334 / 3637201 / Stanislav % 20P
+ospisil % 20-[] %
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 \OT1/cmtt/m/n/10.95 event / 710050 / contributions / 3185372 / attachments / 17
 41432 / 2817619 / 11 _ 20 _
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--123
+Underfull \hbox (badness 10000) in paragraph at lines 129--132
 \OT1/cmtt/m/n/10.95 www . monolithicpower . com / en / documentview / productdo
 cument / index / version /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
+Underfull \hbox (badness 10000) in paragraph at lines 142--144
 \OT1/cmtt/m/n/10.95 en / resources / analog-[]dialogue / articles / introductio
 n-[]to-[]spi-[]interface .
  []
@@ -2156,16 +2281,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 (fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
 
-[49]
+[52]
 \openout2 = `zkratky.aux'.
 
- (zkratky.tex) [50
+ (zkratky.tex)
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [53
 
 
 
 
 ]
-<./zadani.pdf, id=1185, 597.50829pt x 845.0471pt>
+Overfull \vbox (3.3155pt too high) has occurred while \output is active []
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.4521pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.4521pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-2.4521pt}.
+
+[54]
+<./zadani.pdf, id=1262, 597.50829pt x 845.0471pt>
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf>
 Package pdftex.def Info: ./zadani.pdf  used on input line 183.
@@ -2174,7 +2314,7 @@ File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf>
 Package pdftex.def Info: ./zadani.pdf  used on input line 183.
 (pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
-<./zadani.pdf, id=1188, page=1, 597.50829pt x 845.0471pt>
+<./zadani.pdf, id=1265, page=1, 597.50829pt x 845.0471pt>
 File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
 Package pdftex.def Info: ./zadani.pdf , page1 used on input line 183.
@@ -2197,13 +2337,13 @@ File: ./zadani.pdf Graphic file (type pdf)
 <use ./zadani.pdf, page 1>
 Package pdftex.def Info: ./zadani.pdf , page1 used on input line 183.
 (pdftex.def)             Requested size: 418.25294pt x 591.52895pt.
-[51
+[55
 
 
 
 
  <./zadani.pdf>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1244, 686.565pt x 542.025pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1320, 686.565pt x 542.025pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_v2.PDF>
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF  used on input line 186.
@@ -2212,7 +2352,7 @@ File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_v2.PDF>
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF  used on input line 186.
 (pdftex.def)             Requested size: 686.56332pt x 542.02367pt.
-<./ObrazkyDP/tpx2min_v2.PDF, id=1247, page=1, 686.565pt x 542.025pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1323, page=1, 686.565pt x 542.025pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_v2.PDF, page 1>
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page1 used on input line 
@@ -2240,7 +2380,7 @@ File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page1 used on input line 
 186.
 (pdftex.def)             Requested size: 480.59222pt x 379.4149pt.
-[52
+[56
 
 
  <./ObrazkyDP/tpx2min_v2.PDF>]
@@ -2282,10 +2422,10 @@ File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page1 used on input line 
 187.
 (pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-[53
+[57
 
 ]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1275, page=2, 722.7pt x 939.51pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1352, page=2, 722.7pt x 939.51pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_v2.PDF, page 2>
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page2 used on input line 
@@ -2301,163 +2441,163 @@ File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page2 used on input line 
 187.
 (pdftex.def)             Requested size: 650.42398pt x 845.5512pt.
- [54
-
- <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1291, page=3, 686.565pt x 686.565pt>
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 3>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page3 used on input line 
-187.
-(pdftex.def)             Requested size: 617.90279pt x 617.90279pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 3>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page3 used on input line 
-187.
-(pdftex.def)             Requested size: 617.90279pt x 617.90279pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 3>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page3 used on input line 
-187.
-(pdftex.def)             Requested size: 617.90279pt x 617.90279pt.
- [55
-
- <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1307, page=4, 686.565pt x 542.025pt>
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 4>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page4 used on input line 
-187.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 4>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page4 used on input line 
-187.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 4>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page4 used on input line 
-187.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-
-[56
-
- <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1323, page=5, 968.61874pt x 569.12625pt>
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 5>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page5 used on input line 
-187.
-(pdftex.def)             Requested size: 871.74883pt x 512.2089pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 5>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page5 used on input line 
-187.
-(pdftex.def)             Requested size: 871.74883pt x 512.2089pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 5>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page5 used on input line 
-187.
-(pdftex.def)             Requested size: 871.74883pt x 512.2089pt.
- [57
-
- <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1340, page=6, 1084.05pt x 794.97pt>
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 6>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page6 used on input line 
-187.
-(pdftex.def)             Requested size: 975.636pt x 715.4664pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 6>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page6 used on input line 
-187.
-(pdftex.def)             Requested size: 975.636pt x 715.4664pt.
-File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 6>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page6 used on input line 
-187.
-(pdftex.def)             Requested size: 975.636pt x 715.4664pt.
  [58
 
  <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1356, page=7, 889.3225pt x 650.43pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1368, page=3, 686.565pt x 686.565pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 7>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page7 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 3>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page3 used on input line 
 187.
-(pdftex.def)             Requested size: 800.38284pt x 585.38159pt.
+(pdftex.def)             Requested size: 617.90279pt x 617.90279pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 7>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page7 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 3>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page3 used on input line 
 187.
-(pdftex.def)             Requested size: 800.38284pt x 585.38159pt.
+(pdftex.def)             Requested size: 617.90279pt x 617.90279pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 7>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page7 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 3>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page3 used on input line 
 187.
-(pdftex.def)             Requested size: 800.38284pt x 585.38159pt.
+(pdftex.def)             Requested size: 617.90279pt x 617.90279pt.
  [59
 
  <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1372, page=8, 686.565pt x 542.025pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1384, page=4, 686.565pt x 542.025pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 8>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page8 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 4>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page4 used on input line 
 187.
 (pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 8>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page8 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 4>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page4 used on input line 
 187.
 (pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 8>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page8 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 4>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page4 used on input line 
 187.
 (pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
- [60
+
+[60
 
  <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1390, page=9, 794.97pt x 614.295pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1400, page=5, 968.61874pt x 569.12625pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 9>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page9 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 5>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page5 used on input line 
 187.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+(pdftex.def)             Requested size: 871.74883pt x 512.2089pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 9>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page9 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 5>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page5 used on input line 
 187.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+(pdftex.def)             Requested size: 871.74883pt x 512.2089pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 9>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page9 used on input line 
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 5>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page5 used on input line 
 187.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+(pdftex.def)             Requested size: 871.74883pt x 512.2089pt.
  [61
 
  <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_v2.PDF, id=1405, page=10, 794.97pt x 614.295pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1416, page=6, 1084.05pt x 794.97pt>
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 10>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page10 used on input line
- 187.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 6>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page6 used on input line 
+187.
+(pdftex.def)             Requested size: 975.636pt x 715.4664pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 10>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page10 used on input line
- 187.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 6>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page6 used on input line 
+187.
+(pdftex.def)             Requested size: 975.636pt x 715.4664pt.
 File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_v2.PDF, page 10>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page10 used on input line
- 187.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 6>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page6 used on input line 
+187.
+(pdftex.def)             Requested size: 975.636pt x 715.4664pt.
  [62
 
  <./ObrazkyDP/tpx2min_v2.PDF>]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1420, 686.565pt x 542.025pt>
+<./ObrazkyDP/tpx2min_v2.PDF, id=1432, page=7, 889.3225pt x 650.43pt>
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 7>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page7 used on input line 
+187.
+(pdftex.def)             Requested size: 800.38284pt x 585.38159pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 7>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page7 used on input line 
+187.
+(pdftex.def)             Requested size: 800.38284pt x 585.38159pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 7>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page7 used on input line 
+187.
+(pdftex.def)             Requested size: 800.38284pt x 585.38159pt.
+ [63
+
+ <./ObrazkyDP/tpx2min_v2.PDF>]
+<./ObrazkyDP/tpx2min_v2.PDF, id=1449, page=8, 686.565pt x 542.025pt>
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 8>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page8 used on input line 
+187.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 8>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page8 used on input line 
+187.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 8>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page8 used on input line 
+187.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+ [64
+
+ <./ObrazkyDP/tpx2min_v2.PDF>]
+<./ObrazkyDP/tpx2min_v2.PDF, id=1467, page=9, 794.97pt x 614.295pt>
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 9>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page9 used on input line 
+187.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 9>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page9 used on input line 
+187.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 9>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page9 used on input line 
+187.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+ [65
+
+ <./ObrazkyDP/tpx2min_v2.PDF>]
+<./ObrazkyDP/tpx2min_v2.PDF, id=1482, page=10, 794.97pt x 614.295pt>
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 10>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page10 used on input line
+ 187.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 10>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page10 used on input line
+ 187.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_v2.PDF, page 10>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_v2.PDF , page10 used on input line
+ 187.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+ [66
+
+ <./ObrazkyDP/tpx2min_v2.PDF>]
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1497, 686.565pt x 542.025pt>
 File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_chipboard_v2.PDF>
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF  used on input li
@@ -2468,7 +2608,7 @@ File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF  used on input li
 ne 190.
 (pdftex.def)             Requested size: 686.56332pt x 542.02367pt.
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1423, page=1, 686.565pt x 542.025pt>
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1500, page=1, 686.565pt x 542.025pt>
 File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 1>
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page1 used on i
@@ -2495,7 +2635,7 @@ File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page1 used on i
 nput line 190.
 (pdftex.def)             Requested size: 480.59222pt x 379.4149pt.
-[63
+[67
 
 
  <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
@@ -2539,10 +2679,10 @@ File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page1 used on i
 nput line 191.
 (pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-[64
+[68
 
 ]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1451, page=2, 1192.455pt x 1191.45125
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1527, page=2, 1192.455pt x 1191.45125
 pt>
 File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 <use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 2>
@@ -2559,102 +2699,102 @@ File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
 Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page2 used on i
 nput line 191.
 (pdftex.def)             Requested size: 1073.1996pt x 1072.29623pt.
- [65
-
- <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1468, page=3, 867.24pt x 578.16pt>
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 3>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page3 used on i
-nput line 191.
-(pdftex.def)             Requested size: 780.5088pt x 520.33919pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 3>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page3 used on i
-nput line 191.
-(pdftex.def)             Requested size: 780.5088pt x 520.33919pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 3>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page3 used on i
-nput line 191.
-(pdftex.def)             Requested size: 780.5088pt x 520.33919pt.
- [66
-
- <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1484, page=4, 686.565pt x 542.025pt>
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 4>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page4 used on i
-nput line 191.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 4>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page4 used on i
-nput line 191.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 4>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page4 used on i
-nput line 191.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
- [67
-
- <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1500, page=5, 686.565pt x 542.025pt>
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 5>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page5 used on i
-nput line 191.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 5>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page5 used on i
-nput line 191.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 5>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page5 used on i
-nput line 191.
-(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
- [68
-
- <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1516, page=6, 794.97pt x 614.295pt>
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 6>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page6 used on i
-nput line 191.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 6>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page6 used on i
-nput line 191.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
-File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 6>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page6 used on i
-nput line 191.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
  [69
 
  <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
-<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1532, page=7, 794.97pt x 614.295pt>
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1545, page=3, 867.24pt x 578.16pt>
 File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 7>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page7 used on i
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 3>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page3 used on i
 nput line 191.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+(pdftex.def)             Requested size: 780.5088pt x 520.33919pt.
 File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 7>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page7 used on i
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 3>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page3 used on i
 nput line 191.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+(pdftex.def)             Requested size: 780.5088pt x 520.33919pt.
 File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
-<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 7>
-Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page7 used on i
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 3>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page3 used on i
 nput line 191.
-(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+(pdftex.def)             Requested size: 780.5088pt x 520.33919pt.
  [70
+
+ <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1561, page=4, 686.565pt x 542.025pt>
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 4>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page4 used on i
+nput line 191.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 4>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page4 used on i
+nput line 191.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 4>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page4 used on i
+nput line 191.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+ [71
+
+ <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1577, page=5, 686.565pt x 542.025pt>
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 5>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page5 used on i
+nput line 191.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 5>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page5 used on i
+nput line 191.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 5>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page5 used on i
+nput line 191.
+(pdftex.def)             Requested size: 617.90279pt x 487.81798pt.
+ [72
+
+ <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1593, page=6, 794.97pt x 614.295pt>
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 6>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page6 used on i
+nput line 191.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 6>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page6 used on i
+nput line 191.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 6>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page6 used on i
+nput line 191.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+ [73
+
+ <./ObrazkyDP/tpx2min_chipboard_v2.PDF>]
+<./ObrazkyDP/tpx2min_chipboard_v2.PDF, id=1608, page=7, 794.97pt x 614.295pt>
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 7>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page7 used on i
+nput line 191.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 7>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page7 used on i
+nput line 191.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+File: ./ObrazkyDP/tpx2min_chipboard_v2.PDF Graphic file (type pdf)
+<use ./ObrazkyDP/tpx2min_chipboard_v2.PDF, page 7>
+Package pdftex.def Info: ./ObrazkyDP/tpx2min_chipboard_v2.PDF , page7 used on i
+nput line 191.
+(pdftex.def)             Requested size: 715.4664pt x 552.86038pt.
+ [74
 
  <./ObrazkyDP/tpx2min_chipboard_v2.PDF>] (DP_main.aux (literatura.aux) (zkratky
 .aux))
@@ -2667,14 +2807,14 @@ L3 programming layer <2024-01-04>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `DP_main.out' has not changed.
-(rerunfilecheck)             Checksum: 7B7BB7EEE228D082A82C03C91AD933EE;8070.
+(rerunfilecheck)             Checksum: 69CA1BBA54B623916EF18A237F6F0C51;9336.
  ) 
 Here is how much of TeX's memory you used:
- 28686 strings out of 474485
- 507206 string characters out of 5753549
- 2039542 words of memory out of 5000000
- 50171 multiletter control sequences out of 15000+600000
- 569531 words of font info for 77 fonts, out of 8000000 for 9000
+ 28805 strings out of 474485
+ 511143 string characters out of 5753549
+ 2041542 words of memory out of 5000000
+ 50272 multiletter control sequences out of 15000+600000
+ 571230 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  95i,18n,93p,2359b,1319s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\opavl\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -2686,13 +2826,13 @@ ublic/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmmi8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.p
 fb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program
  Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1
-/public/amsfonts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsf
-onts/cm/cmtt10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt
-9.pfb>
-Output written on DP_main.pdf (80 pages, 8039437 bytes).
+X/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Program Files/MiKTeX/fonts/type1
+/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt1
+0.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on DP_main.pdf (84 pages, 10284700 bytes).
 PDF statistics:
- 1664 PDF objects out of 1728 (max. 8388607)
- 257 named destinations out of 1000 (max. 500000)
- 819 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1747 PDF objects out of 2073 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
+ 886 words of extra memory for PDF output out of 10000 (max. 10000000)
 
