@@ -435,15 +435,34 @@ V této části bude popsána detailní realizace celého zařízení. V předch
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.17]{./Mechanika/mechanika_open.jpeg}
+		\includegraphics[scale=0.20]{./Mechanika/mechanika_open.jpeg}
 		\caption{Rozložená mechanická krabička navrženého vyčítacího rozhraní.} 
 		\label{fig:mechanika}
 	\end{figure}
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.20]{./Mechanika/t2m.jpeg}
+		\includegraphics[scale=0.22]{./Mechanika/t2m.jpeg}
 		\caption{Navržené miniaturizované vyčítací rozhraní pro pixelový detektor radiace Timepix 2.} 
 		\label{fig:t2m}
 	\end{figure}
+	
+\section{Integrace rozhraní do programu TrackLab}
+Velkou část ověření funkčnosti navrženého rozhraní v této práci tvořila integrace rozhraní do programu TrackLab \cite{Manek_2024} a následné ovládání rozhraní právě z tohoto programu. Tento program slouží pro zpracování dat z pixelových detektorů, online analýzu dat a automatizaci. Navržené rozhraní je připojeno pomocí virtuálního ethernetu přes USB do uživatelského rozhraní. Protokol, kterým rozhraní komunikuje je analogický, jako pro vyčítací rozhraní Katherine pro Timepix 2, které bylo popsáno v části \ref{Katherine}. Protokol je založen na 6 B rámcích, které jsou posílány pomocí UDP protokolu. Pokud nebude uvedeno jinak, pořízené snímky ověřující funkcionalitu rozhraní jsou z právě programu TrackLab \cite{Manek_2024}.
+\begin{figure}[h!]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[scale=0.55]{tracklab_info.jpg}
+	\caption{Hlavní panel programu TrackLab \cite{Manek_2024}.} 
+	\label{fig:Tracklab}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[scale=0.80]{ip.png}
+	\caption{Připojené vyčítací rozhraní, splňující protokol pro Katherine vyčítací rozhraní, do programu TrackLab s nastavenou ip adresou.} 
+	\label{fig:ip}
+\end{figure}
+
 	

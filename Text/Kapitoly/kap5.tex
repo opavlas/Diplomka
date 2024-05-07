@@ -82,25 +82,7 @@ Analýzu odvodu tepla ze zařízení je možné vidět na obrázku \ref{fig:tepl
 \section{USB komunikace}
 Fyzická implementace USB byla popsána v části textu \ref{USB}. Pro testování USB komunikace byly použity dvě USB třídy. První třídou USB byl virtuální sériový port přes USB. Tato třída sloužila pouze pro rychlé ověření funkčnosti USB periférie. Druhou třídou byla třída RNDIS, neboli virtuální ethernet přes USB, tato třída byla použita pro přenos UDP protokolu přes USB, tedy z navrženého vyčítacího rozhraní do rozhraní uživatelského.
 \subsection{Virtuální ethernet přes USB}
-Hlavní USB třída, která byla použita v konečné implementaci byla třída RNDIS. Jedná se o třídu USB kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP protokol. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{Manek_2024} a již existující komunikační protokol, využívající právě UDP komunikaci. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Navržené miniaturizované rozhraní se tedy programu TrackLab jeví jako právě zmíněné vyčítací rozhraní Katherine pro Timepix 2. Ukázka nakonfigurovaného zařízení jako třídy RNDIS lze vidět na obrázku \ref{fig:RNDIS}. Snímek konfigurace zařízení byl pořízen z programu USBTreeView. 
-\begin{figure}[h!]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[scale=0.50]{usb_view.jpg}
-	\caption{Vyčítací rozhraní nakonfigurované jako zařízení z USB třídy RNDIS.} 
-	\label{fig:RNDIS}
-\end{figure}
-
-\section{Integrace rozhraní do programu TrackLab}
-Velkou část ověření funkčnosti navrženého rozhraní v této práci tvořila integrace rozhraní do programu TrackLab \cite{Manek_2024} a následné ovládání rozhraní právě z tohoto programu. Tento program slouží pro zpracování dat z pixelových detektorů, online analýzu dat a automatizaci. Navržené rozhraní je připojeno pomocí virtuálního ethernetu přes USB do uživatelského rozhraní. Protokol, kterým rozhraní komunikuje je analogický, jako pro vyčítací rozhraní Katherine pro Timepix 2, které bylo popsáno v části \ref{Katherine}. Protokol je založen na 6 B rámcích, které jsou posílány pomocí UDP protokolu. Pokud nebude uvedeno jinak, pořízené snímky ověřující funkcionalitu rozhraní jsou z právě programu TrackLab \cite{Manek_2024}.
-
-\begin{figure}[h!]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[scale=0.55]{tracklab_info.jpg}
-	\caption{Hlavní panel programu TrackLab \cite{Manek_2024}.} 
-	\label{fig:Tracklab}
-\end{figure}
+Hlavní USB třída, která byla použita v konečné implementaci byla třída RNDIS. Jedná se o třídu USB kdy je přes USB implementován virtuální ethernet. V této práci se konkrétně pomocí USB přenáší UDP protokol. Tato třída byla zvolena s ohledem na existující program TrackLab \cite{Manek_2024} a již existující komunikační protokol, využívající UDP komunikaci. TrackLab umožňuje připojit různá vyčítací rozhraní s pixelovými detektory. Vyčítací rozhraní v této práci respektuje již existující standart a to standart připojení vyčítacího rozhraní Katherine pro Timepix 2 \ref{Katherine}. Navržené miniaturizované rozhraní se tedy programu TrackLab jeví jako právě zmíněné, vyčítací rozhraní Katherine pro Timepix 2. Připojené vyčítací rozhraní do programu TrackLab s nastaveno ip adresou je možné vidět na obrázku \ref{fig:ip}.
 
 \section{Vysokonapěťový zdroj}
 % Nastaveni VN zdroje
@@ -114,20 +96,11 @@ Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, kte
 \end{figure}
 
 
-
 % TODO promereni teploty s mechanikou ??, termokamra ??
 \section{Měření teploty}
 V této práci bylo implementováno měření teploty pomocí externího teplotního senzoru na desce s detektorem Timepix 2 \ref{Deska s Timepix2} a měření teploty za využití interního měření teploty detektoru Timepix 2. Měření teploty za využití detektoru Timepix 2, bude uvedeno v části \ref{teplota}.
 \subsection{Měření teploty vyčítacího rozhraní}
 Typ senzoru který byl pro tuto práci vybrán pro měření teploty na desce s Timepix 2 byl podrobně popsán v části \ref{Mereni teploty}. Pokud dojde k uživatelskému příkazu, který požaduje informaci o teplotě, následuje proces vyčtení teploty ze senzoru pomocí I2C komunikace. Poté následuje dekódování přijatého čísla na odpovídající skutečnou analogovou hodnotu. Zobrazení teploty na desce s detektorem Timepix 2 je poté monitorováno z programu TrackLab \cite{Manek_2024}. Zobrazení teploty lze vidět na obrázku \ref{fig:Tracklab}.
-
-\begin{figure}[h!]
-	\centering
-	\captionsetup{justification=centering}
-	\includegraphics[scale=0.50]{tpx2_temp.jpg}
-	\caption{Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite{tpx2_manual}.} 
-	\label{fig:tpx2_temp}
-\end{figure}
 
 \section{Komunikační rozhraní s Timepix 2}		% promřování logických urovni komunkikace, rychlosti atd..
 %todo logicke urovne SLVS, rychlosti komunikace -> need V2. MCLOCK..
@@ -143,6 +116,14 @@ Komunikační rozhraní detektoru Timepix 2 bylo popsáno v části textu \ref{K
 \section{Měření teploty Timepix2}
 \label{teplota}
 Pixelový detektor Timepix 2 umožňuje monitorovat vnitřní teplotu detektoru. Hodnota výsledné teploty detektoru je poté dle simulace teploty detektoru v závislosti na napěťové referenci popsána na obrázku \ref{fig:tpx2_temp}. Pro získání teploty detektoru je zapotřebí naměření dvou analogových hodnot z obrázku \ref{fig:tpx2_temp}, označovaných jako Vtemp a Vbg. Pro získání těchto analogových hodnot je nejprve zapotřebí nastavit, jaká hodnota analogového napětí bude na výstupu pinu Timepix 2 označovaného jako DACOUT. Výstup pinu DACOUT Timepix 2 je poté zpracován interním 12-bitovým AD převodníkem mikrokontroléru na základní desce \ref{zakladni deska}. Příklad výběru hodnoty na výstup DACOUT detektoru Timepix 2 a převod získané hodnoty na odpovídající teplotu lze vidět v zjednodušeném kódu \ref{kod_temp_tpx2}. Zpracovaná teplota je následně odeslána do programu TrackLab. Zobrazení teploty v programu TrackLab detektoru Timepix 2 lze najít na obrázku \ref{fig:Tracklab}.  
+\begin{figure}[h!]
+	\centering
+	\captionsetup{justification=centering}
+	\includegraphics[scale=0.50]{tpx2_temp.jpg}
+	\caption{Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite{tpx2_manual}.} 
+	\label{fig:tpx2_temp}
+\end{figure}
+
 \begin{lstlisting}[frame=single, language=C, caption={Výběr výstupu DACOUT detektoru Timepix2 a odečtení hodnoty detektoru.}, label=kod_temp_tpx2]
 	// GET DAC : VBG_TEMP
 	uint8_t set_dacoutsel[0] = VBG_TEMP; 
@@ -204,18 +185,38 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 
 % TODO DOPOCITAT a vysledky
 \section{Měření v laboratoři CERN}
-	Posledním testem navrženého vyčítacího rozhraní bylo měření na urychlovači částic Proton Synchrotron (PS) \cite{PS} v laboratoři CERN \cite{CERN}. Navržené vyčítací rozhraní bylo umístěno do vyúsťujícího svazku z již uvedeného urychlovače PS. Respektive do středu svazku byl umístěn detektor Timepix 2. Rozložení navrženého experimentu je možné vidět na obrázku \ref{fig:setup_meas_beam}. Pozice vyčítacího rozhraní vůči středu svazku je poté zobrazena na obrázku \ref{fig:setup_meas_beam_1}.
+	Posledním testem navrženého vyčítacího rozhraní bylo měření na urychlovači částic Proton Synchrotron (PS) \cite{PS} v laboratoři CERN \cite{CERN}. Parametry urychlených částic je možné najít v tabulce \ref{tab:castice}. Jednalo se o pozitivn9 nastavení urychlovače, tedy svazek byl zhruba z 80$\%$ tvořen protony a z 20$\%$ piony. 
+		\begin{table}[h!]
+		\centering
+		\begin{tabular}{ |P{1.5cm}|P{2.5cm}|P{2.5cm}|P{3cm}|P{2.5cm}|  }
+			\hline
+			\multicolumn{5}{|c|}{Parametry urychlených částic} \\
+			\hline
+			Částice & Energie [GeV] & Počet částic [-] & Doba svazku [ms] & Frekvence [Hz]\\ \hline \hline 
+			Hadrony & 10 & $10^6$ & 400 & 0.05 \\ \hline 	
+		\end{tabular}
+		\caption{Parametry urychlených částic, z urychlovače Proton Synchotron v CERNu}
+		\label{tab:castice}
+	\end{table}
+
+\subsection{Umístění rozhraní}	
+	Navržené vyčítací rozhraní bylo umístěno do vyúsťujícího svazku z uvedeného urychlovače PS. Přesněji do středu svazku byl umístěn detektor Timepix 2. Rozhraní bylo přimontováno na rotační a posuvný stůl, který je možné vidět na obrázku \ref{fig:setup_meas_beam}. Pozice zařízení byla možná měnit ve třech osách. Pomocí dvou posuvných os bylo zařízení přesně umístěno do středu svazku vyúsťujícího z urychlovače částic. Pomocí rotační osy byl pak volen úhel natočení vyčítacího rozhraní vůči svazku. Celé rozložení navrženého experimentu je možné vidět na obrázku \ref{fig:setup_meas_beam}. Pozice vyčítacího rozhraní vůči středu svazku je poté zobrazena na obrázku \ref{fig:setup_meas_beam_1}. Posledním nastavením experimentu bylo analogické z obrázků \ref{fig:setum_beam}, jedinou změnou pak bylo natočení celého rozhraní o 90$\deg$ vůči svazku.
+	
+\subsection{Nastavení měření}	
+	Dle parametrů urychlených částic z uvedené tabulky \ref{tab:castice}, bylo měření s detektorem Timepix 2 následovné. Detektor byl nastaven do režimu s názvem: column trigger. V tomto režimu je možné monitorovat obsazení sloupců pixelové matice. Pokud toto obsazení překročí nastavenou hodnotu, je ukončeno měření a data jsou vyčtena z rozhraní do programu TrackLab. Druhou možností, kdy jsou data vyčtena z rozhraní je po uplynutí nastaveno měřícího času. Konkrétněji nastavení měřící doby bylo 2s a počet obsazených sloupců, při kterém dojde k odeslání dat byl optimalizován v závislosti na staveném úhlu rozhraní vůči svazku.
+	
+\subsection{Vyhodnocení měření}
+	Na obrázcích \ref{fig:tracks} můžete vidět vybrané snímky pořízené detektorem, během měření. Lze na nich pozorovat závislostt závislost délky stopy interagující částice na velikosti nastaveného úhlu. S rostoucím úhlem natočení detektoru vůči svazku se snižuje počet detekovaných částic, vlivem nastaveného režimu column trigger. Pokud se detektor otočí o 90$\deg$ je možné detekovat větší množství částic, protože dopadající částice dopadají v ideálním případě rovnoběžně na sloupce detektoru.
+	
 	\par
-	Vyčítací zařízení bylo umístěno na rotačním a posuvném stole, který je možné vidět na obrázku \ref{fig:setup_meas_beam}. Umístění zařízení tedy bylo možné měnit ve třech osách. Pomocí dvou posuvných os bylo zařízení přesně umístěno do středu svazku vyúsťujícího z urychlovače částic. Pomocí rotační osy byl pak volen úhel natočení vyčítacího rozhraní vůči svazku. Přesný úhel se kterou urychlené částice dopadli na detektor lze dopočítat. Dopadající svazek byl tvořen hadrony o energii 10 GeV.
-	\par
-	 Na obrázcích \ref{fig:tracks} můžete vidět vybrané snímky pořízené detektorem, během měření. Na uvedených obrázcích lze vidět závislost délky stopy interagující částice na velikosti nastaveného úhlu. Kvůli vysoké intenzitě částic, byl na detektoru Timepix 2 při měření aktivovaný column trigger mód. Tento mód zajistí, že pokud je v pixelové matici zasaženo více než počet nastavených sloupců, dojde k zastavení akvizice a data jsou dostupná k vyčtení. Pokud by nebyl zasažen dostačující počet sloupců na aktivaci tohoto signálu, dojde k přerušení akvizice po uplynutí nastaveného akvizičního času.
+	Při měření byla použita křemíková senzorová vrstva o tloušťce 500$\mu$m. Na tuto vrstvu bylo připojeno vysoké napětí o velikosti 110 V. Detekovatelné částice zanechají v senzorové vrstvě pouze část své energie. Vrstva není na tolik tlustá, aby interagující částice zanechaly veškerou energii právě v této vrstvě. Pokud ze získaných snímků vyfiltrujeme stopy částic, které jsou způsobeny pouze urychlenými částicemi dostaneme snímky obsahující pouze stopy od urychlených částic. Následně pro každou stopu částice spočítáme čas TOT \ref{item:modes}, tedy čas kdy signál v daném pixelu byl nad nastavenou detekovatelnou úrovní. Toto provedeme pro každou stopu částice individuálně a vyneseme do grafu. V grafu \ref{fig:0deg_graph}, pak můžete vidět spektrum zanechané energie v senzorové vrstvě pro úhel 0$\deg$ natočení vyčítacího rozhraní vůči dopadajícímu svazku. Jak je vidět, rozložení naměřených dat odpovídá Landau pravděpodobnostnímu rozdělení. %TODO Landaou rozdeleni?
 	
 	\begin{figure}[h!]
 		\captionsetup{justification=centering}
 		\begin{subfigure}{0.5\textwidth}
 			\centering
 			\includegraphics[scale=0.38]{setup_meas_beam.png}
-			\caption{Pohled ze směru svazku na vyčítací zařízení}
+			\caption{Pohled ze směru svazku na vyčítací rozhraní}
 			\label{fig:setup_meas_beam}
 		\end{subfigure}
 		\begin{subfigure}{0.5\textwidth}
@@ -225,8 +226,16 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 			\label{fig:setup_meas_beam_1}
 		\end{subfigure}
 		\caption{Umístění detektorů vůči svazku z urychlovače částic}. %
-		\label{fig:T_all}
+		\label{fig:setum_beam}
 	\end{figure}
+	
+	\begin{figure}[h!]
+		\centering
+		\captionsetup{justification=centering}
+		\includegraphics[scale=0.55]{0degrees_energy_spec_landau_model.pdf}
+		\caption{Spektrum zanechané energie v senzoru pro pro úhel natočení 0$\deg$} 
+		\label{fig:0deg_graph}
+	\end{figure} 
 
 	
 	    \begin{figure*}

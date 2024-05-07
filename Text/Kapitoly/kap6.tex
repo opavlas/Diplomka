@@ -1,1 +1,13 @@
 \chapter{Závěr}
+
+V této práci bylo navrženo miniaturizované vyčítací rozhraní pro pixelový detektor radiace Timepix 2. Tato práce probíhala na půdě Ústavu Technické a Experimentální fyziky ČVUT v Praze. 
+
+Vyčítací rozhraní se skládá ze dvou desek plošných spojů, které jsou vertikálně propojeny pomocí konektoru. Jedná se o základní desku a desku s detektorem Timepix 2. Jádrem základní desky je mikroprocesor STM32 v pouzdře BGA, který se používá k ovládání celého rozhraní. Na druhé desce plošných spojů se nachází detektor Timepix 2, který slouží k sofistikovanému měření ionizujícího záření. Tento detektor je propojen wire bondovací technologií s deskou plošných spojů. Spotřeba navrženého rozhraní, pokud je plně v provozu je 1.5 W. Celé vyčítací rozhraní je poté zapouzdřeno mechanickou hliníkovou krabičkou o rozměrech 73.4 x 22 x 13.5 mm.
+
+Dále bylo realizováno propojení navrženého rozhraní s již existujícím programem TrackLab \cite{Manek_2024}, který slouží pro zpracování dat z pixelových detektorů, online analýzu a automatizaci. Toto propojení je realizováno pomocí virtuálního ethernetu přes USB s maximální teoretickou přenosovou rychlostí 480 Mbit/s.
+ 
+Funkčními testy byla ověřena funkčnost rozhraní, kdy hlavní testem bylo reálné měření s navrženým vyčítacím rozhraním na urychlovači částic v laboratoři CERN. Měřeny byly částice o energii 10 GeV. Z analýzy naměřených dat a průběhu celého měření byla potvrzena schopnost používat navržené rozhraní pro reálné měření ionizujícího záření. 
+\newline
+\par
+Výsledkem této práce je navržené miniaturizované vyčítací rozhraní pro pixelový detektor radiace Timepix 2, které je možné používat pro fyzikální experimenty měřící ionizující záření. Díky propojení rozhraní do programu TrackLab je možné naměřená data živě zobrazovat, vyhodnocovat a celé měření automatizovat. 
+
