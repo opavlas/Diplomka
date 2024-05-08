@@ -45,10 +45,10 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Závislost vstupní 8 bitové hodnoty na výstupním napětí VN zdroje.}}{41}{figure.caption.75}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Průběh komunikačního hodinového signálu Timepix 2.}}{42}{figure.caption.76}%
 \contentsline {figure}{\numberline {5.7}{\ignorespaces Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite {tpx2_manual}.}}{43}{figure.caption.77}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Zobrazení vyčtených hodnot DAC převodníků Timepix 2 v celém rozsahu.}}{45}{figure.caption.79}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Ekvalizace Timepix 2 čipu z programu TrackLab.}}{46}{figure.caption.80}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Zobrazení vyčtených hodnot DAC převodníků Timepix 2 v celém rozsahu.}}{44}{figure.caption.79}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Ekvalizace Timepix 2 čipu z programu TrackLab.}}{45}{figure.caption.80}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Umístění detektorů vůči svazku z urychlovače částic}}{47}{figure.caption.82}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Spektrum zanechané energie v senzoru pro pro úhel natočení 0$\deg $}}{48}{figure.caption.83}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Spektrum energie zanechané v senzorové vrstvě, pro úhel natočení 0$^{\circ }$}}{48}{figure.caption.83}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

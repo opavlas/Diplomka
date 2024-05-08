@@ -90,7 +90,7 @@ Zapojení vysokonapěťového zdroje a princip měření vysokého napětí, kte
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.40]{./Mereni/hv_hex_small.pdf}
+	\includegraphics[scale=0.35]{./Mereni/hv_hex_small.pdf}
 	\caption{Závislost vstupní 8 bitové hodnoty na výstupním napětí VN zdroje.} 
 	\label{fig:hv_hex}
 \end{figure}
@@ -108,7 +108,7 @@ Komunikační rozhraní detektoru Timepix 2 bylo popsáno v části textu \ref{K
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.45]{./Mereni/MCLOCK_DIFF_PROBE.png}
+	\includegraphics[scale=0.39]{./Mereni/MCLOCK_DIFF_PROBE.png}
 	\caption{Průběh komunikačního hodinového signálu Timepix 2.} 
 	\label{fig:MCLOCK_DIFF_PROBE}
 \end{figure}
@@ -119,22 +119,19 @@ Pixelový detektor Timepix 2 umožňuje monitorovat vnitřní teplotu detektoru.
 \begin{figure}[h!]
 	\centering
 	\captionsetup{justification=centering}
-	\includegraphics[scale=0.50]{tpx2_temp.jpg}
+	\includegraphics[scale=0.58]{tpx2_temp.jpg}
 	\caption{Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite{tpx2_manual}.} 
 	\label{fig:tpx2_temp}
 \end{figure}
 
 \begin{lstlisting}[frame=single, language=C, caption={Výběr výstupu DACOUT detektoru Timepix2 a odečtení hodnoty detektoru.}, label=kod_temp_tpx2]
-	// GET DAC : VBG_TEMP
 	uint8_t set_dacoutsel[0] = VBG_TEMP; 
 	float vtemp = 0;
 	// set what type of DAC will be on DACOUT output								   
-	if(tpx2_set_reg_8b(TPXA, SET_DACOUTSEL, set_dacoutsel) != TPX_OK) {    
+	if(tpx2_set_reg_8b(TPXA, SET_DACOUTSEL, set_dacoutsel) != TPX_OK)   
 		Error_Handler();
-	}
-	if(board_tpx2_get_dacout(TPXA, &vtemp) != BOARD_OK) {
+	if(board_tpx2_get_dacout(TPXA, &vtemp) != BOARD_OK)
 		Error_Handler();
-	}
 	// Sim. -> TT. // Temp. into real value in ^C.
 	float tpx2_temp = 471.99*(vtemp - vbg)/1000 - 179.14;					
 \end{lstlisting}
@@ -178,7 +175,7 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 	\begin{figure}[h!]
 		\centering
 		\captionsetup{justification=centering}
-		\includegraphics[scale=0.35]{tracklab_eql.jpg}
+		\includegraphics[scale=0.39]{tracklab_eql.jpg}
 		\caption{Ekvalizace Timepix 2 čipu z programu TrackLab.} 
 		\label{fig:tracklab_eql}
 	\end{figure}
@@ -206,10 +203,10 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 	Dle parametrů urychlených částic z uvedené tabulky \ref{tab:castice}, bylo měření s detektorem Timepix 2 následovné. Detektor byl nastaven do režimu s názvem: column trigger. V tomto režimu je možné monitorovat obsazení sloupců pixelové matice. Pokud toto obsazení překročí nastavenou hodnotu, je ukončeno měření a data jsou vyčtena z rozhraní do programu TrackLab. Druhou možností, kdy jsou data vyčtena z rozhraní je po uplynutí nastaveno měřícího času. Konkrétněji nastavení měřící doby bylo 2s a počet obsazených sloupců, při kterém dojde k odeslání dat byl optimalizován v závislosti na staveném úhlu rozhraní vůči svazku.
 	
 \subsection{Vyhodnocení měření}
-	Na obrázcích \ref{fig:tracks} můžete vidět vybrané snímky pořízené detektorem, během měření. Lze na nich pozorovat závislostt závislost délky stopy interagující částice na velikosti nastaveného úhlu. S rostoucím úhlem natočení detektoru vůči svazku se snižuje počet detekovaných částic, vlivem nastaveného režimu column trigger. Pokud se detektor otočí o 90$\deg$ je možné detekovat větší množství částic, protože dopadající částice dopadají v ideálním případě rovnoběžně na sloupce detektoru.
+	Na obrázcích \ref{fig:tracks} můžete vidět vybrané snímky pořízené detektorem, během měření. Lze na nich pozorovat závislost délky stopy interagující částice na velikosti nastaveného úhlu. S rostoucím úhlem natočení detektoru vůči svazku se zvyšuje dálka stop částic, ale snižuje se počet detekovaných částic, vlivem nastaveného režimu column trigger. Pokud se detektor celý otočí o 90$^{\circ}$ je možné detekovat větší množství částic, protože dopadající částice dopadají v ideálním případě rovnoběžně na sloupce detektoru. Na obrázku \ref{fig:80_rot} můžete vidět stopy interagujících částic pokud byl celý detektor pootočen o 90$^{\circ}$.
 	
 	\par
-	Při měření byla použita křemíková senzorová vrstva o tloušťce 500$\mu$m. Na tuto vrstvu bylo připojeno vysoké napětí o velikosti 110 V. Detekovatelné částice zanechají v senzorové vrstvě pouze část své energie. Vrstva není na tolik tlustá, aby interagující částice zanechaly veškerou energii právě v této vrstvě. Pokud ze získaných snímků vyfiltrujeme stopy částic, které jsou způsobeny pouze urychlenými částicemi dostaneme snímky obsahující pouze stopy od urychlených částic. Následně pro každou stopu částice spočítáme čas TOT \ref{item:modes}, tedy čas kdy signál v daném pixelu byl nad nastavenou detekovatelnou úrovní. Toto provedeme pro každou stopu částice individuálně a vyneseme do grafu. V grafu \ref{fig:0deg_graph}, pak můžete vidět spektrum zanechané energie v senzorové vrstvě pro úhel 0$\deg$ natočení vyčítacího rozhraní vůči dopadajícímu svazku. Jak je vidět, rozložení naměřených dat odpovídá Landau pravděpodobnostnímu rozdělení. %TODO Landaou rozdeleni?
+	Při měření byla použita křemíková senzorová vrstva o tloušťce 500 $\mu$m. Na tuto vrstvu bylo připojeno vysoké napětí o velikosti 110 V. Detekovatelné ionizující částice zanechají v senzorové vrstvě pouze část své energie. Vrstva není na tolik silná, aby interagující částice zanechaly veškerou energii právě v této vrstvě. Pokud ze získaných snímků vyfiltrujeme stopy částic, které jsou způsobeny pouze urychlenými částicemi v ideálním případě dostaneme snímky obsahující pouze stopy od urychlených částic. Následně pro každou stopu částice spočítáme čas TOT \ref{item:modes}, tedy čas, kdy byl signál v daném pixelu nad nastavenou detekovatelnou úrovní. Toto provedeme pro každou stopu částice individuálně a vyneseme do grafu. V grafu \ref{fig:0deg_graph}, pak můžete vidět spektrum zanechané energie v senzorové vrstvě pro úhel 0$^{\circ}$ natočení vyčítacího rozhraní vůči dopadajícímu svazku. Jak je vidět, rozložení naměřených dat odpovídá Landau pravděpodobnostnímu rozdělení. %TODO Landaou rozdeleni?
 	
 	\begin{figure}[h!]
 		\captionsetup{justification=centering}
@@ -233,7 +230,7 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 		\centering
 		\captionsetup{justification=centering}
 		\includegraphics[scale=0.55]{0degrees_energy_spec_landau_model.pdf}
-		\caption{Spektrum zanechané energie v senzoru pro pro úhel natočení 0$\deg$} 
+		\caption{Spektrum energie zanechané v senzorové vrstvě, pro úhel natočení 0$^{\circ}$} 
 		\label{fig:0deg_graph}
 	\end{figure} 
 
@@ -263,9 +260,9 @@ Funkčnost komunikace s detektorem Timepix 2 byla, ověřena pomocí digitální
 		\hfill
 		\begin{subfigure}[b]{0.475\textwidth}   
 			\centering 
-			\includegraphics[width=\textwidth]{./beam/80deg/10GeV_hadrons_80deg_4_1}
-			\caption{Úhel 80$^{\circ}$}
-			\label{fig:80}
+			\includegraphics[width=\textwidth]{./beam/80deg_rot/10GeV_hadrons_80deg_rot_6_1}
+			\caption{Úhel 80$^{\circ}$, rozhraní 90$^{\circ}$}
+			\label{fig:80_rot}
 		\end{subfigure}
 		\captionsetup{justification=centering}
 		\caption[]

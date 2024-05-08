@@ -72,12 +72,12 @@
 \contentsline {subsection}{\numberline {5.8.1}Vyčtení chip ID}{43}{subsection.5.8.1}%
 \contentsline {subsection}{\numberline {5.8.2}Vyčtení a zapsání pixelových matic}{43}{subsection.5.8.2}%
 \contentsline {section}{\numberline {5.9}Vyčítaní DAC převodníku Timepix 2}{44}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Ekvalizace Timepix 2}{44}{section.5.10}%
-\contentsline {section}{\numberline {5.11}Měření v laboratoři CERN}{45}{section.5.11}%
-\contentsline {subsection}{\numberline {5.11.1}Umístění rozhraní}{45}{subsection.5.11.1}%
+\contentsline {section}{\numberline {5.10}Ekvalizace Timepix 2}{45}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Měření v laboratoři CERN}{46}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Umístění rozhraní}{46}{subsection.5.11.1}%
 \contentsline {subsection}{\numberline {5.11.2}Nastavení měření}{46}{subsection.5.11.2}%
-\contentsline {subsection}{\numberline {5.11.3}Vyhodnocení měření}{47}{subsection.5.11.3}%
-\contentsline {section}{\numberline {5.12}Dosažené parametry}{48}{section.5.12}%
+\contentsline {subsection}{\numberline {5.11.3}Vyhodnocení měření}{46}{subsection.5.11.3}%
+\contentsline {section}{\numberline {5.12}Dosažené parametry}{47}{section.5.12}%
 \contentsline {chapter}{\numberline {6}Závěr}{50}{chapter.6}%
 \contentsline {chapter}{Seznam použité literatury}{53}{chapter*.86}%
 \contentsline {chapter}{Seznam použitých zkratek}{55}{chapter*.87}%
