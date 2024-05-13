@@ -126,6 +126,8 @@
 \pagenumbering{roman}
 \setcounter{page}{3}
 
+\includepdf[fitpaper=true,pages=1]{./zadani.pdf}
+
 % Declaration
 \chapter*{Prohlášení:}
 \input{tex/declaration}
@@ -180,7 +182,7 @@
 % TODO include zadnání diplomky plus prilohy (viz. BP)
 
 \appendix
-\includepdf[scale=0.7, offset=20 -80,pages=1,pagecommand=\chapter{Zadání Diplomové práce}]{./zadani.pdf}
+%\includepdf[scale=0.7, offset=20 -80,pages=1,pagecommand=\chapter{Zadání Diplomové práce}]{./zadani.pdf}
 
 %todo davat obe prilohy?
 \includepdf[scale=0.7, offset=20 -80,pages=1,pagecommand=\chapter{Základní deska}]{./ObrazkyDP/tpx2min_v2.PDF}

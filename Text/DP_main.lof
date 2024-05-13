@@ -14,8 +14,8 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Koncept řešení vyčítacího rozhraní pro detektor Timepix 2}}{14}{figure.caption.24}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces PCB: Základní deska. Rozložení vrstev.}}{17}{figure.caption.25}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev základní desky.}}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces PCB: Základní deska. Rozložení vrstev}}{17}{figure.caption.25}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Popis vrstev základní desky}}{17}{figure.caption.25}%
 \contentsline {figure}{\numberline {4.3}{\ignorespaces Zapojení regulátoru MP2333H.}}{18}{figure.caption.27}%
 \contentsline {figure}{\numberline {4.4}{\ignorespaces Napájecí sekvence základní desky.}}{18}{figure.caption.29}%
 \contentsline {figure}{\numberline {4.5}{\ignorespaces Konfigurace a napájení mikrokontroléru STM32U5A9.}}{21}{figure.caption.31}%
@@ -44,12 +44,11 @@
 \contentsline {figure}{\numberline {5.4}{\ignorespaces Odvod tepla z navrženého vyčítacího rozhraní.}}{40}{figure.caption.74}%
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Závislost vstupní 8 bitové hodnoty na výstupním napětí VN zdroje.}}{41}{figure.caption.75}%
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Průběh komunikačního hodinového signálu Timepix 2.}}{42}{figure.caption.76}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite {tpx2_manual}.}}{43}{figure.caption.77}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Simulace teploty detektoru Timepix 2 v závislosti na hodnotě napěťové reference \cite {tpx2_manual}.}}{42}{figure.caption.77}%
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Zobrazení vyčtených hodnot DAC převodníků Timepix 2 v celém rozsahu.}}{44}{figure.caption.79}%
 \contentsline {figure}{\numberline {5.9}{\ignorespaces Ekvalizace Timepix 2 čipu z programu TrackLab.}}{45}{figure.caption.80}%
 \contentsline {figure}{\numberline {5.10}{\ignorespaces Umístění detektorů vůči svazku z urychlovače částic}}{47}{figure.caption.82}%
 \contentsline {figure}{\numberline {5.11}{\ignorespaces Spektrum energie zanechané v senzorové vrstvě, pro úhel natočení 0$^{\circ }$}}{48}{figure.caption.83}%
-\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

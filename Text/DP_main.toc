@@ -81,6 +81,5 @@
 \contentsline {chapter}{\numberline {6}Závěr}{50}{chapter.6}%
 \contentsline {chapter}{Seznam použité literatury}{53}{chapter*.86}%
 \contentsline {chapter}{Seznam použitých zkratek}{55}{chapter*.87}%
-\contentsline {chapter}{\numberline {A}Zadání Diplomové práce}{56}{appendix.A}%
-\contentsline {chapter}{\numberline {B}Základní deska}{57}{appendix.B}%
-\contentsline {chapter}{\numberline {C}Deska s Timepix 2}{68}{appendix.C}%
+\contentsline {chapter}{\numberline {A}Základní deska}{56}{appendix.A}%
+\contentsline {chapter}{\numberline {B}Deska s Timepix 2}{67}{appendix.B}%
